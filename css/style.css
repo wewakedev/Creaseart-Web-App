@@ -1308,7 +1308,9 @@ form .input-textarea {
   border: none !important;
 }
 
-
+.card-block p {
+  margin: 1rem 0rem;
+}
 
 /*********VendorFORM***********/
 
