@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Offers & Coupons</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="background: #fff;">
+
+  <!-- navbar section -->
+  <div class="container-fluid nav2">
+    <script>
+      $.get("nav.html", function(data){
+          $("#navholder").replaceWith(data);
+      });
+      </script>
+      <div class="" id="navholder"></div>
+  </div>
+
+  
+  <div class="container-fluid offerheader d-flex justify-content-center align-items-center" style="background-image: url(img/offerbanner.svg); 
+    height: 45vh;
+    background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     ">
+
+    <div class="offerhead container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="" style="color: #B52421 !important;"><b>Offers & Coupons</b> </h1>
+          <p class="text-gray">Explore top deals and offers exclusively for you!</p>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+
+  <div class="couponoffers my-5 light-bg">
+    <div class="container">
+     
+      <ul class="nav nav-tabs coupon-sec">
+        <li class="nav-item vendoroffer">
+          <a class="nav-link active" data-toggle="tab" href="#vendoroffertab"><h6>Vendor Offers</h6></a>
+        </li>
+        <li class="nav-item creaseartcoupon">
+        <a class="nav-link" data-toggle="tab" href="#creaseartcoupontab"><h6>Coupons</h6></a>
+        </li>
+      </ul>
+      <div class="tab-content ">
+        <div class="tab-pane show active" id="vendoroffertab">
+
+          <div class="container">
+            <div class="row justify-content-between">
+                <div class=" col-md-3 vendoroffer m-2 " style="background: #F6F6F6;">          
+                  <div class="vendoroffertag pt-1 pb-0 text-center">
+                    <h4><i class="fas fa-rupee-sign"></i>50 OFF</h4></i><br>
+                    <small>Min Order Value ₹ 450</small><br>
+                    <div id="second" style="color: #fff; margin: 0px; background: #E76F51; padding: 0px; text-align: center;"><small>SPRDC 0025</small></div>
+                  </div>
+                  <div class="offertagdeat">
+                    <small style="color: #000;"><b>Get ₹ 50 OFF, min order value ₹ 450</b></small><br>
+                    <small class="text-secondary">by Super Fine Dry Cleaners</small><br>
+                    <a style="color: #6993C3 !important;" href="shoppage.html">More+ </a>
+                  </div><hr style="margin: .5rem 0rem;">
+                  <div class="">
+                    <button id="second-button" class=" copyoffer" style="right:0;" onclick="copyText('second');" title="Copy Text">Copy Code</button>
+                  </div>
+                  <script>
+                    
+                  </script>
+                </div>
+
+                <div class=" col-md-3 vendoroffer m-2" style="background: #F6F6F6;">          
+                  <div class="vendoroffertag pt-1 pb-0 text-center">
+                    <h4><i class="fas fa-rupee-sign"></i>50 OFF</h4></i><br>
+                    <small>Min Order Value ₹ 450</small><br>
+                    <div id="sprdc" style="color: #fff; margin: 0px; background: #E76F51; padding: 0px; text-align: center;"><small>SPRDC 0025</small></div>
+                  </div>
+                  <div class="offertagdeat">
+                    <small style="color: #000;"><b>Get ₹ 50 OFF, min order value ₹ 450</b></small><br>
+                    <small class="text-secondary">by Super Fine Dry Cleaners</small><br>
+                    <a style="color: #6993C3 !important;" href="shoppage.html">More+ </a>
+                  </div><hr style="margin: .5rem 0rem;">
+                  <div><button class="copyoffer" onclick="copyToClipboard('#sprdc')"><small>Copy Code</small></button></div>
+                </div>
+
+                <div class=" col-md-3 vendoroffer m-2" style="background: #F6F6F6;">          
+                  <div class="vendoroffertag pt-1 pb-0 text-center">
+                    <h4><i class="fas fa-rupee-sign"></i>50 OFF</h4></i><br>
+                    <small>Min Order Value ₹ 450</small><br>
+                    <div id="sprdc" style="color: #fff; margin: 0px; background: #E76F51; padding: 0px; text-align: center;"><small>SPRDC 0025</small></div>
+                  </div>
+                  <div class="offertagdeat">
+                    <small style="color: #000;"><b>Get ₹ 50 OFF, min order value ₹ 450</b></small><br>
+                    <small class="text-secondary">by Super Fine Dry Cleaners</small><br>
+                    <a style="color: #6993C3 !important;" href="shoppage.html">More+ </a>
+                  </div><hr style="margin: .5rem 0rem;">
+                  <div><button class="copyoffer" onclick="copyToClipboard('#sprdc')"><small>Copy Code</small></button></div>
+                </div>
+                
+                
+            </div>
+          </div>
+
+
+        </div>
+        <script>
+          function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+          }
+
+        </script>
+
+        <div class="tab-pane show " id="creaseartcoupontab">
+
+          <div class="container">
+            <div class="row justify-content-between">
+                <div class=" col-md-3 creaseartoffer m-2 " style="background: #F6F6F6;">          
+                  <div class="creaseartoffertag pt-1 pb-0 text-center" style=" background-image: url(img/couponbg.svg);">
+                    <span><img src="img/couponicon.png" alt=""></span> &nbsp; &nbsp;
+                    <span id="codeidfc"><small><b>IDFC125</b></small></span>
+                  </div>
+                  <div class="creaseartoffertagdeat">
+                    <small style="color: #000;"><b>Get 30% discount using IDFC FIRST Bank cards</b></small><br>
+                    <small class="text-secondary">Maximum discount up to Rs. 125 on orders above Rs. 299</small><br>
+                    <a style="color: #6993C3 !important;" href="shoppage.html">More+ </a>
+                  </div><hr style="margin: .5rem 0rem;">
+                  <div><button class="copyoffer" onclick="copyToClipboard('#codeidfc')"><small>Copy Code</small></button></div>
+                </div>
+
+                
+                
+                
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- footer section -->
+
+  <div class="">
+    <script>
+      $.get("footer.html", function(data){
+          $("#footerjs").replaceWith(data);
+      });
+      </script>
+      <div class="container-fluid " id="footerjs" ></div>
+  </div>
+
+
+
+ <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/main.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

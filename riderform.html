@@ -1,0 +1,795 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Signup as Rider</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body style="background: #F6F6F6;">
+      
+    <div class="container-fluid nav2">
+      <script>
+        $.get("nav2.html", function(data){
+            $("#navholder2").replaceWith(data);
+        });
+        </script>
+        <div class="" id="navholder2"></div>
+    
+        
+    </div>
+    
+  
+    <div class="container vendorformheading my-5">
+
+       <h3>
+           <b>Rider to Complete and Sign</b> 
+       </h3> 
+       <small><Span>*</Span>denotes compulsory field. Application will be rejected unless these fields are completed.</small> <hr>
+    </div>
+
+   
+    
+<!---------------------------------------------- FORM A SUPPLIER INFO ------------------------------------------------->
+
+
+    <div class="container">
+        <form action="vendorsignup.php" method="POST" id="ridersignform">
+
+            <div class="container my-5 p-4" style="background-color: #fff; border-radius: .4rem;">
+            
+                <h5 class="my-3"> <b>(A) Rider Information</b></h5>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="rdrfirstname">First Name<sup>*</sup></label>
+                      <input type="text" class="form-control" placeholder="" id="rdrfirstname" required="required">
+                    </div>
+                  </div>
+                  <!--  col-md-6   -->
+            
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="rdrlastname">Last Name <sup>*</sup> </label>
+                      <input type="text" class="form-control" placeholder="" id="rdrlastname" required="required">
+                    </div>
+                  </div>
+                  <!--  col-md-6   -->
+                </div>
+            
+            
+                <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="taxid">Date of Birth <sup>*</sup></label>
+                        <input type="date" class="form-control" id="taxid" required="required">
+                      </div>
+            
+            
+                    </div>
+                </div>
+
+
+            </div>
+
+<!---------------------------------------------- FORM B CONTACT INFO ------------------------------------------------->
+
+            <hr class="my-5">
+      
+
+            <div class="container my-5 p-4" style="background-color: #fff; border-radius: .4rem;">
+            
+                <h5 class="my-3"> <b>(B) Contact Information</b></h5>
+
+                <div class="row">
+                    <div class="col-md-8">
+              
+                      <div class="form-group">
+                        <label for="supadd">Rider Address <sup>*</sup></label>
+                        <input type="rdradd" class="form-control" id="rdradd" placeholder="" required="required">
+                      </div>
+                    </div>
+              
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="rdrcity">City <sup>*</sup></label>
+                        <input type="rdrcity" class="form-control" id="rdrcity" placeholder="" required="required">
+                      </div>
+              
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="rdrpin">Pin Code<sup>*</sup></label>
+                          <input type="rdrpin" class="form-control" id="rdrpin" placeholder="" required="required">
+                        </div>
+                    </div>
+              
+                    <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="rdrstate">State <sup>*</sup></label>
+                          <input type="rdrstate" class="form-control" id="rdrstate" placeholder="" required="required">
+                        </div>
+                
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="rdrmobile">Mobile Number<sup>*</sup></label>
+                          <input type="rdrmobile" class="form-control" id="rdrmobile" pattern="^\d{10}$" placeholder="" required="required">
+                        </div>
+                
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="rdrmail">Email<sup>*</sup></label>
+                            <input type="mail" class="form-control" id="rdrmail" placeholder="" required="required" >
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-5">
+                
+    <!-- OWNER ADDRESS -->
+
+                <!-- <div class="row">
+                    <div class="col-md-8">
+              
+                      <div class="form-group">
+                        <label for="ownadd">Owner Address<sup>*</sup></label>&nbsp;
+                        <span><input type="checkbox" id="copydetails"  onclick="autoFilAddress()"> Same as above</span>
+                         
+                        <input type="ownadd" class="form-control" id="ownadd" placeholder="">
+                      </div>
+                    </div>
+              
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="owncity">City <sup>*</sup></label>
+                        <input type="owncity" class="form-control" id="owncity" placeholder="">
+                      </div>
+              
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="ownpin">Pin Code<sup>*</sup></label>
+                          <input type="ownpin" class="form-control" id="ownpin" placeholder="">
+                        </div>
+                    </div>
+              
+                    <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="ownstate">State <sup>*</sup></label>
+                          <input type="ownstate" class="form-control" id="ownstate" placeholder="">
+                        </div>
+                
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="ownmobile">Mobile Number<sup>*</sup></label>
+                          <input type="ownmobile" class="form-control" id="ownmobile" placeholder="">
+                        </div>
+                
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="ownemail">Email<sup>*</sup></label>
+                            <input type="mail" class="form-control" id="ownmail" placeholder="">
+                        </div>
+                    </div>
+                </div> -->
+
+
+            </div>
+
+
+
+<!---------------------------------------------- FORM C PAYMENT CLASSES ------------------------------------------------->
+
+
+            <div class="container my-5 p-4" style="background-color: #fff; border-radius: .4rem;">
+            
+                <h5 class="my-3"> <b>(C) Payment Information</b></h5>
+
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="rdrbanknum">Bank Account Number <sup>*</sup></label>
+                          <input type="rdrbanknum" class="form-control" id="rdrbanknum" placeholder="" required="required">
+                        </div>
+                    </div>
+              
+                    <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="rdrifscnum">IFSC <sup>*</sup></label>
+                          <input type="rdrifscnum" class="form-control" id="rdrifscnum" placeholder="" required="required">
+                        </div>
+                
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-6">
+              
+                      <div class="form-group">
+                        <label for="rdrbankname">Bank & Branch Name * <sup>*</sup></label>
+                        <input type="rdrbankname" class="form-control" id="rdrbankname" placeholder="" required="required">
+                      </div>
+                    </div>
+              
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="rdracholdername">Account Holder Name * <sup>*</sup></label>
+                        <input type="rdracholdername" class="form-control" id="rdracholdername" placeholder="" required="required">
+                      </div>
+              
+                    </div>
+                </div>
+
+
+                <small><b>Mode of payment selected * <sup>*</sup> </b> </small><br><br>
+                
+                <div class="row ">
+                    <div class="col-md-9 d-flex justify-content-between flex-wrap">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="paycheckopt" id="paycheckopt">
+                                <label class="form-check-label" for="paycheckopt">
+                                  Cheque
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="payrtgsopt" id="payrtgsopt">
+                                <label class="form-check-label" for="payrtgsopt">
+                                  RTGS
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="paynetbankopt" id="paynetbankopt">
+                                <label class="form-check-label" for="paynetbankopt">
+                                  Net Banking
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="paytpaytmopt" id="paytpaytmopt">
+                                <label class="form-check-label" for="paytpaytmopt">
+                                  Paytm
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                
+            </div>
+
+<!---------------------------------------------- FORM D SERVICE CLASSES ------------------------------------------------->
+
+            <div class="container my-5 p-4" style="background-color: #fff; border-radius: .4rem;">
+            
+                <h5 class="my-3"> <b>(D) Service Classification</b></h5>
+                
+
+
+                <!-- If YES to Own Logistics -->
+
+                <div class="row my-3">
+                    <div class="container my-3">
+                        <small><b>How would you manage logistics? Which type of vehile you use for pick & Drop facility?</b> </small><br>
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-between flex-wrap">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="logbicycle" id="logbicycle">
+                                <label class="form-check-label" for="logbicycle">
+                                  Bicycle
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="twowheellog" id="twowheellog">
+                                <label class="form-check-label" for="twowheellog">
+                                   2 Wheeler
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="threewheellog" id="threewheellog">
+                                <label class="form-check-label" for="threewheellog">
+                                  3 Wheeler
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="fourwheellog" id="fourwheellog">
+                                <label class="form-check-label" for="fourwheellog">
+                                  4 Wheeler
+                                </label>
+                               
+                            </div>
+                        </div>
+                        
+
+                    </div>
+
+
+                    <div class="container my-3">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <small><b>Do you have Vechile Registration Certificate ?</b> </small><br>
+
+                                <div class="row my-3 ">
+                                    <div class="col-md-6 d-flex justify-content-between flex-wrap">
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="radio" id="yesvreg">
+                                                <label class="form-check-label" for="yesvreg">
+                                                  Yes
+                                                </label>
+                                            </div>
+                                        </div>
+                                     
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="radio" id="novreg">
+                                                <label class="form-check-label" for="novreg">
+                                                  No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <small><b>Do you have Vechile Insurance No.? <sup>*</sup></b> </small><br>
+
+                                <div class="row my-3 ">
+                                    <div class="col-md-6 d-flex justify-content-between flex-wrap">
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="radio" id="yesvin">
+                                                <label class="form-check-label" for="yesvin">
+                                                  Yes
+                                                </label>
+                                            </div>
+                                        </div>
+                                     
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="radio" id="novin">
+                                                <label class="form-check-label" for="novin">
+                                                  No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <small><b>Enter your Vechile Registration Certificate</b> </small><br>
+
+                                <div class="form-group">
+                                    <input type="vregcert" class="form-control" id="vregcert" placeholder="">
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <small><b>Enter your Vechile Insurance No. <sup>*</sup></b> </small><br>
+
+                                <div class="form-group">
+                                    <input type="vinnum" class="form-control" id="vinnum" placeholder="">
+                                </div>
+                                
+                            </div>
+
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <small><b>Is your Rider 18 year old *</b> </small><br>
+
+                                <div class="row my-3 ">
+                                    <div class="col-md-6 d-flex justify-content-between flex-wrap">
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="radio" id="yesageopt">
+                                                <label class="form-check-label" for="yesageopt">
+                                                  Yes
+                                                </label>
+                                            </div>
+                                        </div>
+                                     
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="radio" id="noageopt">
+                                                <label class="form-check-label" for="noageopt">
+                                                  No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <small><b>Enter Birth Certificate or any document with you D.O.B. <sup>*</sup></b> </small><br>
+
+                                <div class="row my-3 ">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="form-group">
+                                                <input type="vinnum" class="form-control" id="venriderdob" placeholder="">
+                                            </div>
+                                        </div>
+                                     
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <small><b>Do you have a license number <sup>*</sup></b> </small><br>
+
+                                <div class="row my-3 ">
+                                    <div class="col-md-6 d-flex justify-content-between flex-wrap">
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="radio" id="yeslicenseopt">
+                                                <label class="form-check-label" for="yeslicenseopt">
+                                                  Yes
+                                                </label>
+                                            </div>
+                                        </div>
+                                     
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="radio" id="nolicenseopt">
+                                                <label class="form-check-label" for="nolicenseopt">
+                                                  No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <small><b>Enter your license number *<sup>*</sup></b> </small><br>
+
+                                <div class="row my-3 ">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="form-group">
+                                                <input type="vinnum" class="form-control" id="lincensenum" placeholder="">
+                                            </div>
+                                        </div>
+                                     
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                
+                    
+                    
+                </div>
+
+                <small><b>What are your quality parameters/standards of each service/services you will offering to Crease Art?</b></small>
+                        <div class="row my-3 ">
+                            <div class="col-md-12">
+                            
+                                <div class="form-group">
+                                    <textarea id="querybox1" name="querybox1" placeholder="" style="height:10rem; width: 100%; border-radius: 5px;"></textarea>
+                                </div>
+                               
+                             
+                            </div>
+                        </div>
+
+            
+            
+                <small><b>Please provide details of how would you 
+                    manage services/delivery during festivals, 
+                    public holidays and in cases when 
+                    your labour 
+                    is off and in emergency cases?
+                    </b></small>
+                <div class="row my-3 ">
+                    <div class="col-md-12">
+                        
+                            <div class="form-group">
+                                <textarea id="querybox2" name="querybox2" placeholder="" style="height:10rem; width: 100%; border-radius: 5px;"></textarea>
+                            </div>
+                        
+                     
+                    </div>
+                </div>
+
+                <div class="row my-3">
+                    <div class="col-md-10">
+                        <div class="form-group">
+                            <label for="leavecal">Please submit your Adhar Card:</label>
+                            <input type="file" id="leavecal" name="leavecal"><br><br>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+                <!-- <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            
+                            <small>Please do your Virtual Signature!</small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                             <canvas id="sig-canvas" width="620" height="160">
+                                 Get a better browser, bro.
+                             </canvas>
+                         </div>
+                         <button class="btn" id="sig-clearBtn">Clear Signature</button>
+                         <button class="btn" id="sig-saveBtn">Save</button>
+                    </div>
+                    <style>
+                        #sig-canvas {
+                          border: 2px dotted #CCCCCC;
+                          border-radius: 15px;
+                          cursor: crosshair;
+                        }
+                    </style>
+    
+                    <script>(function() {
+                        window.requestAnimFrame = (function(callback) {
+                          return window.requestAnimationFrame ||
+                            window.webkitRequestAnimationFrame ||
+                            window.mozRequestAnimationFrame ||
+                            window.oRequestAnimationFrame ||
+                            window.msRequestAnimaitonFrame ||
+                            function(callback) {
+                              window.setTimeout(callback, 1000 / 60);
+                            };
+                        })();
+                      
+                        var canvas = document.getElementById("sig-canvas");
+                        var ctx = canvas.getContext("2d");
+                        ctx.strokeStyle = "#222222";
+                        ctx.lineWidth = 4;
+                      
+                        var drawing = false;
+                        var mousePos = {
+                          x: 0,
+                          y: 0
+                        };
+                        var lastPos = mousePos;
+                      
+                        canvas.addEventListener("mousedown", function(e) {
+                          drawing = true;
+                          lastPos = getMousePos(canvas, e);
+                        }, false);
+                      
+                        canvas.addEventListener("mouseup", function(e) {
+                          drawing = false;
+                        }, false);
+                      
+                        canvas.addEventListener("mousemove", function(e) {
+                          mousePos = getMousePos(canvas, e);
+                        }, false);
+                      
+                        
+                        canvas.addEventListener("touchstart", function(e) {
+                      
+                        }, false);
+                      
+                        canvas.addEventListener("touchmove", function(e) {
+                          var touch = e.touches[0];
+                          var me = new MouseEvent("mousemove", {
+                            clientX: touch.clientX,
+                            clientY: touch.clientY
+                          });
+                          canvas.dispatchEvent(me);
+                        }, false);
+                      
+                        canvas.addEventListener("touchstart", function(e) {
+                          mousePos = getTouchPos(canvas, e);
+                          var touch = e.touches[0];
+                          var me = new MouseEvent("mousedown", {
+                            clientX: touch.clientX,
+                            clientY: touch.clientY
+                          });
+                          canvas.dispatchEvent(me);
+                        }, false);
+                      
+                        canvas.addEventListener("touchend", function(e) {
+                          var me = new MouseEvent("mouseup", {});
+                          canvas.dispatchEvent(me);
+                        }, false);
+                      
+                        function getMousePos(canvasDom, mouseEvent) {
+                          var rect = canvasDom.getBoundingClientRect();
+                          return {
+                            x: mouseEvent.clientX - rect.left,
+                            y: mouseEvent.clientY - rect.top
+                          }
+                        }
+                      
+                        function getTouchPos(canvasDom, touchEvent) {
+                          var rect = canvasDom.getBoundingClientRect();
+                          return {
+                            x: touchEvent.touches[0].clientX - rect.left,
+                            y: touchEvent.touches[0].clientY - rect.top
+                          }
+                        }
+                      
+                        function renderCanvas() {
+                          if (drawing) {
+                            ctx.moveTo(lastPos.x, lastPos.y);
+                            ctx.lineTo(mousePos.x, mousePos.y);
+                            ctx.stroke();
+                            lastPos = mousePos;
+                          }
+                        }
+                      
+                        // Prevent scrolling when touching the canvas
+                        document.body.addEventListener("touchstart", function(e) {
+                          if (e.target == canvas) {
+                            e.preventDefault();
+                          }
+                        }, false);
+                        document.body.addEventListener("touchend", function(e) {
+                          if (e.target == canvas) {
+                            e.preventDefault();
+                          }
+                        }, false);
+                        document.body.addEventListener("touchmove", function(e) {
+                          if (e.target == canvas) {
+                            e.preventDefault();
+                          }
+                        }, false);
+                      
+                        (function drawLoop() {
+                          requestAnimFrame(drawLoop);
+                          renderCanvas();
+                        })();
+                      
+                        function clearCanvas() {
+                          canvas.width = canvas.width;
+                        }
+                      
+                        // Set up the UI
+                        var sigText = document.getElementById("sig-dataUrl");
+                        var sigImage = document.getElementById("sig-image");
+                        var clearBtn = document.getElementById("sig-clearBtn");
+                        var saveBtn = document.getElementById("sig-saveBtn");
+                        clearBtn.addEventListener("click", function(e) {
+                          clearCanvas();
+                          sigText.innerHTML = "Data URL for your signature will go here!";
+                          sigImage.setAttribute("src", "");
+                        }, false);
+                        saveBtn.addEventListener("click", function(e) {
+                          var dataUrl = canvas.toDataURL();
+                          sigText.innerHTML = dataUrl;
+                          sigImage.setAttribute("src", dataUrl);
+                        }, false);
+                      
+                      })();</script>
+    
+                </div> -->
+
+              
+            
+      
+      
+          
+      
+          <div class="agreeterms text-center">
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="allagreeopt" id="allagreeopt" required="required" data-msg-required="This value is required.">
+                    <label class="form-check-label" for="allagreeopt">
+                        I hereby decalare that all the information I have filled is correct.
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="tncopt" id="tncopt" required="required" data-msg-required="This value is required.">
+                    <label class="form-check-label" for="tncopt">
+                        I agree to buy Starter Kit. &nbsp; &nbsp; &nbsp; <a href="rider.html#riderkit" target="_blank"><b>( View Starter Kit )</b> </a>
+
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="tncopt" id="tncopt" required="required" data-msg-required="This value is required.">
+                    <label class="form-check-label" for="tncopt">
+                        Please read our T&C before proceeding
+                    </label>
+                </div>
+
+            </div>
+          </div>
+      
+      
+          <div class="vendorformsubmission text-center">
+            <button type="submit" class="vendorformsubmitbtn">Submit</button>
+          </div>
+          
+        </form>
+    </div>
+  </div>
+    <!-- footer section -->
+
+    <div class="">
+      <script>
+       $.get("footer.html", function(data){
+           $("#footerjs").replaceWith(data);
+       });
+      </script>
+      <div class="container-fluid " id="footerjs" ></div>
+  </div>
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/main.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+</html>
+
+

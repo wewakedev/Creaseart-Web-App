@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29.24" height="29.24" viewBox="0 0 29.24 29.24">
+  <g id="Group_2471" data-name="Group 2471" transform="translate(-134 -347)">
+    <g id="_2561279_cart_shopping_icon" data-name="2561279_cart_shopping_icon" transform="translate(140 354)">
+      <ellipse id="Ellipse_599" data-name="Ellipse 599" cx="1.252" cy="1.25" rx="1.252" ry="1.25" transform="translate(5.045 12.501)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <circle id="Ellipse_600" data-name="Ellipse 600" cx="1.25" cy="1.25" r="1.25" transform="translate(12.001 12.501)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Path_3962" data-name="Path 3962" d="M3.991,4.2h11.1L14.013,9.575a1.281,1.281,0,0,1-1.281,1.031H5.963A1.281,1.281,0,0,1,4.682,9.492L3.709,2.114A1.281,1.281,0,0,0,2.441,1H1" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+    <path id="Path_4052" data-name="Path 4052" d="M14.62,0A14.62,14.62,0,1,1,0,14.62,14.582,14.582,0,0,1,14.62,0Zm0,1.351A13.309,13.309,0,1,0,27.969,14.62,13.293,13.293,0,0,0,14.62,1.351Z" transform="translate(134 347)" fill="#fff"/>
+  </g>
+</svg>

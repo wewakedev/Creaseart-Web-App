@@ -1,0 +1,14 @@
+<svg id="Watch" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+  <circle id="Ellipse_543" data-name="Ellipse 543" cx="21" cy="21" r="21" fill="#fe5959"/>
+  <path id="Path_2644" data-name="Path 2644" d="M84.956,37A20.978,20.978,0,0,1,64,58V16A20.978,20.978,0,0,1,84.956,37Z" transform="translate(-43.028 -16)" fill="#cc4a4a"/>
+  <circle id="Ellipse_544" data-name="Ellipse 544" cx="18" cy="18" r="18" transform="translate(3 3)" fill="#fee2e2"/>
+  <path id="Path_2645" data-name="Path 2645" d="M81.872,41A17.937,17.937,0,0,1,64,59V23A17.937,17.937,0,0,1,81.872,41Z" transform="translate(-43 -20.001)" fill="#fec9c9"/>
+  <circle id="Ellipse_545" data-name="Ellipse 545" cx="2" cy="2" r="2" transform="translate(19 19)" fill="#cc4a4a"/>
+  <path id="Path_2646" data-name="Path 2646" d="M58.684,46.8a1.353,1.353,0,0,1-.319.039,1.257,1.257,0,0,1-.258-.026,1.31,1.31,0,0,1-1.013-.965l-1.266-5.06-1.79-7.164a1.31,1.31,0,1,1,2.541-.637l.515,2.065.118.476,2.423,9.7A1.31,1.31,0,0,1,58.684,46.8Z" transform="translate(-37.402 -25.037)" fill="#4bb0f0"/>
+  <path id="Path_2647" data-name="Path 2647" d="M61.817,51.346a1.353,1.353,0,0,1-.319.039,1.257,1.257,0,0,1-.258-.026,7.9,7.9,0,0,1-.873-.624,1.31,1.31,0,0,1-.14-.341l-.476-4.685c-.279-2.222-.38-4.44.594-5.649l2.423,9.7A1.31,1.31,0,0,1,61.817,51.346Z" transform="translate(-40.534 -29.621)" fill="#3a88ba"/>
+  <path id="Path_2648" data-name="Path 2648" d="M62.31,51.351A1.31,1.31,0,0,1,61,50.041V41.31a1.31,1.31,0,0,1,2.62,0v8.732A1.31,1.31,0,0,1,62.31,51.351Z" transform="translate(-41.346 -29.587)" fill="#4bb0f0"/>
+  <rect id="Rectangle_820" data-name="Rectangle 820" width="3" transform="translate(4 20)" fill="#fbb850"/>
+  <rect id="Rectangle_821" data-name="Rectangle 821" width="2" transform="translate(35 20)" fill="#fbb850"/>
+  <rect id="Rectangle_822" data-name="Rectangle 822" width="2.62" height="1.746" transform="translate(21.619 3.816) rotate(90)" fill="#fbb850"/>
+  <rect id="Rectangle_823" data-name="Rectangle 823" width="2.62" height="1.746" transform="translate(21.619 34.308) rotate(90)" fill="#fbb850"/>
+</svg>

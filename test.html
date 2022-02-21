@@ -1,0 +1,850 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Super Fine Dry Cleanings</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="background: #F6F6F6;">
+
+  <!-- navbar section -->
+  <div class="container-fluid nav2">
+    
+    <script>
+      $.get("nav.html", function(data){
+          $("#navholder").replaceWith(data);
+      });
+      </script>
+      <div class="" id="navholder"></div>
+  </div>
+
+
+
+  <div class="container-fluid  mb-5 p-2 " style="background: url(img/vendorheadbg.jpg);background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;">
+      <div class="container">
+          <div class="row py-5">
+              <div class="col-md-3  my-3">
+                  <img class="shopimg1" style="width: 200px; height: auto;" src="img/vendorthumb1.jpg" alt="">
+              </div>
+              <div class="col-md-6 my-3 shopinfos">
+                  <h3 style="color: #fff !important;"><b> Super Fine Dry Cleaners</b></h3>
+                  <p >Dry cleaning, Wash & Fold, Wash & Iron</p>
+                  <div class=" d-flex text-white mt-2">
+                    <div><img src="img/vendorheadcoupontag.svg" alt="" style="width: 3rem; margin: 1rem;"></div>
+                  
+                    <div><p class="text-white" style="margin: 1rem 0.2rem;"><b>₹50 Off</b></p>
+                      <p style="margin-top: -1rem !important;">Min order value 450</p>
+                    </div>
+                    
+              
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="container my-4" id="mainservcies">
+
+    <div class="row ">
+
+      <!-- <div class="col-md-3 service text-center ">
+          <div class="nav flex-row nav-pills " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active d-flex justify-content-around " id="v-pills-dryclean-tab" data-toggle="pill" href="#v-pills-dryclean" role="tab" aria-controls="v-pills-dryclean" aria-selected="true"><img src="img/drycleaning.png" alt="" class="serviceicon"><span class="align-self-center">DRY CLEANING</span> </a>
+            <a class="nav-link d-flex justify-content-around"  id="v-pills-laundry-tab" data-toggle="pill" href="#v-pills-laundry" role="tab" aria-controls="v-pills-laundry" aria-selected="false"><img src="img/laundryicon.png" alt="" class="serviceicon"><span class="align-self-center">LAUNDRY</span> </a>
+            <a class="nav-link d-flex justify-content-around" id="v-pills-washfolds-tab" data-toggle="pill" href="#v-pills-washfolds" role="tab" aria-controls="v-pills-washfolds" aria-selected="false"><img src="img/washfoldicon.png" alt="" class="serviceicon"> <span class="align-self-center">WASH & FOLDS</span></a>
+            <a class="nav-link d-flex justify-content-around" id="v-pills-washiron-tab" data-toggle="pill" href="#v-pills-washiron" role="tab" aria-controls="v-pills-washiron" aria-selected="false"><img src="img/washiron.png" alt="" class="serviceicon"> <span class="align-self-center">WASH & IRON</span></a>
+          </div>
+      </div> -->
+      
+      <div class="col-md-9">
+
+        <script>
+          $(document).ready(function(){
+              $('[data-toggle="tooltip"]').tooltip({
+                  placement : 'top'
+              });
+          });
+          </script>
+
+          <div class="container">
+            <div class="row mb-1 justify-content-between  " style="border-bottom: 1px solid #b6b3b3;">
+              <div class="col-md-3 col-6">
+                <h6><b> SELECT SERVICES</b></h6>
+              </div>
+              <div class="col-md-3 col-12 d-flex">
+                <small><b>Express Delivery <sup><i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-original-title="Delivery Within 24hrs"></i></sup> </b></small>
+                <input type="checkbox" id="switchexp"class="checkbox dark-modeBtn" />
+                <label for="switchexp" class="toggleexp">
+                </label>   
+              </div>
+            </div>
+          </div>
+          <div class="service container my-4 text-center ">
+            <!-- <div class="nav flex-row flex-wrap justify-content-around nav-pills " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link active d-flex justify-content-between align-items-center " id="v-pills-dryclean-tab" data-toggle="pill" href="#v-pills-dryclean" role="tab" aria-controls="v-pills-dryclean" aria-selected="true"><img src="img/drycleaning.png" alt="" class="serviceicon"><span class="">DRY CLEANING</span> </a>
+              <a class="nav-link d-flex justify-content-between align-items-center"  id="v-pills-laundry-tab" data-toggle="pill" href="#v-pills-laundry" role="tab" aria-controls="v-pills-laundry" aria-selected="false"><img src="img/laundryicon.png" alt="" class="serviceicon"><span class="">LAUNDRY</span> </a>
+              <a class="nav-link d-flex justify-content-between align-items-center" id="v-pills-washfolds-tab" data-toggle="pill" href="#v-pills-washfolds" role="tab" aria-controls="v-pills-washfolds" aria-selected="false"><img src="img/washfoldicon.png" alt="" class="serviceicon"> <span class="">WASH & FOLDS</span></a>
+              <a class="nav-link d-flex justify-content-between align-items-center" id="v-pills-washiron-tab" data-toggle="pill" href="#v-pills-washiron" role="tab" aria-controls="v-pills-washiron" aria-selected="false"><img src="img/washiron.png" alt="" class="serviceicon"> <span class="">WASH & IRON</span></a>
+            </div> -->
+            <div class="nav row justify-content-around nav-pills " id="v-pills-tab" role="tablist" aria-orientation="horizontal">
+              <a class="nav-link active col-md-3 col-6 d-flex justify-content-center align-items-center " id="v-pills-dryclean-tab" data-toggle="pill" href="#v-pills-dryclean" role="tab" aria-controls="v-pills-dryclean" aria-selected="true"><img src="img/drycleaning.png" alt="" class="serviceicon"><span class="">DRY CLEANING</span> </a>
+              <a class="nav-link d-flex col-md-3 col-6 justify-content-center align-items-center"  id="v-pills-laundry-tab" data-toggle="pill" href="#v-pills-laundry" role="tab" aria-controls="v-pills-laundry" aria-selected="false"><img src="img/laundryicon.png" alt="" class="serviceicon"><span class="">LAUNDRY</span> </a>
+              <a class="nav-link d-flex col-md-3 col-6 justify-content-center align-items-center" id="v-pills-washfolds-tab" data-toggle="pill" href="#v-pills-washfolds" role="tab" aria-controls="v-pills-washfolds" aria-selected="false"><img src="img/washfoldicon.png" alt="" class="serviceicon"> <span class="">WASH & FOLDS</span></a>
+              <a class="nav-link d-flex col-md-3 col-6 justify-content-center align-items-center" id="v-pills-washiron-tab" data-toggle="pill" href="#v-pills-washiron" role="tab" aria-controls="v-pills-washiron" aria-selected="false"><img src="img/washiron.png" alt="" class="serviceicon"> <span class="">WASH & IRON</span></a>
+            </div>
+        </div>
+
+       
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-dryclean" role="tabpanel" aria-labelledby="v-pills-dryclean-tab">
+              <div class="container category">
+                <div class="row">
+                  <div class="col-md-12 ">
+                    <ul class="nav nav-pills mb-3 justify-content-around" id="pills-tab" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-men-tab" data-toggle="pill" href="#pills-men" role="tab" aria-controls="pills-men" aria-selected="true">Men</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-women-tab" data-toggle="pill" href="#pills-women" role="tab" aria-controls="pills-women" aria-selected="false">Women</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-kids-tab" data-toggle="pill" href="#pills-kids" role="tab" aria-controls="pills-kids" aria-selected="false">Kids</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-household-tab" data-toggle="pill" href="#pills-household" role="tab" aria-controls="pills-household" aria-selected="false">Households</a>
+                      </li>
+                    </ul>  
+                  </div>
+                  <div class="col-12 text-center">
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade show active" id="pills-men" role="tabpanel" aria-labelledby="pills-men-tab">
+
+                        <div class="container-fluid mt-5">
+
+                          <div class="row justify-content-center">
+                              <div class="col-md-12">
+                                  <div class="table-responsive">
+                                      <table id="myTable" class="table">
+                                          <thead>
+                                              <tr>
+
+                                                  <th>Name</th>
+                                                  <th>Qty</th>
+                                                  <th>Price</th>
+                                                  <th class="text-right"><span id="amount" class="amount">Amount</span> </th>
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                              <tr>
+                                                  
+                                                  <td>
+                                                      <p>Product One</p>
+                                                  </td>
+                                                  <td>
+                                                      <div class="button-container">
+                                                          <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                          <input type="text" name="qty" min="0" class="qty form-control" value="0"/>
+                                                          <button class="cart-qty-minus" type="button" value="-">-</button>
+                                                      </div>
+                                                  </td>
+                                                  <td>
+                                                      <input type="text" value="72" class="price form-control" disabled>
+                                                  </td>
+                                                  <td align="right">$ <span id="amount" class="amount">0</span></td>
+                                              </tr>
+                                              <tr>
+                                                 
+                                                  <td>
+                                                      <p>Product Two</p>
+                                                  </td>
+                                                  <td>
+                                                      <div class="button-container">
+                                                          <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                          <input type="text" name="qty" min="0" class="qty form-control" value="0"/>
+                                                          <button class="cart-qty-minus" type="button" value="-">-</button>
+                                                      </div>
+                                                  </td>
+                                                  <td>
+                                                      <input type="text" value="125" class="price form-control" disabled>
+                                                  </td>
+                                                  <td align="right">$ <span id="amount" class="amount">0</span></td>
+                                              </tr>
+                                              <tr>
+                                                 
+                                                  <td>
+                                                      <p>Product Three</p>
+                                                  </td>
+                                                  <td>
+                                                      <div class="button-container">
+                                                          <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                          <input type="text" name="qty" min="0" class="qty form-control" value="0"/>
+                                                          <button class="cart-qty-minus" type="button" value="-">-</button>
+                                                      </div>
+                                                  </td>
+                                                  <td>
+                                                      <input type="text" value="250" class="price form-control" disabled>
+                                                  </td>
+                                                  <td align="right">$ <span id="amount" class="amount">0</span></td>
+                                              </tr>
+                                              <tr>
+                                                 
+                                                  <td>
+                                                      <p>Product Four</p>
+                                                  </td>
+                                                  <td>
+                                                      <div class="button-container">
+                                                          <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                          <input type="text" name="qty" min="0" class="qty form-control" value="0"/>
+                                                          <button class="cart-qty-minus" type="button" value="-">-</button>
+                                                      </div>
+                                                  </td>
+                                                  <td>
+                                                      <input type="text" value="300" class="price form-control" disabled>
+                                                  </td>
+                                                  <td align="right">$ <span id="amount" class="amount">0</span></td>
+                                              </tr>
+                                          </tbody>
+                                          <tfoot>
+                                              <tr>
+                                                  <td colspan="4"></td><td align="right"><strong>TOTAL = $  <span id="total" class="total">0</span></strong></td>
+                                              </tr>
+                                          </tfoot>
+                                      </table>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <style>
+                        @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+
+/*------------------------*/
+input:focus,
+button:focus,
+.form-control:focus{
+	outline: none;
+	box-shadow: none;
+}
+.form-control:disabled, .form-control[readonly]{
+	background-color: #fff;
+}
+.table tr,
+.table tr td{
+	vertical-align: middle;
+}
+.button-container{
+	display: flex;
+	align-items: center;
+}
+.button-container .form-control{
+	max-width: 80px;
+	text-align: center;
+	display: inline-block;
+	margin: 0px 5px;
+}
+#myTable .form-control{
+	width: auto;
+	display: inline-block;
+}
+.cart-qty-plus,
+.cart-qty-minus{
+	width: 38px;
+	height: 38px;
+	background-color: #fff;
+	border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+.cart-qty-plus:hover,
+.cart-qty-minus:hover{
+	background-color: #5161ce;
+	color: #fff;
+}
+.img-prdct{
+	width: 50px;
+	height: 50px;
+	background-color: #5161ce;
+	border-radius: 4px;
+  display: none;
+}
+.img-prdct img{
+  width: 100%;
+}
+                      </style>
+
+                      <script>
+                        // -----------------for-Shopping-cart-------------
+$(document).ready(function(){
+  	update_amounts();
+  	$('.qty, .price').on('keyup keypress blur change', function(e) {
+	  	update_amounts();
+  	});
+});
+function update_amounts(){
+	var sum = 0.0;
+	  	$('#myTable > tbody  > tr').each(function() {
+			var qty = $(this).find('.qty').val();
+		  	var price = $(this).find('.price').val();
+		  	var amount = (qty*price)
+		  	sum+=amount;
+		  	$(this).find('.amount').text(''+amount);
+	  	});
+	$('.total').text(sum);
+}
+
+
+
+//----------------for quantity-increment-or-decrement-------
+var incrementQty;
+var decrementQty;
+var plusBtn  = $(".cart-qty-plus");
+var minusBtn = $(".cart-qty-minus");
+var incrementQty = plusBtn.click(function() {
+	var $n = $(this)
+		.parent(".button-container")
+		.find(".qty");
+	$n.val(Number($n.val())+1 );
+	update_amounts();
+});
+
+var decrementQty = minusBtn.click(function() {
+		var $n = $(this)
+		.parent(".button-container")
+		.find(".qty");
+	var QtyVal = Number($n.val());
+	if (QtyVal > 0) {
+		$n.val(QtyVal-1);
+	}
+	update_amounts();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      </script>
+              
+   
+                      </div>
+                      <div class="tab-pane fade" id="pills-women" role="tabpanel" aria-labelledby="pills-women-tab">
+
+                        <div class="container">
+                          <div class="row justify-content-around my-2">
+                            <div class="col-4"><small><b>Clothes List</b></small> </div>
+                            <div class="col-4"><small><b>Price</b></small> </div>
+                            <div class="col-4"><small><b>Qty.</b></small> </div>  
+                          </div>
+                          <div class="row my-2">
+                            <div class="col-4"><small>Saree</small> </div>
+                            <div class="col-4"><small>₹150</small> </div>
+                            <div class=" col-4 clothesquantity ">
+                              <input type="number" value="0" min="0">
+                            </div> 
+                          </div>
+                          <div class="row my-2">
+                            <div class="col-4"><small>Shirt</small> </div>
+                            <div class="col-4"><small>₹50</small> </div>
+                            <div class=" col-4 clothesquantity ">
+                              <input type="number" value="0" min="0">
+                            </div> 
+                          </div>
+                          <div class="row my-2">
+                            <div class="col-4"><small>Coat</small> </div>
+                            <div class="col-4"><small>₹200</small> </div>
+                            <div class=" col-4 clothesquantity ">
+                              <input type="number" value="0" min="0">
+                            </div> 
+                          </div>
+                        </div>
+                        
+                       
+                      </div>
+                      <div class="tab-pane fade" id="pills-kids" role="tabpanel" aria-labelledby="pills-kids-tab">
+                        
+                        <div class="container">
+                          <div class="row justify-content-around my-2">
+                            <div class="col-4"><small><b>Clothes List</b></small> </div>
+                            <div class="col-4"><small><b>Price</b></small> </div>
+                            <div class="col-4"><small><b>Qty.</b></small> </div>  
+                          </div>
+                          <div class="row my-2">
+                            <div class="col-4"><small>Shirt</small> </div>
+                            <div class="col-4"><small>₹20</small> </div>
+                            <div class=" col-4 clothesquantity ">
+                              <input type="number" value="0" min="0">
+                            </div> 
+                          </div>
+                          <div class="row my-2">
+                            <div class="col-4"><small>Shorts</small> </div>
+                            <div class="col-4"><small>₹50</small> </div>
+                            <div class=" col-4 clothesquantity ">
+                              <input type="number" value="0" min="0">
+                            </div> 
+                          </div>
+                          <div class="row my-2">
+                            <div class="col-4"><small>Jacket</small> </div>
+                            <div class="col-4"><small>₹150</small> </div>
+                            <div class=" col-4 clothesquantity ">
+                              <input type="number" value="0" min="0">
+                            </div> 
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="tab-pane fade" id="pills-household" role="tabpanel" aria-labelledby="pills-household-tab">
+                        
+                        <div class="container">
+                          <div class="row justify-content-around my-2">
+                            <div class="col-4"><small><b>Clothes List</b></small> </div>
+                            <div class="col-4"><small><b>Price</b></small> </div>
+                            <div class="col-4"><small><b>Qty.</b></small> </div>  
+                          </div>
+                          <div class="row my-2">
+                            <div class="col-4"><small>Blanket</small> </div>
+                            <div class="col-4"><small>₹200</small> </div>
+                            <div class=" col-4 clothesquantity ">
+                              <input type="number" value="0" min="0">
+                            </div> 
+                          </div>
+                          <div class="row my-2">
+                            <div class="col-4"><small>Bedsheet</small> </div>
+                            <div class="col-4"><small>₹100</small> </div>
+                            <div class=" col-4 clothesquantity ">
+                              <input type="number" value="0" min="0">
+                            </div> 
+                          </div>
+                          <div class="row my-2">
+                            <div class="col-4"><small>Rugs</small> </div>
+                            <div class="col-4"><small>₹250</small> </div>
+                            <div class=" col-4 clothesquantity ">
+                              <input type="number" value="0" min="0">
+                            </div> 
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-laundry" role="tabpanel" aria-labelledby="v-pills-laundry-tab">
+             
+              <div class="container">
+                <div class="row d-flex text-center justify-content-between align-items-center">
+                  <div class="col-md-4 col-7">
+                    <p>Laundry / Kg <sup><i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-original-title="Place Orders in Kg"></i></sup></p>
+                    <small><span style="color: #B52421;">₹90</span>  per kg</small>
+                  </div>
+                  <div class="col-md-4 col-5 clothesquantity ">
+                    <label for="qty" style="color: #B52421;"><b>Qty</b></label><br>
+                    <input type="number" value="0" min="0">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="tab-pane fade" id="v-pills-washfolds" role="tabpanel" aria-labelledby="v-pills-washfolds-tab">
+              
+              <div class="container">
+                <div class="row d-flex text-center justify-content-between align-items-center">
+                  <div class="col-md-4 col-7">
+                    <p>Wash & Folds / Kg <sup><i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-original-title="Place Orders in Kg"></i></sup></p>
+                    <small><span style="color: #B52421;">₹90</span>  per kg</small>
+                  </div>
+                  <div class="col-md-4 col-5 clothesquantity ">
+                    <label for="qty" style="color: #B52421;"><b>Qty</b></label><br>
+                    <input type="number" value="0" min="0">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="tab-pane fade" id="v-pills-washiron" role="tabpanel" aria-labelledby="v-pills-washiron-tab">
+              
+              <div class="container">
+                <div class="row d-flex text-center justify-content-between align-items-center">
+                  <div class="col-md-4 col-7">
+                    <p>Wash & Iron / Kg <sup><i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-original-title="Place Orders in Kg"></i></sup></p>
+                    <small><span style="color: #B52421;">₹90</span>  per kg</small>
+                  </div>
+                  <div class="col-md-4 col-5 clothesquantity ">
+                    <label for="qty" style="color: #B52421;"><b>Qty</b></label><br>
+                    <input type="number" value="0" min="0">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+          
+          <div class="addontitle my-4" >
+            <h6><b>Add on services</b> <sup><i class="fa fa-info-circle" aria-hidden="true"aria-hidden="true" data-toggle="tooltip" data-original-title="Addone Details"></i></sup> </h6>
+             
+            
+            
+
+            </div>
+            
+    
+        </div>
+
+
+
+          <div class="col-md-3">
+            <div class="cartlist" style="border-bottom: 1px solid #b6b3b3; padding-bottom: 10px;">
+              <h5>Cart</h5>
+              <small class="text-secondary"> 6 ITEMS</small>
+            </div>
+           
+
+            <div class="totalcart my-2">
+              <div class="item1 m-2 d-flex text-secondary justify-content-between">
+                <small>Express Delivery Charges</small>
+                <small class="" ><b><i class="fas fa-rupee-sign    "></i> 50</b> </small>
+              </div>
+              <div class="subtotal m-2 d-flex justify-content-between">
+                <p class=""><b>Total Order</b> </p>
+                <p><b><i class="fas fa-rupee-sign    "></i> 310</b> </p>
+              </div>
+            </div>
+
+            <div class="checkoutbtn text-center">
+              <a href="delivertimeadd.html"><h6><b>Proceed</b></h6></a>
+            </div>
+
+          </div>
+      </div>
+
+      
+    
+    </div>
+    
+  </div>
+
+  
+  <div class="jumbotron text-center">
+    <h1>My First Bootstrap Page</h1>
+    <p>Resize this responsive page to see the effect!</p> 
+  </div>
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Column 1</h3>
+        <input id="image1" onclick="openmodal(this);"/>
+      </div>
+      
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div id="couponmodal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <a class="hello" data-id="2">2</p>
+      <a class="hello" data-id="3">3</p>
+      <a class="hello" data-id="4">4</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+  <script>
+
+    function openmodal(input) {
+     
+     $('#couponmodal').modal('show');
+     $(".hello").unbind().click(function(event){
+   
+         $(input).val($(this).attr("data-id"));
+         $('#couponmodal').modal('hide');
+     });
+   }
+  </script>
+
+
+
+<div class="modal left fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog leftsidebar" role="document">
+      <div class="modal-content">
+
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"  aria-label="Close"><span aria-hidden="true">&times;</span></button>	
+          </div>
+
+          <div class="text-center">
+            <!-- <span><p class="" id="myModalLabel" data-toggle="modal" data-dismiss="modal" data-target="#modallogin" style="padding: 10px 18px; margin: 20px 70px; cursor: pointer; color: white; background: #B52421">Login</p></span>  -->
+         </div>
+          
+          <div class="modal-body sidebar-item">
+              <ul>
+                <li><span><p class="" id="myModalLabel" data-toggle="modal" data-dismiss="modal" data-target="#modallogin" style="padding: .8rem 1.6rem;
+                  margin: 0rem 7rem 0rem 0rem; cursor: pointer; color: white; background: #B52421">Login / Signup</p></span> </li>
+                  <hr>
+                <li><img src="img/ham/myaccount.svg" alt="">&nbsp; <a class="" href="profile.html"><b>My Account </b></a></li>
+                <li><img src="img/ham/orderhere.svg" alt=""> &nbsp;<a class="" data-toggle="modal" data-target="#enterpin" data-dismiss="modal" href=""><b>Order Here</b></a></li>
+                <li><img src="img/discount.png" alt="" style="width: 1.3rem;">&nbsp; <a class="" href="offers.html"><b>Offers</b></a></li>
+                <li><img src="img/ham/support.svg" alt="">&nbsp; <a class="" href="support.html"><b>Support</b></a></li>
+                <li><img src="img/ham/faq.svg" alt="">&nbsp; <a class="" href="faqs.html"><b>FAQs</b></a></li>
+                <li><img src="img/ham/cart.svg" alt="">&nbsp; <a class="" href="checkout.html"><b>Cart</b></a></li>
+                <li><img src="img/ham/about.svg" alt="">&nbsp; <a class="" href="about.html"><b>About Us</b></a></li>
+                <li><img src="img/ham/feed.svg" alt="">&nbsp; <a class="" href="feedback.html"><b>Feedback</b></a></li>
+                <li><img src="img/ham/rateus.svg" alt="">&nbsp; <a class="" href=""><b>Rate Us</b></a></li>
+                <hr>
+                <!-- <li> <a class="" href="#"><b>Products</b></a></li>
+                <hr>
+                <ul style="margin-left: 2rem;">
+                  <li><a href="drive.html"><b>Drive</b> </a></li>
+                  <li><a href="selfdrive.html"><b>Self Delivery</b> </a></li>
+                  <li><a href="#"><b>Starter Kit</b> </a></li>
+                </ul> -->
+              </ul>
+              
+              <div class="aaqrbadges ">
+                <div class="row justify-content-around">
+                    <div class="sidebarbadge ">
+                      <img class="googlebadge" src="img/gplayqr.png" alt="">
+                    </div>
+                    <div class="sidebarbadge text-center">
+                      <img class="iosbadge" src="img/astoreqr.png"  alt="">
+                    </div>
+                </div>
+                
+              </div>
+          </div>
+
+      </div><!-- modal-content -->
+  </div><!-- modal-dialog -->
+</div><!-- modal -->
+
+
+
+
+
+<div class="container">
+  <form class="is-readonly">
+    <div class="form-group">
+      
+      <input type="text" class="form-control is-disabled" id="exampleInputPassword1" placeholder="Name" value="SamaraSsr" disabled>
+    </div>
+  <div class="form-group">
+      
+      <input type="email" class="form-control is-disabled" id="exampleInputEmail1" placeholder="Email" value="samara@company.com" disabled>
+    </div>
+    <button type="button" class=" btn-edit js-edit">Edit</button>
+    <button type="button" class=" btn-save js-save">Save</button>
+  </form>
+  
+  </div>
+
+<script>
+  $(document).ready(function(){
+	$('.js-edit, .js-save').on('click', function(){
+  	var $form = $(this).closest('form');
+  	$form.toggleClass('is-readonly is-editing');
+    var isReadonly  = $form.hasClass('is-readonly');
+    $form.find('input,textarea').prop('disabled', isReadonly);
+  });
+});
+</script>
+<STyle>
+  form.is-readonly .btn-save {
+  display: none;
+}
+form.is-readonly input[disabled], form.is-readonly textarea[disabled] {
+  cursor: text;
+  background-color: #fff;
+  border-color: transparent;
+  outline-color: transparent;
+  box-shadow: none;
+}
+form.is-editing .btn-edit {
+  display: none;
+}
+
+</STyle>
+    <!-- Footer -->
+    
+  <div class="">
+    <script>
+      $.get("footer.html", function(data){
+          $("#footerjs").replaceWith(data);
+      });
+      </script>
+      <div class="container-fluid " id="footerjs" ></div>
+  </div>
+        
+    <script src="js/main.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script>
+//      $(document).ready(function(){
+//   $('.carousel').slick({
+//   slidesToShow: 3,
+//   dots:false,
+//   centerMode: true,
+//   arrows:true,
+//   infinite: true,
+//   prevArrow: false,
+//     nextArrow: false
+//   });
+// });
+$('.carousel').slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  prevArrow: false,
+  nextArrow: false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: false,
+        dots: false,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+
+// <div class="row">
+    
+//     <div class="col-md-3">
+//       <div class=" teammember">
+//         <img src="img/team1.png" alt="Avatar" class="teamimage">
+//         <div class="overlay">
+//           <div class="memberdetail">
+//             <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquid modi tempore, odit inventore rerum.</small>
+//           </div>
+//         </div>
+        
+//       </div>
+//       <div>
+//         <h6 class="teamname">Shived Bansal</h6>
+//         <small class="text-secondary teamposition">CEO & Director</small>
+//       </div>
+//     </div>
+
+//     <div class="col-md-3">
+//       <div class=" teammember">
+//         <img src="img/team1.png" alt="Avatar" class="teamimage">
+//         <div class="overlay">
+//           <div class="memberdetail">
+//             <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquid modi tempore, odit inventore rerum.</small>
+//           </div>
+//         </div>
+        
+//       </div>
+//       <div>
+//         <h6 class="teamname">Shived Bansal</h6>
+//         <small class="text-secondary teamposition">CEO & Director</small>
+//       </div>
+//     </div>
+
+//     <div class="col-md-3">
+//       <div class=" teammember">
+//         <img src="img/team1.png" alt="Avatar" class="teamimage">
+//         <div class="overlay">
+//           <div class="memberdetail">
+//             <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquid modi tempore, odit inventore rerum.</small>
+//           </div>
+//         </div>
+        
+//       </div>
+//       <div>
+//         <h6 class="teamname">Shived Bansal</h6>
+//         <small class="text-secondary teamposition">CEO & Director</small>
+//       </div>
+//     </div>
+
+//     <div class="col-md-3">
+//       <div class=" teammember">
+//         <img src="img/team1.png" alt="Avatar" class="teamimage">
+//         <div class="overlay">
+//           <div class="memberdetail">
+//             <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquid modi tempore, odit inventore rerum.</small>
+//           </div>
+//         </div>
+        
+//       </div>
+//       <div>
+//         <h6 class="teamname">Shived Bansal</h6>
+//         <small class="text-secondary teamposition">CEO & Director</small>
+//       </div>
+//     </div>
+
+    
+    
+   
+    
+    
+//   </div>
+// Slick version 1.5.8
+
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

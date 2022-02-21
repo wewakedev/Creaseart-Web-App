@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Super Fine Dry Cleanings</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="background: #F6F6F6;">
+
+  <!-- navbar section -->
+  <div class="container-fluid nav2">
+    
+    <script>
+      $.get("nav.html", function(data){
+          $("#navholder").replaceWith(data);
+      });
+      </script>
+      <div class="" id="navholder"></div>
+  </div>
+
+
+
+  <div class="container-fluid  mb-5 p-2 " style="background: url(img/vendorheadbg.jpg);background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;">
+      <div class="container">
+          <div class="row py-5">
+              <div class="col-md-3  my-3">
+                  <img class="shopimg1" style="width: 200px; height: auto;" src="img/vendorthumb1.jpg" alt="">
+              </div>
+              <div class="col-md-6 my-3 shopinfos">
+                  <h3 style="color: #fff !important;"><b> Super Fine Dry Cleaners</b></h3>
+                  <p >Dry cleaning, Wash & Fold, Wash & Iron</p>
+                  <div class=" d-flex text-white mt-2">
+                    <div><img src="img/vendorheadcoupontag.svg" alt="" style="width: 3rem; margin: 1rem;"></div>
+                  
+                    <div><p class="text-white" style="margin: 1rem 0.2rem;"><b>₹50 Off</b></p>
+                      <p style="margin-top: -1rem !important;">Min order value 450</p>
+                    </div>
+                    
+              
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="container my-4" id="mainservcies">
+
+    <div class="row ">
+
+      <!-- <div class="col-md-3 service text-center ">
+          <div class="nav flex-row nav-pills " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active d-flex justify-content-around " id="v-pills-dryclean-tab" data-toggle="pill" href="#v-pills-dryclean" role="tab" aria-controls="v-pills-dryclean" aria-selected="true"><img src="img/drycleaning.png" alt="" class="serviceicon"><span class="align-self-center">DRY CLEANING</span> </a>
+            <a class="nav-link d-flex justify-content-around"  id="v-pills-laundry-tab" data-toggle="pill" href="#v-pills-laundry" role="tab" aria-controls="v-pills-laundry" aria-selected="false"><img src="img/laundryicon.png" alt="" class="serviceicon"><span class="align-self-center">LAUNDRY</span> </a>
+            <a class="nav-link d-flex justify-content-around" id="v-pills-washfolds-tab" data-toggle="pill" href="#v-pills-washfolds" role="tab" aria-controls="v-pills-washfolds" aria-selected="false"><img src="img/washfoldicon.png" alt="" class="serviceicon"> <span class="align-self-center">WASH & FOLDS</span></a>
+            <a class="nav-link d-flex justify-content-around" id="v-pills-washiron-tab" data-toggle="pill" href="#v-pills-washiron" role="tab" aria-controls="v-pills-washiron" aria-selected="false"><img src="img/washiron.png" alt="" class="serviceicon"> <span class="align-self-center">WASH & IRON</span></a>
+          </div>
+      </div> -->
+      
+      <div class="col-md-9">
+
+        <script>
+          $(document).ready(function(){
+              $('[data-toggle="tooltip"]').tooltip({
+                  placement : 'top'
+              });
+          });
+          </script>
+
+          <div class="container">
+            <div class="row mb-1 justify-content-between  " style="border-bottom: 1px solid #b6b3b3;">
+              <div class="col-md-4 text-left col-4">
+                <h6><b> SELECT SERVICES</b></h6>
+              </div>
+              <div class="col-md-4 col-8 justify-content-around d-flex">
+                <small><b>Express Delivery <sup><i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-original-title="Delivery Within 24hrs"></i></sup> </b></small>
+                <input type="checkbox" id="switchexp"class="expcheck dark-modeBtn" />
+                <label for="switchexp" class="toggleexp">
+                </label>   
+              </div>
+            </div>
+          </div>
+          <div class="service container my-4 text-center ">
+            <div class="nav row justify-content-around  nav-pills " id="v-pills-tab" role="tablist" aria-orientation="horizontal">
+              <a class="nav-link active col-md-3 col-6 d-flex justify-content-center  align-items-center " id="v-pills-dryclean-tab" data-toggle="pill" href="#v-pills-dryclean" role="tab" aria-controls="v-pills-dryclean" aria-selected="true"><img src="img/drycleaning.png" alt="" class="serviceicon"><span class="">DRY CLEANING</span> </a>
+              <a class="nav-link d-flex col-md-3 col-6 justify-content-center align-items-center"  id="v-pills-laundry-tab" data-toggle="pill" href="#v-pills-laundry" role="tab" aria-controls="v-pills-laundry" aria-selected="false"><img src="img/laundryicon.png" alt="" class="serviceicon"><span class="">LAUNDRY</span> </a>
+              <a class="nav-link d-flex col-md-3 col-6 justify-content-center align-items-center" id="v-pills-washfolds-tab" data-toggle="pill" href="#v-pills-washfolds" role="tab" aria-controls="v-pills-washfolds" aria-selected="false"><img src="img/washfoldicon.png" alt="" class="serviceicon"> <span class="">WASH & FOLD</span></a>
+              <a class="nav-link d-flex col-md-3 col-6 justify-content-center align-items-center" id="v-pills-washiron-tab" data-toggle="pill" href="#v-pills-washiron" role="tab" aria-controls="v-pills-washiron" aria-selected="false"><img src="img/washiron.png" alt="" class="serviceicon"> <span class="">WASH & IRON</span></a>
+            </div>
+        </div>
+
+       
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-dryclean" role="tabpanel" aria-labelledby="v-pills-dryclean-tab">
+              <div class="container category">
+                <div class="row">
+                  <div class="col-md-12 ">
+                    <ul class="nav nav-pills mb-3 justify-content-around" id="pills-tab" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-men-tab" data-toggle="pill" href="#pills-men" role="tab" aria-controls="pills-men" aria-selected="true">Men</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-women-tab" data-toggle="pill" href="#pills-women" role="tab" aria-controls="pills-women" aria-selected="false">Women</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-kids-tab" data-toggle="pill" href="#pills-kids" role="tab" aria-controls="pills-kids" aria-selected="false">Kids</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-household-tab" data-toggle="pill" href="#pills-household" role="tab" aria-controls="pills-household" aria-selected="false">Households</a>
+                      </li>
+                    </ul>  
+                  </div>
+                  <div class="col-12 text-center">
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade show active" id="pills-men" role="tabpanel" aria-labelledby="pills-men-tab">
+
+                        <div class="container">
+                          <div class="row venitemcat justify-content-around my-2">
+                            <div class="col-4"><small><b>Clothes List</b></small> </div>
+                            <div class="col-4"><small><b>Price</b></small> </div>
+                            <div class="col-4"><small><b>Qty.</b></small> </div>  
+                          </div>
+                          <div class="row my-2">
+                            <div class="col-4"><small>Tshirt</small> </div>
+                            <div class="col-4"><small>₹20</small> </div>
+                            <div class=" col-4 clothesquantity ">
+                              <div class="button-container d-flex justify-content-center align-items-center">
+                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
+                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                            </div>
+                            </div> 
+                          </div>
+                          <div class="row my-2">
+                            <div class="col-4"><small>Jeans</small> </div>
+                            <div class="col-4"><small>₹50</small> </div>
+                            <div class=" col-4 clothesquantity ">
+                              <div class="button-container d-flex justify-content-center align-items-center">
+                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
+                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                            </div>                            </div> 
+                          </div>
+                          <div class="row my-2">
+                            <div class="col-4"><small>Blazer</small> </div>
+                            <div class="col-4"><small>₹150</small> </div>
+                            <div class=" col-4 clothesquantity ">
+                              <iv class="button-container d-flex justify-content-center align-items-center">
+                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
+                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                            </iv>
+                            </div> 
+                          </div>
+                        </div>
+                        
+              
+   
+                      </div>
+                      <div class="tab-pane fade" id="pills-women" role="tabpanel" aria-labelledby="pills-women-tab">
+
+                        <div class="container">
+                          <div class="row venitemcat justify-content-around my-2">
+                            <div class="col-4"><small><b>Clothes List</b></small> </div>
+                            <div class="col-4"><small><b>Price</b></small> </div>
+                            <div class="col-4"><small><b>Qty.</b></small> </div>  
+                          </div>
+                          <div class="row my-2">
+                            <div class="col-4"><small>Saree</small> </div>
+                            <div class="col-4"><small>₹150</small> </div>
+                            <div class=" col-4 clothesquantity ">
+                              <div class="button-container d-flex justify-content-center align-items-center">
+                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
+                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                            </div>
+                            </div> 
+                          </div>
+                          <div class="row my-2">
+                            <div class="col-4"><small>Shirt</small> </div>
+                            <div class="col-4"><small>₹50</small> </div>
+                            <div class=" col-4 clothesquantity ">
+                              <div class="button-container d-flex justify-content-center align-items-center">
+                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
+                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                            </div>
+                            </div> 
+                          </div>
+                          <div class="row my-2">
+                            <div class="col-4"><small>Coat</small> </div>
+                            <div class="col-4"><small>₹200</small> </div>
+                            <div class=" col-4 clothesquantity ">
+                              <div class="button-container d-flex justify-content-center align-items-center">
+                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
+                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                            </div>
+                            </div> 
+                          </div>
+                        </div>
+                        
+                       
+                      </div>
+                      <div class="tab-pane fade" id="pills-kids" role="tabpanel" aria-labelledby="pills-kids-tab">
+                        
+                        <div class="container ">
+                          <div class="row venitemcat justify-content-around my-2">
+                            <div class="col-4"><small><b>Clothes List</b></small> </div>
+                            <div class="col-4"><small><b>Price</b></small> </div>
+                            <div class="col-4"><small><b>Qty.</b></small> </div>  
+                          </div>
+                          <div class="row my-2">
+                            <div class="col-4"><small>Shirt</small> </div>
+                            <div class="col-4"><small>₹20</small> </div>
+                            <div class=" col-4 clothesquantity ">
+                              <div class="button-container d-flex justify-content-center align-items-center">
+                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
+                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                            </div>
+                            </div> 
+                          </div>
+                          <div class="row my-2">
+                            <div class="col-4"><small>Shorts</small> </div>
+                            <div class="col-4"><small>₹50</small> </div>
+                            <div class=" col-4 clothesquantity ">
+                              <div class="button-container d-flex justify-content-center align-items-center">
+                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
+                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                            </div>
+                            </div> 
+                          </div>
+                          <div class="row my-2">
+                            <div class="col-4"><small>Jacket</small> </div>
+                            <div class="col-4"><small>₹150</small> </div>
+                            <div class=" col-4 clothesquantity ">
+                              <div class="button-container d-flex justify-content-center align-items-center">
+                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
+                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                            </div>
+                            </div> 
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="tab-pane fade" id="pills-household" role="tabpanel" aria-labelledby="pills-household-tab">
+                        
+                        <div class="container">
+                          <div class="row venitemcat justify-content-around my-2">
+                            <div class="col-4"><small><b>Clothes List</b></small> </div>
+                            <div class="col-4"><small><b>Price</b></small> </div>
+                            <div class="col-4"><small><b>Qty.</b></small> </div>  
+                          </div>
+                          <div class="row my-2">
+                            <div class="col-4"><small>Blanket</small> </div>
+                            <div class="col-4"><small>₹200</small> </div>
+                            <div class=" col-4 clothesquantity ">
+                              <div class="button-container d-flex justify-content-center align-items-center">
+                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
+                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                            </div>
+                            </div> 
+                          </div>
+                          <div class="row my-2">
+                            <div class="col-4"><small>Bedsheet</small> </div>
+                            <div class="col-4"><small>₹100</small> </div>
+                            <div class=" col-4 clothesquantity ">
+                              <div class="button-container d-flex justify-content-center align-items-center">
+                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
+                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                            </div>
+                            </div> 
+                          </div>
+                          <div class="row my-2">
+                            <div class="col-4"><small>Rugs</small> </div>
+                            <div class="col-4"><small>₹250</small> </div>
+                            <div class=" col-4 clothesquantity ">
+                              <div class="button-container d-flex justify-content-center align-items-center">
+                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
+                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                            </div>
+                            </div> 
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-laundry" role="tabpanel" aria-labelledby="v-pills-laundry-tab">
+             
+              <div class="container">
+                <div class="row venitemcat justify-content-between text-center my-2">
+                  <div class="col-md-4 col-7"><b><p>Laundry / Kg <sup><i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-original-title="Place Orders in Kg"></i></sup></p></b></div>
+                  <div class="col-4"><b><p>Qty</p> </b></div>   
+                </div>
+
+                <div class="row  justify-content-between text-center my-2">
+                  <div class="col-md-4 col-7"><small><span style="color: #B52421;">₹90</span>  per kg</small></div>
+                  <div class=" col-4 clothesquantity ">
+                    <div class="button-container d-flex justify-content-center align-items-center">
+                      <button class="cart-qty-plus" type="button" value="+">+</button>
+                      <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
+                      <button class="cart-qty-minus" type="button" value="-">-</button>
+                  </div>
+                  </div> 
+                </div>
+              </div>
+
+            </div>
+            <div class="tab-pane fade" id="v-pills-washfolds" role="tabpanel" aria-labelledby="v-pills-washfolds-tab">
+              
+              <div class="container">
+                <div class="row venitemcat justify-content-between text-center my-2">
+                  <div class="col-md-4 col-7"><b><p>Wash & Fold / Kg <sup><i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-original-title="Place Orders in Kg"></i></sup></p></b></div>
+                  <div class="col-4"><b><p>Qty</p> </b></div>   
+                </div>
+
+                <div class="row  justify-content-between text-center my-2">
+                  <div class="col-md-4 col-7"><small><span style="color: #B52421;">₹90</span>  per kg</small></div>
+                  <div class=" col-4 clothesquantity ">
+                    <div class="button-container d-flex justify-content-center align-items-center">
+                      <button class="cart-qty-plus" type="button" value="+">+</button>
+                      <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
+                      <button class="cart-qty-minus" type="button" value="-">-</button>
+                  </div>
+                  </div> 
+                </div>
+              </div>
+
+            </div>
+            <div class="tab-pane fade" id="v-pills-washiron" role="tabpanel" aria-labelledby="v-pills-washiron-tab">
+              
+              <div class="container">
+                <div class="row venitemcat justify-content-between text-center my-2">
+                  <div class="col-md-4 col-7"><b><p>Wash & Iron / Kg <sup><i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-original-title="Place Orders in Kg"></i></sup></p></b></div>
+                  <div class="col-4"><b><p>Qty</p> </b></div>   
+                </div>
+
+                <div class="row  justify-content-between text-center my-2">
+                  <div class="col-md-4 col-7"><small><span style="color: #B52421;">₹90</span>  per kg</small></div>
+                  <div class=" col-4 clothesquantity ">
+                    <div class="button-container d-flex justify-content-center align-items-center">
+                      <button class="cart-qty-plus" type="button" value="+">+</button>
+                      <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
+                      <button class="cart-qty-minus" type="button" value="-">-</button>
+                  </div>
+                  </div> 
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+          <div class="vendorshopinfo container p-3 my-4">
+            <h6><b>We Provide</b></h6>
+
+            <div class="venforinfobullets">
+              <div class="row flex-column">
+                <div>
+                  <img src="img/vendorinfoicon.png" alt="">
+                  <small>48 hrs Turnaround time</small>
+                </div>
+                <div>
+                  <img src="img/vendorinfoicon.png" alt="">
+                  <small>Machine Wash & Tumble Dry</small>
+                </div>
+                <div>
+                  <img src="img/vendorinfoicon.png" alt="">
+                  <small>Combined Packaging</small>
+                </div>
+                <div>
+                  <img src="img/vendorinfoicon.png" alt="">
+                  <small>Preferred for Casual and Regular Wears.</small>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="addontitle my-4" >
+            <h6><b>Add on services</b> <sup><i class="fa fa-info-circle" aria-hidden="true"aria-hidden="true" data-toggle="tooltip" data-original-title="Addone Details"></i></sup> </h6>
+           
+        
+       <style>
+    
+    
+    
+    .addonbtn input[type=checkbox] {
+        display:none;
+        margin:10px;
+    }
+     
+    /*
+      Change the look'n'feel of labels (which are adjacent to radiobuttons).
+      Add some margin, padding to label
+    */
+    .addonbtn input[type=checkbox] + label {
+      /* font-size: .8rem;
+      padding: .2rem .5rem;
+      background: #e0d9e08f;
+      border-radius: 5px; */
+      font-size: .8rem;
+  width: 100%;
+  padding: .2rem .4rem;
+  margin: 1rem 0rem;
+  color: #fff;
+  background: #B52421;
+  border-radius: 10px;
+  /* border: 1px solid black; */
+  /* font-weight: bold; */
+    }
+    /*
+     Change background color for label next to checked radio button
+     to make it look like highlighted button
+    */
+    .addonbtn input[type=checkbox]:checked + label {
+       background-image: none;
+        background-color:#329405;
+        color: #fff;
+    }
+    
+       </style>
+            <div class="wrapper">
+                  <div class="carousel">
+                    
+
+                    <div class=" addon">
+                       
+                      <small><i class="fa fa-info-circle addoninfoicon"  aria-hidden="true" data-toggle="tooltip" data-original-title="You can sanitize colored fabrics by pouring 1 cup of Pine-Sol or Lysol disinfectant into the washer. Use the hottest water that's safe for the fabric."></i></small>
+                      <img src="img/antiseptic 100x100.png"><br>
+                      <p>Aniseptic</p>
+                      <p><b><i class="fas fa-rupee-sign "></i>120</b></p>
+                      <div class="addonbtn">
+                        <!-- <input type="checkbox" id="addon1" value="all">
+                      <label for="addon1">Add+</label> -->
+                      <input type="checkbox" class="checkit" name="addon1" id="addon1" value="1" onclick="yesno('addon1','checkadd1');" />
+                      <label for="addon1" name="checkadd1" id="checkadd1">Add +</label>
+                      </div>
+                      
+                    
+                    </div>
+                    <div class="text-center addon">
+                      <small><i class="fa fa-info-circle addoninfoicon"  aria-hidden="true" data-toggle="tooltip" data-original-title="You can sanitize colored fabrics by pouring 1 cup of Pine-Sol or Lysol disinfectant into the washer. Use the hottest water that's safe for the fabric."></i></small>
+                      <img src="img/emulsifier_icon.png"><br>
+                      <p>Emulsifier</p>
+                      <p><b><i class="fas fa-rupee-sign "></i>120</b></p>
+                      <div class="addonbtn">
+                        <input type="checkbox" class="checkit" name="addon2" id="addon2" value="2" onclick="yesno('addon2','checkadd2');" />
+                      <label for="addon2" name="checkadd2" id="checkadd2">Add +</label>
+                      </div>
+                      
+                    
+                    </div>
+                    <div class="text-center addon">
+                      <small><i class="fa fa-info-circle addoninfoicon"  aria-hidden="true" data-toggle="tooltip" data-original-title="You can sanitize colored fabrics by pouring 1 cup of Pine-Sol or Lysol disinfectant into the washer. Use the hottest water that's safe for the fabric."></i></small>
+                      <img src="img/neutralizer_icon.png"><br>
+                      <p>Neutralizer</p>
+                      <p><b><i class="fas fa-rupee-sign "></i>120</b></p>
+                      <div class="addonbtn">
+                        <input type="checkbox" class="checkit" name="addon3" id="addon3" value="3" onclick="yesno('addon3','checkadd3');" />
+                      <label for="addon3" name="checkadd3" id="checkadd3">Add +</label>
+                      </div>
+                      
+                    
+                    </div>
+                    <div class=" addon">
+                      <small><i class="fa fa-info-circle addoninfoicon"  aria-hidden="true" data-toggle="tooltip" data-original-title="You can sanitize colored fabrics by pouring 1 cup of Pine-Sol or Lysol disinfectant into the washer. Use the hottest water that's safe for the fabric."></i></small>                      <img src="img/antiseptic 100x100.png"><br>
+                      <p>Aniseptic</p>
+                      <p><b><i class="fas fa-rupee-sign "></i>120</b></p>
+                      <div class="addonbtn">
+                        <input type="checkbox" class="checkit" name="addon4" id="addon4" value="4" onclick="yesno('addon4','checkadd4');" />
+                      <label for="addon4" name="checkadd4" id="checkadd4">Add +</label>
+                      </div>
+                      
+                    
+                    </div>
+
+                    <div class="text-center addon">
+                      <small><i class="fa fa-info-circle addoninfoicon"  aria-hidden="true" data-toggle="tooltip" data-original-title="You can sanitize colored fabrics by pouring 1 cup of Pine-Sol or Lysol disinfectant into the washer. Use the hottest water that's safe for the fabric."></i></small>
+                      <img src="img/antiseptic 100x100.png"><br>
+                      <p>Aniseptic</p>
+                      <p><b><i class="fas fa-rupee-sign "></i>120</b></p>
+                      <div class="addonbtn">
+                        <input type="checkbox" class="checkit" name="addon5" id="addon5" value="5" onclick="yesno('addon5','checkadd5');" />
+                      <label for="addon5" name="checkadd5" id="checkadd5">Add +</label>
+                      </div>
+                      
+                    
+                    </div>
+
+                    <div class="text-center addon">
+                      <small><i class="fa fa-info-circle addoninfoicon"  aria-hidden="true" data-toggle="tooltip" data-original-title="You can sanitize colored fabrics by pouring 1 cup of Pine-Sol or Lysol disinfectant into the washer. Use the hottest water that's safe for the fabric."></i></small>
+                      <img src="img/antiseptic 100x100.png"><br>
+                      <p>Aniseptic</p>
+                      <p><b><i class="fas fa-rupee-sign "></i>120</b></p>
+                      <div class="addonbtn">
+                        <input type="checkbox" class="checkit" name="addon6" id="addon6" value="6" onclick="yesno('addon6','checkadd6');" />
+                        <label for="addon6" name="checkadd6" id="checkadd6">Add +</label>
+                      </div>
+                      
+                    
+                    </div>
+
+                    
+                  </div>
+            </div>
+            
+
+            </div>
+            
+    
+        </div>
+
+
+
+          <div class="col-md-3">
+            <div class="cartlist" style="border-bottom: 1px solid #b6b3b3; padding-bottom: 10px;">
+              <h5>Cart</h5>
+              <small class="text-secondary"> 6 ITEMS</small>
+            </div>
+           
+
+            <div class="totalcart my-2">
+              <div class="item1 m-2 d-flex text-secondary justify-content-between">
+                <small>Express Delivery Charges</small>
+                <small class="" ><b><i class="fas fa-rupee-sign    "></i> 50</b> </small>
+              </div>
+              <div class="subtotal m-2 d-flex justify-content-between">
+                <p class=""><b>Total Order</b> </p>
+                <p><b><i class="fas fa-rupee-sign    "></i> 310</b> </p>
+              </div>
+            </div>
+
+            <div class="checkoutbtn text-center">
+              <a href="delivertimeadd.html"><h6><b>Proceed</b></h6></a>
+            </div>
+
+          </div>
+      </div>
+
+      
+    
+    </div>
+    
+  </div>
+
+
+    <!-- Footer -->
+    
+  <div class="">
+    <script>
+      $.get("footer.html", function(data){
+          $("#footerjs").replaceWith(data);
+      });
+      </script>
+      <div class="container-fluid " id="footerjs" ></div>
+  </div>
+        
+    <script src="js/main.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script>
+//      $(document).ready(function(){
+//   $('.carousel').slick({
+//   slidesToShow: 3,
+//   dots:false,
+//   centerMode: true,
+//   arrows:true,
+//   infinite: true,
+//   prevArrow: false,
+//     nextArrow: false
+//   });
+// });
+$('.carousel').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  prevArrow: false,
+  nextArrow: false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: false,
+        dots: false,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+
+// <div class="row">
+    
+//     <div class="col-md-3">
+//       <div class=" teammember">
+//         <img src="img/team1.png" alt="Avatar" class="teamimage">
+//         <div class="overlay">
+//           <div class="memberdetail">
+//             <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquid modi tempore, odit inventore rerum.</small>
+//           </div>
+//         </div>
+        
+//       </div>
+//       <div>
+//         <h6 class="teamname">Shived Bansal</h6>
+//         <small class="text-secondary teamposition">CEO & Director</small>
+//       </div>
+//     </div>
+
+//     <div class="col-md-3">
+//       <div class=" teammember">
+//         <img src="img/team1.png" alt="Avatar" class="teamimage">
+//         <div class="overlay">
+//           <div class="memberdetail">
+//             <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquid modi tempore, odit inventore rerum.</small>
+//           </div>
+//         </div>
+        
+//       </div>
+//       <div>
+//         <h6 class="teamname">Shived Bansal</h6>
+//         <small class="text-secondary teamposition">CEO & Director</small>
+//       </div>
+//     </div>
+
+//     <div class="col-md-3">
+//       <div class=" teammember">
+//         <img src="img/team1.png" alt="Avatar" class="teamimage">
+//         <div class="overlay">
+//           <div class="memberdetail">
+//             <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquid modi tempore, odit inventore rerum.</small>
+//           </div>
+//         </div>
+        
+//       </div>
+//       <div>
+//         <h6 class="teamname">Shived Bansal</h6>
+//         <small class="text-secondary teamposition">CEO & Director</small>
+//       </div>
+//     </div>
+
+//     <div class="col-md-3">
+//       <div class=" teammember">
+//         <img src="img/team1.png" alt="Avatar" class="teamimage">
+//         <div class="overlay">
+//           <div class="memberdetail">
+//             <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquid modi tempore, odit inventore rerum.</small>
+//           </div>
+//         </div>
+        
+//       </div>
+//       <div>
+//         <h6 class="teamname">Shived Bansal</h6>
+//         <small class="text-secondary teamposition">CEO & Director</small>
+//       </div>
+//     </div>
+
+    
+    
+   
+    
+    
+//   </div>
+
+var incrementQty;
+var decrementQty;
+var plusBtn  = $(".cart-qty-plus");
+var minusBtn = $(".cart-qty-minus");
+var incrementQty = plusBtn.click(function() {
+	var $n = $(this)
+		.parent(".button-container")
+		.find(".qty");
+	$n.val(Number($n.val())+1 );
+	update_amounts();
+});
+
+var decrementQty = minusBtn.click(function() {
+		var $n = $(this)
+		.parent(".button-container")
+		.find(".qty");
+	var QtyVal = Number($n.val());
+	if (QtyVal > 0) {
+		$n.val(QtyVal-1);
+	}
+	update_amounts();
+});
+
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Select Address | Date | Time </title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body style="background: #F6F6F6;">
+
+  <!-- navbar section -->
+  <div class="container-fluid nav2">
+    <script>
+      $.get("nav.html", function(data){
+          $("#navholder").replaceWith(data);
+      });
+      </script>
+      <div class="" id="navholder"></div>
+  </div>
+  <style>
+    .checkoutnav{
+      color: #B52421 !important;
+    }
+  </style>
+  
+
+
+  <div class="container mt-3 checkoutsection" >
+
+  <div class="row">
+
+    <div class="col-md-8 checkoutleft my-3">
+      
+      <ul class="timeline panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <!-- <li class="timeline-line"></li> -->
+  
+        <li class="timeline-item">
+            <div class="timeline-badge"></div>
+            <div class="timeline-panel">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#deliveryadress">
+                              <div class="timeline-heading"><h6><b>Pickup & Delivery Address</b> &nbsp; <sup><i class="fa fa-check-circle" aria-hidden="true"></i></sup></h6> </div> <span class="expand-icon-wrap" aria-expanded="false" aria-controls="collapseThree"></span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="deliveryadress" class="panel-collapse collapse show" role="tabpanel">
+                        <div class="panel-body">
+                            <div class="timeline-content">
+                              <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-5 m-3 adds p-3">
+                                        <div class="row">
+                                          <i style="padding:5px;" class="fas fa-home"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="addbody">
+                                              <h6>Home</h6>
+                                              <small>123, Lorem, ipsum dolor. <br>
+                                              Dwarka, New Delhi 110059</small>
+                                            </div>
+                                            <div class="deliveryaddbtn flex-wrap my-2">
+                                              <input type="radio" id="deliveryhomebtn" name="radios" value="all">
+                                                <label for="deliveryhomebtn">Deliver Here </label>
+                                            </div>
+                                          
+                                        </div>
+                                        
+                                    </div>   
+  
+                                    <div class="col-lg-5 m-3 adds p-3">
+                                        <div class="row">
+                                          <i style="padding:5px;" class="fas fa-briefcase"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="addbody">
+                                              <h6>Work</h6>
+                                              <small>34/4 lorem, ipsum dolor sit. <br>
+                                              Gurgram, Haryana 112203</small>
+                                            </div>
+                                            <div class="deliveryaddbtn flex-wrap my-2">
+                                              <input type="radio" id="deliveryworkbtn" name="radios" value="all">
+                                                <label for="deliveryworkbtn"> Deliver Here</label>
+                                            </div>
+                                          
+                                        </div>
+                                        
+                                    </div>   
+  
+                                    <div class="col-lg-5 m-3 adds p-3">
+                                      <div class="row">
+                                        <i style="padding:5px;" class="fas fa-location-arrow"></i>
+                                      </div>
+                                      <div class="col-10">
+                                          <div class="addbody">
+                                            <h6>Add New Address</h6>
+                                          </div>
+                                          <div class="addcta">
+                                              <button class="addbtn">
+                                                Add New
+                                              </button>
+                                          </div>
+                                        
+                                      </div>
+                                      
+                                  </div>   
+                                    
+                                      
+                                </div>   
+  
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+  
+        <li class="timeline-item">
+            <!-- <div class="timeline-badge"><i class="far fa-calendar    "></i></div> -->
+            <div class="timeline-panel">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#deliverydatetime">
+                                <div id="about" class="timeline-heading"><h6><b>Pickup & Delivery Date/Time</b> &nbsp; <sup><i class="fa fa-check-circle" aria-hidden="true"></i></sup></h6> </div> <span class="expand-icon-wrap" aria-expanded="false" aria-controls="collapseThree"></span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="deliverydatetime" class="panel-collapse collapse show" role="tabpanel">
+                        <div class="panel-body">
+                            <div class="timeline-content m-3 p-3">
+                                <div class="datepicker row">
+                                  <div class="pickupdate col-8">
+                                    <form action="">
+                                      <small><label for="Pickup"><i class="fas fa-calendar-alt"></i> <small>Select your Pick Up Date</small> </label><br></small>
+                                      <input type="date" id="pickupdate" name="pickup" onkeydown="return false" >                         
+                                    </form>
+                                  </div>
+  
+                                  <div class="col-md-12 pickupdates container">
+                                    <div class="datetimebtn flex-wrap">
+                                      <small><label for="Pickup"><i class="fas fa-stopwatch    "></i>  <small>Select your Pick Up Time</small> </label><br></small>
+    
+                                      <form action="">
+                                        <input type="radio" id="pickupslot1" name="radios" value="all">
+                                          <label for="pickupslot1">10:00 AM <br> 12:00 AM</label>
+                                        <input type="radio" id="pickupslot2" name="radios"value="false">
+                                          <label for="pickupslot2">12:00 AM <br> 02:00 PM</label>
+                                        <input type="radio" id="pickupslot3" name="radios" value="true">
+                                          <label for="pickupslot3">02:00 PM <br> 04:00 PM</label>
+                                        <input type="radio" id="pickupslot4" name="radios" value="all">
+                                          <label for="pickupslot4">04:00 PM <br> 06:00 PM</label>
+                                        <input type="radio" id="pickupslot5" name="radios" value="all">
+                                          <label for="pickupslot5">06:00 PM <br> 08:00 PM</label>
+                                      </form>
+                                    </div>
+                                  </div>
+                                  
+                                </div>
+
+                                <div class="datepicker row my-3">
+                                  <div class="pickupdate col-8">
+                                    <form action="">
+                                      <small><label for="Delivery"><i class="fas fa-calendar-alt"></i> <small>Select your Delivery Up Date</small> </label><br></small>
+                                      <input type="date" id="pickupdate" name="pickup" onkeydown="return false" >                         
+                                    </form>
+                                  </div>
+  
+                                  <div class="col-md-12 pickupdates">
+                                    <div class="datetimebtn flex-wrap">
+                                      <small><label for="Delivery"><i class="fas fa-stopwatch    "></i>  <small>Select your Delivery Time</small> </label><br></small>
+                                      <form action="">
+    
+                                        <input type="radio" id="deliverytimeslot1" name="radios" value="all">
+                                          <label for="deliverytimeslot1">10:00 AM <br> 12:00 AM</label>
+                                        <input type="radio" id="deliverytimeslot2" name="radios"value="false">
+                                          <label for="deliverytimeslot2">12:00 AM <br> 02:00 PM</label>
+                                        <input type="radio" id="deliverytimeslot3" name="radios" value="true">
+                                          <label for="deliverytimeslot3">02:00 PM <br> 04:00 PM</label>
+                                        <input type="radio" id="deliverytimeslot4" name="radios" value="all">
+                                          <label for="deliverytimeslot4">04:00 PM <br> 06:00 PM</label>
+                                        <input type="radio" id="deliverytimeslot5" name="radios" value="all">
+                                          <label for="deliverytimeslot5">06:00 PM <br> 08:00 PM</label>
+
+                                      </form>
+                                    </div>
+                                  </div>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+  
+  
+  
+      </ul>
+
+      <!-- <div class="success text-center text-secondary">Thank You. Your Order has been received <span type="" class="" data-toggle="modal" data-target="#vieworder">
+        <a href="javascript:;" class=""><b>View Orders</b> </a>
+      </span>
+      </button></div> -->
+      </div>
+      <div class="col-md-3 my-3">
+        <div class="cartlist" style="border-bottom: 1px solid #b6b3b3; padding-bottom: 10px;">
+          <h5>Cart</h5>
+          <small class="text-secondary"> 6 ITEMS</small>
+        </div>
+       
+
+        <div class="totalcart my-2">
+          <div class="item1 m-2 d-flex text-secondary justify-content-between">
+            <small>Express Delivery Charges</small>
+            <!-- <div class="quantitycat text-center">
+              <button class="btn minus-btn disabled" type="button">-</button>
+              <input type="text" id="quantity" class="text-center" readonly value="1">
+              <button class="btn plus-btn" type="button">+</button>
+              </div> -->
+            <small class="" ><b><i class="fas fa-rupee-sign    "></i> 50</b> </small>
+          </div>
+          <div class="subtotal m-2 d-flex justify-content-between">
+            <p class=""><b>Total Order</b> </p>
+            <p><b><i class="fas fa-rupee-sign    "></i> 310</b> </p>
+          </div>
+        </div>
+
+        <div class="checkoutbtn text-center">
+          <a href="checkout.html"><h6><b>Proceed</b></h6></a>
+        </div>
+
+      </div>
+      
+
+          
+
+  </div>
+  
+
+  
+
+  </div>
+
+
+  
+  
+<!-- footer -->
+
+
+<div class="">
+  <script>
+    $.get("footer.html", function(data){
+        $("#footerjs").replaceWith(data);
+    });
+    </script>
+    <div class="container-fluid " id="footerjs" ></div>
+</div>
+
+
+
+   <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="js/main.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+
+
+  </body>
+</html>
