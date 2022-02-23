@@ -119,6 +119,8 @@ ul{
 	.modal.left .modal-content, .modal.right .modal-content
 	 {
 		height: 100%;
+    border: none !important;
+    border-radius: 0rem;
 		/* overflow-y: inherit; */
     /* background-color: #ffcccc; */
     /* background-image: linear-gradient(318deg, #dc3545 0%, #f3f3f5 74%); */
@@ -718,12 +720,15 @@ fieldset {
 }
 
 .valuecell{
-  
-  margin: 1rem;
-  padding:4rem .8rem;
+  padding:2rem .8rem;
   color: #fff!important;
   font-size: .8rem;
+  height: 100%;
   background-color: #B52421;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
 }
 /* .teammember {
   position: relative;
@@ -811,20 +816,23 @@ ul.links {
 @media only screen and (max-width: 500px) {
 
   h1{
-		font-size: 1.7rem !important;
+		font-size: 1.8rem !important;
 	}
 	h2{
-		font-size: 1.4rem !important;
+		font-size: 1.6rem !important;
 	}
 	h3{
-		font-size: 1.2rem !important;
+		font-size: 1.4rem !important;
 	}
 	h4{
-		font-size: 1rem !important;
+		font-size: 1.2rem !important;
 	}
 	p{
 		font-size: 80%;
 	}
+  small{
+    font-size:.7rem !important;
+  }
 
     .herosec{
         margin-top: 50px;
@@ -1288,8 +1296,16 @@ form .input-textarea {
   color: #6a6c6f;
 }
 
-.accordion-head i{
-  float: right;
+.accordion-head i {
+  /* float: right; */
+  /* display: flex; */
+  /* align-items: center; */
+  position: absolute;
+  right: 2%;
+  top: 30%;
+}
+.accordion-head h6{
+  font-weight: bold;
 }
 
 .accordion-head > .collapsed > i:before{
@@ -1310,7 +1326,11 @@ form .input-textarea {
 
 .card-block p {
   margin: 1rem 0rem;
+  font-weight: 500;
 }
+.card-header {
+  padding: 0.75rem 1rem !important;}
+
 
 /*********VendorFORM***********/
 
