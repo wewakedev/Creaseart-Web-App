@@ -202,7 +202,8 @@ $(document).ready(function() {
 
 
 
-// Increent decrement 
+// edit cart
+
 
 
 

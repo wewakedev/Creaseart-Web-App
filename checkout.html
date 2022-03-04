@@ -9,19 +9,20 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/style.css">
   <script src="//code.jquery.com/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
 </head>
 <body style="background:#fff;">
   <style>
     input[type=locationsearch],.locationicon{
       display: none;
     }
-    .productprice{
+    /* .productprice{
       display: none;
-    }
+    } */
   </style>
 
   <!-- navbar section -->
@@ -32,391 +33,181 @@
           $("#navholder").replaceWith(data);
       });
       </script>
-      <div class="" id="navholder"></div>
+     
+     <div class="" id="navholder"></div>
   </div>
-  
 
+  <div class="container-fluid carttitle p-3 text-center" style="background-color:#404040;">
+    <h3 class=" text-white">Checkout</h3>
+  </div>
 
-
-  
-
-
-
-
-
-
-
-
-
-<div class="productexec my-5 light-bg">
-  <div class="container">
-      
-      <div class="shopping-cart container my-5 p-3" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
-      
-        <div class="container ">
-          <div class="row my-5 justify-content-between align-items-center " style="border-bottom: 1px solid #b6b3b3;">
-            <div class="col-md-6">
-              <h4 style="color: #B52421 !important;">Super Fine Dry Cleaners</h4>
-            </div>
-            <div class="col-md-3 text-center col-12 d-flex">
-              <small><b>Express Delivery <sup><i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-original-title="Delivery Within 24hrs"></i></sup> </b></small>
-              <input type="checkbox" id="switchexp"class="expcheck dark-modeBtn" />
-              <label for="switchexp" class="toggleexp">
-              </label>   
-            </div>
-          </div>
-        </div>
-      
-        <div class="product container ">
-          <div class="row my-4 justify-content-between">
-            
-          
-          <div class="productdetails text-md-center col-md-2 col-12">
-            <div class="producttitle"><small><b>2 x T-Shirt</b> </small> </div>
-            <!-- <p class="product-description">Who doesn't like lamb and rice? We've all hit the halal cart at 3am while quasi-blackout after a night of binge drinking in Manhattan. Now it's your dog's turn!</p> -->
-          </div>
-          <div class=" col-md-2 col-3 text-center productcategory">
-            <div class="producttitle"><small><b>Dry Cleaning</b> </small> </div>
-          </div>
-          <!-- <div class="productprice col-md-2 col-3 text-center"><small>200</small> </div> -->
-
-          <div class="product-quantity text-center col-md-3 col-3">
-            <button class="cart-qty-plus" type="button" value="+">+</button>
-            <input type="number" class="qty" value="1" min="1">
-            <button class="cart-qty-minus" type="button" value="-">-</button>
-
-          </div>
-          <div class="productpriceupdate text-center col-1"><small>0</small> </div>
-          <div class="productremoval  text-center  col-1">
-            <button class="remove-product">
-             <a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
-            </button>
-          </div>
-          </div>
-        </div>
-
-        <hr>
-        <div class="container editdatetime">
-          <div class="row my-4 align-items-center justify-content-between">
-            <div class="col-md-2 col-12">
-              <small><b>Pickup Details</b> </small>
-            </div>
-            <div class="col-md-2 col-6">
-              <input type="date" name="" id="" class="checkoutdate">
-            </div>
-            <div class="col-md-2 col-6">
-              <form action="">
-                <!-- <select id="cars" name="cars"> -->
-                  <select  disabled class="drop-down-list">
-                  <option value="time1">10:00 AM - 12:00 AM</option>
-                  <option value="time3">12:00 AM - 02:00 AM</option>
-                  <option value="time3">02:00 AM - 04:00 AM</option>
-                  <option value="time4">04:00 AM - 06:00 AM</option>
-                  <option value="time5">06:00 AM - 08:00 AM</option>
-                </select>
-                  <script>
-                          function enable_value(event){
-                              if($(event).parent().parent().find('.drop-down-list').prop("disabled")){
-                                  $(event).parent().parent().find('.drop-down-list').attr('disabled', false);
-                              } else {
-                                   $(event).parent().parent().find('.drop-down-list').attr('disabled', true);
-                              }
-                          }
-                  </script>
-              </form>
-            </div>
-            <div class="col-md-2 text-md-center col-12">
-              <small type="" class="checkoutedit" onclick="enable_value(this)" name="edit">Edit</small>
-            </div>
-          </div>
-
-          <!-- Deliverydate -->
-
-          <div class="row my-4 align-items-center justify-content-between">
-            <div class="col-md-2 col-12">
-              <small><b>Delivery Details</b> </small>
-            </div>
-            <div class="col-md-2 col-6">
-              <input type="date" name="" id="" class="checkoutdate">
-            </div>
-            <div class="col-md-2 col-6">
-              <form action="">
-                <!-- <select id="cars" name="cars"> -->
-                  <select  disabled class="drop-down-list">
-                  <option value="time1">10:00 AM - 12:00 AM</option>
-                  <option value="time3">12:00 AM - 02:00 AM</option>
-                  <option value="time3">02:00 AM - 04:00 AM</option>
-                  <option value="time4">04:00 AM - 06:00 AM</option>
-                  <option value="time5">06:00 AM - 08:00 AM</option>
-                </select>
-                  <script>
-                          function enable_value(event){
-                              if($(event).parent().parent().find('.drop-down-list').prop("disabled")){
-                                  $(event).parent().parent().find('.drop-down-list').attr('disabled', false);
-                              } else {
-                                   $(event).parent().parent().find('.drop-down-list').attr('disabled', true);
-                              }
-                          }
-                  </script>
-              </form>
-            </div>
-            <div class="col-md-2 text-md-center col-12">
-              <small type="" class="checkoutedit" onclick="enable_value(this)" name="edit">Edit</small>
-            </div>
-          </div>
-
-          
-        </div>
-      <!-- ADDONS -->
-
-      <div class="container addoncheck">
-        <div class="row my-4 align-items-center justify-content-between">
-          <div class="col-md-2 col-8">
-            <div>
-              <small style="color:#B52421 !important"><b>Addon Services</b></small>
-            </div>
-            <div>
-              <small>Softner, Emulsifier</small> <span><small style="color:#B52421 !important"><b>Edit</b></small></span>
-            </div>
-            
-          </div>
-          
-          <div class="col-md-2 text-center col-4">
-            <small style="color:#B52421 !important"><b>₹540</b></small>
-            
-          </div>
-        </div>
-        
-      </div>
-
-      <!--COUPON -->
-
-      <div class="container couponcheck">
-        <div class="row my-4 justify-content-center">
-          <div class="col-md-3 text-center">
-            <div>
-              <input id="image1" onclick="return  openmodal(this);" placeholder="ADD COUPON"/>
-            </div>
-          </div>
-        </div>
-        <style>
-          .couponcheck input{
-            padding: .8rem;
-            border: 1px dashed #B52421;
-            text-align: center;
-          }
-        </style>
-        <!-- COUPON_MODAL -->
-      </div>
-      
-      
-
-      <!-- TOTAL -->
-
-        <div class="container total">
-          <div class="row justify-content-between">
-
-            <div class="col-md-3 col-6  ">
-              <label><small> Item Total</small> </label>
-            </div>
-            <div class="totalvalue col-md-2 col-4" id="cart-subtotal">
-              <small>₹300</small>
-            </div>   
-          </div>
-          <div class="row  justify-content-between">
-
-            <div class="col-md-3 col-6  ">
-              <label><small> Tax (5%)</small></label>
-            </div>
-            <div class="totalvalue  col-md-2 col-4" id="cart-tax">
-              <small>₹10</small> 
-            </div>   
-          </div>
-
-          <div class="row  justify-content-between">
-
-            <div class="col-md-3 col-6 ">
-              <label><small>Express Delivery Charges</small> </label>
-            </div>
-            <div class="totalvalue  col-md-2 col-4" id="cart-shipping">
-              <small>₹40</small> 
-            </div>   
-          </div>
-
-          <hr>
-          <div class="row  justify-content-between">
-
-            <div class="col-md-3 col-6  ">
-              <label><small><b>Grand Total</b></small> </label>
-            </div>
-            <div class="totalvalue col-md-2 col-4" id="cart-total">
-              <small><b>₹350</b></small> 
-            </div>   
-          </div>
-          <hr>
-
-
-        </div>
-        
-        <div class="container my-4 addoncheck"><br>
-          <p><b>Your Details</b> </p>
-          <div class="row py-4 align-items-center justify-content-between">
-            
-            <div class="col-md-8 col-8">
-              <div>
-                <small><b>Deependra Bhaskar</b></small>
+  <div class="container my-4 checkout_add_date">
+      <div class="finaladd my-3">
+          <h4 class="my-2">Pick Up & Delivery Address</h4>
+          <div class="adddetails">
+              <div class="checkusername">
+                  <small class="font-weight-bold">Deep Bhaskar</small>
               </div>
-              <div>
-                <small>Type 1st, Block 30, Room No. 7, Police Colony, Police Line, Jhansi, 284001</small>
+              <div class="checkaddress">
+                  <small>Type 1st, Block 30, Room No. 7, Police Colony, Police Line, Jhansi, 284001</small>
               </div>
-              
-            </div>
-            
-            <div class="col-md-2 text-center col-4">
-              <small style="color:#B52421 !important"><b>Edit</b></small>
-              
-            </div>
           </div>
-          
-        </div>
-          
-      
       </div>
 
+      <div class="finaldatetime">
+        <h4 class="my-2">Pick Up & Delivery Time</h4>
+        <div class="finalpickupdetails">
+            <div class="checkpickup">
+                <small class="font-weight-bold">Pick-up :</small>
+                <small>20/03/2022</small>
+                <small><em>01:00pm - 01:30pm</em> </small>
+                
+                
+            </div>
+            <div class="checkdropdetails">
+                <small class="font-weight-bold">Delivery :</small>
+                <small>21/03/2022</small>
+                <small><em>03:00pm - 04:30pm</em> </small>
+               
+            </div>
+        </div>
+    </div>
+       
+  </div>
+  <div id="service-cart" class="container cartsection mt-5">
+  	<div class="table-responsive  text-center">
+  		<table class="table table-bordered ">
+  			<thead>
+  				<tr>
+  					<th class="text-left">Services</th>
+  					<th>Items</th>
+  					<th>Unit Price</th>
+  					<th>Qty</th>
+  					<th>Total Price</th>
+  					<!-- <th>Edit</th> -->
+  				</tr>
+  			</thead>
+  			<tbody>
+  				<tr id="checkout-row0">
+            <td class="cartservice text-left" rowspan="2">Dry Cleaning</td>
+  					<td class="serviceitem">Coat</td>
+            <td class="unitprice">40</td>
+            <td>
+              <div class="cartquantity ">
+                5
+              </div>
+            </td>
+  
+            <td>120</td>
+  					
+  				</tr>
+  
+  				<tr id="checkout-row1">
+  					<td class="serviceitem">Blazer</td>
+            <td class="unitprice">40</td>
+            <td>
+              <div class="cartquantity ">
+                2
+              </div>
+            </td>
+  
+            <td>120</td>
+  					
+  				</tr>
+  
+  				<tr id="checkout-row2">
+            <td class="cartservice text-left" rowspan="2">Wash & Fold</td>
+  					<td class="serviceitem">Shirt</td>
+            <td class="unitprice">40</td>
+            <td>
+              <div class="cartquantity ">
+                1
+              </div>
+            </td>
+  
+            <td>120</td>
+  				</tr>
+  
+  				<tr id="checkout-row3">
+  			        <td class="serviceitem">Blazer</td>
+                    <td class="unitprice">40</td>
+                    <td>
+                      <div class="cartquantity ">
+                        1
+                      </div>
+                    </td>
+                    <td>120</td>
+  					
+  				</tr>
+  
+  
+  				<tr id='checkout-row4'>
+                    <td class="subtotalcls text-left" colspan="4">Subtotal</td>
+                    <td class="subtotalprice  price">480</td>
+                </tr>
+                <tr id='checkout-row5'>
+                    <td class="addontotalcls text-left" colspan="4">Add-on Services</td>
+                    <td class="addonprice  price">480</td>
+                </tr>
+                <tr id='checkout-row6'>
+                    <td class="couponcheckout text-left" colspan="4" style="color: green;" >Coupons Applied</td>
+                    <td class="grandtotal  price"style="color: green;" >-200</td>
+                </tr>
+                <tr id='checkout-row7'>
+                    <td class="grandtotalcls font-weight-bold text-left" colspan="4">Grand Total</td>
+                    <td class="grandtotal font-weight-bold   price">2000</td>
+                </tr>
+  
+  			</tbody>
+  		</table>
+
+          
+  	</div>
+
+    <div class="commentcheckout container my-4">
+        <h4>Comment</h4>
     
-      
-    </div>
-      
 
-    <div class="container">
-      
-    </div>
-      
-      <script>
-          /* Set rates + misc */
-      var taxRate = 0.05;
-      var shippingRate = 15.00; 
-      var fadeTime = 300;
-      
-      
-      /* Assign actions */
-      $('.product-quantity input').change( function() {
-        updateQuantity(this);
-      });
-      
-      $('.productremoval button').click( function() {
-        removeItem(this);
-      });
-      
-      
-      /* Recalculate cart */
-      function recalculateCart()
-      {
-        var subtotal = 0;
-        
-        /* Sum up row totals */
-        $('.product').each(function () {
-          subtotal += parseFloat($(this).children('.productpriceupdate').text());
-        });
-        
-        /* Calculate totals */
-        var tax = subtotal * taxRate;
-        var shipping = (subtotal > 0 ? shippingRate : 0);
-        var total = subtotal + tax + shipping;
-        
-        /* Update totals display */
-        $('.totals-value').fadeOut(fadeTime, function() {
-          $('#cart-subtotal').html(subtotal.toFixed(2));
-          $('#cart-tax').html(tax.toFixed(2));
-          $('#cart-shipping').html(shipping.toFixed(2));
-          $('#cart-total').html(total.toFixed(2));
-          if(total == 0){
-            $('.checkout').fadeOut(fadeTime);
-          }else{
-            $('.checkout').fadeIn(fadeTime);
-          }
-          $('.totals-value').fadeIn(fadeTime);
-        });
-      }
-      
-      
-      
-      
-      
-      /* Remove item from cart */
-      function removeItem(removeButton)
-      {
-        /* Remove row from DOM and recalc cart total */
-        var productRow = $(removeButton).parent().parent();
-        productRow.slideUp(fadeTime, function() {
-          productRow.remove();
-          recalculateCart();
-        });
-      }
-      </script>
-      
-      <div class="form-check text-center my-5">
-        <form class="form">
-            <input class="form-check-input" type="checkbox" name="allagreeopt" id="allagreeopt" required="required" data-msg-required="This value is required.">
+        <form action="">
+          <textarea id="message_field" class="input-textarea" type="text" placeholder="Enter your comment" name="message"></textarea>
+    
+          <div class="my-3 text-center">
+              <input class="form-check-input float-left" type="checkbox" name="allagreeopt" id="allagreeopt" required="required" data-msg-required="This value is required.">
             <label class="form-check-label" for="allagreeopt">
                 <small>I agree to the <a href="#">Terms & Conditions</a></small> 
             </label>
-            <div class="text-center my-3">
-              <button type="submit" onclick="location.href='thankorder.html'" class="produtproceed"><a href=""><small> Proceed</small></a> </button>
-            </div> 
+
+            <button type="submit" onclick="location.href='thankorder.html'" class="contactsubmitbtn float-right">Place Order</button>
+          </div>
+          
         </form>
-        
     </div>
-      
-</div>
+  </div>
 
 
 
 
-<script>
-      var incrementQty;
-      var decrementQty;
-      var plusBtn  = $(".cart-qty-plus");
-      var minusBtn = $(".cart-qty-minus");
-      var incrementQty = plusBtn.click(function() {
-      	var $n = $(this)
-      		.parent(".product-quantity")
-      		.find(".qty");
-      	$n.val(Number($n.val())+1 );
-      	update_amounts();
-      });
-      
-      var decrementQty = minusBtn.click(function() {
-      		var $n = $(this)
-      		.parent(".product-quantity")
-      		.find(".qty");
-      	var QtyVal = Number($n.val());
-      	if (QtyVal > 0) {
-      		$n.val(QtyVal-1);
-      	}
-      	update_amounts();
-      });
-      
-  </script>
 
 
 
 
-  <!-- footer section -->
-
-    <div class="">
-        <script>
-         $.get("footer.html", function(data){
-             $("#footerjs").replaceWith(data);
-         });
-        </script>
-        <div class="container-fluid " id="footerjs" ></div>
-    </div>
+ <!-- Footer -->
     
+ <div class="">
+    <script>
+      $.get("footer.html", function(data){
+          $("#footerjs").replaceWith(data);
+      });
+      </script>
+      <div class="container-fluid " id="footerjs" ></div>
+  </div>
+        
     <script src="js/main.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>

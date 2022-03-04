@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Cart</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+</head>
+<body style="background:#fff;">
+  <style>
+    input[type=locationsearch],.locationicon{
+      display: none;
+    }
+    /* .productprice{
+      display: none;
+    } */
+  </style>
+
+  <!-- navbar section -->
+  <div class="container-fluid nav2">
+    
+    <script>
+      $.get("nav.html", function(data){
+          $("#navholder").replaceWith(data);
+      });
+      </script>
+     
+     <div class="" id="navholder"></div>
+  </div>
+
+  <div class="container-fluid carttitle p-3 text-center" style="background-color:#404040;">
+    <h3 class=" text-white">Shopping Cart</h3>
+  </div>
+  <div id="service-cart" class="container cartsection mt-5">
+  	<div class="table-responsive  text-center">
+  		<table class="table table-bordered ">
+  			<thead>
+  				<tr>
+  					<th class="text-left">Services</th>
+  					<th>Items</th>
+  					<th>Unit Price</th>
+  					<th>Qty</th>
+  					<th>Total Price</th>
+  					<th>Remove</th>
+  					<!-- <th>Edit</th> -->
+  				</tr>
+  			</thead>
+  			<tbody>
+  				<tr id="cart-row0">
+            <td class="cartservice font-weight-bold" rowspan="2">Dry Cleaning</td>
+  					<td class="serviceitem">Coat</td>
+            <td class="unitprice">40</td>
+            <td>
+              <div class="cartquantity ">
+                <div class="button-container d-flex justify-content-center align-items-center">
+                  <div class="cart-qty-plus" type="button" value="+">+</div>
+                  <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
+                  <div class="cart-qty-minus" type="button" value="-">-</div>
+                </div>
+              </div>
+            </td>
+  
+            <td>120</td>
+  					<td>
+  						<img src="img/removebtn.png" alt="">
+  					</td>
+  				</tr>
+  
+  				<tr id="cart-row1">
+  					<td class="serviceitem">Blazer</td>
+            <td class="unitprice">40</td>
+            <td>
+              <div class="cartquantity ">
+                <div class="button-container d-flex justify-content-center align-items-center">
+                  <div class="cart-qty-plus" type="button" value="+">+</div>
+                  <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
+                  <div class="cart-qty-minus" type="button" value="-">-</div>
+                </div>
+              </div>
+            </td>
+  
+            <td>120</td>
+  					<td>
+  						<img src="img/removebtn.png" alt="">
+  					</td>
+  				</tr>
+  
+  				<tr id="cart-row2">
+            <td class="cartservice font-weight-bold" rowspan="2">Wash & Fold</td>
+  					<td class="serviceitem">Shirt</td>
+            <td class="unitprice">40</td>
+            <td>
+              <div class="cartquantity ">
+                <div class="button-container d-flex justify-content-center align-items-center">
+                  <div class="cart-qty-plus" type="button" value="+">+</div>
+                  <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
+                  <div class="cart-qty-minus" type="button" value="-">-</div>
+                </div>
+              </div>
+            </td>
+  
+            <td>120</td>
+  					<td>
+  						<img src="img/removebtn.png" alt="">
+  					</td>
+  				</tr>
+  
+  				<tr id="cart-row3">
+  					<td class="serviceitem">Blazer</td>
+            <td class="unitprice">40</td>
+            <td>
+              <div class="cartquantity ">
+                <div class="button-container d-flex justify-content-center align-items-center">
+                  <div class="cart-qty-plus" type="button" value="+">+</div>
+                  <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
+                  <div class="cart-qty-minus" type="button" value="-">-</div>
+                </div>
+              </div>
+            </td>
+  
+            <td>120</td>
+  					<td>
+  						<img src="img/removebtn.png" alt="">
+  					</td>
+  				</tr>
+  
+  
+  				<tr id='cart-row4'></tr>
+  
+  			</tbody>
+  		</table>
+  	</div>
+  
+  </div>
+
+
+  <div id="addonservice-cart" class="container cartsection">
+  	<div class="table-responsive  text-center">
+  		<table class="table table-bordered ">
+  			<thead>
+  				<tr>
+  					<th colspan="15" class="text-left">Addon Services</th>
+  					<th>Price</th>
+  					<th>Remove</th>
+  				</tr>
+  			</thead>
+  			<tbody>
+  				<tr id="cartaddon-row0">
+            <td class="cartservice font-weight-bold" colspan="15">Dry Cleaning</td>
+            <td>120</td>
+  					<td>
+  						<img src="img/removebtn.png" alt="">
+  					</td>
+  				</tr>
+  
+  				<tr id="cartaddon-row1">
+            <td class="cartservice font-weight-bold" colspan="15">Emlusifier</td>
+            <td>40</td>
+  					<td>
+  						<img src="img/removebtn.png" alt="">
+  					</td>
+  				</tr>
+  
+  				<tr id="cartaddon-row2">
+            <td class="cartservice font-weight-bold" colspan="15">Antiseptic</td>
+            <td>40</td>
+  					<td>
+  						<img src="img/removebtn.png" alt="">
+  					</td>
+  				</tr>
+  
+  			</tbody>
+  		</table>
+  	</div>
+  
+  </div>
+  
+  <div class="applycouponbtn container">
+    <div class="row align-items-center justify-content-between">
+
+      <div class="col-sm-3 col-12 text-center text-sm-left cartbtns">
+        <p><a href=""class="cartcouponbtn" ><span><img  src="img/applycouponicon.svg" style="width: 1.2rem;"></span> &nbsp;Apply Coupon</a></p>
+      </div>
+      <div class="col-sm-6 col-12">
+        <div class="row justify-content-center">
+          <div class="col-sm-5 text-center cartbtns  mx-1"><p><a class="cartcontinuebtn" href="">Continue Shopping</a></p></div>
+          <div class="col-sm-5 text-center cartbtns mx-1"><p><a class="cartupdatebtn" href="">Update Cart</a></p></div>
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+
+  <div class="container my-3">
+    <div class="row d-flex justify-content-between">
+      <div id=" editdetails-cart" class="cartsection my-3 col-sm-6">
+  
+        <div class="text-center table-responsive">
+    
+          <table class="table">
+            <thead>
+                <tr>
+                    <th colspan="4" class="text-left" >Pick Up & Delivery Address</th>
+                    <!-- <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Middle Name</th> -->
+                    <th colspan="2">Actions</th>
+                    <!-- <th>Delete</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr id="d1">
+                    <td>1</td>
+                    <td id="f1">John</td>
+                    <td id="l1">Wick</td>
+                    <td id="m1">Doe</td>
+                </tr> -->
+
+                <tr id='d2'>
+                  <td class="grandtotalcls text-left" colspan="4">Deep Bhaskar <br> Type 1st, Block 30, Room No. 7, Police Colony, Police Line, Jhansi, 284001</td>
+                  <td colspan="2"><a href="" data-toggle="modal" data-target="#edit_" data-uid="1" class="update"><i class="fas fa-pencil-alt    "></i></a> <a href="" data-toggle="modal" data-target="#delete" data-uid="1" class="delete"><i class="fas fa-trash-alt    "></i></a></td>
+              </tr>
+              <!-- <tr id='d2'>
+                <td class="grandtotalcls text-left" colspan="4">Type 1st, Block 30, Room No. 7, Police Colony, Police Line, Jhansi, 284001</td>
+                <td colspan="2"><a href="" data-toggle="modal" data-target="#edit" data-uid="1" class="update"><i class="fas fa-pencil-alt    "></i></a> <a href="" data-toggle="modal" data-target="#delete" data-uid="1" class="delete"><i class="fas fa-trash-alt    "></i></a></td>
+            </tr> -->
+                <!-- <tr id="d2">
+                    <td>2</td>
+                    <td id="f2">Jane</td>
+                    <td id="l2">Wick</td>
+                    <td id="m2">Doe</td>
+                    <td><a  data-toggle="modal" data-target="#edit" data-uid="2" class="update"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                    <td><button type="button" data-toggle="modal" data-target="#delete" data-uid="2" class="delete btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></button></td>
+                </tr> -->
+            </tbody>
+          </table>
+    
+        </div>
+          
+      </div>
+      <div id="edit" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">×</button>
+              <h4 class="modal-title">Update Data</h4>
+            </div>
+            <div class="modal-body">
+                 <input id="fn" type="text" class="form-control" name="fname" placeholder="First Name">
+                 <input id="ln" type="text" class="form-control" name="fname" placeholder="Last Name">
+                 <input id="mn" type="text" class="form-control" name="fname" placeholder="Middle Name">
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="up" class="btn btn-warning" data-dismiss="modal">Update</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="delete" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">×</button>
+              <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+              <p>Are you sure you want to delete this data?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="del" class="btn" data-dismiss="modal" style="background-color: #B52421;"><small class="text-white">Delete</small> </button>
+              <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div id="addonservice-cart" class="m-auto my-3 col-sm-5 cartsection">
+        <div class="table-responsive  text-center">
+          <table class="table table-bordered ">
+            <!-- <thead>
+              <tr>
+                <th colspan="5" class="text-left">Addon Services</th>
+                <th>Price</th>
+                <th>Remove</th>
+              </tr>
+            </thead> -->
+            <tbody>
+              <tr id="cartsubtotal-row0">
+                <td class="subtotalcls text-left">Subtotal</td>
+                <td>200</td>
+              </tr>
+      
+              <tr id="cartaddontotal-row1">
+                <td class="addontotalcls text-left" >Addon Services</td>
+                <td>120</td>
+              </tr>
+      
+              <tr id="cartgrandtotal-row2">
+                <td class="grandtotalcls text-left font-weight-bold"> Grand Total</td>
+                <td class="grandtotalcls font-weight-bold">320</td>
+              </tr>
+      
+            </tbody>
+          </table>
+        </div>
+      
+        <div class="text-center cartproceedbtn my-3">
+          <a href="checkout.html" class=""> Proceed</a>
+        </div>
+
+      </div>
+  
+    </div>
+  </div>
+  
+
+  
+
+    <!-- Footer -->
+    
+    <div class="">
+      <script>
+        $.get("footer.html", function(data){
+            $("#footerjs").replaceWith(data);
+        });
+        </script>
+        <div class="container-fluid " id="footerjs" ></div>
+    </div>
+          
+      <script src="js/main.js"></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>
+  
+  
+  var incrementQty;
+  var decrementQty;
+  var plusBtn  = $(".cart-qty-plus");
+  var minusBtn = $(".cart-qty-minus");
+  var incrementQty = plusBtn.click(function() {
+    var $n = $(this)
+      .parent(".button-container")
+      .find(".qty");
+    $n.val(Number($n.val())+1 );
+    update_amounts();
+  });
+  
+  var decrementQty = minusBtn.click(function() {
+      var $n = $(this)
+      .parent(".button-container")
+      .find(".qty");
+    var QtyVal = Number($n.val());
+    if (QtyVal > 0) {
+      $n.val(QtyVal-1);
+    }
+    update_amounts();
+  });
+  
+      </script>
+
+      <script>
+        $(document).ready(function(){
+   $(".update").click(function(){
+       var id = $(this).data("uid");
+       var f1 = $("#f1").html();
+       var l1 = $("#l1").html();
+       var m1 = $("#m1").html();
+       var f2 = $("#f2").html();
+       var l2 = $("#l2").html();
+       var m2 = $("#m2").html();
+       if(id==1){
+           $("#fn").val(f1);
+           $("#mn").val(m1);
+           $("#ln").val(l1);
+       }else if(id==2){
+           $("#fn").val(f2);
+           $("#mn").val(m2);
+           $("#ln").val(l2);
+       }
+       $("#up").click(function(){
+           if(id==1){
+               var fn = $("#fn").val();
+               var mn = $("#mn").val();
+               var ln = $("#ln").val();    
+               $("#f1").html(fn);
+               $("#m1").html(mn);
+               $("#l1").html(ln);
+           }else if(id==2){
+               var fn = $("#fn").val();
+               var mn = $("#mn").val();
+               var ln = $("#ln").val();    
+               $("#f2").html(fn);
+               $("#m2").html(mn);
+               $("#l2").html(ln);              
+           }
+       });
+   });
+   $(".delete").click(function(){
+      var id = $(this).data("uid");
+      $("#del").click(function(){
+          if(id==1){
+              $("#d1").html('');
+          }else if(id==2){
+              $("#d2").html('');
+          }
+      });
+   });
+});
+      </script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+  </html>

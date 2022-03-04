@@ -49,6 +49,7 @@ a{
     color: #282C3F !important;
     text-decoration: none !important;
     cursor: pointer;
+    
 }
 a:hover{
     color: #B52421 !important;
@@ -501,13 +502,11 @@ fieldset {
 
 }
 .workings img{
-    width: 250px;
+    width: 200px;
     height: auto;
+    margin: 1.5rem 0rem;
 }
-.workings p {
-  margin: 1rem 2rem;
-  font-size: .9rem;
-}
+
 .appsec{
     margin-top: 100px;
 }
@@ -900,7 +899,14 @@ ul.links {
   }
   .cart-qty-plus, .proqtyplus, .proqtyminus, .cartqtyplus, .cartqtyminus, .cart-qty-minus {
     width: 5px !important;}
+
+    /* .cartquantity input[type='number']{
+      width: 100%;
+      text-align: center;
+    } */
 } 
+
+
 @media only screen and (min-width: 768px) { 
   .ridekitshow{
     display: none;
@@ -1740,7 +1746,7 @@ text-align: center;
   height : 16px;
   background-color: #b6b3b3;
   border-radius: 30px;
-  border: 2px solid gray;
+  border: 2px solid transparent;
   margin-left: 5px;
 
 }
@@ -2079,7 +2085,7 @@ input.checkoutdate{
     padding: .2rem;
   }
 
-  input::-webkit-outer-spin-button,
+ input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
@@ -2600,6 +2606,10 @@ color: #282C3F !important;
 .clothesquantity input[type='number']{
   width: 50%;
 }
+.cartquantity input[type='number']{
+  width: 100%;
+  text-align: center;
+}
 
 .productquantity input[type='number']{
   width: 100%;
@@ -2645,7 +2655,7 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
 /* Global "table" column settings */
 /*  */
 input[type=number]::-webkit-inner-spin-button {
-  opacity: 1
+  opacity: 1;
 }
 
 /* This is used as the traditional .clearfix class */
@@ -2730,7 +2740,56 @@ input[type=number]::-webkit-inner-spin-button {
 	color: #fff;
 } */
 
+.fa-pencil-alt,.fa-trash-alt{
+  margin: 0rem .2rem;
+}
 
+.cartservice{
+  text-align: left;
+}
+.cartsection table th , .cartsection table td{
+  font-size: .8rem;
+  padding: 0.2rem;
+}
+.cartbtns a{
+  padding: .3rem .8rem;
+  border: 0.5px solid #B52421;
+  border-radius: 2px;
+  font-family: 'Montserrat';
+}
+.cartproceedbtn{
+  padding: .3rem 1.5rem;
+  border: 0.5px solid #B52421;
+  border-radius: 2px;
+  font-family: 'Montserrat';
+}
+.cartproceedbtn a{
+  color: #fff !important;
+}
+/* .cartproceedbtn:hover{
+color: #B52421 !important;
+background-color: #fff;
+} */
+.cartcouponbtn{
+  color: #B52421;
+  background-color:#FEF1F1;
+}
+.cartcontinuebtn{
+  background-color: #fff;
+  color: #B52421;
+}
+.cartupdatebtn,.cartproceedbtn{
+  background-color: #B52421;
+  color: #FEF1F1 !important;
+}
+.cartupdatebtn:hover{
+  background-color: #fff;
+  color: #B52421;
+  transition: .6s ease;
+}
+.grandtotalcls{
+ font-size: 1rem !important; 
+}
 #proaddform label{
   font-family: 'Roboto';
   color: #282C3F;
