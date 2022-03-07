@@ -1709,6 +1709,12 @@ iframe {
   height: 30px; */
   margin: 0 auto;
 }
+.addon img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+}
 .slick-initialized .slick-slide{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
