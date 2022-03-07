@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+    <link rel="icon" href="img/aftercaremobilelogo.png" type="image/x-icon" />
     <!-- Bootstrap CSS -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
     <link rel="stylesheet" href="css/style.css">
@@ -24,7 +24,7 @@
  <div class="container-fluid mainsec ">
   <nav class="navbar container navbar-expand-lg pr-3 pl-3">
       <button type="button" class="btn btn-demo" data-toggle="modal" data-target="#myModal">
-          <i class="fas fa-bars " style="font-size: 30px;"></i>
+          <!-- <i class="fas fa-bars " style="font-size: 30px;"></i> --> <img src="img/aftercareham.png" alt="">
       </button>
 
       <!-- SidebarLEFT -->
@@ -100,7 +100,9 @@
               </div><!-- modal-dialog -->
           </div><!-- modal -->
 
-      <a class="navbar-brand logo" href="index.html"><img src="img/aftercarelogo1.svg" style="width: 12rem;"alt=""></a>
+      
+      <a class="navbar-brand logo d-sm-block d-none" href="index.html"><img src="img/aftercarelogo1.svg" style="width: 12rem;"alt=""></a>
+      <a class="navbar-brand logo d-sm-none" href="index.html"><img src="img/aftercaremobilelogo.png"alt=""></a>
       
       <div class="collapse navbar-collapse " id="navbarText">
         <ul class="navbar-nav m-auto ">
@@ -117,9 +119,9 @@
 
         <!-- Button Sign up trigger modal -->
 
-              <button type="button" class="btn signbtn" data-toggle="modal" data-target="#modalsignup">
+              <!-- <button type="button" class="btn signbtn" data-toggle="modal" data-target="#modalsignup">
                   <a href="#" class="signbtn"><b>Sign Up</b> </a>
-                </button>
+                </button> -->
                 
 
                 <!-- RIGHT SIDEBAR -->
@@ -164,7 +166,7 @@
                                 Login with Google
                               </button>
                               </div>
-                              <p class="copyright">Already have and acoount ?<a href="#" target="_blank" data-dismiss="modal" data-toggle="modal" data-target="#modallogin" title="gotologin"> Login </a></p>
+                              <p class="copyright">Already have and account ?<a href="#" target="_blank" data-dismiss="modal" data-toggle="modal" data-target="#modallogin" title="gotologin"> Login </a></p>
                             </form>
                           </div>
                   
@@ -184,7 +186,7 @@
 
 
                 <button type="button" class="btn loginbtn" data-toggle="modal" data-target="#modallogin">
-                  <a href="#" class="loginbtn"><b>Login</b> </a>
+                 <a href="#" class="loginbtn"><i class="fas fa-user-alt    "></i> &nbsp; <b>Login</b> </a>
                 </button>
                 
                 <!-- LOGIN Modal -->
@@ -250,7 +252,7 @@
     <div class="container herosec wow animate__animated animate__fadeIn animate__slower" >
     <div class="row justify-content-around align-items-center " >
         <div class="col-md-8 my-3 order-md-1 order-sm-2 order-2">
-            <h1 style="color: #282C3F; font: Montserrat;">Dry cleaners and more, 
+            <h1>Dry cleaners and more, 
               Delivered to your door!
               </h1>
             <small><b>Join the platform with the largest network of active laundry service providers.</b> </small>
@@ -359,7 +361,7 @@
             <div class="col-md-6 wow animate__animated animate__fadeInLeft animate__fast ">
                 <h1 class="">Laundry solutions are just clicks away</h1>
                 <p class=" text-secondary">Experience the best, and hassle-free online laundry service your neighbourhood laundry vendor has to offer. Download the app to get the best offers and experience laundry services that were never affordable. It's all here in one app.</p>
-                <div class="row wow animate__animated animate__fadeInUp animate__fast ">
+                <div class="row py-3 wow animate__animated animate__fadeInUp animate__fast ">
                     <div class="col-6">
                         <img class="googlebadge" src="img/gplayqr.png" alt="">
                     </div>
@@ -382,16 +384,16 @@
           <h4><b>Are you all set to go?</b></h4>
           <p style="font-weight: 500;">We have made laundry service easy and fast</p>
       </div>
-      <div class="row justify-content-around partner wow animate__animated animate__fadeInUp animate__slow pt-3">
-          <div class="col-md-3 mt-sm-1 mt-4 col-6 my-2 text-center">
+      <div class="row justify-content-around partner pt-3">
+          <div class="col-md-3 mt-sm-1 mt-4 col-12 my-2 wow animate__animated animate__fadeInUp animate__slow text-center">
               <img src="img/user.png" alt="">
-            <div class="mt-3" style="height: 6.5rem;">
+            <div class="mt-3">
               <h5>
                   Users
               </h5>
               <small>Discover the finest for your laundry solutions with us.</small> 
             </div>
-            <div><small class="homesign"><span type="" data-toggle="modal" data-target="#modalsignup">
+            <div class="homeallsetbtns"><small class="homesign"><span type="" data-toggle="modal" data-target="#modalsignup">
                 <a href="javascript:;" class=""><b>Sign Up</b> </a>
               </span></small>
             </div>
@@ -399,57 +401,55 @@
               
           </div>
 
-          <div class="col-md-3 mt-sm-1 mt-4  col-6 my-2 text-center">
+          <div class="col-md-3 mt-sm-1 mt-4  col-12 my-2 wow animate__animated animate__fadeInUp animate__slow text-center">
               <img src="img/vendor.png" alt="">
-            <div class="mt-3 " style="height: 6.5rem;" >
+            <div class="mt-3 "  >
               <h5>
                   Vendor
               </h5>
               <small>Collaborate with us, you may expand your business.</small>
             </div>
-              <div><small><a class="homepartner" href="vendor.html"><b>Partner with us</b> </a></small></div>
+              <div class="homeallsetbtns"><small><a class="homepartner" href="vendor.html"><b>Partner with us</b> </a></small></div>
               
           </div>
 
-          <div class="col-md-3 col-6 mt-sm-1 mt-4 my-2 text-center">
+          <div class="col-md-3 col-12 mt-sm-1 mt-4 my-2 wow animate__animated animate__fadeInUp animate__slow text-center">
               <img src="img/rider.png" alt="">
-            <div class="mt-3" style="height: 6.5rem;">
+            <div class="mt-3">
               <h5>
                   Riders
               </h5>
               <small>Be your own boss by working whenever and wherever you'd like.</small>
             </div>
-              <div><small><a class="homerider" href="rider.html"><b>Join Us</b> </a></small></div>
+              <div class="homeallsetbtns"><small><a class="homerider" href="rider.html"><b>Join Us</b> </a></small></div>
               
               
           </div>
 
-          <div class="col-md-3 col-6 mt-sm-1 mt-4  my-2 text-center">
+          <div class="col-md-3 col-12 mt-sm-1 mt-4 wow animate__animated animate__fadeInUp animate__slow  my-2 text-center">
             <img src="img/franchise.png"  alt="">
-            <div class="mt-3"style="height: 6.5rem;">
+            <div class="mt-3"style="height: 5rem;">
             <h5>
                 Franchise
             </h5>
-            <small></small>
           </div>
-            <div><small><a class="homefranchise" href="javascript:;"><b>Coming Soon</b> </a></small></div>
+            <div class="homeallsetbtns"><small><a class="homefranchise" href="javascript:;"><b>Coming Soon</b> </a></small></div>
             
         </div>
           
       </div>
   </div>
     
-  <div class="container mt-5 videosec">
-    <div class="row">
-      <div class="video col-12 text-center pt-3">
-        <img src="img/video.png" alt="">
-      </div>
-      <div class="videocontent">
-      <h3 class="text-white">See What Our Partners Have To Say</h3>
-      <button style="border:none; background: #fff; padding: 10px 20px;"><i class="fa fa-play" aria-hidden="true"></i> Watch a 30 second video</button>
-      </div>
-    </div>
+  <div class="container-fluid mt-5 px-0 videosec">
     
+    
+
+
+    
+    <!-- <div>
+      <video class="w-100" autoplay controls src="img/homedemovideo.mp4"  > </video>
+
+    </div> -->
   </div>
 
 

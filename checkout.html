@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link rel="icon" href="img/aftercaremobilelogo.png" type="image/x-icon" />
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/style.css">
   <script src="//code.jquery.com/jquery.min.js"></script>
@@ -171,13 +171,19 @@
         <form action="">
           <textarea id="message_field" class="input-textarea" type="text" placeholder="Enter your comment" name="message"></textarea>
     
-          <div class="my-3 text-center">
+          <div class="my-3 d-flex justify-content-between">
+            <div class=" col-sm-6 col-12">
+
               <input class="form-check-input float-left" type="checkbox" name="allagreeopt" id="allagreeopt" required="required" data-msg-required="This value is required.">
             <label class="form-check-label" for="allagreeopt">
                 <small>I agree to the <a href="#">Terms & Conditions</a></small> 
             </label>
 
-            <button type="submit" onclick="location.href='thankorder.html'" class="contactsubmitbtn float-right">Place Order</button>
+            </div>
+            <div class=" col-sm-6 col-12">
+              <button type="submit" onclick="location.href='thankorder.html'" class="contactsubmitbtn">Place Order</button>
+            </div>
+            
           </div>
           
         </form>

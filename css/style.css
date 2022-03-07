@@ -7,7 +7,7 @@
 h1,h2,h3,h4,h5,h6{
   font-family: 'Montserrat', sans-serif;
   color: #282C3F !important;
-  font-weight: bold;
+  font-weight: bold !important;
 }
 .userlog,.shoptitle{
   font-family: 'Montserrat', sans-serif;
@@ -15,7 +15,7 @@ h1,h2,h3,h4,h5,h6{
 .userlog p{
   margin: .2rem;
 }
-.nav-link{
+.nav-link,span{
   font-family: 'Montserrat', sans-serif;
 }
 p,small,label,td,tr{
@@ -44,6 +44,8 @@ html,body{
 }
 button:focus {outline:0 !important;
 }
+#v-pills-tabContent label {
+  display: block !important;}
 
 a{
     color: #282C3F !important;
@@ -62,7 +64,7 @@ ul{
   
 }
 .logo img, .footlogo img{
-    width: 50px;
+    width: 48px;
     height: auto;
 }
 .active{
@@ -75,7 +77,7 @@ ul{
 }
 .cartmain{
   position: absolute;
-  top: 30%;
+  top: 28%;
   right: 4%;
   
 }
@@ -473,7 +475,7 @@ fieldset {
 
 }
 .rotatinghero{
-  animation: rotation 2s infinite linear;
+  animation: rotation 4s infinite linear;
   
     width: 300px;
     height: 300px;
@@ -535,11 +537,18 @@ fieldset {
   border-radius: .5rem;
 
 }
-.homesign a,.homerider,.homepartner,.homefranchise{
+.homeallsetbtns{
+  background: #B52421;
   padding: .3rem .6rem;
   color: #fff !important;
-  background: #B52421;
+  margin:.5rem 1.5rem;
   border-radius: .2rem;
+}
+.homeallsetbtns:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.homesign a,.homerider,.homepartner,.homefranchise{
+  color: #fff !important;
 }
 .homesign a:hover,.homerider:hover,.homepartner:hover,.homefranchise:hover{
   color: #fff !important;
@@ -904,6 +913,10 @@ ul.links {
       width: 100%;
       text-align: center;
     } */
+
+    .offerheader{
+      height: 20vh !important;
+    }
 } 
 
 
@@ -1103,6 +1116,9 @@ form .input-textarea {
   border: transparent;
   color: #fff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+a.savechangesbtn{
+  color: #fff !important;
 }
 .reviewsubmit{
   padding: .2rem .4rem;
@@ -1320,11 +1336,25 @@ form .input-textarea {
   content: "\f105";
 }
 
-.faq-sec .nav-link.active, .coupon-sec .nav-link.active{
-  color: #B52421 !important;
+.faq-sec .nav-link.active{
+  background: transparent !important;
+  /* border-bottom: 1px solid #B52421 !important; */
+}
+.coupon-sec .nav-link.active{
   background: transparent !important;
   border-bottom: 1px solid #B52421 !important;
 }
+.faq-sec .nav-link.active::after{
+  content: "";
+  width: 7rem;
+  height: 1px;
+  background: #B52421;
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%,-50%);
+}
+
  .nav-tabs {
   border: none !important;
 }
@@ -1595,7 +1625,7 @@ input[type=locationsearch] {
   max-height: 200px;
   opacity: 1;
   padding: 1rem;
-  background: rgb(245 245 245);
+  background: #ffffffd1;
 }
 /* .dropdown-menu {
   display: block;
@@ -1675,8 +1705,8 @@ iframe {
 }
 .slick-slide img {
   display: block;
-  width: 30px;
-  height: 30px;
+  /* width: 30px;
+  height: 30px; */
   margin: 0 auto;
 }
 .slick-initialized .slick-slide{
@@ -2327,7 +2357,16 @@ font-family: 'Montserrat';
   margin: 1rem .5rem;
 }
 
-.ridercards,.vendorguide{
+.ridercards{
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 1rem;
+  padding: 1rem;
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+}
+.vendorguide{
   border: none;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin: 1rem;
@@ -2482,6 +2521,14 @@ font-family: 'Montserrat';
 }
 
 /******VENDOR & Aftercare COUPON*********/
+.offerheader{
+  background-image: url(../img/offerbanner.svg);
+    height: 45vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
 
 .vendoroffer,.Aftercareoffer{
   border-radius: .5em;
@@ -2607,7 +2654,8 @@ color: #282C3F !important;
   width: 50%;
 }
 .cartquantity input[type='number']{
-  width: 100%;
+  width: 10
+  0%;
   text-align: center;
 }
 

@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link rel="icon" href="img/aftercaremobilelogo.png" type="image/x-icon" />
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/style.css">
   <script src="//code.jquery.com/jquery.min.js"></script>
@@ -29,6 +29,7 @@
 
 
   </div>
+
 
 
 
@@ -102,31 +103,93 @@
                     </div>
                     
                     <form action="">
+                      <div class="row">
+                          <div class="col-12">
+                            <fieldset>
+                              <label> <h6>Name</h6> <br>
+                                  <input type="name" tabindex="3" value="Vivek Rawat" required>
+                              </label>
+                            </fieldset>
+    
+                            <fieldset>
+                                <label> <h6>Phone Number</h6> <br>
+                                    <input value="7530910300" type="phone" pattern="^\d{4}-\d{3}-\d{4}$" required >
+                                </label>    
+                            </fieldset>
+    
+                            <fieldset>
+                                <label> <h6>Email Id</h6>  <br>
+                                    <input value="vivek@maxlence.com" type="email" tabindex="3" required> <span><b></b></span>
+                                </label>
+                            </fieldset>
+    
+                            <fieldset>
+                                <label> <h6>Password</h6>  <br>
+                                    <input value="password12345" type="password" tabindex="3" required ></span>
+                                </label>
+                                    <!-- <i class="fa fa-eye-slash" style="margin-left: -30px;" id="togglepassword" aria-hidden="true"></i> &nbsp;<span><b></b> -->
+                            </fieldset>
+                          </div>
+                        </div>
 
-                      <fieldset>
-                        <label> <h6>Name</h6> </label> <br>
-                            <input placeholder="Vivek Rawat" type="name" tabindex="3" required> <span><b></b></span>
-                    </fieldset>
+                        <div class="row button-section">
+                          <div class="mr-auto ml-4">
+                            <a class="savechangesbtn save-button">Save</a>
+                            <a class="savechangesbtn  cancel-button">Cancel</a>
+                            <a class="savechangesbtn  edit-button">Edit</a>
+                          </div>
+                        </div>
+                  </form>
 
-                        <fieldset>
-                            <label> <h6>Phone Number</h6> </label> <br>
-                                <input placeholder="+91 9999000011" type="phone" tabindex="3" required> <span><b></b></span>
-                        </fieldset>
+                  <script>
+                    $(window).on("load", function(){
 
-                        <fieldset>
-                            <label> <h6>Email Id</h6> </label> <br>
-                                <input placeholder="xyz@gmail.com" type="email" tabindex="3" required> <span><b></b></span>
-                        </fieldset>
+$('.save-button').on('click', save_onclick);
+$('.cancel-button').on('click', cancel_onclick);
+$('.edit-button').on('click', edit_onclick);
 
-                        <fieldset>
-                            <label> <h6>Password</h6> </label> <br>
-                                <input placeholder="*********" type="password" tabindex="3" required ></span>
-                                <!-- <i class="fa fa-eye-slash" style="margin-left: -30px;" id="togglepassword" aria-hidden="true"></i> &nbsp;<span><b></b> -->
-                        </fieldset>
-                    </form>
-                    <button class="savechangesbtn" type="submit" style="margin:0 auto;">Submit</button>
+$('.save-button, .cancel-button').hide();
+});
+
+function edit_onclick(){
+setFormMode($(this).closest("form"), 'edit');
+}
+
+function cancel_onclick(){
+setFormMode($(this).closest("form"), 'view');
+
+//TODO: Undo input changes?
+}
+
+function save_onclick(){
+setFormMode($(this).closest("form"), 'view');
+
+//TODO: Send data to server?
+}
+
+
+function setFormMode($form, mode){
+switch(mode){
+    case 'view':
+        $form.find('.save-button, .cancel-button').hide();
+        $form.find('.edit-button').show();
+        $form.find("input, select").prop("disabled", true);
+        break;
+    case 'edit':
+        $form.find('.save-button, .cancel-button').show();
+        $form.find('.edit-button').hide();
+        $form.find("input, select").prop("disabled", false);
+        break;
+}
+}
+                  </script>
                       
                   </div>
+
+
+
+
+                  
                   <div class="tab-pane fade p-3" id="v-pills-orders" role="tabpanel" aria-labelledby="v-pills-orders-tab">
 
                     <div class="tab2title mb-5 ">
@@ -155,9 +218,9 @@
                                   </div>
                               </div>
                               <div class="d-flex justify-content-between orderstat">
-                                <div><small><img src="img/drycleanicon.svg" alt="" style="width: .8rem; margin: 0 .3rem;"><a href=""><b>Pick up Scheduled</b></a> </small></div>
-                                <div><small><i class="fa fa-cart-plus "></i> <span type="" class="" data-toggle="modal" data-target="#vieworder">
-                                  <a href="javascript:;" class=""><b>View Orders</b> </a>
+                                <div><small><img src="img/drycleanicon.svg" alt="" style="width: .8rem; margin: 0 .3rem;"><b>Payment Pending</b></small></div>
+                                <div><small><span style="cursor: pointer;" type="" class="" data-toggle="modal" data-target="#vieworder">
+                                  <b>View Orders</b>
                                 </span></small></div>
                                 <!-- <div class="success text-center text-secondary">Thank You. Your Order has been received <span type="" class="" data-toggle="modal" data-target="#vieworder">
         <a href="javascript:;" class=""><b>View Orders</b> </a>
@@ -278,10 +341,7 @@
             </div>
         
         </div>
-
-
-        
-
+  
 
 
     </div>

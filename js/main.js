@@ -59,7 +59,7 @@ particlesJS('par-js',
       },
       "move": {
         "enable": true,
-        "speed": 5,
+        "speed": 2,
         "direction": "top",
         "random": false,
         "straight": false,
@@ -122,7 +122,8 @@ particlesJS('par-js',
 
 );
       
-//////////////Incremnet button////////
+////////////// Favicon ////////
+
 
 
 
