@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="99" height="41" viewBox="0 0 99 41">
+  <g id="Group_1135" data-name="Group 1135" transform="translate(-126 -449)">
+    <g id="Group_1133" data-name="Group 1133">
+      <g id="Rectangle_834" data-name="Rectangle 834" transform="translate(126 449)" fill="none" stroke="#bd3935" stroke-width="1">
+        <rect width="99" height="25" stroke="none"/>
+        <rect x="0.5" y="0.5" width="98" height="24" fill="none"/>
+      </g>
+      <rect id="Rectangle_835" data-name="Rectangle 835" width="99" height="16" transform="translate(126 474)" fill="#bd3935"/>
+    </g>
+    <text id="_10_OFF" data-name="10% OFF" transform="translate(141 468)" fill="#3a3a3a" font-size="16" font-family="Montserrat-SemiBold, Montserrat" font-weight="600"><tspan x="0" y="0">10% OFF</tspan></text>
+    <text id="Min_Order_Value_450" data-name="Min Order Value ₹ 450" transform="translate(134 485)" fill="#fff" font-size="8" font-family="Montserrat-Medium, Montserrat" font-weight="500" letter-spacing="-0.05em"><tspan x="0" y="0">Min Order Value ₹ 450</tspan></text>
+  </g>
+</svg>

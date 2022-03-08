@@ -17,9 +17,7 @@
 </head>
 <body style="background:#fff;">
   <style>
-    input[type=locationsearch],.locationicon{
-      display: none;
-    }
+   
     .btn:focus,
 .btn:active:focus,
 .btn.active:focus,
@@ -197,28 +195,7 @@
     <div class="row justify-content-between">
 
       <div class="col-sm-3 col-6 text-center text-sm-left cartbtns">
-        <fieldset class="question">
-          <label for="coupon_question">Do you have a coupon?</label>
-          <input class="coupon_question" type="checkbox" name="coupon_question" value="1" />
-          <span class="item-text">Yes</span>
-      </fieldset>
-   
-      <fieldset class="answer">
-          <label for="coupon_field">Your coupon:</label>
-          <input type="text" name="coupon_field" id="coupon_field"/>
-      </fieldset>
-
-      <script>
-        $(".answer").hide();
-$(".coupon_question").click(function() {
-    if($(this).is(":checked")) {
-        $(".answer").show();
-    } else {
-        $(".answer").hide();
-    }
-});
-      </script>
-        <p><a href=""class="cartcouponbtn" ><span><img  src="img/applycouponicon.svg" style="width: 1.2rem;"></span> &nbsp;Apply Coupon</a></p>
+        <p><a href=""class="cartcouponbtn" data-toggle="modal" data-target="#applycouponmodal" data-dismiss="modal" ><span><img  src="img/applycouponicon.svg" style="width: 1.2rem;"></span> &nbsp;Apply Coupon</a></p>
       </div>
       <div class="col-sm-6 col-6">
         <div class="row justify-content-center">
@@ -370,8 +347,87 @@ $(".coupon_question").click(function() {
         <div class="container-fluid " id="footerjs" ></div>
     </div>
           
-      <script src="js/main.js"></script>
-      
+
+
+
+
+    <!-- pincode Modal -->
+<div class="modal fade in" id="applycouponmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: #BD3935;">
+        <h5 class="modal-title text-white" id="exampleModalLongTitle">Apply Coupon</h5>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <div class="container my-4 applycoupon vendorcoupavail">
+          <div class="row align-items-center">
+            <div class="col-9">
+              <img class="" src="img/vendoroffer1.svg" alt="">
+              <div>
+                <small><b>Get ₹ 50 OFF, min order value ₹ 450</b></small>
+              </div>
+              <div>
+                <small>Super Fine Dry Cleaners</small>
+              </div>
+            </div>
+            <div class="col-3 px-0">
+              <small><a href="/#" style="color: #B52421 !important;">Apply Coupon</a></small>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="container applycoupon vendorcoupavail">
+          <div class="row align-items-center">
+            <div class="col-9">
+              <img class="" src="img/availcoupon.svg" alt="">
+              <div>
+                <small><b>Get ₹ 50 OFF, min order value ₹ 450</b></small>
+              </div>
+              <div>
+                <small>Super Fine Dry Cleaners</small>
+              </div>
+            </div>
+            <div class="col-3 px-0">
+              <small><a href="/#" style="color: #B52421 !important;">Apply Coupon</a></small>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+
+        <div class="container applycoupon vendorcoupavail">
+          <div class="row align-items-center">
+            <div class="col-9">
+              <img class="" src="img/vendoroffer1.svg" alt="">
+              <div>
+                <small><b>Get ₹ 50 OFF, min order value ₹ 450</b></small>
+              </div>
+              <div>
+                <small>Super Fine Dry Cleaners</small>
+              </div>
+            </div>
+            <div class="col-3 px-0">
+              <small><a href="/#" style="color: #B52421 !important;">Apply Coupon</a></small>
+            </div>
+          </div>
+        </div>
+
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+      <script src="js/main.js"></script>   
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -451,7 +507,15 @@ $(".coupon_question").click(function() {
       });
    });
 });
+
+
+
+
       </script>
+
+
+
+
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
   </html>

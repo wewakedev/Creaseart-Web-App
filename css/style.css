@@ -506,7 +506,7 @@ fieldset {
 
 }
 .workings img{
-    width: 200px;
+    width: 100%;
     height: auto;
     margin: 1.5rem 0rem;
 }
@@ -930,6 +930,11 @@ ul.links {
       bottom: 35%;
       width: 1rem;
   }
+  .cart-qty-plus, .proqtyplus, .proqtyminus, .cartqtyplus, .cartqtyminus, .cart-qty-minus{
+    background-color: transparent !important;
+    color: #000 !important;
+  }
+  
 } 
 
 
@@ -956,7 +961,7 @@ ul.links {
   height: 90vh;
 }
 .workings img {
-  width: 165px;
+  width: 100%
 }
 .riderheadsubtext{
   font-size: .7rem;
