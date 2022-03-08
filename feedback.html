@@ -66,7 +66,24 @@
                         </div>
                         <div class="tab1body col-7 d-flex justify-content-between">
                           <div class="">
-                            <div><img src="img/feedicon1.png" alt=""></div>
+
+
+                            <div class="row d-flex">
+    
+                              <input type="checkbox" id="appworst" name="radios" value="all">
+                                <label for="appworst"><img src="img/feedicon1.png" alt=""><br> Worst</label>
+                                
+                              <input type="checkbox" id="apppoor" name="radios"value="false">
+                                <label for="apppoor"><img src="img/feedicon2.png" alt=""></label>
+                              <input type="checkbox" id="appavg" name="radios" value="true">
+                                <label for="appavg"><img src="img/feedicon3.png" alt=""></label>
+                              <input type="checkbox" id="appgood" name="radios" value="all">
+                                <label for="appgood"><img src="img/feedicon4.png" alt=""></label>
+                              <input type="checkbox" id="appexc" name="radios" value="all">
+                                <label for="appexc"><img src="img/feedicon5.png" alt=""></label>
+                            </div>
+          
+                          
                             <div class="text-center" style="color: #DE332B;"><small>Worst</small></div>
                           </div>
                           <div class="">
@@ -150,6 +167,8 @@
                       </div>
                       <div class="tab3body col-7 d-flex justify-content-between">
                         <div class="">
+
+                          
                           <div><img src="img/feedicon1.png" alt=""></div>
                           <div class="text-center" style="color: #DE332B;"><small>Worst</small></div>
                         </div>
@@ -256,6 +275,61 @@
       </div>
   
 
+
+      <div class="col-md-10 d-flex justify-content-around subfilters">
+
+
+        <div class="filter flex-wrap">
+    
+          <input type="checkbox" id="appworst" name="radios" value="all">
+            <label for="appworst"><img src="img/feedicon1.png" alt=""></label>
+          <input type="checkbox" id="apppoor" name="radios"value="false">
+            <label for="apppoor"><img src="img/feedicon2.png" alt=""></label>
+          <input type="checkbox" id="appavg" name="radios" value="true">
+            <label for="appavg"><img src="img/feedicon3.png" alt=""></label>
+          <input type="checkbox" id="appgood" name="radios" value="all">
+            <label for="appgood"><img src="img/feedicon4.png" alt=""></label>
+          <input type="checkbox" id="appexc" name="radios" value="all">
+            <label for="appexc"><img src="img/feedicon5.png" alt=""></label>
+        </div>
+          
+
+
+   
+
+   <style>
+
+
+
+/*
+  Hide radio button (the round disc)
+  we will use just the label to create pushbutton effect
+*/
+input[type=checkbox] {
+    display:none;
+    margin:10px;
+}
+ 
+/*
+  Change the look'n'feel of labels (which are adjacent to radiobuttons).
+  Add some margin, padding to label
+*/
+input[type=checkbox] + label {
+  font-size: .8rem;
+  padding: .2rem .5rem;
+  background: #e0d9e08f;
+  border-radius: 5px;
+}
+/*
+ Change background color for label next to checked radio button
+ to make it look like highlighted button
+*/
+input[type=checkbox]:checked + label {
+   background-image: none;
+    background-color:#B52421;
+    color: #fff;
+}
+   </style>
           
 
           <!-- footer section -->

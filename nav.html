@@ -93,7 +93,7 @@
       </div><!-- modal -->
   
       <a class="navbar-brand logo d-sm-block d-none" href="index.html"><img src="img/aftercarelogo1.svg" style="width: 12rem;"alt=""></a>
-      <a class="navbar-brand logo d-sm-none" href="index.html"><img src="img/aftercaremobilelogo.png"alt=""></a>
+      <a class="navbar-brand logo d-sm-none" href="index.html"><img src="img/aftercaremobilelogo.svg"alt=""></a>
       
   <form>
     <i class="fa fa-search locationicon" aria-hidden="true"></i><input type="locationsearch" name="search" placeholder="Choose Location">
@@ -142,37 +142,29 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                    <form id="signupform" action="" method="post">
-                      <h3>Create Account</h3>
+                    <form id="loginform" action="" method="post">
+                      <fieldset>
+                          <input placeholder="Enter phone or email " type="tel" tabindex="3"pattern="^\d{10}$" required>
+                        </fieldset>
+                        <fieldset>
+                          <input placeholder="Your Password" type="password" tabindex="4" required>
+                        </fieldset>
+                        <fieldset>
+                          <a href=""><button name="submit" type="submit" id="submit" data-submit="...Sending">Login</button></a>
+                        </fieldset>
+                        <p class="text-center"><b>or </b></p>
+                          <div class="text-center">
+                          <button class="loginBtn loginBtn--facebook">
+                            Login with Facebook
+                          </button>
+                          
+                          <button class="loginBtn loginBtn--google">
+                            Login with Google
+                          </button>
+                          </div>
+                          <p class="copyright">Already have and account ? <a href="#" target="_blank" data-dismiss="modal" data-toggle="modal" data-target="#modalsignup" title="gotologin">Create an account</a></p>
                       
-                      <fieldset>
-                        <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3"  pattern="^\d{10}$" required>
-                      </fieldset>
-                      <fieldset>
-                        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-                      </fieldset>
-                      <fieldset>
-                        <input placeholder="Your Email Address" type="email" tabindex="2" required>
-                      </fieldset>
-                      <fieldset>
-                        <input placeholder="Your Password" type="password" tabindex="4" required>
-                      </fieldset>
-                      <fieldset>
-                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                      </fieldset>
-                      <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button> -->
-                      <p class="text-center"><b>or </b></p>
-                      <div class="text-center">
-                      <button class="loginBtn loginBtn--facebook">
-                        Login with Facebook
-                      </button>
-                      
-                      <button class="loginBtn loginBtn--google">
-                        Login with Google
-                      </button>
-                      </div>
-                      <p class="copyright">Already have and acoount ?<a href="#" target="_blank" data-dismiss="modal" data-toggle="modal" data-target="#modallogin" title="gotologin"> Login </a></p>
-                    </form>
+                      </form>
                   </div>
               
                   </div>
@@ -244,7 +236,7 @@
   </span>       
   <span class="cartmain">
     <div>
-     <a href="cart.html"><img src="img/shopping-cart.png" alt=""></a> 
+     <a href="cart.html"><img src="img/shopping-cart.svg" alt=""></a> 
     </div>
   </span> 
                   

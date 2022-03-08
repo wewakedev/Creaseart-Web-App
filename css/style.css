@@ -391,12 +391,14 @@ fieldset {
 
 .copyright {
   text-align: center;
+  margin-top: 2rem;
 }
 .copyright a{
-    color: #F50057;
+    color: #B52421 !important;
+    font-weight: bold;
 }
 .copyright a:hover{
-    color: #F50057 !important;
+    color: #B52421 !important;
 }
 
 #signupform input:focus, #loginform input:focus,
@@ -510,7 +512,7 @@ fieldset {
 }
 
 .appsec{
-    margin-top: 100px;
+    margin-top: 0px;
 }
 
 .hitappsec{
@@ -570,15 +572,15 @@ fieldset {
 .inputlocationfield,.supportinput{
 
     height: calc(1.5em + .75rem + 2px);
-    padding: .375rem 1.5rem;
+    padding: .575rem 1.5rem;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.5;
     color: #495057;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
-    border-radius: .25rem;
+    /* border-radius: .25rem; */
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     width: 65%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -587,18 +589,22 @@ fieldset {
 .submitlocbtn,.searchsupport{
   background : #B52421 0% 0% no-repeat padding-box; color: white; padding: 5px 10px; 
   height: calc(2em + .75rem + 2px);
-    padding: .375rem .75rem;
-    font-size: 1.1rem;
+    padding: .575rem .75rem;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     background-clip: padding-box;
-    border-radius: .25rem;
+    /* border-radius: .25rem; */
     cursor: pointer;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  /* margin-left: -130px; */
 }
 .submitlocbtn:active,.searchsupport:active{
   color: #000;
+}
+span.searchlocationicon img{
+  position: absolute;
+  right: 37%;
+  bottom: 34%;
 }
 /* .searchsupport{
   padding: .2rem .65rem;
@@ -639,7 +645,7 @@ fieldset {
   border: none !important;
   padding: 2px 15px;
   border-radius: 20px;
-  margin: 2px 18px !important;
+  margin: 2px 16px !important;
   color: #000;
   background-color:#FCFC62;
   font-size: .6rem;
@@ -917,6 +923,12 @@ ul.links {
     .offerheader{
       height: 20vh !important;
     }
+    span.searchlocationicon img {
+      position: absolute;
+      right: 35%;
+      bottom: 35%;
+      width: 1rem;
+  }
 } 
 
 
