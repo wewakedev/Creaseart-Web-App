@@ -20,6 +20,15 @@
     input[type=locationsearch],.locationicon{
       display: none;
     }
+    .btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+}
+
     /* .productprice{
       display: none;
     } */
@@ -60,7 +69,7 @@
   					<td class="serviceitem">Coat</td>
             <td class="unitprice">40</td>
             <td>
-              <div class="cartquantity ">
+              <div class="clothesquantity  ">
                 <div class="button-container d-flex justify-content-center align-items-center">
                   <div class="cart-qty-plus" type="button" value="+">+</div>
                   <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
@@ -79,7 +88,7 @@
   					<td class="serviceitem">Blazer</td>
             <td class="unitprice">40</td>
             <td>
-              <div class="cartquantity ">
+              <div class="clothesquantity  ">
                 <div class="button-container d-flex justify-content-center align-items-center">
                   <div class="cart-qty-plus" type="button" value="+">+</div>
                   <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
@@ -99,7 +108,7 @@
   					<td class="serviceitem">Shirt</td>
             <td class="unitprice">40</td>
             <td>
-              <div class="cartquantity ">
+              <div class="clothesquantity  ">
                 <div class="button-container d-flex justify-content-center align-items-center">
                   <div class="cart-qty-plus" type="button" value="+">+</div>
                   <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
@@ -118,7 +127,7 @@
   					<td class="serviceitem">Blazer</td>
             <td class="unitprice">40</td>
             <td>
-              <div class="cartquantity ">
+              <div class="clothesquantity  ">
                 <div class="button-container d-flex justify-content-center align-items-center">
                   <div class="cart-qty-plus" type="button" value="+">+</div>
                   <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
@@ -188,6 +197,27 @@
     <div class="row justify-content-between">
 
       <div class="col-sm-3 col-6 text-center text-sm-left cartbtns">
+        <fieldset class="question">
+          <label for="coupon_question">Do you have a coupon?</label>
+          <input class="coupon_question" type="checkbox" name="coupon_question" value="1" />
+          <span class="item-text">Yes</span>
+      </fieldset>
+   
+      <fieldset class="answer">
+          <label for="coupon_field">Your coupon:</label>
+          <input type="text" name="coupon_field" id="coupon_field"/>
+      </fieldset>
+
+      <script>
+        $(".answer").hide();
+$(".coupon_question").click(function() {
+    if($(this).is(":checked")) {
+        $(".answer").show();
+    } else {
+        $(".answer").hide();
+    }
+});
+      </script>
         <p><a href=""class="cartcouponbtn" ><span><img  src="img/applycouponicon.svg" style="width: 1.2rem;"></span> &nbsp;Apply Coupon</a></p>
       </div>
       <div class="col-sm-6 col-6">
@@ -325,6 +355,7 @@
     </div>
   </div>
   
+
 
   
 

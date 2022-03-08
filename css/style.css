@@ -543,8 +543,9 @@ fieldset {
   background: #B52421;
   padding: .3rem .6rem;
   color: #fff !important;
-  margin:.5rem 1.5rem;
+  margin:.5rem 0rem;
   border-radius: .2rem;
+  text-align: center;
 }
 .homeallsetbtns:hover{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -913,7 +914,7 @@ ul.links {
     display: none;
   }
   .cart-qty-plus, .proqtyplus, .proqtyminus, .cartqtyplus, .cartqtyminus, .cart-qty-minus {
-    width: 5px !important;}
+    width: 15px !important;}
 
     /* .cartquantity input[type='number']{
       width: 100%;
