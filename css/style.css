@@ -922,7 +922,8 @@ ul.links {
     } */
 
     .offerheader{
-      height: 20vh !important;
+      height: 13vh !important;
+      font-size: 80% !important;
     }
     span.searchlocationicon img {
       position: absolute;
@@ -2593,7 +2594,7 @@ font-family: 'Montserrat';
 /******VENDOR & Aftercare COUPON*********/
 .offerheader{
   background-image: url(../img/offerbanner.svg);
-    height: 45vh;
+    height: 200px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

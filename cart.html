@@ -47,7 +47,24 @@
   <div class="container-fluid carttitle p-3 text-center" style="background-color:#404040;">
     <h3 class=" text-white">Shopping Cart</h3>
   </div>
-  <div id="service-cart" class="container cartsection mt-5">
+
+
+  <div class="container mt-5">
+    <div class="row my-3 justify-content-between  " style="border-bottom: 1px solid #b6b3b3;">
+      <div class="col-md-4 text-left col-6">
+        <h6><b> SELECT SERVICES</b></h6>
+      </div>
+      <div class="col-md-4 col-6 justify-content-around d-flex">
+        <small><b>Express Delivery <sup><i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-original-title="Delivery Within 24hrs"></i></sup> </b></small>
+        <input type="checkbox" id="switchexp"class="expcheck dark-modeBtn" />
+        <label for="switchexp" class="toggleexp">
+        </label>   
+      </div>
+    </div>
+  </div>
+
+
+  <div id="service-cart" class="container cartsection mt-4">
   	<div class="table-responsive  text-center">
   		<table class="table table-bordered ">
   			<thead>
@@ -208,6 +225,11 @@
     
   </div>
 
+  <style>
+    .table td{
+      border-top: 0px;
+    }
+  </style>
   <div class="container my-3">
     <div class="row d-flex justify-content-between">
       <div id=" editdetails-cart" class="cartsection my-3 col-sm-6">
@@ -217,11 +239,11 @@
           <table class="table">
             <thead>
                 <tr>
-                    <th colspan="4" class="text-left" >Pick Up & Delivery Address</th>
+                    <th colspan="4" class="text-left" >Pick Up & Delivery Details</th>
                     <!-- <th>First Name</th>
                     <th>Last Name</th>
                     <th>Middle Name</th> -->
-                    <th colspan="2">Actions</th>
+                    <th colspan="2"><a href="" data-toggle="modal" data-target="#edit_" data-uid="1" class="update"><i class="fas fa-pencil-alt    "></i></a>
                     <!-- <th>Delete</th> -->
                 </tr>
             </thead>
@@ -233,28 +255,37 @@
                     <td id="m1">Doe</td>
                 </tr> -->
 
-                <tr id='d2'>
-                  <td class="grandtotalcls text-left" colspan="4">Deep Bhaskar <br> Type 1st, Block 30, Room No. 7, Police Colony, Police Line, Jhansi, 284001</td>
-                  <td colspan="2"><a href="" data-toggle="modal" data-target="#edit_" data-uid="1" class="update"><i class="fas fa-pencil-alt    "></i></a> <a href="" data-toggle="modal" data-target="#delete" data-uid="1" class="delete"><i class="fas fa-trash-alt    "></i></a></td>
-              </tr>
-              <!-- <tr id='d2'>
-                <td class="grandtotalcls text-left" colspan="4">Type 1st, Block 30, Room No. 7, Police Colony, Police Line, Jhansi, 284001</td>
-                <td colspan="2"><a href="" data-toggle="modal" data-target="#edit" data-uid="1" class="update"><i class="fas fa-pencil-alt    "></i></a> <a href="" data-toggle="modal" data-target="#delete" data-uid="1" class="delete"><i class="fas fa-trash-alt    "></i></a></td>
-            </tr> -->
-                <!-- <tr id="d2">
-                    <td>2</td>
-                    <td id="f2">Jane</td>
-                    <td id="l2">Wick</td>
-                    <td id="m2">Doe</td>
-                    <td><a  data-toggle="modal" data-target="#edit" data-uid="2" class="update"><span class="glyphicon glyphicon-pencil"></span></a></td>
-                    <td><button type="button" data-toggle="modal" data-target="#delete" data-uid="2" class="delete btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></button></td>
-                </tr> -->
+                <tr id='d1'>
+                  <td class="cartaddupdate text-left" colspan="4">Deep Bhaskar <br> Type 1st, Block 30, Room No. 7, Police Colony, Police Line, Jhansi, 284001</td>
+                  <!-- <td colspan="2"><a href="" data-toggle="modal" data-target="#edit_" data-uid="1" class="update"><i class="fas fa-pencil-alt    "></i></a> -->
+                     <!-- <a href="" data-toggle="modal" data-target="#delete" data-uid="1" class="delete"><i class="fas fa-trash-alt    "></i></a></td> -->
+                </tr>
+
+                <tr id='d1'>
+                  <td class="cartaddupdate text-left" colspan="4"><b>Pick-up (Date/Time)</b>  <br> 20/04/2022 / 02:00 pm </td>
+                  <!-- <td colspan="2"><a href="" data-toggle="modal" data-target="#edit_" data-uid="1" class="update"><i class="fas fa-pencil-alt    "></i></a> -->
+                     <!-- <a href="" data-toggle="modal" data-target="#delete" data-uid="1" class="delete"><i class="fas fa-trash-alt    "></i></a></td> -->
+                </tr>
+                <tr id='d1'>
+                  <td class="cartaddupdate text-left" colspan="4"><b>Delivery (Date/Time)</b>  <br> 21/04/2022 <br> 12:00 pm </td>
+                  <!-- <td colspan="2"><a href="" data-toggle="modal" data-target="#edit_" data-uid="1" class="update"><i class="fas fa-pencil-alt    "></i></a> -->
+                     <!-- <a href="" data-toggle="modal" data-target="#delete" data-uid="1" class="delete"><i class="fas fa-trash-alt    "></i></a></td> -->
+                </tr>
+
+
+               
             </tbody>
           </table>
     
         </div>
+
+
           
       </div>
+
+      
+
+      
       <div id="edit" class="modal fade" role="dialog">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -330,6 +361,9 @@
       </div>
   
     </div>
+
+
+    
   </div>
   
 

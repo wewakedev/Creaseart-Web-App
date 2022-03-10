@@ -92,7 +92,7 @@
           </div><!-- modal-dialog -->
       </div><!-- modal -->
   
-      <a class="navbar-brand logo d-sm-block d-none" href="index.html"><img src="img/aftercarelogo1.svg" style="width: 12rem;"alt=""></a>
+      <a class="navbar-brand logo d-sm-block d-none" href="index.html"><img src="img/aftercarelogo1.svg" style="width: 14rem;"alt=""></a>
       <a class="navbar-brand logo d-sm-none" href="index.html"><img src="img/aftercaremobilelogo.svg"alt=""></a>
       
   <form>
@@ -291,7 +291,29 @@
   
   </nav>
   
+
+  <script>
+  $('#show-more-content').hide();
+
+$('#show-more').click(function(){
+	$('#show-more-content').show(300);
+	$('#show-less').show();
+	$('#show-more').hide();
+});
+
+$('#show-less').click(function(){
+	$('#show-more-content').hide(150);
+	$('#show-more').show();
+	$(this).hide();
+});
+  </script>
   
+  <style>
+    .moretext {
+  display: none;
+}
+
+  </style>
 </body>
 </html>
 

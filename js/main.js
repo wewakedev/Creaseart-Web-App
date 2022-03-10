@@ -122,7 +122,7 @@ particlesJS('par-js',
 
 );
       
-////////////// Favicon ////////
+////////////// more+ offer show  ////////
 
 
 
