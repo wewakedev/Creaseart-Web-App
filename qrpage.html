@@ -14,18 +14,21 @@
 </head>
 <body style="background: #F6F6F6;">
   <style>
-    input[type=locationsearch],i.fa.fa-search.locationicon{
+    input[type=locationsearch],.locationicon,.navbar .nav-item:nth-child(2){
       display: none;
     }
   </style>
+
   <!-- navbar section -->
   <div class="container-fluid nav2">
     <script>
-      $.get("nav.html", function(data){
-          $("#navholder").replaceWith(data);
+      $.get("nav2.html", function(data){
+          $("#navholder2").replaceWith(data);
       });
       </script>
-      <div class="" id="navholder"></div>
+      <div class="" id="navholder2"></div>
+  
+      
   </div>
 
   

@@ -293,27 +293,22 @@
   
 
   <script>
-  $('#show-more-content').hide();
-
-$('#show-more').click(function(){
-	$('#show-more-content').show(300);
-	$('#show-less').show();
-	$('#show-more').hide();
-});
-
-$('#show-less').click(function(){
-	$('#show-more-content').hide(150);
-	$('#show-more').show();
-	$(this).hide();
+  $(".more-link").click(function(e){
+  $(this).closest("#show-more-content").toggleClass("show-more");
+  e.preventDefault();
 });
   </script>
-  
-  <style>
-    .moretext {
-  display: none;
-}
+  <script>
+     function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+          }
 
-  </style>
+  </script>
+  
 </body>
 </html>
 

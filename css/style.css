@@ -29,7 +29,7 @@ opacity: 1;
   color: #43A047;
 }
 .fas .fa-rupee-sign{
-  font-family: 'Montesrrat';
+  font-family: 'montserrat';
   font-weight: lighter !important;
 }
 .fa-times-circle{
@@ -2635,7 +2635,33 @@ font-family: 'Montserrat';
 }
 .couponoffers button:focus{
   background-color: #E76F51;
-  font-family: 'Montesrrat' sans-serif;
+  font-family: 'montserrat' sans-serif;
+}
+
+.more-text {
+  max-height: 0;
+  overflow: hidden;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.show-more .more-text {
+  max-height: 1000px;
+}
+
+.more-link {
+  display: block;  
+}
+.more-link:hover {
+  color: #6993C3 !important;
+}
+.more-link:after {
+  content: "Show More +";
+  font-family: 'Montserrat', sans-serif;
+}
+.show-more .more-link:after {
+  content: "Show Less -";
 }
 
 
@@ -2707,7 +2733,7 @@ color: #282C3F !important;
 
 /***************PRODUCT INNER DESCRIPTION************/
 .topreviewercontent p{
-  font-family: 'Montesrrat' sans-serif;
+  font-family: 'montserrat' sans-serif;
 }
 .productname h3{
   font-weight: bold;
@@ -2885,6 +2911,7 @@ input[type=number]::-webkit-inner-spin-button {
   border: 0.5px solid #B52421;
   border-radius: 2px;
   font-family: 'Montserrat';
+  font-family: 'montserrat';
 }
 .cartproceedbtn a{
   color: #fff !important;
@@ -2992,7 +3019,7 @@ background-color: #fff;
  
 }
 .showmorecomment{
-  font-family: 'Montesrrat' sans-serif;
+  font-family: 'montserrat' sans-serif;
 }
 
 #loadLess {
