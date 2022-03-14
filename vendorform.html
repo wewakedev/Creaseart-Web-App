@@ -11,6 +11,11 @@
     <script src="//code.jquery.com/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
+  <style>
+    input[type=locationsearch],.locationicon,.navbar .nav-item:nth-child(2){
+      display: none;
+    }
+  </style>
   <body style="background: #F6F6F6;">
       
     <div class="container-fluid nav2">
@@ -594,7 +599,7 @@
 
                         </div>
 
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col-md-6">
                                 <small><b>Enter your Vechile Registration Certificate</b> </small><br>
 
@@ -613,7 +618,7 @@
                                 
                             </div>
 
-                        </div>
+                        </div> -->
 
 
                         <div class="row">
@@ -644,65 +649,34 @@
                             </div>
 
                             <div class="col-md-6">
-                                <small><b>Enter Birth Certificate or any document with you D.O.B. <sup>*</sup></b> </small><br>
+                              <small><b>Do you have a license number <sup>*</sup></b> </small><br>
 
-                                <div class="row my-3 ">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <div class="form-group">
-                                                <input type="vinnum" class="form-control" id="venriderdob" placeholder="">
-                                            </div>
-                                        </div>
-                                     
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <small><b>Do you have a license number <sup>*</sup></b> </small><br>
-
-                                <div class="row my-3 ">
-                                    <div class="col-md-6 d-flex justify-content-between flex-wrap">
-                                        <div class="form-group">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="radio" id="yeslicenseopt">
-                                                <label class="form-check-label" for="yeslicenseopt">
-                                                  Yes
-                                                </label>
-                                            </div>
-                                        </div>
-                                     
-                                        <div class="form-group">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="radio" id="nolicenseopt">
-                                                <label class="form-check-label" for="nolicenseopt">
-                                                  No
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <small><b>Enter your license number *<sup>*</sup></b> </small><br>
-
-                                <div class="row my-3 ">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <div class="form-group">
-                                                <input type="vinnum" class="form-control" id="lincensenum" placeholder="">
-                                            </div>
-                                        </div>
-                                     
-                                    </div>
-                                </div>
-                            </div>
+                              <div class="row my-3 ">
+                                  <div class="col-md-6 d-flex justify-content-between flex-wrap">
+                                      <div class="form-group">
+                                          <div class="form-check">
+                                              <input class="form-check-input" type="radio" name="radio" id="yeslicenseopt">
+                                              <label class="form-check-label" for="yeslicenseopt">
+                                                Yes
+                                              </label>
+                                          </div>
+                                      </div>
+                                   
+                                      <div class="form-group">
+                                          <div class="form-check">
+                                              <input class="form-check-input" type="radio" name="radio" id="nolicenseopt">
+                                              <label class="form-check-label" for="nolicenseopt">
+                                                No
+                                              </label>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
 
                         </div>
+
+                        
 
 
                         <small><b>What’s the radius of distance (in kms) you can cover for present and future order requirements?</b> </small>

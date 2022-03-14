@@ -209,7 +209,9 @@ ul{
     background-color:#B52421;
     color: #fff !important;
 }
-
+input{
+  font-family: 'Montserrat' sans-serif !important;
+}
 
     /* Signup / Login MODAL */
 
@@ -277,6 +279,9 @@ fieldset {
   margin: 0 0 10px;
   padding: 14px;
   font-size: 12px;
+  -webkit-appearance: none;
+  --webkit-box-shadow:rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  -moz-box-shadow:rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
@@ -323,6 +328,9 @@ fieldset {
 
 #signupform button[type="submit"]:active , #loginform button[type="submit"]:active{
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  -webkit-appearance: none;
+  --webkit-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* facebook and google  */
@@ -355,6 +363,10 @@ fieldset {
 }
 .loginBtn:active {
   box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
+  -webkit-appearance: none;
+  --webkit-box-shadow:inset inset 0 0 0 32px rgba(0,0,0,0.1);
+  -moz-box-shadow:inset inset 0 0 0 32px rgba(0,0,0,0.1);
+  
 }
 
 
@@ -549,6 +561,10 @@ fieldset {
 }
 .homeallsetbtns:hover{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  -webkit-appearance: none;
+  --webkit-box-shadow:rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  -moz-box-shadow:rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  
 }
 .homesign a,.homerider,.homepartner,.homefranchise{
   color: #fff !important;
@@ -584,23 +600,35 @@ fieldset {
     /* border-radius: .25rem; */
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     width: 65%;
+    -webkit-appearance: none;
+  --webkit-box-shadow:rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  -moz-box-shadow:rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-
+.supportinput{
+  width: 100%;
+}
 .submitlocbtn,.searchsupport{
-  background : #B52421 0% 0% no-repeat padding-box; color: white; padding: 5px 10px; 
-  height: calc(2em + .75rem + 2px);
+  background : #B52421 0% 0% no-repeat padding-box; 
+  color: white !important;
+   padding: 5px 10px; 
+  /* height: calc(2em + .75rem + 2px); */
     padding: .575rem .75rem;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     background-clip: padding-box;
     /* border-radius: .25rem; */
+    font-family: 'Montserrat' ,sans-serif;
     cursor: pointer;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 .submitlocbtn:active,.searchsupport:active{
   color: #000;
+}
+.submitlocbtn:hover,.searchsupport:hover{
+  color: #fff !important;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 span.searchlocationicon img{
   position: absolute;
@@ -1146,6 +1174,7 @@ form .input-textarea {
   background: #B52421;
   border: transparent;
   color: #fff;
+  -webkit-appearance: none;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   --webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   -moz-box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -1168,6 +1197,7 @@ a.savechangesbtn{
   background: #B52421;
   border: transparent;
   color: #fff;
+  -webkit-appearance: none;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   --webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   -moz-box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -1198,6 +1228,7 @@ a.savechangesbtn{
   transition: all 0.6s ease-out 0s;
 }
 .edittabs,.feeds{
+  -webkit-appearance: none;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   --webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   -moz-box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -1230,6 +1261,7 @@ a.savechangesbtn{
 }
 .adds{
   font-size: 12px;
+  -webkit-appearance: none;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   --webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   -moz-box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -1248,6 +1280,7 @@ a.savechangesbtn{
 }
 
 .orderdeats {
+  -webkit-appearance: none;
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
   --webkit-box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
   -moz-box-shadow:rgb(0 0 0 / 24%) 0px 3px 8px;
@@ -1500,12 +1533,14 @@ color: #000000;
     line-height: 1.42857143;
     background-color: #fff;
     border-radius: 2px;
+    -webkit-appearance: none;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
     --webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
     -moz-box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
     transition: box-shadow .25s; 
 }
 .card:hover {
+  -webkit-appearance: none;
   box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   --webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -moz-box-shadow:0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
@@ -1623,12 +1658,14 @@ input[type=locationsearch] {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   --webkit-box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
   -moz-box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  -webkit-appearance: none;
 
   padding: 5px 10px;
   position: relative;
   border-radius: 10px;
 }
 .vendor:hover{
+  -webkit-appearance: none;
   box-shadow: rgba(0, 0, 0, 0.952) 0px 3px 8px;
   --webkit-box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
   -moz-box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -1770,6 +1807,7 @@ iframe {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   --webkit-box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
   -moz-box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  -webkit-appearance: none;
 }
 .vendorproduct{
   margin: 3rem;
@@ -1783,7 +1821,7 @@ iframe {
 {
   margin: 5px;
   padding: 10px 25px;
-  
+  -webkit-appearance: none;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   --webkit-box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -1805,7 +1843,7 @@ text-align: center;
 }
 .addontitle {
   padding: 10px 20px;
-  /* border: 1px solid #aaa; */
+  -webkit-appearance: none;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   --webkit-box-shadow:rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   -moz-box-shadow:rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -2195,6 +2233,7 @@ input[type="datetime-local"] {
   font-size: .7rem;
   width: 100%;
   border: none;
+  -webkit-appearance: none;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   --webkit-box-shadow:rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   -moz-box-shadow:rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -2424,6 +2463,7 @@ font-family: 'Montserrat';
 
 .ridercards{
   border: none;
+  -webkit-appearance: none;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   --webkit-box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
   -moz-box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -2435,6 +2475,7 @@ font-family: 'Montserrat';
 }
 .vendorguide{
   border: none;
+  -webkit-appearance: none;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   --webkit-box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
   -moz-box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -2452,6 +2493,7 @@ font-family: 'Montserrat';
   margin: 2rem;
   width: 300px;
   height: auto;
+  -webkit-appearance: none;
   border-radius: 10px;
   line-height: 1rem;
 }
@@ -2745,6 +2787,7 @@ color: #282C3F !important;
   text-align: center;
   padding: .5rem;
   font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+  -webkit-appearance: none;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   --webkit-box-shadow:rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   -moz-box-shadow:rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -2856,6 +2899,7 @@ input[type=number]::-webkit-inner-spin-button {
   padding: 1.5rem;
   border: 1px solid #707070;
   border-radius: 7px;
+  -webkit-appearance: none;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   --webkit-box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   -moz-box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -2904,7 +2948,7 @@ input[type=number]::-webkit-inner-spin-button {
 .cartservice{
   text-align: left;
 }
-.cartsection table th , .cartsection table td{
+.cartsection table th , .cartsection table td,.supporttable table td,.supporttable table th{
   font-size: .8rem;
   padding: 0.2rem;
 }
@@ -2971,6 +3015,7 @@ background-color: #fff;
   background: #fff;
   padding: .3rem;
   font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+  -webkit-appearance: none;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   --webkit-box-shadow:rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   -moz-box-shadow:rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -3042,6 +3087,7 @@ background-color: #fff;
   border-style: solid;
   border-color: #fff;
   border-radius: .2rem;
+  -webkit-appearance: none;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   --webkit-box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   -moz-box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
