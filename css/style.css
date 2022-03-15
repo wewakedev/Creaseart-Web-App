@@ -924,6 +924,7 @@ ul.links {
     .inputlocationfield,.submitlocbtn{
       font-size: .6rem;
       padding: .475rem .75rem;
+      border-radius: 0px;
 
     }
     .whydrive,.whyselfdrive {
