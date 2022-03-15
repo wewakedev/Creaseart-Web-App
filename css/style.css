@@ -599,7 +599,7 @@ fieldset {
     border: 1px solid #ced4da;
     /* border-radius: .25rem; */
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    width: 65%;
+    width: 65%;  
     -webkit-appearance: none;
   --webkit-box-shadow:rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   -moz-box-shadow:rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -840,9 +840,6 @@ ul.links {
 /* media queries */
 
 
-
-
-
 @media only screen and (max-width: 450px){
   .navbar-text button.signbtn,.navbar-text button.loginbtn{
     font-size: 16px;
@@ -852,6 +849,9 @@ ul.links {
   }
   .appsec  h1{
     font-size: 1.5rem ;
+  }
+  #par-js{
+    height: 100vh;
   }
   
 }
@@ -912,8 +912,8 @@ ul.links {
       height: 150px !important;
     } */
     .rotatinghero{
-      width: 200px ;
-      height: 200px ;
+      width: 145px ;
+      height: 145px ;
     }
     .herosec .row{
       text-align: center;
@@ -921,12 +921,20 @@ ul.links {
     .herosec h1{
       font-size: 1.5rem !important;
     }
-    .inputlocationfield,.submitlocbtn{
+    .inputlocationfield{
       font-size: .6rem;
       padding: .475rem .75rem;
       border-radius: 0px;
+      width: 100%;
+      
 
     }
+    .submitlocbtn{
+      font-size: .6rem;
+      padding: .475rem .75rem;
+      border-radius: 0px;
+    }
+
     .whydrive,.whyselfdrive {
       text-align: center;
   }
@@ -956,8 +964,8 @@ ul.links {
     }
     span.searchlocationicon img {
       position: absolute;
-      right: 34%;
-      bottom: 24%;
+      right: 2%;
+    top: 6%;
       width: 1rem;
   }
   .cart-qty-plus, .proqtyplus, .proqtyminus, .cartqtyplus, .cartqtyminus, .cart-qty-minus{
@@ -1179,6 +1187,10 @@ form .input-textarea {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   --webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   -moz-box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.feedsubmitbtn:hover,.savechangesbtn:hover,.ctavendorbtn:hover,.registerbtn:hover,.vendorformsubmitbtn:hover,.proaddformsubbtn:hover,.contactsubmitbtn:hover,.ctariderbtn:hover,.reviewsubmit:hover{
+box-shadow: rgb(6 24 44 / 40%) 0px 0px 0px 2px, rgb(6 24 44 / 65%) 0px 4px 6px -1px, rgb(255 255 255 / 8%) 0px 1px 0px inset;
 }
 a.savechangesbtn{
   color: #fff !important;
