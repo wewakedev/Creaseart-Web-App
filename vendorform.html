@@ -467,16 +467,33 @@
                         </div>
 
                         <div class="form-group">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="otheropt" id="otheropt">
-                                <label class="form-check-label" for="otheropt">
-                                  Others (Please Specify)
-                                </label>
-                                <div class="otherinput">
-                                    <input type="text">
-                                </div>
-                            </div>
-                        </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" name="checkbox" id="checkbox" value="checkbox" name="eachclothopt"/>
+                              <label class="form-check-label" for="eachclothopt">
+                                Others
+                              </label>
+                              <div>
+                                <input id="showthis" name="showthis" type="text" value=""/>
+                              </div>
+                              <script>
+                                //hide field by default
+                                $('input[name="showthis"]').hide();
+                                
+                                //show it when the checkbox is clicked
+                                $('input[name="checkbox"]').on('click', function(){
+                                if ( $(this).prop('checked') ) {
+                                    $('input[name="showthis"]').fadeIn();
+                                } 
+                                else {
+                                    $('input[name="showthis"]').hide();
+                                }
+                                });
+                                
+                              </script>
+                          </div>
+                      </div>
+
+
                         
 
                     </div>
@@ -995,7 +1012,7 @@
 
               <div class="row">
                 <small class="container">
-                  MERCHANT agrees to pay onboarding fee of Rs. <input class="agreementinput mx-2" type="text" name="totalfeeinput">  to the
+                  MERCHANT agrees to pay onboarding fee of Rs. <span><input class="agreementinput mx-2" type="text" name="totalfeeinput"></span>to the
                   AFTERCARE, and MERCHANT has opted one of the below schedules
                   offered by the AFTERCARE to the Merchants. To specify and acknowledge
                   his consent with respect to opted schedule, the Merchant has signed
@@ -1020,7 +1037,7 @@
                         <td class=" font-weight-bold" colspan="15">1.</td>
                         <td>At the time of signing of this agreement</td>
                                   <td class="text-center">
-                                      <input class="agreementinput" type="text" name="signfeeinput">
+                                      <input class="agreementinput form-control" type="text" name="signfeeinput">
                                   </td>
                               </tr>
               
@@ -1030,7 +1047,7 @@
                           amount will be charged at the time
                           of launch.</td>
                                   <td class="text-center">
-                                      <input class="agreementinput" type="text" name="onboardfee1input">
+                                      <input class="agreementinput form-control" type="text" name="onboardfee1input">
                                   </td>
                               </tr>
               
@@ -1039,7 +1056,7 @@
                         <td colspan="15">Onboarding fee shall deducted from the
                           commission of the vendor.</td>
                                   <td class="text-center">
-                                      <input class="agreementinput" type="text" name="onboardfee2input">
+                                      <input class="agreementinput form-control" type="text" name="onboardfee2input">
                                   </td>
                               </tr>
 
@@ -1047,7 +1064,7 @@
                                 <td class=" font-weight-bold">4.</td>
                                 <td colspan="15">GST % Applicable</td>
                                           <td class="text-center">
-                                              <input class="agreementinput" type="text" name="gstfee">
+                                              <input class="agreementinput form-control" type="text" name="gstfee">
                                           </td>
                                </tr>
               
