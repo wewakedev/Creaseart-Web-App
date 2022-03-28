@@ -47,9 +47,7 @@
                   
                     <div><p class="text-white" style="margin: 1rem 0.2rem;"><b>₹50 Off</b></p>
                       <p style="margin-top: -1rem !important;">Min order value 450</p>
-                    </div>
-                    
-              
+                    </div>            
                   </div>
               </div>
           </div>
@@ -133,10 +131,23 @@
                             <div class=" col-4 clothesquantity ">
                               <div class="button-container d-flex justify-content-center align-items-center">
                                 <button class="cart-qty-plus" type="button" value="+">+</button>
-                                <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
+                                <input type="number" id ='vendoqty' max="20" name="qty" min="0" class="qty form-control" value="0"/>
                                 <button class="cart-qty-minus" type="button" value="-">-</button>
                             </div>
                             </div> 
+                            <script>
+                              $("#testid").keypress(function (evt) {
+  evt.preventDefault();
+});
+
+$(document).keydown(function(e) {
+      var elid = $(document.activeElement).hasClass('qty');
+     console.log(e.keyCode + ' && ' + elid);
+      if (e.keyCode === 8 && !elid) {
+          return false;
+      };
+  });
+                            </script>
                           </div>
                           <div class="row my-2">
                             <div class="col-4"><small>Jeans</small> </div>
