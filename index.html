@@ -41,9 +41,13 @@
                                <img src="img/ham/profileimgdemo.png" alt="" style="width: 6rem;">
                                <div>
                                  <div class="userlog">
-                                   <p><b>Vivek Rawat</b> </p>
+                                  <button type="button" class="btn loginbtn  d-block" data-toggle="modal"       data-target="#modallogin">
+                                    <a href="#" class="loginbtn  " style="font-size: 28px;" > &nbsp; <b>Login</b> </a>
+                                  </button>
+                                   
+                                   <!-- <p><b>Vivek Rawat</b> </p>
                                    <small><b>+91  7539910300</b> </small><br>
-                                   <small class="m-1"><a href="profile.html">Edit Profile</a></small>
+                                   <small class="m-1"><a href="profile.html">Edit Profile</a></small> -->
                                  </div>
                                </div>
                              </div>
@@ -57,7 +61,7 @@
                          
                       </div>
       
-                      
+                      <!-- sideham -->
                       
                       <div class="modal-body sidebar-item" style="background: url(img/ham/dashboard_bg_img.png); background-position: center;">
                           <ul>
@@ -105,6 +109,29 @@
       <a class="navbar-brand logo d-sm-block d-none" href="index.html"><img src="img/aftercarelogo1.svg" style="width: 14rem;"alt=""></a>
       <a class="navbar-brand logo d-sm-none" href="index.html"><img src="img/aftercaremobilelogo.svg"alt=""></a>
       
+      <div class="dropdown">
+  
+        <button></button>
+        
+        <div class="options">
+          <input id="radio-geoapklocation" type="radio" name="region" value="gurgoan" checked>
+          <label style="--index: 1" for="radio-geoapklocation">Gurgoan</label>
+          
+          <input id="radio-gurgoan" type="radio" name="region" value="geoloc">
+          <label style="--index: 2" class="text-primary" for="radio-gurgoan"><span><img src="img/location.svg" alt=""></span> Get Your Location </label>
+          
+          <input id="radio-delhi" type="radio" name="region" value="delhi">
+          <label style="--index: 3" for="radio-delhi">Delhi/NCR</label>
+         
+        </div>
+        
+        <svg viewBox="0 0 24 24">
+          <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+        </svg>
+        
+      </div>
+
+      
       <div class="collapse navbar-collapse " id="navbarText">
         <ul class="navbar-nav m-auto ">
           <li class="nav-item ml-2 mr-2 ">
@@ -118,7 +145,7 @@
       <span class="navbar-text logsignbtns">
         
 
-        <!-- Button Sign up trigger modal -->
+              <!-- Button Sign up trigger modal -->
 
               <!-- <button type="button" class="btn signbtn" data-toggle="modal" data-target="#modalsignup">
                   <a href="#" class="signbtn"><b>Sign Up</b> </a>
@@ -175,18 +202,11 @@
                   </div>
                 </div>
 
-
-
-
-              
-
-
-
-
+                
                 <!-- Button Login trigger modal -->
 
 
-                <button type="button" class="btn loginbtn" data-toggle="modal" data-target="#modallogin">
+                <button type="button" class="btn loginbtn d-none d-sm-block" data-toggle="modal" data-target="#modallogin">
                  <a href="#" class="loginbtn"><i class="fas fa-user-alt    "></i> &nbsp; <b>Login</b> </a>
                 </button>
                 
@@ -247,8 +267,42 @@
                   
                       
   </nav>
-    
 
+  <div class="modal fade" id="discountmodal">
+    <div class="modal-dialog  modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class=" py-0" style="background-color: none !important;" >
+                <!-- <h4 class="modal-title">My Modal</h4> -->
+                <button type="button" class="close" style="font-size: xxx-large; margin-right: 1rem;" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body pt-0">
+                <div class="discount-coupon">
+                  <div class="row">
+                    <div class="col-12">
+                      <img class="w-100" src="img/discountmodal.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="modal-footer text-center">
+                <!-- <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Close</button> -->
+                <a class="submitlocbtn mt-sm-0 mx-auto" type="submit" form="form1" value="Submit">Download App Now !</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+  $(window).on('load',function(){
+    var delayMs = 1500; // delay in milliseconds
+    
+    setTimeout(function(){
+        $('#discountmodal').modal('show');
+    }, delayMs);
+});
+</script>
   <!-- <navbar class="navbar container navbar-expand-lg">
     <div class="container">
       <div>
@@ -287,8 +341,8 @@
             <small><b>Join the platform with the largest network of active laundry service providers.</b> </small>
             <div class="inputlocation mt-4">
                 <div class="searchlocation" style="position: relative;">
-                  <input type=""  class="inputlocationfield" placeholder="Choose Your City "/>
-                  <span class="searchlocationicon"><img src="img/location.svg"></span>
+                  <input type=""  class="inputlocationfield" placeholder="Find vendors near you "/>
+                  <span class="searchlocationicon"><img src="img/inputsearch.png"></span>
                   <span> <a class="submitlocbtn mt-sm-0 mt-3" type="submit" form="form1" value="Submit">Find Laundry</a>
                   </span>
                   

@@ -12,6 +12,9 @@ h1,h2,h3,h4,h5,h6{
 .userlog,.shoptitle{
   font-family: 'Montserrat', sans-serif;
 }
+.fontmonster{
+  font-family: 'Montserrat';
+}
 .userlog p{
   margin: .2rem;
 }
@@ -211,6 +214,78 @@ ul{
 }
 input{
   font-family: 'Montserrat' sans-serif !important;
+}
+.dropdown {
+  position: relative;
+  box-sizing: content-box;
+  width: 210px;
+  height: 1em;
+  padding: 18px 21px;
+  background-color: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+.dropdown:hover svg {
+  transform: scale(1.1);
+}
+.dropdown button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  
+}
+.dropdown button:focus ~ svg {
+  transform: rotate(-180deg);
+}
+.dropdown .options {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.dropdown input {
+  display: none;
+}
+.dropdown input:checked + label {
+  display: block;
+  z-index: 2;
+  font-weight: 600;
+  transform: none !important;
+}
+.dropdown label {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  padding: 18px 21px;
+  /* line-height: 1; */
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background-color 0.2s, transform 0.2s ease;
+}
+.dropdown label:hover {
+  background-color: #d6d6d6;
+}
+.dropdown button:focus + .options input:not(:checked) + label, .dropdown .options label:active, .dropdown .options label:active ~ label {
+  transform: translateY(calc(var(--index) * 100%));
+}
+.dropdown button:focus + .options input:checked + label ~ label, .dropdown .options input:checked ~ label:active, .dropdown .options input:checked ~ label:active ~ label {
+  transform: translateY(calc((var(--index) - 1) * 100%));
+}
+.dropdown svg {
+  position: absolute;
+  width: 21px;
+  top: 25%;
+  right: 14px;
+  z-index: 2;
+  fill: currentColor;
+  transition: transform 0.1s;
 }
 
     /* Signup / Login MODAL */
@@ -591,8 +666,9 @@ fieldset {
     height: calc(1.5em + .75rem + 2px);
     padding: .575rem 1.5rem;
     font-size: 1rem;
-    font-weight: 500;
+    /* font-weight: 500; */
     line-height: 1.5;
+    font-family: 'Montserrat';
     color: #495057;
     background-color: #fff;
     background-clip: padding-box;
