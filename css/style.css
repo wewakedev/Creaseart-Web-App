@@ -218,7 +218,7 @@ input{
 -moz-appearance: none;
 appearance: none;
 }
-.dropdown {
+/* .dropdown {
   position: relative;
   box-sizing: content-box;
   width: 210px;
@@ -289,7 +289,7 @@ appearance: none;
   z-index: 2;
   fill: currentColor;
   transition: transform 0.1s;
-}
+} */
 
     /* Signup / Login MODAL */
 

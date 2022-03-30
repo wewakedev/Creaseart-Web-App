@@ -109,7 +109,7 @@
       <a class="navbar-brand logo d-sm-block d-none" href="index.html"><img src="img/aftercarelogo1.svg" style="width: 14rem;"alt=""></a>
       <a class="navbar-brand logo d-sm-none" href="index.html"><img src="img/aftercaremobilelogo.svg"alt=""></a>
       
-      <div class="dropdown">
+      <!-- <div class="dropdown">
   
         <button></button>
         
@@ -129,8 +129,60 @@
           <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
         </svg>
         
-      </div>
+      </div> -->
 
+      <span class="location"></span>
+      <script>var $locationText = $(".location");
+
+        // Check for geolocation browser support and execute success method
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            geoLocationSuccess,
+            geoLocationError,
+            { timeout: 10000 }
+          );
+        } else {
+          alert("your browser doesn't support geolocation");
+        }
+        function geoLocationSuccess(pos) {
+          // get user lat,long
+          var myLat = pos.coords.latitude,
+            myLng = pos.coords.longitude,
+            loadingTimeout;
+        
+          var loading = function () {
+            $locationText.text("fetching...");
+          };
+        
+          loadingTimeout = setTimeout(loading, 600);
+        
+          var request = $.get(
+            "https://nominatim.openstreetmap.org/reverse?format=json&lat=" +
+              myLat +
+              "&lon=" +
+              myLng
+          )
+            .done(function (data) {
+              if (loadingTimeout) {
+                clearTimeout(loadingTimeout);
+                loadingTimeout = null;
+                $locationText.text(data.display_name);
+              }
+            })
+            .fail(function () {
+              // handle error
+            });
+        }
+        
+        function geoLocationError(error) {
+          var errors = {
+            1: "Permission denied",
+            2: "Position unavailable",
+            3: "Request timeout"
+          };
+          alert("Error: " + errors[error.code]);
+        }
+        </script>
       
       <div class="collapse navbar-collapse " id="navbarText">
         <ul class="navbar-nav m-auto ">
