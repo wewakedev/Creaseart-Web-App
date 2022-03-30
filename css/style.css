@@ -218,6 +218,7 @@ input{
 -moz-appearance: none;
 appearance: none;
 }
+
 /* .dropdown {
   position: relative;
   box-sizing: content-box;
@@ -266,7 +267,7 @@ appearance: none;
   width: 100%;
   z-index: 1;
   padding: 18px 21px;
-  /* line-height: 1; */
+  /* line-height: 1;
   background-color: #fff;
   cursor: pointer;
   font-size: 0.8rem;
@@ -595,7 +596,7 @@ appearance: none;
   
 }
 .herosec{
-    margin-top: 60px;
+    margin-top: 4rem;
 }
 .googlebadge,.iosbadge{
     width: 200px;
@@ -688,10 +689,10 @@ appearance: none;
     /* border-radius: .25rem; */
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     width: 65%;  
-    -webkit-appearance: none;
+    /* -webkit-appearance: none;
   --webkit-box-shadow:rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   -moz-box-shadow:rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
     -webkit-appearance: none;
 -moz-appearance: none;
 appearance: none;
@@ -951,7 +952,11 @@ ul.links {
   #par-js{
     height: 100vh;
   }
-  
+  .cartmain {
+    position: absolute;
+    top: 20%;
+    right: 4%;
+}
 }
 
 
@@ -1095,12 +1100,17 @@ ul.links {
 ;
 }
 } 
+@media only screen and (max-width: 390px){
+  #par-js{
+    height: 100vh;
+  }
+}
 @media only screen and (max-width: 900px){
 .checkoutleft .btns.d-flex.justify-content-between{
   width: 100% !important;
 }
 #par-js{
-  height: 90vh;
+  height: 100vh;
 }
 .workings img {
   width: 100%
