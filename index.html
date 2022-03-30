@@ -108,10 +108,14 @@
               </div><!-- modal-dialog -->
           </div><!-- modal -->
 
-      
+      <!-- LOGOS -->
+
       <a class="navbar-brand logo d-sm-block d-none" href="index.html"><img src="img/aftercarelogo1.svg" style="width: 14rem;"alt=""></a>
       <a class="navbar-brand logo d-sm-none" href="index.html"><img src="img/aftercaremobilelogo.svg"alt=""></a>
-      
+      <span class="searchlocation my-sm-0 my-3 w-100" style="position: relative;">
+        <input type=""  class="inputlocationfield mt-3 my-sm-0" placeholder="Choose your location"/>
+        <span class="searchlocationicon"><img src="img/inputsearch.png"></span>
+      </span>
       
       <!-- <div class="dropdown">
   
@@ -136,10 +140,7 @@
       </div> -->
 
     
-      <span class="searchlocation my-sm-0 my-3 w-100" style="position: relative;">
-        <input type=""  class="inputlocationfield mt-3 my-sm-0" placeholder="Choose your location"/>
-        <span class="searchlocationicon"><img src="img/inputsearch.png"></span>
-      </span>
+      
       
       
       <!-- <span class="location"></span>
@@ -333,6 +334,9 @@
                       
   </nav>
 
+  <!-- Discount modal -->
+
+
   <div class="modal fade" id="discountmodal">
     <div class="modal-dialog  modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -357,17 +361,17 @@
             </div>
         </div>
     </div>
-</div>
+  </div>
 
-<script>
-  $(window).on('load',function(){
-    var delayMs = 1500; // delay in milliseconds
-    
-    setTimeout(function(){
-        $('#discountmodal').modal('show');
-    }, delayMs);
-});
-</script>
+      <script>
+        $(window).on('load',function(){
+          var delayMs = 1500; // delay in milliseconds
+          
+          setTimeout(function(){
+              $('#discountmodal').modal('show');
+          }, delayMs);
+      });
+      </script>
   <!-- <navbar class="navbar container navbar-expand-lg">
     <div class="container">
       <div>
@@ -434,6 +438,11 @@
     
   </div>
   </div>
+
+  <!-- Fixed form -->
+  
+  
+
 
     <div class="workings container-fluid mt-5 ">
         <div class="workhead py-3 text-center wow animate__animated animate__fadeIn animate__slow">
@@ -595,19 +604,19 @@
         </div>
           
       </div>
-  </div>
+    </div>
     
-  <div class="container-fluid mt-5 px-0 videosec">
+  <!-- <div class="container-fluid mt-5 px-0 videosec">
     
     
 
 
     
-    <!-- <div>
+     <div>
       <video class="w-100" autoplay controls src="img/homedemovideo.mp4"  > </video>
 
-    </div> -->
-  </div>
+    </div> 
+  </div> -->
 
 
 
@@ -702,8 +711,92 @@
        
         
     </div>
-</div>
+  </div>
 
+
+  <div id="fixedform" class="container-fuild bg-dark mb-4 supportforms" style="z-index: ;">
+    <div class="container">
+
+      <form action="" id="submitsupport" method="get">
+
+        <div class="row d-flex justify-content-around align-items-center">
+          <div class="col-sm-2 my-2">
+            <a class="navbar-brand logo" href="index.html"><img src="img/aftercaremobilelogo.svg"alt=""></a>   
+          </div>
+
+          <div class="col-sm-3 my-2">
+            <input type="" class="supportinput" name="" id="" placeholder="Name">    
+          </div>
+          <div class="col-sm-3 my-2 ">
+            <input type="" class="supportinput" name="" id="" placeholder="Contact No.">    
+          </div>
+          <div class="col-sm-3 my-2">
+            <input type="" class="supportinput" name="" id="" placeholder="Email ID">    
+          </div>
+          <div class="my-sm-4 mt-3 text-center">
+            <a class="submitlocbtn" type="submit" form="submitsupport" value="Submit">Submit</a>
+          </div>
+          
+  
+        </div>
+  
+      </form>
+
+    </div>      
+  </div>
+
+  <!-- <script>
+    var startProductBarPos=-1;
+window.onscroll=function(){
+  var bar = document.getElementById('fixedform');
+  if(startProductBarPos<0)startProductBarPos=findPosY(bar);
+
+  if(pageYOffset>startProductBarPos){
+    bar.style.position='fixed';
+    bar.style.top=0;
+  }else{
+    bar.style.position='relative';
+  }
+
+};
+
+function findPosY(obj) {
+  var curtop = 0;
+  if (typeof (obj.offsetParent) != 'undefined' && obj.offsetParent) {
+    while (obj.offsetParent) {
+      curtop += obj.offsetTop;
+      obj = obj.offsetParent;
+    }
+    curtop += obj.offsetTop;
+  }
+  else if (obj.y)
+    curtop += obj.y;
+  return curtop;
+}
+  </script> -->
+<style>
+  #fixedform,
+  #footerjs {
+  position: sticky;
+  bottom: 0;
+  background: white;
+  border: solid;
+  clear: both;
+  z-index: 1;
+}
+#footerjs {
+  z-index: 0;/*hide it from aside */
+}
+html:before {/* push sticky elements down */
+  content: "";
+  float: left;
+  height: 100vh;
+}
+body {
+margin:0;
+  display: inline;/* get body scrolling and block formatting context off the game */
+}
+</style>
 
 
   <!-- footer section -->

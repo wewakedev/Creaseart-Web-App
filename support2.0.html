@@ -1,0 +1,183 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+      <title>Support</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" href="img/aftercaremobilelogo.png" type="image/x-icon" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <script src="//code.jquery.com/jquery.min.js"></script>
+      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body style="background: #F6F6F6; ">
+
+      <!-- navbar section -->
+      <div class="container-fluid nav2">
+        
+        <script>
+          $.get("nav.html", function(data){
+              $("#navholder").replaceWith(data);
+          });
+          </script>
+          <div class="" id="navholder"></div>
+      </div>
+    
+      <div class="feedbacktitle container text-center my-5">
+        <h3>Hello, how can we help ?</h3>
+        <!-- <p class="" style="color: blanchedalmond;">Your feedback matters to us</p> -->
+      </div>
+    
+      <div class="supportbody">
+    
+       <style>
+         .supportforms label{
+           font-size: .8rem;
+           text-align: left;
+         }
+       </style>
+    
+        <div class="container mt-4 mb-4 supportforms" id="">
+     
+              
+              <form action="" id="submitsupport" method="get">
+
+                <div class="row d-flex justify-content-around">
+
+
+                  <div class="col-sm-3 my-2">
+                    <label for="supportinput">Search by Name</label> 
+                    <input type="" class="supportinput" name="" id="" placeholder="">    
+                  </div>
+                  <div class="col-sm-3 my-2 ">
+                    <label for="supportinput">Search by Phone no.</label> 
+                    <input type="" class="supportinput" name="" id="" placeholder="">    
+                  </div>
+                  <div class="col-sm-3 my-2">
+                    <label for="supportinput">Search by Company Name</label> 
+                    <input type="" class="supportinput" name="" id="" placeholder="">    
+                  </div>
+                  <div class="col-sm-3 my-2">
+                    <label for="supportinput">Search by Pincode</label>   
+                    <input type="" class="supportinput" name="" id="" placeholder=""> 
+                    
+                  </div>
+
+                </div>
+
+              </form>
+                
+             
+              <div class="my-sm-4 mt-3 text-center">
+                <a class="submitlocbtn" type="submit" form="submitsupport" value="Submit">Submit</a>
+              </div>
+                
+        </div>
+
+        <!-- <div class="suportoptions container my-3 ">
+            <div class="row justify-content-around pt-3">
+                <div class="col-md-3 m-3 text-center supportcall">
+                    <i class="fa fa-phone-volume my-3 text-secondary" style="font-size: 2rem; transform: rotate(-45deg);"></i>
+                    <h5>
+                     <a href="tel:555-555-5555"> Call <span style="color: #B52421;">9876543210</span> </a>
+                    </h5>
+                </div>
+    
+                <div class="col-md-3 m-3 text-center mailsupport">
+                    <i class="far fa-envelope my-3 text-secondary " style="font-size: 2rem;"></i>
+                    <h5>
+                      
+                      <a href="mailto:email@example.com">Email <br> <span style="color: #B52421;"><small> info@aftercareco.com</small></span></a>
+                    </h5>
+                </div>
+    
+                <div class="col-md-3 m-3 text-center chatsupport">
+                    <img src="img/chatsupport.svg" class="my-3" style="width: 2rem; height: auto;" alt="">
+                    <h5>
+                      Live <span style="color: #B52421;">Chat</span>
+                    </h5>
+                </div>
+                
+            </div>
+        </div> -->
+  
+
+          
+        <div id="supportsearchtableresult" class="container supporttable my-5">
+          <div class="table-responsive  text-center">
+            <table class="table table-bordered ">
+              <thead>
+                <tr>
+                  <th class="">Ids</th>
+                  <th>Name</th>
+                  <th>Phone no.</th>
+                  <th>Company Name</th>
+                  <th>Address</th>
+                  <th>Pincode</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr id="supportresult1">
+                  <td class="supportresult">1.</td>
+                  <td>Shuresh Sharma</td>
+                  <td>9876543210</td>
+                  <td>Clean & Dryers</td>
+                  <td>Unit-57, Plot-20A, Gurgoan Sector-24</td>
+                  <td>122000</td>
+                </tr>
+        
+                <tr id="supportresult2">
+                  <td class="supportresult">2.</td>
+                  <td>Shuresh Sharma</td>
+                  <td>9876543210</td>
+                  <td>Clean & Dryers</td>
+                  <td>Unit-57, Plot-20A, Gurgoan Sector-24</td>
+                  <td>122000</td>
+                </tr>
+        
+                <tr id="supportresult3">
+                  <td class="supportresult">3.</td>
+                  <td>Shuresh Sharma</td>
+                  <td>9876543210</td>
+                  <td>Clean & Dryers</td>
+                  <td>Unit-57, Plot-20A, Gurgoan Sector-24</td>
+                  <td>122000</td>
+                </tr>
+        
+              </tbody>
+            </table>
+          </div>
+        
+        </div>
+
+          <!-- footer section -->
+
+        <div class="">
+          <script>
+            $.get("footer.html", function(data){
+                $("#footerjs").replaceWith(data);
+            });
+            </script>
+            <div class="container-fluid " id="footerjs" ></div>
+        </div>
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+        <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    
+        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+    </html>
+    
