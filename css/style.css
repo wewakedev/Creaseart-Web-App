@@ -674,11 +674,8 @@ appearance: none;
   cursor: pointer;
 }
 
-.inputlocationfield,.supportinput{
+.inputlocationfield,.supportinput,input[type="pincode"]{
 
-    height: calc(1.5em + .75rem + 2px);
-    padding: .575rem 1.5rem;
-    font-size: 1rem;
     /* font-weight: 500; */
     line-height: 1.5;
     font-family: 'Montserrat';
@@ -686,9 +683,13 @@ appearance: none;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
-    /* border-radius: .25rem; */
+    border-radius: .4rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     width: 65%;  
+    font-size: 13px;
+    height: 36px;
+    padding: 0 10px;
+    box-shadow: 0 2px 3px 0 rgb(116 116 116 / 20%);
     /* -webkit-appearance: none;
   --webkit-box-shadow:rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   -moz-box-shadow:rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -700,17 +701,17 @@ appearance: none;
 .supportinput{
   width: 100%;
 }
-.submitlocbtn,.searchsupport{
-  background : #B52421 0% 0% no-repeat padding-box; 
-  color: white !important;
-   padding: 5px 10px; 
-  /* height: calc(2em + .75rem + 2px); */
-    padding: .575rem .75rem;
-    font-size: 1rem;
+.submitlocbtn,.searchsupport,.pinsubmitbtn{
+  background: #B52421 0% 0% no-repeat padding-box;
+    color: white !important;
+   
+    height: 36px;
+    padding: 0.575rem 0.75rem;
+    font-size: 13px;
     font-weight: 400;
     line-height: 1.5;
     background-clip: padding-box;
-    /* border-radius: .25rem; */
+    border-radius: 0.5rem;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -1025,17 +1026,15 @@ ul.links {
       font-size: 1.5rem !important;
     }
     .inputlocationfield{
-      font-size: .6rem;
-      padding: .475rem .75rem;
-      border-radius: 0px;
       width: 100%;
+      font-size: 13px;
       
 
     }
     .submitlocbtn{
-      font-size: .6rem;
-      padding: .475rem .75rem;
-      border-radius: 0px;
+      font-size: 13px;
+      /* padding: .475rem .75rem; */
+      border-radius:.5rem;
     }
 
     .whydrive,.whyselfdrive {
@@ -1067,8 +1066,8 @@ ul.links {
     }
     span.searchlocationicon img {
       position: absolute;
-      right: 2%;
-    top: 6%;
+      right: 5%;
+    top: 10%;
       width: 1rem;
   }
   .cart-qty-plus, .proqtyplus, .proqtyminus, .cartqtyplus, .cartqtyminus, .cart-qty-minus{

@@ -10,7 +10,6 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
     <link rel="stylesheet" href="css/style.css">
     <script src="//code.jquery.com/jquery.min.js"></script>
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
@@ -22,7 +21,7 @@
 
   <div id="par-js">
  <div class="container-fluid mainsec ">
-  <nav class="navbar container navbar-expand-lg ">
+  <nav class="navbar container navbar-expand-sm ">
       <button type="button" class="btn btn-demo" data-toggle="modal" data-target="#myModal">
           <!-- <i class="fas fa-bars " style="font-size: 30px;"></i> --> <img src="img/aftercareham.png" alt="">
       </button>
@@ -112,9 +111,10 @@
 
       <a class="navbar-brand logo d-sm-block d-none" href="index.html"><img src="img/aftercarelogo1.svg" style="width: 14rem;"alt=""></a>
       <a class="navbar-brand logo d-sm-none" href="index.html"><img src="img/aftercaremobilelogo.svg"alt=""></a>
+      <br>
       <span class="searchlocation my-sm-0 my-3 w-100" style="position: relative;">
         <input type=""  class="inputlocationfield mt-3 my-sm-0" placeholder="Choose your location"/>
-        <span class="searchlocationicon"><img src="img/inputsearch.png"></span>
+        <span class="searchlocationicon"><img src="img/locationicon.png" style="width: 1rem;"></span>
       </span>
       
       <!-- <div class="dropdown">
@@ -439,7 +439,7 @@
   </div>
   </div>
 
-  <!-- Fixed form -->
+
   
   
 
@@ -713,6 +713,7 @@
     </div>
   </div>
 
+  <!-- Fixed form -->
 
   <div id="fixedform" class="container-fuild supportforms" style="background-color: #ebbeb7f7;">
     <div class="container">
@@ -720,7 +721,7 @@
       <form action="" id="submitsupport" method="get">
 
         <div class="row d-flex justify-content-around align-items-center">
-          <div class="col-sm-2 my-2">
+          <div class="col-sm-2 my-2 text-center">
             <!-- <a class="navbar-brand logo" href="index.html"><img src="img/aftercaremobilelogo.svg"alt=""></a>    -->
             <a class="navbar-brand logo" href="index.html"><img src="img/aftercarelogo1.svg" style="width: 10rem;"alt=""></a>
           </div>
@@ -731,9 +732,9 @@
           <div class="col-sm-3 my-2 ">
             <input type="" class="supportinput" name="" id="" placeholder="Contact No.">    
           </div>
-          <div class="col-sm-3 my-2">
+          <!-- <div class="col-sm-3 my-2">
             <input type="" class="supportinput" name="" id="" placeholder="Email ID">    
-          </div>
+          </div> -->
           <div class="my-sm-4 mt-3 text-center my-sm-0 my-3">
             <a class="submitlocbtn" type="submit" form="submitsupport" value="Submit">Submit</a>
           </div>
@@ -834,26 +835,13 @@ body {
           <p style="color: #B52421;"><b>Enter your Location to find vendors near you.</b> </p>
         </div>
         <div>
-          <div class="my-2">
+          <div class="my-2 text-center">
             <input type="pincode" placeholder="Location/Pincode/City">
           </div>
           <div class="my-2">
             <button class="pinsubmitbtn" onclick="location.href = 'shops.html';" type="submit">Submit</button>
           </div>
-          <style>
-            input[type="pincode"] {
-               padding: .5rem 3rem;
-               text-align: center;
-               border: none;
-               width: 60%;
-               box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 1px -18px inset;
-            }
-            .pinsubmitbtn{
-              padding: .5rem 3rem;
-              width: 60%;
-              box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-            }
-          </style>
+
           
         </div>
         
