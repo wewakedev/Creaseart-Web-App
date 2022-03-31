@@ -214,9 +214,6 @@ ul{
 }
 input{
   font-family: 'Montserrat' sans-serif !important;
-  -webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
 }
 
 /* .dropdown {
@@ -674,7 +671,7 @@ appearance: none;
   cursor: pointer;
 }
 
-.inputlocationfield,.supportinput,input[type="pincode"]{
+.inputlocationfield,.supportinput,input[type="pincode"],.inputcommon{
 
     /* font-weight: 500; */
     line-height: 1.5;
@@ -698,6 +695,9 @@ appearance: none;
 -moz-appearance: none !important;
 appearance: none;
 }
+/* .inputcommon{
+  width: 100%;
+} */
 .supportinput{
   width: 100%;
 }
