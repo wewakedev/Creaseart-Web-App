@@ -702,7 +702,7 @@ appearance: none;
   width: 100%;
 }
 .submitlocbtn,.searchsupport,.pinsubmitbtn{
-  background: #B52421 0% 0% no-repeat padding-box;
+  background: #B52421;
     color: white !important;
    
     /* height: 36px; */
@@ -710,7 +710,6 @@ appearance: none;
     font-size: 13px;
     font-weight: 400;
     line-height: 1.5;
-    background-clip: padding-box;
     border-radius: 0.5rem;
     -webkit-appearance: none;
     -moz-appearance: none;
