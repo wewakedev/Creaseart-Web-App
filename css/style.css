@@ -551,7 +551,7 @@ appearance: none;
     color: black;
     opacity: 1;  
     font-size: 18px;
-    padding:.5rem 2rem;
+    padding:.5rem 1.5rem;
     -webkit-appearance: none;
 -moz-appearance: none;
 appearance: none;
@@ -705,7 +705,7 @@ appearance: none;
   background: #B52421 0% 0% no-repeat padding-box;
     color: white !important;
    
-    height: 36px;
+    /* height: 36px; */
     padding: 0.575rem 0.75rem;
     font-size: 13px;
     font-weight: 400;
