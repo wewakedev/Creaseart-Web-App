@@ -716,6 +716,9 @@ appearance: none;
     cursor: pointer;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+.submitlocbtn a:hover{
+  color: white !important;
+}
 .submitlocbtn:active,.searchsupport:active{
   color: #000;
 }
