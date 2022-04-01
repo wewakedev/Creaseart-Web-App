@@ -711,9 +711,8 @@ appearance: none;
     font-weight: 400;
     line-height: 1.5;
     border-radius: 0.5rem;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    -webkit-border-radius: 0.5rem;
+   
     font-family: 'Montserrat' ,sans-serif;
     cursor: pointer;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
