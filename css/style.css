@@ -2573,14 +2573,17 @@ font-family: 'Montserrat';
 /***********************  RIDER PROVIDER XD *************/
 
 .vendorbenifits{
-  margin: 1rem;
+  margin: 1rem ;
 }
 .vendorbenifits img{
-  width: 50%;
-  margin: 2rem .5rem;
+  /* width: 50%; */
+  margin: 1rem .5rem;
 }
 .vendorguide img{
   margin: 1rem .5rem;
+}
+.vendorguide{
+  background-color: #fff;
 }
 
 .ridercards{
