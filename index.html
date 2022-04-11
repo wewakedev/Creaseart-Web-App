@@ -109,75 +109,15 @@
 
       <!-- LOGOS -->
 
-      <a class="navbar-brand logo d-sm-block d-none" href="index.html"><img src="img/aftercarelogo1.svg" style="width: 14rem;"alt=""></a>
-      <a class="navbar-brand logo d-sm-none" href="index.html"><img src="img/aftercaremobilelogo.svg"alt=""></a>
+      <a class="navbar-brand logo d-lg-block d-none" href="index.html"><img src="img/aftercarelogo1.svg" style="width: 14rem;"alt=""></a>
+      <a class="navbar-brand logo d-lg-none" href="index.html"><img src="img/aftercaremobilelogo.svg"alt=""></a>
       <br>
       <span class="searchlocation my-sm-0 my-3 w-100" style="position: relative;">
         <input type=""  class="inputlocationfield mt-3 my-sm-0" placeholder="Choose your location"/>
         <span class="searchlocationicon"><img src="img/locationicon.png" style="width: 1rem;"></span>
       </span>
-    
-
-    
       
-      
-      
-      <!-- <span class="location"></span>
-
-      
-      <script>var $locationText = $(".location");
-
-        // Check for geolocation browser support and execute success method
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(
-            geoLocationSuccess,
-            geoLocationError,
-            { timeout: 10000 }
-          );
-        } else {
-          alert("your browser doesn't support geolocation");
-        }
-        function geoLocationSuccess(pos) {
-          // get user lat,long
-          var myLat = pos.coords.latitude,
-            myLng = pos.coords.longitude,
-            loadingTimeout;
-        
-          var loading = function () {
-            $locationText.text("fetching...");
-          };
-        
-          loadingTimeout = setTimeout(loading, 600);
-        
-          var request = $.get(
-            "https://nominatim.openstreetmap.org/reverse?format=json&lat=" +
-              myLat +
-              "&lon=" +
-              myLng
-          )
-            .done(function (data) {
-              if (loadingTimeout) {
-                clearTimeout(loadingTimeout);
-                loadingTimeout = null;
-                $locationText.text(data.display_name);
-              }
-            })
-            .fail(function () {
-              // handle error
-            });
-        }
-        
-        function geoLocationError(error) {
-          var errors = {
-            1: "Permission denied",
-            2: "Position unavailable",
-            3: "Request timeout"
-          };
-          alert("Error: " + errors[error.code]);
-        }
-        </script> -->
-      
-      <div class="collapse navbar-collapse " id="navbarText">
+      <!-- <div class="collapse navbar-collapse " id="navbarText">
         <ul class="navbar-nav m-auto ">
           <li class="nav-item ml-2 mr-2 ">
             <a class="nav-link" href="#"></a>
@@ -186,8 +126,8 @@
             <a class="nav-link" href="#"></a>
           </li>
        </ul>
-      </div>
-      <span><div class="nav-item dropdown d-md-block d-none dropdown-slide dropdown-hover">
+      </div> -->
+      <span><div class="nav-item dropdown d-none d-md-block  dropdown-slide dropdown-hover">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <b>Products</b>
         </a>
@@ -274,7 +214,7 @@
                 <!-- Button Login trigger modal -->
 
 
-                <button type="button" class="btn loginbtn d-none d-sm-block" data-toggle="modal" data-target="#modallogin">
+                <button type="button" class="btn loginbtn d-none d-lg-block" data-toggle="modal" data-target="#modallogin">
                  <a href="#" class="loginbtn"><b>Login</b> </a>
                 </button>
                 
@@ -329,10 +269,36 @@
                 
 
       </span>  
-      <span class="cartmain">
-        <div>
-         <a href="cart.html"><img src="img/shopping-cart.svg" alt=""></a> 
+      <span class="cartmain d-flex">
+        <div class="nav-item dropdown d-block d-md-none  dropdown-slide dropdown-hover">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <b>Products</b>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" data-toggle="modal" data-target="#enterpin" data-dismiss="modal" href="" >Order Now</a>
+  
+            <a class="dropdown-item" href="drive.html">Drive</a>
+            <a class="dropdown-item" href="selfdrive.html">Self Drive</a>
+          </div>
+          <style>.dropdown .dropdown-menu {
+            transition: all 0.5s;
+            overflow: hidden;
+            transform-origin: top center;
+            transform: scale(1, 0);
+            display: block;
+          }
+          .dropdown:hover .dropdown-menu {
+            transform: scale(1);
+          }
+          
+          </style>
         </div>
+        <span>
+          <div>
+            <a href="cart.html"><img src="img/shopping-cart.svg" alt=""></a> 
+           </div>
+        </span>
+        
       </span>     
                   
                       
@@ -448,39 +414,13 @@
       });
       </script>
 
-
-  <!-- <navbar class="navbar container navbar-expand-lg">
-    <div class="container">
-      <div>
-        <button type="button" class="btn btn-demo" data-toggle="modal" data-target="#myModal">
-         <img src="img/aftercareham.png" alt="">
-      </button>
-     
-      </div>
-      <a class="navbar-brand logo " href="index.html"><img src="img/aftercarelogo1.svg" style="width: 10rem;"alt=""></a>
-      <a class="navbar-brand logo d-sm-none" href="index.html"><img src="img/aftercaremobilelogo.svg"alt=""></a>
-      
-      <div class="navbar-nav">
-        <button type="button" class="btn loginbtn" data-toggle="modal" data-target="#modallogin">
-          <a href="#" class="loginbtnlink"><i class="fas fa-user-alt    "></i> &nbsp; <b>Login</b> </a>
-         </button>
-         <span class="cartmain">
-          <div>
-           <a href="cart.html"><img src="img/shopping-cart.svg" alt=""></a> 
-          </div>
-        </span>   
-     
-      </div>
-    </div>
-  </navbar> -->
-
   
     <!-- hero section -->
 
 
     <div class="container herosec wow animate__animated animate__fadeIn animate__slower" >
-    <div class="row justify-content-around align-items-center " >
-        <div class="col-md-8 my-3 order-md-1 order-sm-2 order-2">
+    <div class="row justify-content-between align-items-center " >
+        <div class="col-md-12 col-lg-8 my-3 order-md-1 order-sm-2 order-2">
             <h1>Dry cleaners and more, </h1>
              <h1>delivered to your door!</h1>  
               
@@ -506,7 +446,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 order-md-2 order-sm-1 order-1 text-center ">
+        <div class="col-md-4 d-md-none d-lg-block order-md-2 order-sm-1 order-1 text-center ">
           <img class="rotatinghero" src="img/Ellipse 443.png" alt="">
         </div>
     </div>
