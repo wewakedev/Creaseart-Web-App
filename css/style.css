@@ -1184,7 +1184,7 @@ ul.links {
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color: #fff !important;
   font-weight: bold;
-  background-color: #B52421 !important;
+  background-color: #BD3935  !important;
 }
  a.nav-pills:hover{
   color: #b5232196 !important;
@@ -1193,6 +1193,8 @@ ul.links {
 
 .nav-pills .nav-link{
   padding: .4rem .8rem;
+  border-radius: 2rem !important;
+  background-color: #F5F5F5;
 }
 
 .avatar-upload {
