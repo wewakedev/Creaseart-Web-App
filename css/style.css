@@ -1163,7 +1163,7 @@ ul.links {
 }
 .navmenu ul li a{
   font-weight: 800;
-  font-family: 'Roboto';
+  font-family: 'Montserrat';
 }
 .container-fluid.nav2 {
   box-shadow: 0rem .03rem .5rem black;
@@ -1890,7 +1890,7 @@ input[type=locationsearch] {
 }
 .shoptitle.col-12.d-flex.justify-content-between {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: -4px;
   
 }
