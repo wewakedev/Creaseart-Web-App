@@ -963,6 +963,10 @@ ul.links {
     top: 16%;
     right: 4%;
 }
+.service .nav-link {
+  width: 150px !important;
+  height: 60px !important;
+}
 }
 
 
@@ -1177,13 +1181,13 @@ ul.links {
 .fade {
   transition: opacity .15s linear !important;
 }
-.service .nav-pills a img{
-  width:1.5rem;
-  margin: .3rem;
+.service a img{
+  width: 35px;
+  height: auto;
+  margin: .6rem;
 }
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+/* .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color: #fff !important;
-  font-weight: bold;
   background-color: #BD3935  !important;
 }
  a.nav-pills:hover{
@@ -1193,8 +1197,39 @@ ul.links {
 
 .nav-pills .nav-link{
   padding: .4rem .8rem;
+  border-radius: 1.2rem !important;
+  background-color: #F5F5F5;
+} */
+.service .nav-link.active, .show>.nav-link,.category  .nav-pills .nav-link.active {
+  color: #fff !important;
+  background-color: #BD3935  !important;
+ 
+}
+.service .nav-link{
+  width: 180px;
+  height: 50px;
+  border-radius: 1.2rem !important;
+  background-color: #F5F5F5;
+  margin: .5rem;
+}
+.category .nav-pills .nav-link{
+  width: 100px;
+  height: 30px;
   border-radius: 2rem !important;
   background-color: #F5F5F5;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service a:hover,.category a.nav-pills:hover{
+  color: #fff !important;
+  background-color: #BD3935  !important;
+}
+.service .row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .avatar-upload {
@@ -1367,7 +1402,7 @@ a.savechangesbtn{
   background-color: #fff;
 }
 #acdetails .nav-pills .nav-link, #feedbacks .nav-pills .nav-link{
-  font-weight: bold !important;
+  /* font-weight: bold !important; */
 }
 
 .tabcon input[type="phone"],.tabcon input[type="email"],.tabcon input[type="password"], .tabcon input[type="name"]{
@@ -1975,10 +2010,10 @@ iframe {
   margin: 0 auto;
 }
 .slick-initialized .slick-slide{
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   --webkit-box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
   -moz-box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  -webkit-appearance: none;
+  -webkit-appearance: none; */
 }
 .vendorproduct{
   margin: 3rem;
@@ -2014,10 +2049,10 @@ text-align: center;
 }
 .addontitle {
   padding: 10px 20px;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   --webkit-box-shadow:rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  -moz-box-shadow:rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  -moz-box-shadow:rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
   border-radius: .5rem;
 }
 
@@ -2046,7 +2081,7 @@ text-align: center;
   display : inline-block;
   width : 35px;
   height : 16px;
-  background-color: #b6b3b3;
+  background-color: #E5E5E5;
   border-radius: 30px;
   border: 2px solid transparent;
   margin-left: 5px;
@@ -2060,7 +2095,7 @@ text-align: center;
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background-color: #B52421;
+  background-color: #C4C4C4;
   top: -3px; 
   left: -3px;
   transition:  all 0.5s;
@@ -2070,11 +2105,12 @@ text-align: center;
 /* Checkbox checked effect */
 .expcheck:checked + .togglekg::after, .expcheck:checked + .toggleexp::after {
   left : 15px; 
+  background-color: #BD3935  ;
 }
       
 /* Checkbox checked togglekg label bg color */
 .expcheck:checked + .togglekg , .expcheck:checked + .toggleexp{
-  background-color: #b5242191;
+  /* background-color: #b5242191; */
 }
       
 /* Checkbox vanished */
@@ -2587,7 +2623,7 @@ transition: all 300ms ease;
   color: #B52421;
 }
 .service a,.category ul li a{
-  font: normal normal bold 12px/18px Montserrat;
+  font: normal normal 12px/18px Montserrat;
 }
 .mrptable td, .mrptable th,.commenttable td,.commenttable th{
 padding:0rem .5rem !important;
@@ -2957,6 +2993,7 @@ color: #282C3F !important;
 
 .clothesquantity input[type='number'],.productquantity input[type='number']{
   border: 1px solid transparent;
+  border-radius: 1rem;
   background: #fff;
   text-align: center;
   padding: .5rem;
@@ -3081,17 +3118,17 @@ input[type=number]::-webkit-inner-spin-button {
 .cart-qty-plus,.proqtyplus,.proqtyminus,.cartqtyplus,.cartqtyminus,
 .cart-qty-minus{
 	width: 20px;
-	height: 20px;
-	border: none;
-  background-color: #B52421;
-    border-radius: .25rem;
+    height: 20px;
+    border: none;
+    background-color: white;
+    border-radius: 0.25rem;
     z-index: 99;
     position: absolute;
     top: 18%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #000;
 
 }
 .cart-qty-minus{
