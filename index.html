@@ -17,26 +17,7 @@
 
   <!-- navbar section -->
 
-   <!-- Back to top button -->
-<a id="totopbutton"></a>
-<script>
-  var btn = $('#totopbutton');
-
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
-
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
-});
-
-
-</script>
+   
 
 
  <div id="par-js">
@@ -880,7 +861,6 @@ btn.on('click', function(e) {
   width: 100%;
   text-align: center;
 }
-/* #footer { height: 5em; background: #888; } */
 </style>
 
 <script>
@@ -896,6 +876,13 @@ btn.on('click', function(e) {
 $(document).ready(checkOffset);
 $(document).scroll(checkOffset);
 </script>
+
+
+<!-- Back to top button -->
+
+<button class="top-btn"></button>
+
+
 
   <!-- footer section -->
 

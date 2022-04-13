@@ -24,7 +24,7 @@
       <div class="" id="navholder"></div>
   </div>
 
-  <div class="container-fluid" style="background-color: #F5F5F5;">
+  <div class="container-fluid pb-sm-0 pb-3" style="background-color: #F5F5F5;">
     <div class="container py-2">
       <div class="row filters align-items-center" >
       <div class="col-md-2 my-3 d-flex text-center justify-content-center align-items-center">
@@ -36,26 +36,26 @@
 
         <div class="filter flex-wrap">
     
-          <input type="radio" id="radio1" name="radios" value="all">
-            <label for="radio1">Popular vendors near me</label>
-          <!-- <input type="radio" id="radio2" name="radios"value="false">
-            <label for="radio2">Laundry</label>
-          <input type="radio" id="radio3" name="radios" value="true">
-            <label for="radio3">Wash & Fold</label>
-          <input type="radio" id="radio4" name="radios" value="all">
-            <label for="radio4">Wash & Iron</label> -->
-          <input type="radio" id="radio5" name="radios" value="all">
-            <label for="radio5">Offers</label>
-            <input type="radio" id="radio6" name="radios" value="all">
-            <label for="radio6">Express Delivery</label>
-          <input type="radio" id="radio7" name="radios"value="false">
-            <label for="radio7">Within 5km</label>
-          <!-- <input type="radio" id="radio8" name="radios" value="true">
-            <label for="radio8">Between 5-15km</label> -->
-          <input type="radio" id="radio9" name="radios" value="all">
-            <label for="radio9">Rating 4+</label>
-          <!-- <input type="radio" id="radio10" name="radios" value="all">
-            <label for="radio10">Below 4</label> -->
+          <input type="checkbox" id="checkbox1" name="checkboxs" value="all">
+            <label for="checkbox1">Popular vendors near me</label>
+          <!-- <input type="checkbox" id="checkbox2" name="checkboxs"value="false">
+            <label for="checkbox2">Laundry</label>
+          <input type="checkbox" id="checkbox3" name="checkboxs" value="true">
+            <label for="checkbox3">Wash & Fold</label>
+          <input type="checkbox" id="checkbox4" name="checkboxs" value="all">
+            <label for="checkbox4">Wash & Iron</label> -->
+          <input type="checkbox" id="checkbox5" name="checkboxs" value="all">
+            <label for="checkbox5">Offers</label>
+            <input type="checkbox" id="checkbox6" name="checkboxs" value="all">
+            <label for="checkbox6">Express Delivery</label>
+          <input type="checkbox" id="checkbox7" name="checkboxs"value="false">
+            <label for="checkbox7">Within 5km</label>
+          <!-- <input type="checkbox" id="checkbox8" name="checkboxs" value="true">
+            <label for="checkbox8">Between 5-15km</label> -->
+          <input type="checkbox" id="checkbox9" name="checkboxs" value="all">
+            <label for="checkbox9">Rating 4+</label>
+          <!-- <input type="checkbox" id="checkbox10" name="checkboxs" value="all">
+            <label for="checkbox10">Below 4</label> -->
         </div>
           
 
@@ -67,19 +67,19 @@
 
 
 /*
-  Hide radio button (the round disc)
+  Hide checkbox button (the round disc)
   we will use just the label to create pushbutton effect
 */
-input[type=radio] {
+input[type=checkbox] {
     display:none;
     margin:10px;
 }
  
 /*
-  Change the look'n'feel of labels (which are adjacent to radiobuttons).
+  Change the look'n'feel of labels (which are adjacent to checkboxbuttons).
   Add some margin, padding to label
 */
-input[type=radio] + label {
+input[type=checkbox] + label {
   font-size: .8rem;
     padding: 0.2rem 1rem;
     background: #fff;
@@ -87,10 +87,10 @@ input[type=radio] + label {
     margin: .3rem;
 }
 /*
- Change background color for label next to checked radio button
+ Change background color for label next to checked checkbox button
  to make it look like highlighted button
 */
-input[type=radio]:checked + label {
+input[type=checkbox]:checked + label {
    background-image: none;
     background-color:#B52421;
     color: #fff;
@@ -139,11 +139,16 @@ input[type=radio]:checked + label {
   background: linear-gradient(90deg, rgba(32, 32, 32, 0.8) 0%, rgba(26, 24, 24, 0) 100%);
 }
     </style>
+
+    
     <div class="container vendors mt-4">
-      <div class="row  justify-content-around flex-wrap">
+      <div class="row  justify-content-start flex-wrap">
 
 
-        <div class="vendor col-sm-3 col-md-5 col-lg-4 p-2  my-3 px-0  shop1 "  onclick="location.href='shoppage.html'">
+        <!-- <div class="vendor col-sm-3 col-md-5 col-lg-4 p-2  my-3 px-0  shop1 "  onclick="location.href='shoppage.html'"> -->
+        
+          <!-- <div class="vendor col-lg-4 col-sm-6 p-2  my-3   shop1 "  onclick="location.href='shoppage.html'">
+          
           <div class="shopimg container-fluid px-0">
             <div class="img-gradienten"><img src="img/shop1.jpg" alt=""></div>
             <div><p><a href="" class="rating text-dark"><span><i class="fa fa-star" aria-hidden="true"></i></span> 4.2</a></li></small></div>
@@ -173,7 +178,7 @@ input[type=radio]:checked + label {
           
         </div>
 
-        <div class="vendor col-sm-3 col-md-5 col-lg-4 p-2  my-3 px-0  shop1 "  onclick="location.href='shoppage.html'">
+        <div class="vendor col-lg-4 col-sm-6 p-2  my-3  shop1 "  onclick="location.href='shoppage.html'">
           <div class="shopimg container-fluid px-0">
             <div class="img-gradienten"><img src="img/shop2.jpg" alt=""></div>
             <div><p><a href="" class="rating text-dark"><span><i class="fa fa-star" aria-hidden="true"></i></span> 4.2</a></li></small></div>
@@ -203,9 +208,130 @@ input[type=radio]:checked + label {
           
         </div>
 
-        <div class="vendor col-sm-3 col-md-5 col-lg-4 p-2  my-3 px-0  shop1 "  onclick="location.href='shoppage.html'">
+        <div class="vendor col-lg-4 col-sm-6 p-2  my-3   shop1 "  onclick="location.href='shoppage.html'">
           <div class="shopimg container-fluid px-0">
             <div class="img-gradienten"><img src="img/shop3.jpg" alt=""></div>
+            <div><p><a href="" class="rating text-dark"><span><i class="fa fa-star" aria-hidden="true"></i></span> 4.2</a></li></small></div>
+
+          </div>
+          
+          <small><span class="offerbadge"><b>30% Off</b></span></small>
+          <div class="container p-2">
+            <div class="shoptitle col-12 d-flex justify-content-between">
+              <div><p  class="text-white">Super Fine Dry Cleaners</p></div>
+              <div><small><span class="distancebadge text-dark"><img src="img/shopdisicon.png" style="width: .6rem;" alt=""> 1.5km</span></small></div>
+            </div>
+            <div class="services col-12 text-secondary">
+            <ul class="d-flex justify-content-between pb-0" style="list-style-type: disc !important; font-size: 12px; padding-left: 0px;font-family: 'Montserrat';">
+              <li><p><a href="shoppage.html"> Drycleaning</a></p></li>
+              <li><p><a href=""> Laundry</a></p></li>
+              <li><p><a href=""> Wash & Fold</a></p></li>
+            </ul>
+           
+            </div>
+            <div class="services pl-0 col-12 text-secondary">
+            <ul class="d-flex mb-0 mt-n3 align-items-center justify-content-between" style="font-size: 12px;padding-left: 0px;font-family: 'Montserrat';">
+              <li><p><a href=""><img src="img/truck.svg" alt="" srcset=""> Express Delivery within 2 days</a></p></li>
+            </ul>
+            </div>
+          </div>
+          
+        </div> -->
+
+
+        <div class="vendor  col-lg-4 col-md-6 p-2  my-3   shop1 "  onclick="location.href='shoppage.html'">
+          
+          <div class="shopimg container-fluid px-0">
+            <div class="img-gradienten"><img class="w-100" src="img/shop1.jpg" alt=""></div>
+            <div><p><a href="" class="rating text-dark"><span><i class="fa fa-star" aria-hidden="true"></i></span> 4.2</a></li></small></div>
+
+          </div>
+          
+          <small><span class="offerbadge"><b>30% Off</b></span></small>
+          <div class="container p-2">
+            <div class="shoptitle col-12 d-flex justify-content-between">
+              <div><p  class="text-white">Super Fine Dry Cleaners</p></div>
+              <div><small><span class="distancebadge text-dark"><img src="img/shopdisicon.png" style="width: .6rem;" alt=""> 1.5km</span></small></div>
+            </div>
+            <div class="services col-12 text-secondary">
+            <ul class="d-flex justify-content-between pb-0" style="list-style-type: disc !important; font-size: 12px; padding-left: 0px;font-family: 'Montserrat';">
+              <li><p><a href="shoppage.html"> Drycleaning</a></p></li>
+              <li><p><a href=""> Laundry</a></p></li>
+              <li><p><a href=""> Wash & Fold</a></p></li>
+            </ul>
+           
+            </div>
+            <div class="services pl-0 col-12 text-secondary">
+            <ul class="d-flex mb-0 mt-n3 align-items-center justify-content-between" style="font-size: 12px;padding-left: 0px;font-family: 'Montserrat';">
+              <li><p><a href=""><img src="img/truck.svg" alt="" srcset=""> Express Delivery within 2 days</a></p></li>
+            </ul>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="vendor  col-lg-4 col-md-6 p-2  my-3  shop1 "  onclick="location.href='shoppage.html'">
+          <div class="shopimg container-fluid px-0">
+            <div class="img-gradienten"><img class="w-100" src="img/shop2.jpg" alt=""></div>
+            <div><p><a href="" class="rating text-dark"><span><i class="fa fa-star" aria-hidden="true"></i></span> 4.2</a></li></small></div>
+
+          </div>
+          
+          <small><span class="offerbadge"><b>30% Off</b></span></small>
+          <div class="container p-2">
+            <div class="shoptitle col-12 d-flex justify-content-between">
+              <div><p  class="text-white">Super Fine Dry Cleaners</p></div>
+              <div><small><span class="distancebadge text-dark"><img src="img/shopdisicon.png" style="width: .6rem;" alt=""> 1.5km</span></small></div>
+            </div>
+            <div class="services col-12 text-secondary">
+            <ul class="d-flex justify-content-between pb-0" style="list-style-type: disc !important; font-size: 12px; padding-left: 0px;font-family: 'Montserrat';">
+              <li><p><a href="shoppage.html"> Drycleaning</a></p></li>
+              <li><p><a href=""> Laundry</a></p></li>
+              <li><p><a href=""> Wash & Fold</a></p></li>
+            </ul>
+           
+            </div>
+            <div class="services pl-0 col-12 text-secondary">
+            <ul class="d-flex mb-0 mt-n3 align-items-center justify-content-between" style="font-size: 12px;padding-left: 0px;font-family: 'Montserrat';">
+              <li><p><a href=""><img src="img/truck.svg" alt="" srcset=""> Express Delivery within 2 days</a></p></li>
+            </ul>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="vendor col-lg-4 col-md-6 p-2  my-3   shop1 "  onclick="location.href='shoppage.html'">
+          <div class="shopimg container-fluid px-0">
+            <div class="img-gradienten"><img class="w-100" src="img/shop3.jpg" alt=""></div>
+            <div><p><a href="" class="rating text-dark"><span><i class="fa fa-star" aria-hidden="true"></i></span> 4.2</a></li></small></div>
+
+          </div>
+          
+          <small><span class="offerbadge"><b>30% Off</b></span></small>
+          <div class="container p-2">
+            <div class="shoptitle col-12 d-flex justify-content-between">
+              <div><p  class="text-white">Super Fine Dry Cleaners</p></div>
+              <div><small><span class="distancebadge text-dark"><img src="img/shopdisicon.png" style="width: .6rem;" alt=""> 1.5km</span></small></div>
+            </div>
+            <div class="services col-12 text-secondary">
+            <ul class="d-flex justify-content-between pb-0" style="list-style-type: disc !important; font-size: 12px; padding-left: 0px;font-family: 'Montserrat';">
+              <li><p><a href="shoppage.html"> Drycleaning</a></p></li>
+              <li><p><a href=""> Laundry</a></p></li>
+              <li><p><a href=""> Wash & Fold</a></p></li>
+            </ul>
+           
+            </div>
+            <div class="services pl-0 col-12 text-secondary">
+            <ul class="d-flex mb-0 mt-n3 align-items-center justify-content-between" style="font-size: 12px;padding-left: 0px;font-family: 'Montserrat';">
+              <li><p><a href=""><img src="img/truck.svg" alt="" srcset=""> Express Delivery within 2 days</a></p></li>
+            </ul>
+            </div>
+          </div>
+          
+        </div>
+        <div class="vendor col-lg-4 col-md-6 p-2  my-3   shop1 "  onclick="location.href='shoppage.html'">
+          <div class="shopimg container-fluid px-0">
+            <div class="img-gradienten"><img class="w-100" src="img/shop3.jpg" alt=""></div>
             <div><p><a href="" class="rating text-dark"><span><i class="fa fa-star" aria-hidden="true"></i></span> 4.2</a></li></small></div>
 
           </div>

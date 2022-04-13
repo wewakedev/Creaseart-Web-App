@@ -251,42 +251,40 @@ svg.animated{
   border-radius: 1rem;
 }
 
-#totopbutton {
-  display: inline-block;
-  background-color: #b52421;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 50%;
+.top-btn {
+  all: unset; 
   position: fixed;
-  bottom: 1%;
-  right: 1%;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  transform:scale(1.8);
   opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
+  transition: .3s;
+  z-index: 10;
+  background-color: #b52421;
+  width: 20px;
+  height: 20px;
+  
 }
-#totopbutton::after {
+.top-btn:after{
   content: "\2191";
+  position: absolute;
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
+  font-size: 1em;
+  line-height: 10px;
+  right: 30%;
+  bottom: 30%;
   color: #fff;
 }
-#totopbutton:hover {
+/* .top-btn:hover {
   cursor: pointer;
   background-color: #333;
 }
-#totopbutton:active {
+.top-btn:active {
   background-color: #555;
-}
-#totopbutton.show {
-  opacity: 1;
-  visibility: visible;
-}
+} */
 
 #signupform h3 {
   display: block;
@@ -963,7 +961,7 @@ ul.links {
 		font-size: 1.2rem !important;
 	}
 	p{
-		font-size: 80%;
+		font-size: 90%;
 	}
   small{
     font-size:.7rem !important;
