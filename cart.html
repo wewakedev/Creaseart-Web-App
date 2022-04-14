@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <title>Cart</title>
   <!-- Required meta tags -->
@@ -9,23 +10,26 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/style.css">
   <script src="//code.jquery.com/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
+
 <body style="background:#fff;">
   <style>
-   
     .btn:focus,
-.btn:active:focus,
-.btn.active:focus,
-.btn.focus,
-.btn:active.focus,
-.btn.active.focus {
-  outline: none;
-}
+    .btn:active:focus,
+    .btn.active:focus,
+    .btn.focus,
+    .btn:active.focus,
+    .btn.active.focus {
+      outline: none;
+    }
 
     /* .productprice{
       display: none;
@@ -34,19 +38,20 @@
 
   <!-- navbar section -->
   <div class="container-fluid nav2">
-    
+
     <script>
-      $.get("nav.html", function(data){
-          $("#navholder").replaceWith(data);
+      $.get("nav.html", function (data) {
+        $("#navholder").replaceWith(data);
       });
-      </script>
-     
-     <div class="" id="navholder"></div>
+    </script>
+
+    <div class="" id="navholder"></div>
   </div>
 
   <div class="container-fluid carttitle p-3 text-center" style="background-color:#404040;">
-    <h4 class=" text-white mb-0"> <span><img style="width: 4rem;" src="img/shopcart.gif" alt=""></span> Shopping Cart</h4>
-    
+    <h4 class=" text-white mb-0"> <span><img style="width: 4rem;" src="img/shopcart.gif" alt=""></span> Shopping Cart
+    </h4>
+
   </div>
 
 
@@ -56,513 +61,543 @@
         <h6 class="mb-0"><b> SELECT SERVICES</b></h6>
       </div>
       <div class="col-md-4 col-6 justify-content-end align-items-center d-flex">
-        <small><b>Express Delivery <sup><i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-original-title="Delivery Within 24hrs"></i></sup> </b></small>
-        <input type="checkbox" id="switchexp"class="expcheck dark-modeBtn" />
+        <small><b>Express Delivery <sup><i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip"
+                data-original-title="Delivery Within 24hrs"></i></sup> </b></small>
+        <input type="checkbox" id="switchexp" class="expcheck dark-modeBtn" />
         <label for="switchexp" class="toggleexp ml-2">
-        </label>   
-        <style>.toggleexp {
-          margin-bottom: 0px !important;
-        }</style>
+        </label>
+        <style>
+          .toggleexp {
+            margin-bottom: 0px !important;
+          }
+        </style>
       </div>
     </div>
   </div>
 
 
-  
+
   <div id="service-cart" class="container cartsection mt-4">
-  	<div class="table-responsive  text-center">
-  		<table class="table table-bordered ">
-  			<thead>
-  				<tr>
-  					<th class="" rowspan="3" >Services</th>
-  					<th>Items</th>
-  					<th>Unit Price</th>
-  					<th >Qty</th>
-  					<th >Total Price</th>
-  					<th>Remove</th>
-  					<!-- <th>Edit</th> -->
-  				</tr>
-  				<!-- <tr>
-  					<th class="" rowspan="2" >Services</th>
-  					<th rowspan="2">Items</th>
-  					<th rowspan="2">Unit Price</th>
-  					<th rowspan="2">Qty</th>
-  					<th rowspan="2">Total Price</th>
-  					<th rowspan="2">Remove</th>
-  				</tr> -->
-  			</thead>
-  			<tbody>
-  				<tr id="cart-row0">
+    <div class="table-responsive  text-center">
+      <table class="table table-bordered ">
+        <thead>
+          <tr>
+            <th class="" rowspan="3">Services</th>
+            <th>Items</th>
+            <th>Unit Price</th>
+            <th colspan="2">Qty</th>
+            <th>Total Price</th>
+            <th>Remove</th>
+            <!-- <th>Edit</th> -->
+          </tr>
+
+        </thead>
+        <tbody>
+          <tr id="cart-row0">
             <td class="cartservice font-weight-bold" rowspan="2">Dry Cleaning</td>
-  					<td class="serviceitem">Coat</td>
+            <td class="serviceitem">Coat</td>
             <td class="unitprice">40</td>
-            <td>
+            <td colspan="2">
               <div class="clothesquantity  ">
                 <div class="button-container d-flex justify-content-center align-items-center">
                   <div class="cart-qty-plus" type="button" value="+">+</div>
-                  <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
+                  <input type="number" name="qty" min="0" class="qty form-control" value="0" />
                   <div class="cart-qty-minus" type="button" value="-">-</div>
                 </div>
               </div>
             </td>
-  
+
             <td>120</td>
-  					<td>
-  						<img src="img/removebtn.png" alt="">
-  					</td>
-  				</tr>
-  
-  				<tr id="cart-row1">
-  					<td class="serviceitem">Blazer</td>
-            <td class="unitprice">40</td>
             <td>
+              <img src="img/removebtnnew.png" alt="">
+            </td>
+          </tr>
+
+          <tr id="cart-row1">
+            <td class="serviceitem">Blazer</td>
+            <td class="unitprice">40</td>
+            <td colspan="2">
               <div class="clothesquantity">
                 <div class="button-container d-flex justify-content-center align-items-center">
                   <div class="cart-qty-plus" type="button" value="+">+</div>
-                  <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
+                  <input type="number" name="qty" min="0" class="qty form-control" value="0" />
                   <div class="cart-qty-minus" type="button" value="-">-</div>
                 </div>
               </div>
             </td>
-  
+
             <td>120</td>
-  					<td>
-  						<img src="img/removebtn.png" alt="">
-  					</td>
-  				</tr>
-  
-  				<tr id="cart-row2">
+            <td>
+              <img src="img/removebtnnew.png" alt="">
+            </td>
+          </tr>
+
+          <tr id="cart-row2">
             <td class="cartservice font-weight-bold" rowspan="2">Wash & Fold</td>
-  					<td class="serviceitem">Shirt</td>
+            <td class="serviceitem">Shirt</td>
             <td class="unitprice">40</td>
-            <td>
+            <td colspan="2">
               <div class="clothesquantity  ">
                 <div class="button-container d-flex justify-content-center align-items-center">
                   <div class="cart-qty-plus" type="button" value="+">+</div>
-                  <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
+                  <input type="number" name="qty" min="0" class="qty form-control" value="0" />
                   <div class="cart-qty-minus" type="button" value="-">-</div>
                 </div>
               </div>
             </td>
-  
+
             <td>120</td>
-  					<td>
-  						<img src="img/removebtn.png" alt="">
-  					</td>
-  				</tr>
-  
-  				<tr id="cart-row3">
-  					<td class="serviceitem">Blazer</td>
-            <td class="unitprice">40</td>
             <td>
+              <img src="img/removebtnnew.png" alt="">
+            </td>
+          </tr>
+
+          <tr id="cart-row3">
+            <td class="serviceitem">Blazer</td>
+            <td class="unitprice">40</td>
+            <td colspan="2">
               <div class="clothesquantity  ">
                 <div class="button-container d-flex justify-content-center align-items-center">
                   <div class="cart-qty-plus" type="button" value="+">+</div>
-                  <input type="number" name="qty" min="0" class="qty form-control" value="0"/>
+                  <input type="number" name="qty" min="0" class="qty form-control" value="0" />
                   <div class="cart-qty-minus" type="button" value="-">-</div>
                 </div>
               </div>
             </td>
-  
+
             <td>120</td>
-  					<td>
-  						<img src="img/removebtn.png" alt="">
-  					</td>
-  				</tr>
-  
-  
-  				<tr id='cart-row4'></tr>
-  
-  			</tbody>
-  		</table>
-  	</div>
-  
+            <td>
+              <img src="img/removebtnnew.png" alt="">
+            </td>
+          </tr>
+
+
+          <tr id='cart-row4'></tr>
+
+        </tbody>
+      </table>
+    </div>
+
   </div>
 
 
-  <div id="addonservice-cart" class="container cartsection">
-  	<div class="table-responsive  text-center">
-  		<table class="table table-bordered ">
-  			<thead>
-  				<tr>
-  					<th colspan="15" class="text-left">Addon Services</th>
-  					<th>Price</th>
-  					<th>Remove</th>
-  				</tr>
-  			</thead>
-  			<tbody>
-  				<tr id="cartaddon-row0">
-            <td class="cartservice font-weight-bold" colspan="15">Dry Cleaning</td>
-            <td>120</td>
-  					<td>
-  						<img src="img/removebtn.png" alt="">
-  					</td>
-  				</tr>
-  
-  				<tr id="cartaddon-row1">
-            <td class="cartservice font-weight-bold" colspan="15">Emlusifier</td>
-            <td>40</td>
-  					<td>
-  						<img src="img/removebtn.png" alt="">
-  					</td>
-  				</tr>
-  
-  				<tr id="cartaddon-row2">
-            <td class="cartservice font-weight-bold" colspan="15">Antiseptic</td>
-            <td>40</td>
-  					<td>
-  						<img src="img/removebtn.png" alt="">
-  					</td>
-  				</tr>
-  
-  			</tbody>
-  		</table>
-  	</div>
-  
-  </div>
-  
+
+
+
+
   <div class="applycouponbtn container">
     <div class="row justify-content-between">
 
       <div class="col-sm-3 col-6 text-center text-sm-left cartbtns">
-        <p><a href=""class="cartcouponbtn" data-toggle="modal" data-target="#applycouponmodal" data-dismiss="modal" ><span><img  src="img/applycouponicon.svg" style="width: 1.2rem;"></span> &nbsp;Apply Coupon</a></p>
+        <p><a href="" class="cartcouponbtn" data-toggle="modal" data-target="#applycouponmodal"
+            data-dismiss="modal"><span><img src="img/applycouponicon.svg" style="width: 1.2rem;"></span> &nbsp;Apply
+            Coupon</a></p>
       </div>
       <div class="col-sm-6 col-6">
         <div class="row justify-content-center">
-          <div class="col-sm-5 text-center cartbtns "><p><a class="cartcontinuebtn" href="">Continue Shopping</a></p></div>
-          <div class="col-sm-5 text-center cartbtns"><p><a class="cartupdatebtn" href="">Update Cart</a></p></div>
+          <div class="col-sm-5 text-center cartbtns ">
+            <p><a class="cartcontinuebtn" href="">Continue Shopping</a></p>
+          </div>
+          <div class="col-sm-5 text-center cartbtns">
+            <p><a class="cartupdatebtn" href="">Update Cart</a></p>
+          </div>
         </div>
       </div>
 
     </div>
-    
+
   </div>
 
   <style>
-    .table td{
+    .table td {
       border-top: 0px;
     }
   </style>
   <div class="container my-3">
     <div class="row d-flex justify-content-between">
+
       <div id=" editdetails-cart" class="cartsection my-3 col-sm-6">
-  
-        <div class="text-center table-responsive">
-    
-          <table class="table">
-            <thead>
+        <div id="addonservice-cart" class="container cartsection">
+          <div class="table-responsive  text-center">
+            <table class="table table-bordered ">
+              <thead>
                 <tr>
-                    <th colspan="4" class="text-left" >Pick Up & Delivery Details</th>
-                    <!-- <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Middle Name</th> -->
-                    <th colspan="2"><a href="" data-toggle="modal" data-target="#edit_" data-uid="1" class="update"><i class="fas fa-pencil-alt    "></i></a>
-                    <!-- <th>Delete</th> -->
+                  <th colspan="15" class="">Addon Services</th>
+                  <th>Price</th>
+                  <th>Remove</th>
                 </tr>
-            </thead>
-            <tbody>
-                <!-- <tr id="d1">
-                    <td>1</td>
-                    <td id="f1">John</td>
-                    <td id="l1">Wick</td>
-                    <td id="m1">Doe</td>
-                </tr> -->
-
-                <tr id='d1'>
-                  <td class="cartaddupdate text-left" colspan="4">Deep Bhaskar <br> Type 1st, Block 30, Room No. 7, Police Colony, Police Line, Jhansi, 284001</td>
-                  <!-- <td colspan="2"><a href="" data-toggle="modal" data-target="#edit_" data-uid="1" class="update"><i class="fas fa-pencil-alt    "></i></a> -->
-                     <!-- <a href="" data-toggle="modal" data-target="#delete" data-uid="1" class="delete"><i class="fas fa-trash-alt    "></i></a></td> -->
+              </thead>
+              <tbody>
+                <tr id="cartaddon-row0">
+                  <td class="cartservice font-weight-bold" colspan="15">Dry Cleaning</td>
+                  <td>120</td>
+                  <td>
+                    <img src="img/removebtnnew.png" alt="">
+                  </td>
                 </tr>
 
-                <tr id='d1'>
-                  <td class="cartaddupdate text-left" colspan="4"><b>Pick-up (Date/Time)</b>  <br> 20/04/2022 / 02:00 pm </td>
-                  <!-- <td colspan="2"><a href="" data-toggle="modal" data-target="#edit_" data-uid="1" class="update"><i class="fas fa-pencil-alt    "></i></a> -->
-                     <!-- <a href="" data-toggle="modal" data-target="#delete" data-uid="1" class="delete"><i class="fas fa-trash-alt    "></i></a></td> -->
-                </tr>
-                <tr id='d1'>
-                  <td class="cartaddupdate text-left" colspan="4"><b>Delivery (Date/Time)</b>  <br> 21/04/2022 <br> 12:00 pm </td>
-                  <!-- <td colspan="2"><a href="" data-toggle="modal" data-target="#edit_" data-uid="1" class="update"><i class="fas fa-pencil-alt    "></i></a> -->
-                     <!-- <a href="" data-toggle="modal" data-target="#delete" data-uid="1" class="delete"><i class="fas fa-trash-alt    "></i></a></td> -->
+                <tr id="cartaddon-row1">
+                  <td class="cartservice font-weight-bold" colspan="15">Emlusifier</td>
+                  <td>40</td>
+                  <td>
+                    <img src="img/removebtnnew.png" alt="">
+                  </td>
                 </tr>
 
+                <tr id="cartaddon-row2">
+                  <td class="cartservice font-weight-bold" colspan="15">Antiseptic</td>
+                  <td>40</td>
+                  <td>
+                    <img src="img/removebtnnew.png" alt="">
+                  </td>
+                </tr>
 
-               
-            </tbody>
-          </table>
-    
-        </div>
-
-
-          
-      </div>
-
-      
-
-      
-      <div id="edit" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">×</button>
-              <h4 class="modal-title">Update Data</h4>
-            </div>
-            <div class="modal-body">
-                 <input id="fn" type="text" class="form-control" name="fname" placeholder="First Name">
-                 <input id="ln" type="text" class="form-control" name="fname" placeholder="Last Name">
-                 <input id="mn" type="text" class="form-control" name="fname" placeholder="Middle Name">
-            </div>
-            <div class="modal-footer">
-              <button type="button" id="up" class="btn btn-warning" data-dismiss="modal">Update</button>
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+              </tbody>
+            </table>
           </div>
+
         </div>
       </div>
-      <div id="delete" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">×</button>
-              <h4 class="modal-title"></h4>
-            </div>
-            <div class="modal-body">
-              <p>Are you sure you want to delete this data?</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" id="del" class="btn" data-dismiss="modal" style="background-color: #B52421;"><small class="text-white">Delete</small> </button>
-              <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
-            </div>
-          </div>
-        </div>
-      </div>
-  
-  
+
       <div id="addonservice-cart" class="m-auto my-3 col-sm-5 cartsection">
-        <div class="table-responsive  text-center">
-          <table class="table table-bordered ">
-            <!-- <thead>
-              <tr>
-                <th colspan="5" class="text-left">Addon Services</th>
-                <th>Price</th>
-                <th>Remove</th>
-              </tr>
-            </thead> -->
-            <tbody>
-              <tr id="cartsubtotal-row0">
-                <td class="subtotalcls text-left">Subtotal</td>
-                <td>200</td>
-              </tr>
-      
-              <tr id="cartaddontotal-row1">
-                <td class="addontotalcls text-left" >Addon Services</td>
-                <td>120</td>
-              </tr>
-      
-              <tr id="cartgrandtotal-row2">
-                <td class="grandtotalcls text-left font-weight-bold"> Grand Total</td>
-                <td class="grandtotalcls font-weight-bold">320</td>
-              </tr>
-      
-            </tbody>
-          </table>
-        </div>
-      
-        <div class="text-center cartproceedbtn my-3">
-          <a href="checkout.html" class=""> Proceed</a>
+        <div class="shoppagesidecart p-3" style="background: #FFFFFF;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+          <div class="cartlist d-flex justify-content-between mb-4">
+            <img src="img/shopcarticon.png" style="width: 2rem;" alt="">
+            <h5>Cart</h5>
+            <small class="text-secondary"> 6 ITEMS</small>
+          </div>
+
+          <div class="totalcart my-2">
+            <div class="subtotal" style="border-bottom: 1px solid #b6b3b3;">
+              <div class=" item1 m-2 d-flex text-secondary justify-content-between" style=" padding-bottom: 10px;">
+                <small>Express Delivery Charges</small>
+                <small class=""><b><i class="fas fa-rupee-sign    "></i> 50</b> </small>
+              </div>
+
+              <div class=" item1 m-2 d-flex text-secondary justify-content-between" style=" padding-bottom: 10px;">
+                <small>Subtotal</small>
+                <small class=""><b><i class="fas fa-rupee-sign    "></i> 200</b> </small>
+              </div>
+
+              <div class=" item1 m-2 d-flex text-secondary justify-content-between" style=" padding-bottom: 10px;">
+                <small>Add-on Services</small>
+                <small class=""><b><i class="fas fa-rupee-sign    "></i> 120</b> </small>
+              </div>
+            </div>
+
+
+            <div class="finaltotal m-2 d-flex justify-content-between">
+              <p class=""><b>Total Order</b> </p>
+              <p><b><i class="fas fa-rupee-sign    "></i> 370</b> </p>
+            </div>
+          </div>
+
+          <div class="checkoutbtn text-center">
+            <a href="checkout.html">
+              <h6><b>Proceed</b></h6>
+            </a>
+          </div>
+
         </div>
 
       </div>
-  
+
     </div>
 
 
-    
+
+    <div id=" editdetails-cart" class="cartsection my-3 col-sm-6">
+
+      <div class="text-center table-responsive">
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th colspan="4" class="text-left">Pick Up & Delivery Details</th>
+              <!-- <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Middle Name</th> -->
+              <th colspan="2"><a href="" data-toggle="modal" data-target="#edit_" data-uid="1" class="update"><i
+                    class="fas fa-pencil-alt    "></i></a>
+                <!-- <th>Delete</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <tr id="d1">
+                  <td>1</td>
+                  <td id="f1">John</td>
+                  <td id="l1">Wick</td>
+                  <td id="m1">Doe</td>
+              </tr> -->
+
+            <tr id='d1'>
+              <td class="cartaddupdate text-left" colspan="4">Deep Bhaskar <br> Type 1st, Block 30, Room No. 7, Police
+                Colony, Police Line, Jhansi, 284001</td>
+              <!-- <td colspan="2"><a href="" data-toggle="modal" data-target="#edit_" data-uid="1" class="update"><i class="fas fa-pencil-alt    "></i></a> -->
+              <!-- <a href="" data-toggle="modal" data-target="#delete" data-uid="1" class="delete"><i class="fas fa-trash-alt    "></i></a></td> -->
+            </tr>
+
+            <tr id='d1'>
+              <td class="cartaddupdate text-left" colspan="4"><b>Pick-up (Date/Time)</b> <br> 20/04/2022 / 02:00 pm
+              </td>
+              <!-- <td colspan="2"><a href="" data-toggle="modal" data-target="#edit_" data-uid="1" class="update"><i class="fas fa-pencil-alt    "></i></a> -->
+              <!-- <a href="" data-toggle="modal" data-target="#delete" data-uid="1" class="delete"><i class="fas fa-trash-alt    "></i></a></td> -->
+            </tr>
+            <tr id='d1'>
+              <td class="cartaddupdate text-left" colspan="4"><b>Delivery (Date/Time)</b> <br> 21/04/2022 <br> 12:00
+                pm </td>
+              <!-- <td colspan="2"><a href="" data-toggle="modal" data-target="#edit_" data-uid="1" class="update"><i class="fas fa-pencil-alt    "></i></a> -->
+              <!-- <a href="" data-toggle="modal" data-target="#delete" data-uid="1" class="delete"><i class="fas fa-trash-alt    "></i></a></td> -->
+            </tr>
+
+
+
+          </tbody>
+        </table>
+
+      </div>
+
+
+
+    </div>
+
+
+
+
+    <div id="edit" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4 class="modal-title">Update Data</h4>
+          </div>
+          <div class="modal-body">
+            <input id="fn" type="text" class="form-control" name="fname" placeholder="First Name">
+            <input id="ln" type="text" class="form-control" name="fname" placeholder="Last Name">
+            <input id="mn" type="text" class="form-control" name="fname" placeholder="Middle Name">
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="up" class="btn btn-warning" data-dismiss="modal">Update</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="delete" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4 class="modal-title"></h4>
+          </div>
+          <div class="modal-body">
+            <p>Are you sure you want to delete this data?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="del" class="btn" data-dismiss="modal" style="background-color: #B52421;"><small
+                class="text-white">Delete</small> </button>
+            <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </div>
-  
-
-
-  
-
-    <!-- Footer -->
-    
-    <div class="">
-      <script>
-        $.get("footer.html", function(data){
-            $("#footerjs").replaceWith(data);
-        });
-        </script>
-        <div class="container-fluid " id="footerjs" ></div>
-    </div>
-          
 
 
 
 
-    <!-- pincode Modal -->
-<div class="modal fade in" id="applycouponmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header" style="background-color: #BD3935;">
-        <h5 class="modal-title text-white" id="exampleModalLongTitle">Apply Coupon</h5>
-        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-
-        <div class="container my-4 applycoupon vendorcoupavail">
-          <div class="row align-items-center">
-            <div class="col-9">
-              <img class="" src="img/vendoroffer1.svg" alt="">
-              <div>
-                <small><b>Get ₹ 50 OFF, min order value ₹ 450</b></small>
-              </div>
-              <div>
-                <small>Super Fine Dry Cleaners</small>
-              </div>
-            </div>
-            <div class="col-3 px-0">
-              <small><a href="/#" style="color: #B52421 !important;">Apply Coupon</a></small>
-            </div>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="container applycoupon vendorcoupavail">
-          <div class="row align-items-center">
-            <div class="col-9">
-              <img class="" src="img/availcoupon.svg" alt="">
-              <div>
-                <small><b>Get ₹ 50 OFF, min order value ₹ 450</b></small>
-              </div>
-              <div>
-                <small>Super Fine Dry Cleaners</small>
-              </div>
-            </div>
-            <div class="col-3 px-0">
-              <small><a href="/#" style="color: #B52421 !important;">Apply Coupon</a></small>
-            </div>
-          </div>
-        </div>
-
-        <hr>
-
-
-        <div class="container applycoupon vendorcoupavail">
-          <div class="row align-items-center">
-            <div class="col-9">
-              <img class="" src="img/vendoroffer1.svg" alt="">
-              <div>
-                <small><b>Get ₹ 50 OFF, min order value ₹ 450</b></small>
-              </div>
-              <div>
-                <small>Super Fine Dry Cleaners</small>
-              </div>
-            </div>
-            <div class="col-3 px-0">
-              <small><a href="/#" style="color: #B52421 !important;">Apply Coupon</a></small>
-            </div>
-          </div>
-        </div>
-
-        
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 
-      <script src="js/main.js"></script>   
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script>
-  
-  
-  var incrementQty;
-  var decrementQty;
-  var plusBtn  = $(".cart-qty-plus");
-  var minusBtn = $(".cart-qty-minus");
-  var incrementQty = plusBtn.click(function() {
-    var $n = $(this)
-      .parent(".button-container")
-      .find(".qty");
-    $n.val(Number($n.val())+1 );
-    update_amounts();
-  });
-  
-  var decrementQty = minusBtn.click(function() {
-      var $n = $(this)
-      .parent(".button-container")
-      .find(".qty");
-    var QtyVal = Number($n.val());
-    if (QtyVal > 0) {
-      $n.val(QtyVal-1);
-    }
-    update_amounts();
-  });
-  
-      </script>
+  <!-- Footer -->
 
-      <script>
-        $(document).ready(function(){
-   $(".update").click(function(){
-       var id = $(this).data("uid");
-       var f1 = $("#f1").html();
-       var l1 = $("#l1").html();
-       var m1 = $("#m1").html();
-       var f2 = $("#f2").html();
-       var l2 = $("#l2").html();
-       var m2 = $("#m2").html();
-       if(id==1){
-           $("#fn").val(f1);
-           $("#mn").val(m1);
-           $("#ln").val(l1);
-       }else if(id==2){
-           $("#fn").val(f2);
-           $("#mn").val(m2);
-           $("#ln").val(l2);
-       }
-       $("#up").click(function(){
-           if(id==1){
-               var fn = $("#fn").val();
-               var mn = $("#mn").val();
-               var ln = $("#ln").val();    
-               $("#f1").html(fn);
-               $("#m1").html(mn);
-               $("#l1").html(ln);
-           }else if(id==2){
-               var fn = $("#fn").val();
-               var mn = $("#mn").val();
-               var ln = $("#ln").val();    
-               $("#f2").html(fn);
-               $("#m2").html(mn);
-               $("#l2").html(ln);              
-           }
-       });
-   });
-   $(".delete").click(function(){
-      var id = $(this).data("uid");
-      $("#del").click(function(){
-          if(id==1){
-              $("#d1").html('');
-          }else if(id==2){
-              $("#d2").html('');
-          }
+  <div class="">
+    <script>
+      $.get("footer.html", function (data) {
+        $("#footerjs").replaceWith(data);
       });
-   });
-});
+    </script>
+    <div class="container-fluid " id="footerjs"></div>
+  </div>
 
 
 
 
-      </script>
+
+  <!-- pincode Modal -->
+  <div class="modal fade in" id="applycouponmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #BD3935;">
+          <h5 class="modal-title text-white" id="exampleModalLongTitle">Apply Coupon</h5>
+          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <div class="container my-4 applycoupon vendorcoupavail">
+            <div class="row align-items-center">
+              <div class="col-9">
+                <img class="" src="img/vendoroffer1.svg" alt="">
+                <div>
+                  <small><b>Get ₹ 50 OFF, min order value ₹ 450</b></small>
+                </div>
+                <div>
+                  <small>Super Fine Dry Cleaners</small>
+                </div>
+              </div>
+              <div class="col-3 px-0">
+                <small><a href="/#" style="color: #B52421 !important;">Apply Coupon</a></small>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="container applycoupon vendorcoupavail">
+            <div class="row align-items-center">
+              <div class="col-9">
+                <img class="" src="img/availcoupon.svg" alt="">
+                <div>
+                  <small><b>Get ₹ 50 OFF, min order value ₹ 450</b></small>
+                </div>
+                <div>
+                  <small>Super Fine Dry Cleaners</small>
+                </div>
+              </div>
+              <div class="col-3 px-0">
+                <small><a href="/#" style="color: #B52421 !important;">Apply Coupon</a></small>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+
+          <div class="container applycoupon vendorcoupavail">
+            <div class="row align-items-center">
+              <div class="col-9">
+                <img class="" src="img/vendoroffer1.svg" alt="">
+                <div>
+                  <small><b>Get ₹ 50 OFF, min order value ₹ 450</b></small>
+                </div>
+                <div>
+                  <small>Super Fine Dry Cleaners</small>
+                </div>
+              </div>
+              <div class="col-3 px-0">
+                <small><a href="/#" style="color: #B52421 !important;">Apply Coupon</a></small>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script>
+
+
+    var incrementQty;
+    var decrementQty;
+    var plusBtn = $(".cart-qty-plus");
+    var minusBtn = $(".cart-qty-minus");
+    var incrementQty = plusBtn.click(function () {
+      var $n = $(this)
+        .parent(".button-container")
+        .find(".qty");
+      $n.val(Number($n.val()) + 1);
+      update_amounts();
+    });
+
+    var decrementQty = minusBtn.click(function () {
+      var $n = $(this)
+        .parent(".button-container")
+        .find(".qty");
+      var QtyVal = Number($n.val());
+      if (QtyVal > 0) {
+        $n.val(QtyVal - 1);
+      }
+      update_amounts();
+    });
+
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".update").click(function () {
+        var id = $(this).data("uid");
+        var f1 = $("#f1").html();
+        var l1 = $("#l1").html();
+        var m1 = $("#m1").html();
+        var f2 = $("#f2").html();
+        var l2 = $("#l2").html();
+        var m2 = $("#m2").html();
+        if (id == 1) {
+          $("#fn").val(f1);
+          $("#mn").val(m1);
+          $("#ln").val(l1);
+        } else if (id == 2) {
+          $("#fn").val(f2);
+          $("#mn").val(m2);
+          $("#ln").val(l2);
+        }
+        $("#up").click(function () {
+          if (id == 1) {
+            var fn = $("#fn").val();
+            var mn = $("#mn").val();
+            var ln = $("#ln").val();
+            $("#f1").html(fn);
+            $("#m1").html(mn);
+            $("#l1").html(ln);
+          } else if (id == 2) {
+            var fn = $("#fn").val();
+            var mn = $("#mn").val();
+            var ln = $("#ln").val();
+            $("#f2").html(fn);
+            $("#m2").html(mn);
+            $("#l2").html(ln);
+          }
+        });
+      });
+      $(".delete").click(function () {
+        var id = $(this).data("uid");
+        $("#del").click(function () {
+          if (id == 1) {
+            $("#d1").html('');
+          } else if (id == 2) {
+            $("#d2").html('');
+          }
+        });
+      });
+    });
 
 
 
 
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-  </html>
+  </script>
+
+
+
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
