@@ -45,36 +45,41 @@
   </div>
 
   <div class="container-fluid carttitle p-3 text-center" style="background-color:#404040;">
-    <h3 class=" text-white">Shopping Cart</h3>
+    <h4 class=" text-white mb-0"> <span><img style="width: 4rem;" src="img/shopcart.gif" alt=""></span> Shopping Cart</h4>
+    
   </div>
 
 
-  <div class="container mt-5">
-    <div class="row my-3 justify-content-between  " style="border-bottom: 1px solid #b6b3b3;">
+  <div class="container my-3">
+    <div class="row my-3 justify-content-between align-items-center">
       <div class="col-md-4 text-left col-6">
-        <h6><b> SELECT SERVICES</b></h6>
+        <h6 class="mb-0"><b> SELECT SERVICES</b></h6>
       </div>
-      <div class="col-md-4 col-6 justify-content-around d-flex">
+      <div class="col-md-4 col-6 justify-content-end align-items-center d-flex">
         <small><b>Express Delivery <sup><i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-original-title="Delivery Within 24hrs"></i></sup> </b></small>
         <input type="checkbox" id="switchexp"class="expcheck dark-modeBtn" />
-        <label for="switchexp" class="toggleexp">
+        <label for="switchexp" class="toggleexp ml-2">
         </label>   
+        <style>.toggleexp {
+          margin-bottom: 0px !important;
+        }</style>
       </div>
     </div>
   </div>
 
 
+  
   <div id="service-cart" class="container cartsection mt-4">
   	<div class="table-responsive  text-center">
   		<table class="table table-bordered ">
   			<thead>
   				<tr>
-  					<th class="text-left">Services</th>
-  					<th>Items</th>
-  					<th>Unit Price</th>
+  					<th class="" rowspan="2" >Services</th>
+  					<th rowspan="2">Items</th>
+  					<th rowspan="2">Unit Price</th>
   					<th>Qty</th>
-  					<th>Total Price</th>
-  					<th>Remove</th>
+  					<th rowspan="2">Total Price</th>
+  					<th rowspan="2">Remove</th>
   					<!-- <th>Edit</th> -->
   				</tr>
   			</thead>
@@ -103,7 +108,7 @@
   					<td class="serviceitem">Blazer</td>
             <td class="unitprice">40</td>
             <td>
-              <div class="clothesquantity  ">
+              <div class="clothesquantity">
                 <div class="button-container d-flex justify-content-center align-items-center">
                   <div class="cart-qty-plus" type="button" value="+">+</div>
                   <input type="number" name="qty" min="0" class="qty form-control" value="0"/>

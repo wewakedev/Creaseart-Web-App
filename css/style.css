@@ -643,7 +643,7 @@ appearance: none;
   cursor: pointer;
 }
 
-.inputlocationfield,.supportinput,input[type="pincode"],.inputcommon{
+.inputlocationfield,.supportinput,input[type="text"],.inputcommon{
 
     /* font-weight: 500; */
     line-height: 1.5;
@@ -1741,7 +1741,6 @@ color: #000000;
 }
 .shopimg img {
   width: 100%;
-  border-radius: 0.4rem;
   /* border-radius: 10px;
   padding: 5px; */
   background: linear-gradient(90deg, rgba(189, 57, 53, 0.8) 0%, rgba(189, 57, 53, 0) 100%);
@@ -1995,6 +1994,7 @@ iframe {
   --webkit-box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
   -moz-box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
   color: #000;
+  background: #fff;
 }
 img.vendordash {
   width: 100%;
@@ -2644,6 +2644,7 @@ font-family: 'Montserrat';
   width: 300px;
   height: 250px;
   border-radius: 10px;
+  background: #fff;
 }
 .vendorguide{
   border: none;
@@ -2957,6 +2958,7 @@ color: #282C3F !important;
   border: 1px solid transparent;
   border-radius: 1rem;
   background: #fff;
+  color: #B52421;
   text-align: center;
   padding: .5rem;
   font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
@@ -3119,7 +3121,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .cartservice{
-  text-align: left;
+  margin: 0 auto;
 }
 .cartsection table th , .cartsection table td,.supporttable table td,.supporttable table th{
   font-size: .8rem;
