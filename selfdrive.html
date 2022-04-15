@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <title> Self-Drive || Aftercare Delivery </title>
   <!-- Required meta tags -->
@@ -10,13 +11,19 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="//code.jquery.com/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+
 <body style="background: #F6F6F6;">
   <style>
-    input[type=locationsearch],.locationicon{
+    input[type=locationsearch],
+    .locationicon {
       display: none;
     }
   </style>
@@ -24,243 +31,270 @@
   <!-- navbar section -->
   <div class="container-fluid nav2">
     <script>
-      $.get("nav2.html", function(data){
-          $("#navholder2").replaceWith(data);
+      $.get("nav2.html", function (data) {
+        $("#navholder2").replaceWith(data);
       });
-      </script>
-      <div class="" id="navholder2"></div>
-  
-      
+    </script>
+    <div class="" id="navholder2"></div>
+
+
   </div>
-  
 
 
-    <div class="container-fluid riderheaderbg py-5" style="background-image: url(img/selfdrivebg.jpg);
+
+  <div class="container-fluid riderheaderbg py-5" style="background-image: url(img/selfdrivebg.jpg);
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
      width: 100%;
      height: 100%;">
 
-      <div class="container selfdriveheader wow animate__animated animate__fadeInDown animate__fast" >
-        <div class="row py-5 align-items-center">
-          <div class="col-md-6  ">
-            <h1 class=" riderheadtitle text-white"><b>Have your own drivers?</b></h1>
-            <br>
-            <p class="text-white riderheadsubtext">Deliver your own Aftercare orders with your in-house rider’s team at a reduced commission.</p>
-            <div class="vendorregisterbtn">
-              <button class="registerbtn" onclick="location.href='vendorform.html';">Register</button>
-            </div>
-          </div>
-  
-        </div>
-      </div>
-      
-    </div>
-
-    <div class="sdworkings container-fluid py-3 " style="background: #FFF8F1">
-      <div class="container">
-
-        <div class="sdworkhead text-center my-3">
-          <h4><b>How does Self-Delivery work?</b></h4>
-          <p style="font-weight: 500;">We've standardized and streamlined laundry service.</p>
-        </div>
-        <div class="row justify-content-around py-4">
-            <div class="col-md-3 text-center my-4 wow animate__animated animate__fadeInLeft animate__fast animate__delay-1s">
-                <img src="img/sdicon1.png">
-                <p><b>Customer place an order</b> </p>
-                <small>
-                  Customers can place orders using Aftercare App or our website.
-                </small>
-            </div>
-  
-            <div class="col-md-3 text-center my-4 wow animate__animated animate__fadeInDown animate__fast animate__delay-1s">
-              <img src="img/sdicon2.svg">
-              <p><b>You manage your orders</b> </p>
-              <small>
-                Confirm orders on your phone or desktop.
-              </small>
-            </div>
-  
-            <div class="col-md-3 text-center my-4 wow animate__animated animate__fadeInRight animate__fast animate__delay-1s">
-              <img src="img/sdicon3.svg">
-              <p><b>Order deliver to customers</b> </p>
-              <small>
-                You put together orders for your drivers to deliver.
-              </small>
-            </div>
-            
-
-        </div>
-      </div>
-       
-    </div>
-
-    <div class="container py-3 whyselfdrive">
-      <div class=" text-center my-3">
-        <h3><b>Why Drive With Us </b> </h3>
-        <p>Just to be your own boss!</p>
-      </div>
-  
-      <div class="row py-4">
-        <div class="col-md-6 order-md-1 order-sm-2 order-2 col-12 my-4 wow animate__animated animate__fadeInLeft">
-          <img src="img/sdperson1.png" alt="">
-        </div>
-        <div class="col-md-6 my-auto order-md-2 order-sm-1 order-1 my-4 wow animate__animated animate__fadeInRight">
-          <h4>Fulfill your own deliveries</h4>
-          <p>Your own team can facilitate deliveries, keeping you in control of the entire process. We make it possible for your customers to get what they want when and where they want it. You may also set your own delivery prices and zones. When you fulfil your own delivery, you can offer an exceptional delivery experience for your customers. It's the right time to control the process at every step.</p>
-        </div>
-      </div>
-  
-      <div class="row py-4">
-       
-        <div class="col-md-6 my-auto my-4 wow animate__animated animate__fadeInLeft">
-          <h4>Reach out to new customers at a discounted rate.</h4>
-          <p>Ready to take the next step and make the switch to self-delivery? Self-Delivery partners benefit from the Aftercare platform's marketing and sales capabilities, as well as a reduced commission rate than Marketplace orders. Your business will be visible to thousands of customers and we'll help you secure new orders</p>
-        </div> 
-        <div class="col-md-6 my-4 wow animate__animated animate__fadeInRight">
-          <img src="img/lowcostreach.png" alt="" >
-        </div>
-      </div>
-  
-      <div class="row py-4">
-        <div class="col-md-6 order-md-1 order-sm-2 order-2 my-4 wow animate__animated animate__fadeInLeft">
-          <img src="img/selfredguy.png" alt="">
-        </div>
-        <div class="col-md-6  my-auto order-md-2 order-sm-1 order-1 my-4 wow animate__animated animate__fadeInRight">
-          <h4>Tap into the rider network</h4>
-          <p>This option provides you with the flexibility to use our network of riders on an emergency basis, when you need them most. This includes days when your team is off, orders placed after your delivery hours, and orders that fall outside of your delivery range.</p>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="container-fluid mt-3  text-center wow animate__animated animate__pulse animate__infinite	infinite animate__slower" style="background: #fff;" >
-      <div class="container p-4" style="background:#E8EBF8;">
-  
-        <div class="row justify-content-around">
-          <div class="ctavendortext">
-            <h2>Have Your Own Logistics ?</h2>
-          </div>
+    <div class="container selfdriveheader wow animate__animated animate__fadeInDown animate__fast">
+      <div class="row py-5 align-items-center">
+        <div class="col-md-6  ">
+          <h1 class=" riderheadtitle text-white"><b>Have your own drivers?</b></h1>
+          <br>
+          <p class="text-white riderheadsubtext">Deliver your own Aftercare orders with your in-house rider’s team at a
+            reduced commission.</p>
           <div class="ctabtn">
-            <button class="ctariderbtn" onclick="location.href='vendorform.html';">Get Started</button>
+            <button class="ctariderbtn" onclick="location.href='vendorform.html';">Register</button>
           </div>
         </div>
-  
+
       </div>
-      
     </div>
-  
-  
-  
-  
-  
-    <div class="conatainer-fluid py-5" id="drivefaq" style="background: #FFF8F1;">
-      <h2 class=" faqtitle p-2 mb-5 text-center"><b> FAQs</b> </h2>
-      <div class="container creasedrivefaq">
-        <h2></h2>
-        <div class="row">
-          <div class="col-12">
-            <section class=" p-lg-5 d-flex flex-column">
-              <div class="my-auto">
-        
-                <div id="accordion" role="tablist" aria-multiselectable="true">
-        
-                  <!-- Accordion Item 1 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="selfdeliveryfaq1">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#selfdeliveryfaq1ans" aria-expanded="false" aria-controls="selfdeliveryfaq1ans"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>I have my own delivery fleet. Can I still use Aftercare?</h6>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <div id="selfdeliveryfaq1ans" class="collapse" role="tabpanel" aria-labelledby="selfdeliveryfaq1" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>You can do it! Self-Delivery with Aftercare is suitable for merchants who already have their own delivery teams and they have self-delivery capabilities and are eager to grow orders by using the Aftercare consumer base. Utilise your own fulfilment fleet—plus, take advantage of the Aftercare  platform.</p>
+
+  </div>
+
+  <div class="sdworkings container-fluid py-3 " style="background: #FFF8F1">
+    <div class="container">
+
+      <div class="sdworkhead text-center my-3">
+        <h4><b>How does Self-Delivery work?</b></h4>
+        <p style="font-weight: 500;">We've standardized and streamlined laundry service.</p>
+      </div>
+      <div class="row justify-content-around py-4">
+        <div
+          class="col-md-3 text-center my-4 wow animate__animated animate__fadeInLeft animate__fast animate__delay-1s">
+          <img src="img/sdicon1.png">
+          <p><b>Customer place an order</b> </p>
+          <small>
+            Customers can place orders using Aftercare App or our website.
+          </small>
+        </div>
+
+        <div
+          class="col-md-3 text-center my-4 wow animate__animated animate__fadeInDown animate__fast animate__delay-1s">
+          <img src="img/sdicon2.png">
+          <p><b>You manage your orders</b> </p>
+          <small>
+            Confirm orders on your phone or desktop.
+          </small>
+        </div>
+
+        <div
+          class="col-md-3 text-center my-4 wow animate__animated animate__fadeInRight animate__fast animate__delay-1s">
+          <img src="img/sdicon3.png">
+          <p><b>Order deliver to customers</b> </p>
+          <small>
+            You put together orders for your drivers to deliver.
+          </small>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container py-3 whyselfdrive">
+    <div class=" text-center my-3">
+      <h3><b>Why Drive With Us </b> </h3>
+      <p>Just to be your own boss!</p>
+    </div>
+
+    <div class="row py-4">
+      <div class="col-md-6 order-md-1 order-sm-2 order-2 col-12 my-4 wow animate__animated animate__fadeInLeft">
+        <img src="img/sdperson1.png" alt="">
+      </div>
+      <div class="col-md-6 my-auto order-md-2 order-sm-1 order-1 my-4 wow animate__animated animate__fadeInRight">
+        <h4>Fulfill your own deliveries</h4>
+        <p>Your own team can facilitate deliveries, keeping you in control of the entire process. We make it possible
+          for your customers to get what they want when and where they want it. You may also set your own delivery
+          prices and zones. When you fulfil your own delivery, you can offer an exceptional delivery experience for your
+          customers. It's the right time to control the process at every step.</p>
+      </div>
+    </div>
+
+    <div class="row py-4">
+
+      <div class="col-md-6 my-auto my-4 wow animate__animated animate__fadeInLeft">
+        <h4>Reach out to new customers at a discounted rate.</h4>
+        <p>Ready to take the next step and make the switch to self-delivery? Self-Delivery partners benefit from the
+          Aftercare platform's marketing and sales capabilities, as well as a reduced commission rate than Marketplace
+          orders. Your business will be visible to thousands of customers and we'll help you secure new orders</p>
+      </div>
+      <div class="col-md-6 my-4 wow animate__animated animate__fadeInRight">
+        <img src="img/lowcostreach.png" alt="">
+      </div>
+    </div>
+
+    <div class="row py-4">
+      <div class="col-md-6 order-md-1 order-sm-2 order-2 my-4 wow animate__animated animate__fadeInLeft">
+        <img src="img/selfredguy.png" alt="">
+      </div>
+      <div class="col-md-6  my-auto order-md-2 order-sm-1 order-1 my-4 wow animate__animated animate__fadeInRight">
+        <h4>Tap into the rider network</h4>
+        <p>This option provides you with the flexibility to use our network of riders on an emergency basis, when you
+          need them most. This includes days when your team is off, orders placed after your delivery hours, and orders
+          that fall outside of your delivery range.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid p-sm-5 py-3 text-center" style="background-color: #fafafa;">
+    <div class="container p-4 wow animate__animated animate__pulse animate__slow animate__infinite"
+      style="background:#fff; ">
+
+      <div class="row justify-content-around align-items-center">
+        <div class="ctavendortext">
+          <h2>Have Your Own Logistics ?</h2>
+        </div>
+        <div class="ctabtn">
+          <button class="ctariderbtn" onclick="location.href='vendorform.html';">Get Started</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <div class="conatainer-fluid py-5" id="drivefaq" style="background: #FFF8F1;">
+    <h2 class=" faqtitle p-2 mb-5 text-center"><b> FAQs</b> </h2>
+    <div class="container creasedrivefaq">
+      <h2></h2>
+      <div class="row">
+        <div class="col-12">
+          <section class=" p-lg-5 d-flex flex-column">
+            <div class="my-auto">
+
+              <div id="accordion" role="tablist" aria-multiselectable="true">
+
+                <!-- Accordion Item 1 -->
+                <div class="card">
+                  <div class="card-header" role="tab" id="selfdeliveryfaq1">
+                    <div class="mb-0 row">
+                      <div class="col-12 no-padding accordion-head">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#selfdeliveryfaq1ans"
+                          aria-expanded="false" aria-controls="selfdeliveryfaq1ans" class="collapsed ">
+                          <i class="fa fa-angle-down" aria-hidden="true"></i>
+                          <h6>I have my own delivery fleet. Can I still use Aftercare?</h6>
+                        </a>
                       </div>
                     </div>
                   </div>
-        
-                  <!-- Accordion Item 2 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="selfdeliveryfaq2">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#selfdeliveryfaq2ans" aria-expanded="false" aria-controls="selfdeliveryfaq2ans"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>I'm already using a Aftercare drive. How can I change my delivery method to Self-Delivery?</h6>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <div id="selfdeliveryfaq2ans" class="collapse" role="tabpanel" aria-labelledby="selfdeliveryfaq2" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>If your shop is already listed on Aftercare and you're ready to start employing your own drivers to deliver Aftercare orders, you can get started with Self-Delivery on Aftercare. To change your delivery method, you need to call customer support, and your issue will be resolved.                          .</p>
-                      </div>
+
+                  <div id="selfdeliveryfaq1ans" class="collapse" role="tabpanel" aria-labelledby="selfdeliveryfaq1"
+                    aria-expanded="false">
+                    <div class="card-block col-12">
+                      <p>You can do it! Self-Delivery with Aftercare is suitable for merchants who already have their
+                        own delivery teams and they have self-delivery capabilities and are eager to grow orders by
+                        using the Aftercare consumer base. Utilise your own fulfilment fleet—plus, take advantage of the
+                        Aftercare platform.</p>
                     </div>
                   </div>
-        
-                  <!-- Accordion Item 3 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="selfdeliveryfaq3">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#selfdeliveryfaq3ans" aria-expanded="false" aria-controls="selfdeliveryfaq3ans"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>How can I use Self-Delivery to deliver my Aftercare orders?</h6>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <div id="selfdeliveryfaq3ans" class="collapse" role="tabpanel" aria-labelledby="selfdeliveryfaq3" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>Self-Delivery enables merchants to use their in-house riders to deliver, receive and accept orders through the Aftercare website. Customers are told on the Aftercare App that your shop delivers its orders.</p>
-                      </div>
-                    </div>
-                  </div>
-        
-                  <!-- Accordion Item 4 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="selfdeliveryfaq4">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#selfdeliveryfaq4ans" aria-expanded="false" aria-controls="selfdeliveryfaq4ans"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>Will I get a sufficient amount of orders?</h6>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <div id="selfdeliveryfaq4ans" class="collapse" role="tabpanel" aria-labelledby="selfdeliveryfaq4" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>Aftercare provides a variety of orders to assist you in increasing your volume, both via Aftercare participation and marketing promos that you can add straight from your Merchant Portal. Additionally, with our flexible fulfilment option, you may employ Riders to grow your delivery area and order volume without modifying your operations.</p>
-                      </div>
-                    </div>
-                  </div>
-        
                 </div>
-        
+
+                <!-- Accordion Item 2 -->
+                <div class="card">
+                  <div class="card-header" role="tab" id="selfdeliveryfaq2">
+                    <div class="mb-0 row">
+                      <div class="col-12 no-padding accordion-head">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#selfdeliveryfaq2ans"
+                          aria-expanded="false" aria-controls="selfdeliveryfaq2ans" class="collapsed ">
+                          <i class="fa fa-angle-down" aria-hidden="true"></i>
+                          <h6>I'm already using a Aftercare drive. How can I change my delivery method to Self-Delivery?
+                          </h6>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="selfdeliveryfaq2ans" class="collapse" role="tabpanel" aria-labelledby="selfdeliveryfaq2"
+                    aria-expanded="false">
+                    <div class="card-block col-12">
+                      <p>If your shop is already listed on Aftercare and you're ready to start employing your own
+                        drivers to deliver Aftercare orders, you can get started with Self-Delivery on Aftercare. To
+                        change your delivery method, you need to call customer support, and your issue will be resolved.
+                        .</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion Item 3 -->
+                <div class="card">
+                  <div class="card-header" role="tab" id="selfdeliveryfaq3">
+                    <div class="mb-0 row">
+                      <div class="col-12 no-padding accordion-head">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#selfdeliveryfaq3ans"
+                          aria-expanded="false" aria-controls="selfdeliveryfaq3ans" class="collapsed ">
+                          <i class="fa fa-angle-down" aria-hidden="true"></i>
+                          <h6>How can I use Self-Delivery to deliver my Aftercare orders?</h6>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="selfdeliveryfaq3ans" class="collapse" role="tabpanel" aria-labelledby="selfdeliveryfaq3"
+                    aria-expanded="false">
+                    <div class="card-block col-12">
+                      <p>Self-Delivery enables merchants to use their in-house riders to deliver, receive and accept
+                        orders through the Aftercare website. Customers are told on the Aftercare App that your shop
+                        delivers its orders.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion Item 4 -->
+                <div class="card">
+                  <div class="card-header" role="tab" id="selfdeliveryfaq4">
+                    <div class="mb-0 row">
+                      <div class="col-12 no-padding accordion-head">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#selfdeliveryfaq4ans"
+                          aria-expanded="false" aria-controls="selfdeliveryfaq4ans" class="collapsed ">
+                          <i class="fa fa-angle-down" aria-hidden="true"></i>
+                          <h6>Will I get a sufficient amount of orders?</h6>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="selfdeliveryfaq4ans" class="collapse" role="tabpanel" aria-labelledby="selfdeliveryfaq4"
+                    aria-expanded="false">
+                    <div class="card-block col-12">
+                      <p>Aftercare provides a variety of orders to assist you in increasing your volume, both via
+                        Aftercare participation and marketing promos that you can add straight from your Merchant
+                        Portal. Additionally, with our flexible fulfilment option, you may employ Riders to grow your
+                        delivery area and order volume without modifying your operations.</p>
+                    </div>
+                  </div>
+                </div>
+
               </div>
-            </section>
-          </div>
 
+            </div>
+          </section>
         </div>
+
       </div>
-
     </div>
-    
+
+  </div>
 
 
 
@@ -271,63 +305,71 @@
 
 
 
-<!-- footer section -->
 
-<div class="">
+  <!-- footer section -->
+
+  <div class="">
     <script>
-     $.get("footer.html", function(data){
-         $("#footerjs").replaceWith(data);
-     });
+      $.get("footer.html", function (data) {
+        $("#footerjs").replaceWith(data);
+      });
     </script>
-    <div class="container-fluid " id="footerjs" ></div>
-</div>
+    <div class="container-fluid " id="footerjs"></div>
+  </div>
 
 
 
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="js/main.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/main.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
 
 
 
-$('.carousel').slick({
-dots:true,
-infinite: false,
-speed: 300,
-slidesToShow: 3,
-slidesToScroll: 1,
+    $('.carousel').slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 1,
 
-responsive: [
-{
-  breakpoint: 768,
-  settings: {
-    arrows: false,
-    centerMode: true,
-    centerPadding: '40px',
-    slidesToShow: 3
-  }
-},
-{
-  breakpoint: 480,
-  settings: {
-    arrows: false,
-    // centerMode: true,
-    // centerPadding: '40px',
-    slidesToShow: 1
-  }
-}
-]
-});
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            // centerMode: true,
+            // centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
 
 // Slick version 1.5.8
-</script>
+  </script>
 </body>
+
 </html>

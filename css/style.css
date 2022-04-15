@@ -228,6 +228,7 @@ input {
 /* Signup / Login MODAL */
 
 #signupform input[type="text"],
+input[type="text"],
 input[type="date"],
 #contactusform input [type="text"],
 #signupform input[type="email"],
@@ -332,6 +333,7 @@ fieldset {
 }
 
 #signupform input[type="text"],
+input[type="text"],
 input[type="date"],
 #signupform input[type="email"],
 #signupform input[type="tel"],
@@ -367,6 +369,7 @@ input[type="date"],
 }
 
 #signupform input[type="text"]:hover,
+input[type="text"]:hover,
 #signupform input[type="email"]:hover,
 #signupform input[type="tel"]:hover,
 #loginform input[type="tel"]:hover,
@@ -702,7 +705,6 @@ body:not(.modal-open) {
 
 .inputlocationfield,
 .supportinput,
-input[type="text"],
 .inputcommon {
   /* font-weight: 500; */
   line-height: 1.5;
@@ -1228,20 +1230,28 @@ ul.links {
   height: auto;
   margin: 0.6rem;
 }
-#acdetails .nav-pills .nav-link.active,
-#acdetails .nav-pills .show > .nav-link {
+#acdetails .nav-link,
+.newadd .nav-link {
+  padding: 0px;
+}
+#acdetails .nav-link.active small,
+#newadd .nav-link.active small,
+#acdetails .show > .nav-link,
+#newadd .show > .nav-link {
   color: #fff !important;
   background-color: #bd3935 !important;
 }
-#acdetails a.nav-pills:hover {
+#acdetails a:hover,
+#newadd a:hover {
   color: #b5232196 !important;
   transition: 0.6s ease-out;
 }
 
-#acdetails .nav-pills .nav-link {
+#acdetails .nav-link small,
+#newadd .nav-link small {
   padding: 0.4rem 0.8rem;
   border-radius: 1.2rem !important;
-  background-color: #f5f5f5;
+  background-color: #fff;
 }
 
 .service .nav-link.active,
@@ -1500,20 +1510,27 @@ a.savechangesbtn {
 }
 .adds {
   font-size: 12px;
-  -webkit-appearance: none;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /*-webkit-appearance: none;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   --webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  -moz-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -moz-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  -webkit-appearance: none;
+  --webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  -moz-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
+    rgb(0 0 0 / 30%) 0px 1px 3px -1px;
 }
 .adds i {
   font-size: 15px;
+  color: #b52421;
 }
-.addcta span {
+.addcta a {
   margin: 2px;
   padding: 5px;
-  font-size: 18px;
   font-weight: 500;
-  color: #b52421;
+  color: #b52421 !important;
   cursor: pointer;
 }
 
@@ -1670,7 +1687,10 @@ a.savechangesbtn {
 .nav-tabs .nav-link {
   border: none !important;
 }
-
+/* .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: none !important;
+} */
 .card-block p {
   margin: 1rem 0rem;
   font-weight: 500;
@@ -2592,7 +2612,8 @@ input[type="date"]:before {
   top: 50%;
 }
 
-.marker {
+.markerchecksuc,
+.markercheckfail {
   z-index: 1000;
   color: #fff;
   width: 40px;
@@ -2604,6 +2625,9 @@ input[type="date"]:before {
   margin-left: -25px;
   background-color: #b52421;
   border-radius: 50%;
+}
+.markercheckfail {
+  background-color: #cbc9c9;
 }
 
 /* .marker:hover{
