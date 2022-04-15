@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <title>Offers & Coupons</title>
   <!-- Required meta tags -->
@@ -9,45 +10,52 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/style.css">
   <script src="//code.jquery.com/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+
 <body style="background: #fff;">
 
   <!-- navbar section -->
   <div class="container-fluid nav2">
     <script>
-      $.get("nav.html", function(data){
-          $("#navholder").replaceWith(data);
+      $.get("nav.html", function (data) {
+        $("#navholder").replaceWith(data);
       });
-      </script>
-      <div class="" id="navholder"></div>
+    </script>
+    <div class="" id="navholder"></div>
   </div>
 
-  
+
   <div class="container-fluid offerheader d-flex justify-content-center align-items-center">
 
-    <div class="offerhead container">
+    <div class="offerhead container d-none">
       <div class="row py-3">
         <div class="col-sm-8 col-10 mt-3 mb-0 pl-0">
           <h1 class="" style="color: #B52421 !important;"><b>Offers & Coupons</b> </h1>
           <p class="text-gray">Explore top deals and offers exclusively for you!</p>
         </div>
       </div>
-      
+
     </div>
 
   </div>
 
   <div class="couponoffers my-5 light-bg" id="couponofferid">
     <div class="container">
-     
+
       <ul class="nav nav-tabs justify-content-sm-start justify-content-around coupon-sec">
         <li class="nav-item vendoroffer">
-          <a class="nav-link active" data-toggle="tab" href="#vendoroffertab"><h6>Vendor Offers</h6></a>
+          <a class="nav-link active" data-toggle="tab" href="#vendoroffertab">
+            <h6>Vendor Offers</h6>
+          </a>
         </li>
         <li class="nav-item aftercarecoupon">
-        <a class="nav-link" data-toggle="tab" href="#Aftercarecoupontab"><h6>Coupons</h6></a>
+          <a class="nav-link" data-toggle="tab" href="#Aftercarecoupontab">
+            <h6>Coupons</h6>
+          </a>
         </li>
       </ul>
       <div class="tab-content my-4">
@@ -55,79 +63,88 @@
 
           <div class="container">
             <div class="row justify-content-between">
-                <div class=" col-md-3 vendoroffer m-2 " style="background: #F6F6F6;">          
-                  <div class="vendoroffertag pt-1 pb-0 text-center">
-                    <h4><i class="fas fa-rupee-sign"></i>50 OFF</h4></i><br>
-                    <small>Min Order Value ₹ 450</small><br>
-                    <div id="second" style="color: #fff; margin: 0px; background: #E76F51; padding: 0px; text-align: center;"><small>SPRDC 0025</small></div>
+              <div class=" col-md-3 vendoroffer m-2 " style="background: #F6F6F6;">
+                <div class="vendoroffertag pt-1 pb-0 text-center">
+                  <h4><i class="fas fa-rupee-sign"></i>50 OFF</h4></i><br>
+                  <small>Min Order Value ₹ 450</small><br>
+                  <div id="second"
+                    style="color: #fff; margin: 0px; background: #E76F51; padding: 0px; text-align: center;">
+                    <small>SPRDC 0025</small>
                   </div>
-                  <div class="offertagdeat">
-                    <small style="color: #000;"><b>Get ₹ 50 OFF, min order value ₹ 450</b></small><br>
-                    <small class="text-secondary">by Super Fine Dry Cleaners</small>
-                    <!-- <div id="show-more" > <a href="javascript:void(0)">More + </a></div> -->
-  
-                    <div id="show-more-content">
-                      <div class="more-text">
-                        <small><b>Terms & Conditions</b></small>
-                        <ul class="mt-2 " style="list-style-type: disc !important;padding-inline-start: 20px;line-height: 1rem;">
-                          <li><small>Lorem ipsum dolor sit amet consectetur.</small></li>
-                          <li><small>Lorem ipsum dolor sit amet consectetur.</small></li>
-                          <li><small>Lorem ipsum dolor sit amet consectetur.</small></li>
-                 
-                        </ul>
-                      </div>
-                      
-                      <a href="#" class="more-link my-2"></a>
+                </div>
+                <div class="offertagdeat">
+                  <small style="color: #000;"><b>Get ₹ 50 OFF, min order value ₹ 450</b></small><br>
+                  <small class="text-secondary">by Super Fine Dry Cleaners</small>
+                  <!-- <div id="show-more" > <a href="javascript:void(0)">More + </a></div> -->
+
+                  <div id="show-more-content">
+                    <div class="more-text">
+                      <small><b>Terms & Conditions</b></small>
+                      <ul class="mt-2 "
+                        style="list-style-type: disc !important;padding-inline-start: 20px;line-height: 1rem;">
+                        <li><small>Lorem ipsum dolor sit amet consectetur.</small></li>
+                        <li><small>Lorem ipsum dolor sit amet consectetur.</small></li>
+                        <li><small>Lorem ipsum dolor sit amet consectetur.</small></li>
+
+                      </ul>
                     </div>
-                    
-                  </div><hr style="margin: .5rem 0rem;">
-                  <div class="">
-                    <button id="second-button" class=" copyoffer" style="right:0;" onclick="copyText('second');" title="Copy Text">Copy Code</button>
+
+                    <a href="#" class="more-link my-2"></a>
                   </div>
 
                 </div>
-                
+                <hr style="margin: .5rem 0rem;">
+                <div class="">
+                  <button id="second-button" class=" copyoffer" style="right:0;" onclick="copyText('second');"
+                    title="Copy Text">Copy Code</button>
+                </div>
+
+              </div>
+
             </div>
           </div>
 
 
         </div>
-      
+
 
         <div class="tab-pane show " id="Aftercarecoupontab">
 
           <div class="container">
             <div class="row justify-content-between">
-                <div class=" col-md-3 Aftercareoffer m-2 " style="background: #F6F6F6;">          
-                  <div class="Aftercareoffertag pt-1 pb-0 text-center" style=" background-image: url(img/couponbg.svg);">
-                    <span><img src="img/couponicon.png" alt=""></span> &nbsp; &nbsp;
-                    <span id="codeidfc"><small><b>IDFC125</b></small></span>
-                  </div>
-                  <div class="Aftercareoffertagdeat">
-                    <small style="color: #000;"><b>Get 30% discount using IDFC FIRST Bank cards</b></small><br>
-                    <small class="text-secondary">Maximum discount up to Rs. 125 on orders above Rs. 299</small><br>
-                    <!-- <a style="color: #6993C3 !important;" href="shoppage.html">More+ </a> -->
-
-                    <div id="show-more-content">
-                      <div class="more-text">
-                        <small><b>Terms & Conditions</b></small>
-                        <ul class="mt-2 " style="list-style-type: disc !important;padding-inline-start: 20px; line-height: 1rem;">
-                          <li><small>Lorem ipsum dolor sit amet consectetur.</small></li>
-                          <li><small>Lorem ipsum dolor sit amet consectetur.</small></li>
-                          
-                        </ul>
-                      </div>
-                      
-                      <a href="#" class="more-link my-2"></a>
-                    </div>
-                    
-                  </div><hr style="margin: .5rem 0rem;">
-                  <div><button class="copyoffer" onclick="copyToClipboard('#codeidfc')"><small>Copy Code</small></button></div>
+              <div class=" col-md-3 Aftercareoffer m-2 " style="background: #F6F6F6;">
+                <div class="Aftercareoffertag pt-1 pb-0 text-center" style=" background-image: url(img/couponbg.svg);">
+                  <span><img src="img/couponicon.png" alt=""></span> &nbsp; &nbsp;
+                  <span id="codeidfc"><small><b>IDFC125</b></small></span>
                 </div>
+                <div class="Aftercareoffertagdeat">
+                  <small style="color: #000;"><b>Get 30% discount using IDFC FIRST Bank cards</b></small><br>
+                  <small class="text-secondary">Maximum discount up to Rs. 125 on orders above Rs. 299</small><br>
+                  <!-- <a style="color: #6993C3 !important;" href="shoppage.html">More+ </a> -->
 
-                
-                
-                
+                  <div id="show-more-content">
+                    <div class="more-text">
+                      <small><b>Terms & Conditions</b></small>
+                      <ul class="mt-2 "
+                        style="list-style-type: disc !important;padding-inline-start: 20px; line-height: 1rem;">
+                        <li><small>Lorem ipsum dolor sit amet consectetur.</small></li>
+                        <li><small>Lorem ipsum dolor sit amet consectetur.</small></li>
+
+                      </ul>
+                    </div>
+
+                    <a href="#" class="more-link my-2"></a>
+                  </div>
+
+                </div>
+                <hr style="margin: .5rem 0rem;">
+                <div><button class="copyoffer" onclick="copyToClipboard('#codeidfc')"><small>Copy Code</small></button>
+                </div>
+              </div>
+
+
+
+
             </div>
           </div>
 
@@ -145,12 +162,12 @@
 
   </div>
 
-      
-      
 
 
 
-<!-- <article class="text-container">
+
+
+  <!-- <article class="text-container">
   <h1>show more/less</h1>
   <h2>using css3 transitions for toggle slide effect</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
@@ -204,26 +221,33 @@
 
 
 
-   <!-- footer section -->
+  <!-- footer section -->
 
   <div class="">
     <script>
-      $.get("footer.html", function(data){
-          $("#footerjs").replaceWith(data);
+      $.get("footer.html", function (data) {
+        $("#footerjs").replaceWith(data);
       });
-      </script>
-      <div class="container-fluid " id="footerjs" ></div>
+    </script>
+    <div class="container-fluid " id="footerjs"></div>
   </div>
 
 
 
- <!-- Optional JavaScript -->
+  <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="js/main.js"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

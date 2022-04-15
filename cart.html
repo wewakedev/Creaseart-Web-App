@@ -85,7 +85,7 @@
             <th class="" rowspan="3">Services</th>
             <th>Items</th>
             <th>Unit Price</th>
-            <th colspan="2">Qty</th>
+            <th colspan="3">Qty</th>
             <th>Total Price</th>
             <th>Remove</th>
             <!-- <th>Edit</th> -->
@@ -97,7 +97,7 @@
             <td class="cartservice font-weight-bold" rowspan="2">Dry Cleaning</td>
             <td class="serviceitem">Coat</td>
             <td class="unitprice">40</td>
-            <td colspan="2">
+            <td colspan="3">
               <div class="clothesquantity  ">
                 <div class="button-container d-flex justify-content-center align-items-center">
                   <div class="cart-qty-plus" type="button" value="+">+</div>
@@ -116,7 +116,7 @@
           <tr id="cart-row1">
             <td class="serviceitem">Blazer</td>
             <td class="unitprice">40</td>
-            <td colspan="2">
+            <td colspan="3">
               <div class="clothesquantity">
                 <div class="button-container d-flex justify-content-center align-items-center">
                   <div class="cart-qty-plus" type="button" value="+">+</div>
@@ -136,7 +136,7 @@
             <td class="cartservice font-weight-bold" rowspan="2">Wash & Fold</td>
             <td class="serviceitem">Shirt</td>
             <td class="unitprice">40</td>
-            <td colspan="2">
+            <td colspan="3">
               <div class="clothesquantity  ">
                 <div class="button-container d-flex justify-content-center align-items-center">
                   <div class="cart-qty-plus" type="button" value="+">+</div>
@@ -155,7 +155,7 @@
           <tr id="cart-row3">
             <td class="serviceitem">Blazer</td>
             <td class="unitprice">40</td>
-            <td colspan="2">
+            <td colspan="3">
               <div class="clothesquantity  ">
                 <div class="button-container d-flex justify-content-center align-items-center">
                   <div class="cart-qty-plus" type="button" value="+">+</div>
@@ -180,44 +180,61 @@
 
   </div>
 
-
-
-
-
-
-  <div class="applycouponbtn container">
-    <div class="row justify-content-between">
-
-      <div class="col-sm-3 col-6 text-center text-sm-left cartbtns">
-        <p><a href="" class="cartcouponbtn" data-toggle="modal" data-target="#applycouponmodal"
-            data-dismiss="modal"><span><img src="img/applycouponicon.svg" style="width: 1.2rem;"></span> &nbsp;Apply
-            Coupon</a></p>
-      </div>
-      <div class="col-sm-6 col-6">
-        <div class="row justify-content-center">
-          <div class="col-sm-5 text-center cartbtns ">
-            <p><a class="cartcontinuebtn" href="">Continue Shopping</a></p>
-          </div>
-          <div class="col-sm-5 text-center cartbtns">
-            <p><a class="cartupdatebtn" href="">Update Cart</a></p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
   <style>
+    .cartsection .table>tbody>tr>td {
+      vertical-align: middle;
+    }
+
+    .cartsection tr#cart-row0 td,
+    .cartsection tr#cart-row2 td {
+      border-bottom: none;
+    }
+
+    td.cartservice,
+    tr#cartaddon-row2 {
+      border-bottom: 1px solid #dee2e6 !important;
+    }
+
     .table td {
       border-top: 0px;
     }
+
+
+    /* Addoncss */
+    div#addonservice-cart th,
+    div#addonservice-cart td {
+      border-bottom: none;
+    }
+
+    div#addonservice-cart th,
+    div#addonservice-cart td {
+      border-bottom: none;
+    }
+
+    td.addonservice {
+      border-bottom: none;
+    }
+
+    td img {
+      width: 1rem;
+    }
+
+    #editdetails-cart th {
+      border: none;
+    }
+
+    #editdetails-cart tbody {
+      border: .5px solid #dee2e6;
+    }
   </style>
+
+
+
   <div class="container my-3">
     <div class="row d-flex justify-content-between">
 
       <div id=" editdetails-cart" class="cartsection my-3 col-sm-6">
-        <div id="addonservice-cart" class="container cartsection">
+        <div id="addonservice-cart" class="container cartsection px-0">
           <div class="table-responsive  text-center">
             <table class="table table-bordered ">
               <thead>
@@ -229,7 +246,7 @@
               </thead>
               <tbody>
                 <tr id="cartaddon-row0">
-                  <td class="cartservice font-weight-bold" colspan="15">Dry Cleaning</td>
+                  <td class="addonservice font-weight-bold" colspan="15">Dry Cleaning</td>
                   <td>120</td>
                   <td>
                     <img src="img/removebtnnew.png" alt="">
@@ -237,7 +254,7 @@
                 </tr>
 
                 <tr id="cartaddon-row1">
-                  <td class="cartservice font-weight-bold" colspan="15">Emlusifier</td>
+                  <td class="addonservice font-weight-bold" colspan="15">Emlusifier</td>
                   <td>40</td>
                   <td>
                     <img src="img/removebtnnew.png" alt="">
@@ -245,7 +262,7 @@
                 </tr>
 
                 <tr id="cartaddon-row2">
-                  <td class="cartservice font-weight-bold" colspan="15">Antiseptic</td>
+                  <td class="addonservice wborder font-weight-bold" colspan="15">Antiseptic</td>
                   <td>40</td>
                   <td>
                     <img src="img/removebtnnew.png" alt="">
@@ -256,12 +273,17 @@
             </table>
           </div>
 
+
+        </div>
+
+        <div class="my-3 text-center cartbtns ">
+          <p><a class="cartcontinuebtn" href="">Continue Shopping</a></p>
         </div>
       </div>
 
       <div id="addonservice-cart" class="m-auto my-3 col-sm-5 cartsection">
         <div class="shoppagesidecart p-3" style="background: #FFFFFF;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
           <div class="cartlist d-flex justify-content-between mb-4">
             <img src="img/shopcarticon.png" style="width: 2rem;" alt="">
             <h5>Cart</h5>
@@ -287,10 +309,26 @@
             </div>
 
 
+
             <div class="finaltotal m-2 d-flex justify-content-between">
               <p class=""><b>Total Order</b> </p>
               <p><b><i class="fas fa-rupee-sign    "></i> 370</b> </p>
             </div>
+          </div>
+
+          <div class="cartcouponbtn text-center d-flex justify-content-start align-items-center">
+            <a href="checkout.html">
+              <div>
+                <img src=" img/applycouponicon.svg">
+              </div>
+
+              <div class="m-auto">
+                <h6><a href="" class="" data-toggle="modal" data-target="#applycouponmodal" data-dismiss="modal">Apply
+                    Coupon
+                  </a></h6>
+              </div>
+
+            </a>
           </div>
 
           <div class="checkoutbtn text-center">
@@ -307,45 +345,39 @@
 
 
 
-    <div id=" editdetails-cart" class="cartsection my-3 col-sm-6">
+    <div id="editdetails-cart" class="cartsection my-3 px-1  col-sm-6">
 
-      <div class="text-center table-responsive">
+      <div class="text-center">
 
         <table class="table">
           <thead>
             <tr>
-              <th colspan="4" class="text-left">Pick Up & Delivery Details</th>
-              <!-- <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Middle Name</th> -->
-              <th colspan="2"><a href="" data-toggle="modal" data-target="#edit_" data-uid="1" class="update"><i
-                    class="fas fa-pencil-alt    "></i></a>
-                <!-- <th>Delete</th> -->
+              <th colspan="4" class="text-left"> <span><img src="img/carthomeicon.png" style="width: 1rem;"
+                    alt=""></span> &nbsp; Pick Up &
+                Delivery
+                Details</th>
+              <th colspan="2"><a href="" data-toggle="modal" data-target="#edit_" data-uid="1" class="update"><span><img
+                      src="img/editpencil.png" style="width: 1rem;" alt=""></span></a>
             </tr>
           </thead>
           <tbody>
-            <!-- <tr id="d1">
-                  <td>1</td>
-                  <td id="f1">John</td>
-                  <td id="l1">Wick</td>
-                  <td id="m1">Doe</td>
-              </tr> -->
 
             <tr id='d1'>
-              <td class="cartaddupdate text-left" colspan="4">Deep Bhaskar <br> Type 1st, Block 30, Room No. 7, Police
+              <td class="cartaddupdate text-left" colspan="4">Deep Bhaskar <br> Type 1st, Block 30, Room No. 7,
+                Police
                 Colony, Police Line, Jhansi, 284001</td>
-              <!-- <td colspan="2"><a href="" data-toggle="modal" data-target="#edit_" data-uid="1" class="update"><i class="fas fa-pencil-alt    "></i></a> -->
-              <!-- <a href="" data-toggle="modal" data-target="#delete" data-uid="1" class="delete"><i class="fas fa-trash-alt    "></i></a></td> -->
             </tr>
 
             <tr id='d1'>
-              <td class="cartaddupdate text-left" colspan="4"><b>Pick-up (Date/Time)</b> <br> 20/04/2022 / 02:00 pm
+              <td class="cartaddupdate text-left " colspan="4"><b>Pick-up (Date/Time)</b> <br> 20/04/2022 / 02:00
+                pm
               </td>
               <!-- <td colspan="2"><a href="" data-toggle="modal" data-target="#edit_" data-uid="1" class="update"><i class="fas fa-pencil-alt    "></i></a> -->
               <!-- <a href="" data-toggle="modal" data-target="#delete" data-uid="1" class="delete"><i class="fas fa-trash-alt    "></i></a></td> -->
             </tr>
             <tr id='d1'>
-              <td class="cartaddupdate text-left" colspan="4"><b>Delivery (Date/Time)</b> <br> 21/04/2022 <br> 12:00
+              <td class="cartaddupdate text-left " colspan="4"><b>Delivery (Date/Time)</b> <br> 21/04/2022 <br>
+                12:00
                 pm </td>
               <!-- <td colspan="2"><a href="" data-toggle="modal" data-target="#edit_" data-uid="1" class="update"><i class="fas fa-pencil-alt    "></i></a> -->
               <!-- <a href="" data-toggle="modal" data-target="#delete" data-uid="1" class="delete"><i class="fas fa-trash-alt    "></i></a></td> -->
@@ -360,12 +392,13 @@
 
 
 
+
     </div>
 
 
 
 
-    <div id="edit" class="modal fade" role="dialog">
+    <!-- <div id="edit" class="modal fade" role="dialog">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -397,11 +430,10 @@
           <div class="modal-footer">
             <button type="button" id="del" class="btn" data-dismiss="modal" style="background-color: #B52421;"><small
                 class="text-white">Delete</small> </button>
-            <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
   </div>
