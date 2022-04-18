@@ -1,333 +1,360 @@
 <!doctype html>
-    <html lang="en">
-    <head>
-      <title>Feedback</title>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="icon" href="img/aftercaremobilelogo.png" type="image/x-icon" />
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="css/style.css">
-      <script src="//code.jquery.com/jquery.min.js"></script>
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    </head>
-    <body style="background: #B52421 ">
+<html lang="en">
 
-      <style>
-        input[type=locationsearch],i.fa.fa-search.locationicon{
+<head>
+  <title>Feedback</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/aftercaremobilelogo.png" type="image/x-icon" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body style="background: #B52421 ">
+
+  <style>
+    input[type=locationsearch],
+    i.fa.fa-search.locationicon {
       display: none;
     }
-      </style>
-      
-      <!-- navbar section -->
-      <div class="container-fluid nav2">
-        
-        <script>
-          $.get("nav.html", function(data){
-              $("#navholder").replaceWith(data);
-          });
-          </script>
-          <div class="" id="navholder"></div>
-      </div>
-    
-      <div class="feedbacktitle container my-4">
-        <h3 style="color: #fff !important;">Feedback</h3>
-        <p class="" style="color: blanchedalmond;">Your feedback matters to us</p>
-      </div>
-    
-      <div class="feedbackpills">
-    
-       
-    
-        <div class="container my-5 pb-5" id="feedbacks">
-    
-            <div class="row ">
-                <div class="col-md-3 pb-3 pt-3 feeds">
-                    <div class="nav flex-column  nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                      <a class="nav-link active" id="v-pills-applicationfeed-tab" data-toggle="pill" href="#v-pills-applicationfeed" role="tab" aria-controls="v-pills-applicationfeed" aria-selected="true"><img src="img/feedback_Application.svg" alt="" class="feedbackicon m-2"> Application</a>
-                      <a class="nav-link" id="v-pills-orders-tab" data-toggle="pill" href="#v-pills-orders" role="tab" aria-controls="v-pills-orders" aria-selected="false"><img src="img/feedback_order_icon.svg" alt="" class="feedbackicon m-2"> Orders</a>
-                      <a class="nav-link" id="v-pills-delivery-tab" data-toggle="pill" href="#v-pills-delivery" role="tab" aria-controls="v-pills-delivery" aria-selected="false"><img src="img/feedback_delivery_icon.svg" alt="" class="feedbackicon m-2">Delivery</a>
-                      <a class="nav-link" id="v-pills-payments-tab" data-toggle="pill" href="#v-pills-payments" role="tab" aria-controls="v-pills-payments" aria-selected="false"><img src="img/feedback_payment_icon.svg" alt="" class="feedbackicon m-2"> Payments</a>
-                    </div>
-                        
-                        
-        
-                </div>
-    
-                <div class="col-md-9 tabcon">
-                    <div class="tab-content" id="v-pills-tabContent">
-                      <div class="tab-pane fade show active p-3 my-3" id="v-pills-applicationfeed" role="tabpanel" aria-labelledby="v-pills-applicationfeed-tab">
-                        <div class="tab1title mb-sm-5 mb-3">
-                            <h5>Application</h5>
-                            <div class="tab1subtext">
-                              <small>Standard delivery times vary by the location selected and prevailing conditions. Once you select your location, an estimated delivery time is mentioned for each vendor.</small>
-                            </div>
-                        </div>
-                        <div class="tab1body container">
-                          <div class="">
+  </style>
 
-                            <form action="">
+  <!-- navbar section -->
+  <div class="container-fluid nav2">
 
-                              <div class="row">
-                                <div class="col-sm-7 justify-content-between flex-wrap d-flex">
-                                  <input type="radio" id="appworst" name="radios" value="all">
-                                    <label for="appworst">😢 Worst</label>    
-                                  <input type="radio" id="apppoor" name="radios"value="false">
-                                    <label for="apppoor">😒 Poor</label>
-                                  <input type="radio" id="appavg" name="radios" value="true">
-                                    <label for="appavg">😐 OK</label>
-                                  <input type="radio" id="appgood" name="radios" value="all">
-                                    <label for="appgood">😏 Good</label>
-                                  <input type="radio" id="appexc" name="radios" value="all">
-                                    <label for="appexc">😁 Great</label>
-                                </div>
-                              </div>
-  
-                              <div class="tab1message my-4">
-                                <form action="">
-                                  <textarea id="message_field" class="input-textarea" type="text" placeholder="Enter your comment" name="message"></textarea>
-                                </form>
-                                <!-- <label for="message_field"></label> -->
-                              </div>
-                              <div>
-                                <button class="feedsubmitbtn" type="submit">Submit</button>
-                              </div>
+    <script>
+      $.get("nav.html", function (data) {
+        $("#navholder").replaceWith(data);
+      });
+    </script>
+    <div class="" id="navholder"></div>
+  </div>
 
-                            </form>
-                            
+  <div class="feedbacktitle container my-4">
+    <h3 style="color: #fff !important;">Feedback</h3>
+    <p class="" style="color: blanchedalmond;">Your feedback matters to us</p>
+  </div>
 
-                          </div>
-                        </div>                   
-                          
-                        
-                      </div>
-                      <div class="tab-pane fade my-3 p-3" id="v-pills-orders" role="tabpanel" aria-labelledby="v-pills-orders-tab">
+  <div class="feedbackpills">
 
-                        <div class="tab2title mb-sm-5 mb-3">
-                          <h5>Orders</h5>
-                          <div class="tab2subtext">
-                            <small>Standard delivery times vary by the location selected and prevailing conditions. Once you select your location, an estimated delivery time is mentioned for each vendor.</small>
-                          </div>
-                      </div>
-                      <div class="tab2body container">
-                        <div class="">
 
-                          <form action="">
 
-                            <div class="row">
-                              <div class="col-sm-7 justify-content-between flex-wrap d-flex">
-                                <input type="radio" id="orderworst" name="radios" value="all">
-                                  <label for="orderworst">😢 Worst</label>    
-                                <input type="radio" id="orderpoor" name="radios"value="false">
-                                  <label for="orderpoor">😒 Poor</label>
-                                <input type="radio" id="orderavg" name="radios" value="true">
-                                  <label for="orderavg">😐 OK</label>
-                                <input type="radio" id="ordergood" name="radios" value="all">
-                                  <label for="ordergood">😏 Good</label>
-                                <input type="radio" id="orderexc" name="radios" value="all">
-                                  <label for="orderexc">😁 Great</label>
-                              </div>
-                            </div>
+    <div class="container my-5" id="feedbacks">
 
-                            <div class="tab1message my-4">
-                              <form action="">
-                                <textarea id="message_field" class="input-textarea" type="text" placeholder="Enter your comment" name="message"></textarea>
-                              </form>
-                              <!-- <label for="message_field"></label> -->
-                            </div>
-                            <div>
-                              <button class="feedsubmitbtn" type="submit">Submit</button>
-                            </div>
+      <div class="row ">
+        <div class="col-md-3 pb-3 pt-3 feeds">
+          <div class="nav flex-column  nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-applicationfeed-tab" data-toggle="pill"
+              href="#v-pills-applicationfeed" role="tab" aria-controls="v-pills-applicationfeed"
+              aria-selected="true"><img src="img/feedback_Application.svg" alt="" class="feedbackicon m-2">
+              Application</a>
+            <a class="nav-link" id="v-pills-orders-tab" data-toggle="pill" href="#v-pills-orders" role="tab"
+              aria-controls="v-pills-orders" aria-selected="false"><img src="img/feedback_order_icon.svg" alt=""
+                class="feedbackicon m-2"> Orders</a>
+            <a class="nav-link" id="v-pills-delivery-tab" data-toggle="pill" href="#v-pills-delivery" role="tab"
+              aria-controls="v-pills-delivery" aria-selected="false"><img src="img/feedback_delivery_icon.svg" alt=""
+                class="feedbackicon m-2">Delivery</a>
+            <a class="nav-link" id="v-pills-payments-tab" data-toggle="pill" href="#v-pills-payments" role="tab"
+              aria-controls="v-pills-payments" aria-selected="false"><img src="img/feedback_payment_icon.svg" alt=""
+                class="feedbackicon m-2"> Payments</a>
+          </div>
 
-                          </form>
-                          
 
-                        </div>
-                      </div>                   
-                        
-                    </div>
-    
-                        
-                      <div class="tab-pane fade my-3 p-3" id="v-pills-delivery" role="tabpanel" aria-labelledby="v-pills-delivery-tab">
-                        <div class="tab3title mb-sm-5 mb-3">
-                          <h5>Delivery</h5>
-                          <div class="tab1subtext">
-                            <small>Standard delivery times vary by the location selected and prevailing conditions. Once you select your location, an estimated delivery time is mentioned for each vendor.</small>
-                          </div>
-                      </div>
-                      <div class="tab3body">
-                        <div class="">
 
-                          <form action="">
-
-                            <div class="row">
-                              <div class="col-sm-7 justify-content-between flex-wrap d-flex">
-                                <input type="radio" id="delworst" name="radios" value="all">
-                                  <label for="delworst">😢 Worst</label>    
-                                <input type="radio" id="delpoor" name="radios"value="false">
-                                  <label for="delpoor">😒 Poor</label>
-                                <input type="radio" id="delavg" name="radios" value="true">
-                                  <label for="delavg">😐 OK</label>
-                                <input type="radio" id="delgood" name="radios" value="all">
-                                  <label for="delgood">😏 Good</label>
-                                <input type="radio" id="delexc" name="radios" value="all">
-                                  <label for="delexc">😁 Great</label>
-                              </div>
-                            </div>
-
-                            <div class="tab1message my-4">
-                              <form action="">
-                                <textarea id="message_field" class="input-textarea" type="text" placeholder="Enter your comment" name="message"></textarea>
-                              </form>
-                              <!-- <label for="message_field"></label> -->
-                            </div>
-                            <div>
-                              <button class="feedsubmitbtn" type="submit">Submit</button>
-                            </div>
-
-                          </form>
-                          
-
-                        </div>
-
-                      </div>
-                    </div>
-                          
-    
-                      <div class="tab-pane my-3 p-3 fade" id="v-pills-payments" role="tabpanel" aria-labelledby="v-pills-payments-tab">
-                        <div class="tab4title mb-sm-5 mb-3">
-                          <h5>Payments</h5>
-                          <div class="tab1subtext">
-                            <small>Standard delivery times vary by the location selected and prevailing conditions. Once you select your location, an estimated delivery time is mentioned for each vendor.</small>
-                          </div>
-                      </div>
-                      <div class="tab4body container">
-                        <div class="">
-
-                          <form action="">
-
-                            <div class="row">
-                              <div class="col-sm-7 justify-content-between flex-wrap d-flex">
-                                <input type="radio" id="payworst" name="radios" value="all">
-                                  <label for="payworst">😢 Worst</label>    
-                                <input type="radio" id="paypoor" name="radios"value="false">
-                                  <label for="paypoor">😒 Poor</label>
-                                <input type="radio" id="payavg" name="radios" value="true">
-                                  <label for="payavg">😐 OK</label>
-                                <input type="radio" id="paygood" name="radios" value="all">
-                                  <label for="paygood">😏 Good</label>
-                                <input type="radio" id="payexc" name="radios" value="all">
-                                  <label for="payexc">😁 Great</label>
-                              </div>
-                            </div>
-
-                            <div class="tab1message my-4">
-                              <form action="">
-                                <textarea id="message_field" class="input-textarea" type="text" placeholder="Enter your comment" name="message"></textarea>
-                              </form>
-                              <!-- <label for="message_field"></label> -->
-                            </div>
-                            <div>
-                              <button class="feedsubmitbtn" type="submit">Submit</button>
-                            </div>
-
-                          </form>
-                          
-
-                        </div>
-                      </div>                   
-                        
-                    </div>
-                       
-    
-                        
-                                  
-                                  
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                           
-                    </div>
-                    
-                </div>
-            
-            </div>
-    
-    
-            
-    
-    
-    
         </div>
+
+        <div class="col-md-9 tabcon">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active p-3 my-3" id="v-pills-applicationfeed" role="tabpanel"
+              aria-labelledby="v-pills-applicationfeed-tab">
+              <div class="tab1title mb-sm-5 mb-3">
+                <h5>Application</h5>
+                <div class="tab1subtext">
+                  <small>Standard delivery times vary by the location selected and prevailing conditions. Once you
+                    select your location, an estimated delivery time is mentioned for each vendor.</small>
+                </div>
+              </div>
+              <div class="tab1body container">
+                <div class="">
+
+                  <form action="">
+
+                    <div class="row">
+                      <div class="col-sm-7 justify-content-between flex-wrap d-flex">
+                        <input type="radio" id="appworst" name="radios" value="all">
+                        <label for="appworst">😢 Worst</label>
+                        <input type="radio" id="apppoor" name="radios" value="false">
+                        <label for="apppoor">😒 Poor</label>
+                        <input type="radio" id="appavg" name="radios" value="true">
+                        <label for="appavg">😐 OK</label>
+                        <input type="radio" id="appgood" name="radios" value="all">
+                        <label for="appgood">😏 Good</label>
+                        <input type="radio" id="appexc" name="radios" value="all">
+                        <label for="appexc">😁 Great</label>
+                      </div>
+                    </div>
+
+                    <div class="tab1message my-4">
+                      <form action="">
+                        <textarea id="message_field" class="input-textarea" type="text" placeholder="Enter your comment"
+                          name="message"></textarea>
+                      </form>
+                      <!-- <label for="message_field"></label> -->
+                    </div>
+                    <div>
+                      <button class="feedsubmitbtn" type="submit">Submit</button>
+                    </div>
+
+                  </form>
+
+
+                </div>
+              </div>
+
+
+            </div>
+            <div class="tab-pane fade my-3 p-3" id="v-pills-orders" role="tabpanel"
+              aria-labelledby="v-pills-orders-tab">
+
+              <div class="tab2title mb-sm-5 mb-3">
+                <h5>Orders</h5>
+                <div class="tab2subtext">
+                  <small>Standard delivery times vary by the location selected and prevailing conditions. Once you
+                    select your location, an estimated delivery time is mentioned for each vendor.</small>
+                </div>
+              </div>
+              <div class="tab2body container">
+                <div class="">
+
+                  <form action="">
+
+                    <div class="row">
+                      <div class="col-sm-7 justify-content-between flex-wrap d-flex">
+                        <input type="radio" id="orderworst" name="radios" value="all">
+                        <label for="orderworst">😢 Worst</label>
+                        <input type="radio" id="orderpoor" name="radios" value="false">
+                        <label for="orderpoor">😒 Poor</label>
+                        <input type="radio" id="orderavg" name="radios" value="true">
+                        <label for="orderavg">😐 OK</label>
+                        <input type="radio" id="ordergood" name="radios" value="all">
+                        <label for="ordergood">😏 Good</label>
+                        <input type="radio" id="orderexc" name="radios" value="all">
+                        <label for="orderexc">😁 Great</label>
+                      </div>
+                    </div>
+
+                    <div class="tab1message my-4">
+                      <form action="">
+                        <textarea id="message_field" class="input-textarea" type="text" placeholder="Enter your comment"
+                          name="message"></textarea>
+                      </form>
+                      <!-- <label for="message_field"></label> -->
+                    </div>
+                    <div>
+                      <button class="feedsubmitbtn" type="submit">Submit</button>
+                    </div>
+
+                  </form>
+
+
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="tab-pane fade my-3 p-3" id="v-pills-delivery" role="tabpanel"
+              aria-labelledby="v-pills-delivery-tab">
+              <div class="tab3title mb-sm-5 mb-3">
+                <h5>Delivery</h5>
+                <div class="tab1subtext">
+                  <small>Standard delivery times vary by the location selected and prevailing conditions. Once you
+                    select your location, an estimated delivery time is mentioned for each vendor.</small>
+                </div>
+              </div>
+              <div class="tab3body">
+                <div class="">
+
+                  <form action="">
+
+                    <div class="row">
+                      <div class="col-sm-7 justify-content-between flex-wrap d-flex">
+                        <input type="radio" id="delworst" name="radios" value="all">
+                        <label for="delworst">😢 Worst</label>
+                        <input type="radio" id="delpoor" name="radios" value="false">
+                        <label for="delpoor">😒 Poor</label>
+                        <input type="radio" id="delavg" name="radios" value="true">
+                        <label for="delavg">😐 OK</label>
+                        <input type="radio" id="delgood" name="radios" value="all">
+                        <label for="delgood">😏 Good</label>
+                        <input type="radio" id="delexc" name="radios" value="all">
+                        <label for="delexc">😁 Great</label>
+                      </div>
+                    </div>
+
+                    <div class="tab1message my-4">
+                      <form action="">
+                        <textarea id="message_field" class="input-textarea" type="text" placeholder="Enter your comment"
+                          name="message"></textarea>
+                      </form>
+                      <!-- <label for="message_field"></label> -->
+                    </div>
+                    <div>
+                      <button class="feedsubmitbtn" type="submit">Submit</button>
+                    </div>
+
+                  </form>
+
+
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="tab-pane my-3 p-3 fade" id="v-pills-payments" role="tabpanel"
+              aria-labelledby="v-pills-payments-tab">
+              <div class="tab4title mb-sm-5 mb-3">
+                <h5>Payments</h5>
+                <div class="tab1subtext">
+                  <small>Standard delivery times vary by the location selected and prevailing conditions. Once you
+                    select your location, an estimated delivery time is mentioned for each vendor.</small>
+                </div>
+              </div>
+              <div class="tab4body container">
+                <div class="">
+
+                  <form action="">
+
+                    <div class="row">
+                      <div class="col-sm-7 justify-content-between flex-wrap d-flex">
+                        <input type="radio" id="payworst" name="radios" value="all">
+                        <label for="payworst">😢 Worst</label>
+                        <input type="radio" id="paypoor" name="radios" value="false">
+                        <label for="paypoor">😒 Poor</label>
+                        <input type="radio" id="payavg" name="radios" value="true">
+                        <label for="payavg">😐 OK</label>
+                        <input type="radio" id="paygood" name="radios" value="all">
+                        <label for="paygood">😏 Good</label>
+                        <input type="radio" id="payexc" name="radios" value="all">
+                        <label for="payexc">😁 Great</label>
+                      </div>
+                    </div>
+
+                    <div class="tab1message my-4">
+                      <form action="">
+                        <textarea id="message_field" class="input-textarea" type="text" placeholder="Enter your comment"
+                          name="message"></textarea>
+                      </form>
+                      <!-- <label for="message_field"></label> -->
+                    </div>
+                    <div>
+                      <button class="feedsubmitbtn" type="submit">Submit</button>
+                    </div>
+
+                  </form>
+
+
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+        </div>
+
       </div>
 
-   
-
-   <style>
 
 
 
-/*
+
+
+    </div>
+  </div>
+
+
+
+  <style>
+    /*
   Hide radio button (the round disc)
   we will use just the label to create pushbutton effect
 */
-input[type=radio] {
-    display:none;
-    margin:10px;
-}
- 
-/*
+    input[type=radio] {
+      display: none;
+      margin: 10px;
+    }
+
+    /*
   Change the look'n'feel of labels (which are adjacent to radiobuttons).
   Add some margin, padding to label
 */
-input[type=radio] + label {
-  font-size: .8rem;
-  padding: .2rem .5rem;
-  background: #e0d9e08f;
-  border-radius: 5px;
-}
-/*
+    input[type=radio]+label {
+      font-size: .8rem;
+      padding: .2rem .5rem;
+      background: #e0d9e08f;
+      border-radius: 5px;
+    }
+
+    /*
  Change background color for label next to checked radio button
  to make it look like highlighted button
 */
-input[type=radio]:checked + label {
-   background-image: none;
-    background-color:#B52421;
-    color: #fff;
-}
-   </style>
-          
-
-          <!-- footer section -->
-
-        <div class="">
-          <script>
-            $.get("footer.html", function(data){
-                $("#footerjs").replaceWith(data);
-            });
-            </script>
-            <div class="container-fluid " id="footerjs" ></div>
-        </div>
+    input[type=radio]:checked+label {
+      background-image: none;
+      background-color: #B52421;
+      color: #fff;
+    }
+  </style>
 
 
+  <!-- footer section -->
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    
-        <script src="js/main.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>    
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    </body>
-    </html>
-    
+  <div class="">
+    <script>
+      $.get("footer.html", function (data) {
+        $("#footerjs").replaceWith(data);
+      });
+    </script>
+    <div class="container-fluid " id="footerjs"></div>
+  </div>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="js/main.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
