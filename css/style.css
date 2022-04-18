@@ -122,8 +122,20 @@ ul {
   cursor: pointer;
   border-bottom: 1px solid #fff;
 }
-.modal.left .modal-dialog,
+/* .modal.left .modal-dialog,
 .modal.right .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 350px;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+  
+} */
+.modal.left_modal .modal-dialog,
+.modal.right_modal .modal-dialog {
   position: fixed;
   margin: auto;
   width: 350px;
@@ -134,8 +146,8 @@ ul {
   transform: translate3d(0%, 0, 0);
 }
 
-.modal.left .modal-content,
-.modal.right .modal-content {
+.modal.left_modal .modal-content,
+.modal.right_modal .modal-content {
   height: 100%;
   border: none !important;
   border-radius: 0rem;
@@ -144,35 +156,35 @@ ul {
   /* background-image: linear-gradient(318deg, #dc3545 0%, #f3f3f5 74%); */
 }
 
-.modal.left .modal-body,
-.modal.right .modal-body {
+.modal.left_modal .modal-body,
+.modal.right_modal .modal-body {
   padding: 1rem 1rem 15rem;
 }
 
 /*RIGHT*/
 
-.modal.right.fade .modal-dialog {
-  right: 0px;
+.modal.right_modal.fade .modal-dialog {
+  right: -50%;
   -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
   -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
   -o-transition: opacity 0.3s linear, right 0.3s ease-out;
-  transition: opacity 0.3s linear, right 0.3 ease-out;
+  transition: opacity 0.3s linear, right 0.3s ease-out;
 }
 
-.modal.right.fade.in .modal-dialog {
+.modal.right_modal.fade.show .modal-dialog {
   right: 0;
 }
 
 /*Left*/
-.modal.left.fade .modal-dialog {
-  left: 0px;
+.modal.left_modal.fade .modal-dialog {
+  left: -50%;
   -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
   -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
   -o-transition: opacity 0.3s linear, left 0.3s ease-out;
   transition: opacity 0.3s linear, left 0.3s ease-out;
 }
 
-.modal.left.fade.in .modal-dialog {
+.modal.left_modal.fade.show .modal-dialog {
   left: 0;
 }
 
@@ -188,6 +200,12 @@ ul {
   border: none !important;
 }
 
+.modal_outer .modal-body {
+  /*height:90%;*/
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 91vh;
+}
 /*
   Hide radio button (the round disc)
   we will use just the label to create pushbutton effect

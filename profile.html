@@ -9,9 +9,9 @@
   <link rel="icon" href="img/aftercaremobilelogo.png" type="image/x-icon" />
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   <script src="//code.jquery.com/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="js-datepick/dp-light.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -542,9 +542,32 @@
           </button>
         </div>
         <div class="modal-body">
-          <small class="my-2">Save address as*</small>
-
           <div class="col-md-12 my-3">
+
+            <div id="map"></div>
+            <script>
+              // Initialize and add the map
+              function initMap() {
+                // The location of Uluru
+                const uluru = { lat: -25.344, lng: 131.031 };
+                // The map, centered at Uluru
+                const map = new google.maps.Map(document.getElementById("map"), {
+                  zoom: 4,
+                  center: uluru,
+                });
+                // The marker, positioned at Uluru
+                const marker = new google.maps.Marker({
+                  position: uluru,
+                  map: map,
+                });
+              }
+
+              window.initMap = initMap;
+            </script>
+
+            <small class="my-2">Save address as*</small>
+
+
 
             <div class=" row d-flex justify-content-around">
               <input type="radio" id="radio5" name="radios" value="all">
@@ -555,6 +578,13 @@
               <label for="radio7"> Other</label>
             </div>
             <style>
+              #map {
+                height: 400px;
+                /* The height is 400 pixels */
+                width: 100%;
+                /* The width is the width of the web page */
+              }
+
               input[type=radio] {
                 display: none;
                 margin: 10px;
@@ -625,7 +655,9 @@ to make it look like highlighted button
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
