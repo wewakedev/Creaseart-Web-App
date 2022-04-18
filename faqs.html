@@ -1,31 +1,36 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <title>FAQs</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="img/aftercaremobilelogo.png" type="image/x-icon" />
-   <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="css/style.css">
-   <script src="//code.jquery.com/jquery.min.js"></script>
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+
 <body style="background: #F6F6F6;">
   <style>
-    input[type=locationsearch],i.fa.fa-search.locationicon{
+    input[type=locationsearch],
+    i.fa.fa-search.locationicon {
       display: none;
     }
   </style>
   <!-- navbar section -->
   <div class="container-fluid nav2">
     <script>
-      $.get("nav.html", function(data){
-          $("#navholder").replaceWith(data);
+      $.get("nav.html", function (data) {
+        $("#navholder").replaceWith(data);
       });
-      </script>
-      <div class="" id="navholder"></div>
+    </script>
+    <div class="" id="navholder"></div>
   </div>
 
   <div class="feedbacktitle container my-4">
@@ -34,108 +39,130 @@
   </div>
 
   <div class="container faqtabs">
-    
+
     <div class="section my-5 light-bg">
-			<div class="">
-				<!-- <div class="section-title">
+      <div class="">
+        <!-- <div class="section-title">
 					<small>MODERN FRAMEWORK BOOTSTRAP 4</small>
 					<h3>HORIZONTAL TABS</h3>
 				</div>     -->
-				<ul class="nav nav-tabs faq-sec text-center container-fluid bg-light">
+        <ul class="nav nav-tabs faq-sec text-center container-fluid bg-light">
           <li class="col-6 my-3 nav-item vendorboard">
-            <a class="nav-link active" data-toggle="tab" href="#vendorfaq"><h6>Vendor </h6></a>
+            <a class="nav-link active" data-toggle="tab" href="#vendorfaq">
+              <h6>Vendor </h6>
+            </a>
           </li>
-				  <li class="col-6 my-3 nav-item riderboard">
-				  <a class="nav-link " data-toggle="tab" href="#riderfaq"><h6>Rider </h6></a>
-				  </li>
-				  <li class="col-6 my-3 nav-item selfdelifaq">
-				  <a class="nav-link" data-toggle="tab" href="#selfdeliveryfaq"><h6>Self-Delivery</h6></a>
-				  </li>
-				  <li class="col-6 my-3 nav-item drivefaq">
-				  <a class="nav-link" data-toggle="tab" href="#drivefaq"><h6>Drive</h6></a>
-				  </li>
-				</ul>
-			<div class="tab-content">
+          <li class="col-6 my-3 nav-item riderboard">
+            <a class="nav-link " data-toggle="tab" href="#riderfaq">
+              <h6>Rider </h6>
+            </a>
+          </li>
+          <li class="col-6 my-3 nav-item selfdelifaq">
+            <a class="nav-link" data-toggle="tab" href="#selfdeliveryfaq">
+              <h6>Self-Delivery</h6>
+            </a>
+          </li>
+          <li class="col-6 my-3 nav-item drivefaq">
+            <a class="nav-link" data-toggle="tab" href="#drivefaq">
+              <h6>Drive</h6>
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content">
 
-				<div class="tab-pane show active" id="vendorfaq">
+          <div class="tab-pane show active" id="vendorfaq">
 
 
-          <div class="">
-            <div class="accordion-option">
-              <!-- <h3 class="title">Lorem Ipsum</h3> -->
-              <!-- <a href="javascript:void(0)" class="toggle-accordion active" accordion-id="#accordion"></a> -->
-            </div>
-            <div class="clearfix"></div>
-            <section class=" p-lg-5 d-flex flex-column">
-              <div class="my-auto">
-        
-                <div id="accordion" role="tablist" aria-multiselectable="true">
-        
-                  <!-- Accordion Item 1 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="accordionHeadingOne">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#accordionBodyOne" aria-expanded="false" aria-controls="accordionBodyOne"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6><b>How can Aftercare help my business grow?</b> </h6>
-                          </a>
+            <div class="">
+              <div class="accordion-option">
+                <!-- <h3 class="title">Lorem Ipsum</h3> -->
+                <!-- <a href="javascript:void(0)" class="toggle-accordion active" accordion-id="#accordion"></a> -->
+              </div>
+              <div class="clearfix"></div>
+              <section class=" p-lg-5 d-flex flex-column">
+                <div class="my-auto">
+
+                  <div id="accordion" role="tablist" aria-multiselectable="true">
+
+                    <!-- Accordion Item 1 -->
+                    <div class="card">
+                      <div class="card-header" role="tab" id="accordionHeadingOne">
+                        <div class="mb-0 row">
+                          <div class="col-12 no-padding accordion-head">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#accordionBodyOne"
+                              aria-expanded="false" aria-controls="accordionBodyOne" class="collapsed ">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              <h6><b>How can Aftercare help my business grow?</b> </h6>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="accordionBodyOne" class="collapse" role="tabpanel" aria-labelledby="accordionHeadingOne"
+                        aria-expanded="false">
+                        <div class="card-block col-12">
+                          <p>Aftercare helps firms in increasing their sales, reaching new customers, and raising brand
+                            visibility online. You’ll be able to reach new customers who want to order from shops like
+                            yours for delivery and pickup by listing on Aftercare.
+                            <br> <br>
+                            High-value customers see your shop first with Aftercare, and they pay when they order from
+                            you. You receive more orders and repeat customers. Aftercare also allows businesses to opt
+                            in-app marketing initiatives, and the Aftercare app to help you reach even more new
+                            customers and encourage inactive customers to order more.
                         </div>
                       </div>
                     </div>
-        
-                    <div id="accordionBodyOne" class="collapse" role="tabpanel" aria-labelledby="accordionHeadingOne" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>Aftercare helps firms in increasing their sales, reaching new customers, and raising brand visibility online. You’ll be able to reach new customers who want to order from shops like yours for delivery and pickup by listing on Aftercare.
-                          <br> <br>
-                          High-value customers see your shop first with Aftercare, and they pay when they order from you. You receive more orders and repeat customers. Aftercare also allows businesses to opt in-app marketing initiatives, and the Aftercare app to help you reach even more new customers and encourage inactive customers to order more.                      </div>
-                    </div>
-                  </div>
-        
-                  <!-- Accordion Item 2 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="accordionHeadingTwo">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#accordionBodyTwo" aria-expanded="false" aria-controls="accordionBodyTwo"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>How is Aftercare unique as a laundry delivery platform?</h6>
-                          </a>
+
+                    <!-- Accordion Item 2 -->
+                    <div class="card">
+                      <div class="card-header" role="tab" id="accordionHeadingTwo">
+                        <div class="mb-0 row">
+                          <div class="col-12 no-padding accordion-head">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#accordionBodyTwo"
+                              aria-expanded="false" aria-controls="accordionBodyTwo" class="collapsed ">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              <h6>How is Aftercare unique as a laundry delivery platform?</h6>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="accordionBodyTwo" class="collapse" role="tabpanel" aria-labelledby="accordionHeadingTwo"
+                        aria-expanded="false">
+                        <div class="card-block col-12">
+                          <p>Aftercare, now in India offers clean laundry services from the best vendor in your town,
+                            with picking up your order and getting it delivered to your doorstep.
+                            <br><br>
+                            We care about our partners and help you with a range of marketing incentives to bring your
+                            laundry shop in front of more consumers.
+                            <br><br>
+                            Additionally, Aftercare offers a variety of items to meet the needs of your laundry shop.
+                            You’ll be able to provide pickup or delivery using the Aftercare App. With Drive, you can
+                            use Aftercare’s logistics technologies and extensive network of riders to power your
+                            delivery program.
+                          </p>
                         </div>
                       </div>
                     </div>
-        
-                    <div id="accordionBodyTwo" class="collapse" role="tabpanel" aria-labelledby="accordionHeadingTwo" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>Aftercare, now in India offers clean laundry services from the best vendor in your town, with picking up your order and getting it delivered to your doorstep.
-                          <br><br>
-                          We care about our partners and help you with a range of marketing incentives to bring your laundry shop in front of more consumers.
-                          <br><br>
-                          Additionally, Aftercare offers a variety of items to meet the needs of your laundry shop. You’ll be able to provide pickup or delivery using the Aftercare App. With Drive, you can use Aftercare’s logistics technologies and extensive network of riders to power your delivery program.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-        
-                  <!-- Accordion Item 3 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="accordionHeadingThree">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#accordionBodyThree" aria-expanded="false" aria-controls="accordionBodyThree"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>What are the mandatory documents needed to list my vendor shop on Aftercare?</h6>
-                          </a>
+
+                    <!-- Accordion Item 3 -->
+                    <div class="card">
+                      <div class="card-header" role="tab" id="accordionHeadingThree">
+                        <div class="mb-0 row">
+                          <div class="col-12 no-padding accordion-head">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#accordionBodyThree"
+                              aria-expanded="false" aria-controls="accordionBodyThree" class="collapsed ">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              <h6>What are the mandatory documents needed to list my vendor shop on Aftercare?</h6>
+                            </a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-        
-                    <div id="accordionBodyThree" class="collapse" role="tabpanel" aria-labelledby="accordionHeadingThree" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>Here are some mandatory documents:
+
+                      <div id="accordionBodyThree" class="collapse" role="tabpanel"
+                        aria-labelledby="accordionHeadingThree" aria-expanded="false">
+                        <div class="card-block col-12">
+                          <p>Here are some mandatory documents:
                           <ul style="list-style-type: disc !important;">
                             <li><small>Basic KYC document</small></li>
                             <li><small>Trade licence</small></li>
@@ -144,229 +171,260 @@
                             <li><small>Recent Invoice</small> </li>
                           </ul>
                           </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Accordion Item 4 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="accordionHeadingFour">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#accordionBodyFour" aria-expanded="false" aria-controls="accordionBodyFour"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>After I submit all my documents, how long will it take for my vendor shop to go live on Aftercare?</h6>
-                          </a>
                         </div>
                       </div>
                     </div>
-        
-                    <div id="accordionBodyFour" class="collapse" role="tabpanel" aria-labelledby="accordionHeadingFour" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>Document verification takes up to 3 business days. After that, your shop will go live within 8 to 10 working days.
+
+                    <!-- Accordion Item 4 -->
+                    <div class="card">
+                      <div class="card-header" role="tab" id="accordionHeadingFour">
+                        <div class="mb-0 row">
+                          <div class="col-12 no-padding accordion-head">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#accordionBodyFour"
+                              aria-expanded="false" aria-controls="accordionBodyFour" class="collapsed ">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              <h6>After I submit all my documents, how long will it take for my vendor shop to go live
+                                on Aftercare?</h6>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="accordionBodyFour" class="collapse" role="tabpanel"
+                        aria-labelledby="accordionHeadingFour" aria-expanded="false">
+                        <div class="card-block col-12">
+                          <p>Document verification takes up to 3 business days. After that, your shop will go live
+                            within 8 to 10 working days.
                           </p>
-                      </div>
-                    </div>
-                  </div>
-        
-                  <!-- Accordion Item 5 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="accordionHeadingFive">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#accordionBodyFive" aria-expanded="false" aria-controls="accordionBodyFive"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>How much commission will I be charged by Aftercare?  </h6>
-                          </a>
                         </div>
                       </div>
                     </div>
-        
-                    <div id="accordionBodyFive" class="collapse" role="tabpanel" aria-labelledby="accordionHeadingFive" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>After successful document verification, you’ll be able to see the commission rate charged by Aftercare.
-                        </p>
+
+                    <!-- Accordion Item 5 -->
+                    <div class="card">
+                      <div class="card-header" role="tab" id="accordionHeadingFive">
+                        <div class="mb-0 row">
+                          <div class="col-12 no-padding accordion-head">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#accordionBodyFive"
+                              aria-expanded="false" aria-controls="accordionBodyFive" class="collapsed ">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              <h6>How much commission will I be charged by Aftercare? </h6>
+                            </a>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  
-                  <!-- Accordion Item 6 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="accordionHeadingSix">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#accordionBodySix" aria-expanded="false" aria-controls="accordionBodySix"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>What is the one-time onboarding fee? Do I have to pay for it while registering?</h6>
-                          </a>
+
+                      <div id="accordionBodyFive" class="collapse" role="tabpanel"
+                        aria-labelledby="accordionHeadingFive" aria-expanded="false">
+                        <div class="card-block col-12">
+                          <p>After successful document verification, you’ll be able to see the commission rate charged
+                            by Aftercare.
+                          </p>
                         </div>
                       </div>
                     </div>
-        
-                    <div id="accordionBodySix" class="collapse" role="tabpanel" aria-labelledby="accordionHeadingSix" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>Onboarding is a hassle-free process. You'll get an app, dashboard and marketing plan as well. We'll recommend the onboarding fees when you fill up the form.</p>
+
+                    <!-- Accordion Item 6 -->
+                    <div class="card">
+                      <div class="card-header" role="tab" id="accordionHeadingSix">
+                        <div class="mb-0 row">
+                          <div class="col-12 no-padding accordion-head">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#accordionBodySix"
+                              aria-expanded="false" aria-controls="accordionBodySix" class="collapsed ">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              <h6>What is the one-time onboarding fee? Do I have to pay for it while registering?</h6>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="accordionBodySix" class="collapse" role="tabpanel" aria-labelledby="accordionHeadingSix"
+                        aria-expanded="false">
+                        <div class="card-block col-12">
+                          <p>Onboarding is a hassle-free process. You'll get an app, dashboard and marketing plan as
+                            well. We'll recommend the onboarding fees when you fill up the form.</p>
+                        </div>
                       </div>
                     </div>
+
+                    <!-- Accordion Item 7 -->
+                    <div class="card">
+                      <div class="card-header" role="tab" id="accordionHeadingSeven">
+                        <div class="mb-0 row">
+                          <div class="col-12 no-padding accordion-head">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#accordionBodySeven"
+                              aria-expanded="false" aria-controls="accordionBodySeven" class="collapsed ">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              <h6>Who should I contact if I need help and support on getting onboarded?</h6>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="accordionBodySeven" class="collapse" role="tabpanel"
+                        aria-labelledby="accordionHeadingSeven" aria-expanded="false">
+                        <div class="card-block col-12">
+                          <p>You can contact us on our customer support number (_____) & info@aftercareco.com</p>
+                        </div>
+                      </div>
+                    </div>
+
                   </div>
 
-                  <!-- Accordion Item 7 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="accordionHeadingSeven">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#accordionBodySeven" aria-expanded="false" aria-controls="accordionBodySeven"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>Who should I contact if I need help and support on getting onboarded?</h6>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <div id="accordionBodySeven" class="collapse" role="tabpanel" aria-labelledby="accordionHeadingSeven" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>You can contact us on our customer support number (_____) & info@aftercareco.com</p>
-                      </div>
-                    </div>
-                  </div>
-        
                 </div>
-        
-              </div>
-            </section>
+              </section>
+            </div>
+
+
           </div>
 
 
-				</div>
+          <div class="tab-pane" id="riderfaq">
 
+            <div class="">
+              <div class="accordion-option">
+                <!-- <h3 class="title">Lorem Ipsum</h3> -->
+                <!-- <a href="javascript:void(0)" class="toggle-accordion active" accordion-id="#accordion"></a> -->
+              </div>
+              <div class="clearfix"></div>
+              <section class=" p-lg-5 d-flex flex-column">
+                <div class="my-auto">
 
-				<div class="tab-pane" id="riderfaq">
-				
-          <div class="">
-            <div class="accordion-option">
-              <!-- <h3 class="title">Lorem Ipsum</h3> -->
-              <!-- <a href="javascript:void(0)" class="toggle-accordion active" accordion-id="#accordion"></a> -->
-            </div>
-            <div class="clearfix"></div>
-            <section class=" p-lg-5 d-flex flex-column">
-              <div class="my-auto">
-        
-                <div id="accordion" role="tablist" aria-multiselectable="true">
-        
-                  <!-- Accordion Item 1 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="riderfaq1">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#riderfaq1ans" aria-expanded="false" aria-controls="riderfaq1ans"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>How does Aftercare's delivery system work?</h6>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <div id="riderfaq1ans" class="collapse" role="tabpanel" aria-labelledby="riderfaq1" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>Thousands of people seek Aftercare's clean laundry. When clients make an order, we distribute it to riders who earn money by picking up and delivering them. Earn money making deliveries.</p>
-                      </div>
-                    </div>
-                  </div>
-        
-                  <!-- Accordion Item 2 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="riderfaq2">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#riderfaq2ans" aria-expanded="false" aria-controls="riderfaq2ans"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>Are Aftercare drivers required to have any previous driving experience?</h6>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <div id="riderfaq2ans" class="collapse" role="tabpanel" aria-labelledby="riderfaq1" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>Nope! No prior knowledge is required. But, if you do have prior experience in the rideshare, food, courier service industries, delivering with an Aftercare is a great way to earn money.
-                          <br><br>
-                          Riders from other commercial services, such as Uber, Ola, Zomato, Swiggy, and Amazon, are welcome to use our service. Catering drivers, taxi drivers, and other workers from all walks of life use the service.                        </p>
-                      </div>
-                    </div>
-                  </div>
-        
-                  <!-- Accordion Item 3 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="riderfaq3">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#riderfaq3ans" aria-expanded="false" aria-controls="riderfaq3ans"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>What things do I need to become a Aftercare driver?</h6>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <div id="riderfaq3ans" class="collapse" role="tabpanel" aria-labelledby="riderfaq3" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>To become an Aftercare driver, you must be 18 years old or above, need a driving licence, registration certificate, aadhar card as well as purchase the Aftercare starter kit. Additionally, all you need to make money is a smartphone and a mode of transportation such as a scooter or a bicycle. Everything else will be handled by us.</p>
-                      </div>
-                    </div>
-                  </div>
+                  <div id="accordion" role="tablist" aria-multiselectable="true">
 
-                  <!-- Accordion Item 4 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="riderfaq4">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#riderfaq4ans" aria-expanded="false" aria-controls="riderfaq4ans"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>What are the login hours? </h6>
-                          </a>
+                    <!-- Accordion Item 1 -->
+                    <div class="card">
+                      <div class="card-header" role="tab" id="riderfaq1">
+                        <div class="mb-0 row">
+                          <div class="col-12 no-padding accordion-head">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#riderfaq1ans"
+                              aria-expanded="false" aria-controls="riderfaq1ans" class="collapsed ">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              <h6>How does Aftercare's delivery system work?</h6>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="riderfaq1ans" class="collapse" role="tabpanel" aria-labelledby="riderfaq1"
+                        aria-expanded="false">
+                        <div class="card-block col-12">
+                          <p>Thousands of people seek Aftercare's clean laundry. When clients make an order, we
+                            distribute it to riders who earn money by picking up and delivering them. Earn money making
+                            deliveries.</p>
                         </div>
                       </div>
                     </div>
-        
-                    <div id="riderfaq4ans" class="collapse" role="tabpanel" aria-labelledby="riderfaq4" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>You can work Shift-wise or order-wise. Shift-wise, you'll work in a fixed shift from 10:00 AM to 8:00 PM, Online/Offline toggle remains active for 10hrs, Rider can go offline by calling customer care in case of emergency. Apart from that Rider received a fixed payment of Rs.350 and also a meal incentive. In Order-wise, you can on/off the toggle according to your availability. You will receive per pick up/delivery amount. If pickup/delivery is long-distance then you’ll receive an extra amount per kilometre.
+
+                    <!-- Accordion Item 2 -->
+                    <div class="card">
+                      <div class="card-header" role="tab" id="riderfaq2">
+                        <div class="mb-0 row">
+                          <div class="col-12 no-padding accordion-head">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#riderfaq2ans"
+                              aria-expanded="false" aria-controls="riderfaq2ans" class="collapsed ">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              <h6>Are Aftercare drivers required to have any previous driving experience?</h6>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="riderfaq2ans" class="collapse" role="tabpanel" aria-labelledby="riderfaq1"
+                        aria-expanded="false">
+                        <div class="card-block col-12">
+                          <p>Nope! No prior knowledge is required. But, if you do have prior experience in the
+                            rideshare, food, courier service industries, delivering with an Aftercare is a great way to
+                            earn money.
+                            <br><br>
+                            Riders from other commercial services, such as Uber, Ola, Zomato, Swiggy, and Amazon, are
+                            welcome to use our service. Catering drivers, taxi drivers, and other workers from all walks
+                            of life use the service.
                           </p>
-                      </div>
-                    </div>
-                  </div>
-        
-                  <!-- Accordion Item 5 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="riderfaq5">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#riderfaq5ans" aria-expanded="false" aria-controls="riderfaq5ans"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>How much can I earn? </h6>
-                          </a>
                         </div>
                       </div>
                     </div>
-        
-                    <div id="riderfaq5ans" class="collapse" role="tabpanel" aria-labelledby="riderfaq5" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>You don’t need to worry about your expenses. If you’re 18-25, you can make between Rs. 50K and Rs.60K part-time and full-time. It depends on your received order, distance, and more. This can be increased by taking more orders and also depends on the distance of delivery points.</p>
+
+                    <!-- Accordion Item 3 -->
+                    <div class="card">
+                      <div class="card-header" role="tab" id="riderfaq3">
+                        <div class="mb-0 row">
+                          <div class="col-12 no-padding accordion-head">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#riderfaq3ans"
+                              aria-expanded="false" aria-controls="riderfaq3ans" class="collapsed ">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              <h6>What things do I need to become a Aftercare driver?</h6>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="riderfaq3ans" class="collapse" role="tabpanel" aria-labelledby="riderfaq3"
+                        aria-expanded="false">
+                        <div class="card-block col-12">
+                          <p>To become an Aftercare driver, you must be 18 years old or above, need a driving licence,
+                            registration certificate, aadhar card as well as purchase the Aftercare starter kit.
+                            Additionally, all you need to make money is a smartphone and a mode of transportation such
+                            as a scooter or a bicycle. Everything else will be handled by us.</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  
-                  <!-- Accordion Item 6 -->
-                  <!-- <div class="card">
+
+                    <!-- Accordion Item 4 -->
+                    <div class="card">
+                      <div class="card-header" role="tab" id="riderfaq4">
+                        <div class="mb-0 row">
+                          <div class="col-12 no-padding accordion-head">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#riderfaq4ans"
+                              aria-expanded="false" aria-controls="riderfaq4ans" class="collapsed ">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              <h6>What are the login hours? </h6>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="riderfaq4ans" class="collapse" role="tabpanel" aria-labelledby="riderfaq4"
+                        aria-expanded="false">
+                        <div class="card-block col-12">
+                          <p>You can work Shift-wise or order-wise. Shift-wise, you'll work in a fixed shift from 10:00
+                            AM to 8:00 PM, Online/Offline toggle remains active for 10hrs, Rider can go offline by
+                            calling customer care in case of emergency. Apart from that Rider received a fixed payment
+                            of Rs.350 and also a meal incentive. In Order-wise, you can on/off the toggle according to
+                            your availability. You will receive per pick up/delivery amount. If pickup/delivery is
+                            long-distance then you’ll receive an extra amount per kilometre.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Accordion Item 5 -->
+                    <div class="card">
+                      <div class="card-header" role="tab" id="riderfaq5">
+                        <div class="mb-0 row">
+                          <div class="col-12 no-padding accordion-head">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#riderfaq5ans"
+                              aria-expanded="false" aria-controls="riderfaq5ans" class="collapsed ">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              <h6>How much can I earn? </h6>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="riderfaq5ans" class="collapse" role="tabpanel" aria-labelledby="riderfaq5"
+                        aria-expanded="false">
+                        <div class="card-block col-12">
+                          <p>You don’t need to worry about your expenses. If you’re 18-25, you can make between Rs. 50K
+                            and Rs.60K part-time and full-time. It depends on your received order, distance, and more.
+                            This can be increased by taking more orders and also depends on the distance of delivery
+                            points.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Accordion Item 6 -->
+                    <!-- <div class="card">
                     <div class="card-header" role="tab" id="riderfaq6">
                       <div class="mb-0 row">
                         <div class="col-12 no-padding accordion-head">
@@ -385,415 +443,464 @@
                       </div>
                     </div>
                   </div> -->
-        
-                   <!-- Accordion Item 7 -->
-                   <div class="card">
-                    <div class="card-header" role="tab" id="riderfaq7">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#riderfaq7ans" aria-expanded="false" aria-controls="riderfaq7ans"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>Do we have to pay any fees to get on board as an Aftercare rider?</h6>
-                          </a>
+
+                    <!-- Accordion Item 7 -->
+                    <div class="card">
+                      <div class="card-header" role="tab" id="riderfaq7">
+                        <div class="mb-0 row">
+                          <div class="col-12 no-padding accordion-head">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#riderfaq7ans"
+                              aria-expanded="false" aria-controls="riderfaq7ans" class="collapsed ">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              <h6>Do we have to pay any fees to get on board as an Aftercare rider?</h6>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="riderfaq7ans" class="collapse" role="tabpanel" aria-labelledby="riderfaq7"
+                        aria-expanded="false">
+                        <div class="card-block col-12">
+                          <p>No, there is no extra fee to become an Aftercare rider. In addition, you only need to buy a
+                            starter kit from us which includes bags, T-shirts, and more.</p>
                         </div>
                       </div>
                     </div>
-        
-                    <div id="riderfaq7ans" class="collapse" role="tabpanel" aria-labelledby="riderfaq7" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>No, there is no extra fee to become an Aftercare rider. In addition, you only need to buy a starter kit from us which includes bags, T-shirts, and more.</p>
-                      </div>
-                    </div>
-                  </div>
 
-                  <!-- Accordion Item 8 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="riderfaq8">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#riderfaq8ans" aria-expanded="false" aria-controls="riderfaq8ans"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>How will I get paid?</h6>
-                          </a>
+                    <!-- Accordion Item 8 -->
+                    <div class="card">
+                      <div class="card-header" role="tab" id="riderfaq8">
+                        <div class="mb-0 row">
+                          <div class="col-12 no-padding accordion-head">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#riderfaq8ans"
+                              aria-expanded="false" aria-controls="riderfaq8ans" class="collapsed ">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              <h6>How will I get paid?</h6>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="riderfaq8ans" class="collapse" role="tabpanel" aria-labelledby="riderfaq8"
+                        aria-expanded="false">
+                        <div class="card-block col-12">
+                          <p>Your payment will be deposited in your bank account once a week, within 15 days, or once a
+                            month, as you specify.</p>
                         </div>
                       </div>
                     </div>
-        
-                    <div id="riderfaq8ans" class="collapse" role="tabpanel" aria-labelledby="riderfaq8" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>Your payment will be deposited in your bank account once a week, within 15 days, or once a month, as you specify.</p>
-                      </div>
-                    </div>
+
+
                   </div>
 
-                  
                 </div>
-        
-              </div>
-            </section>
-          </div>
-
-				</div>
-
-
-				<div class="tab-pane" id="selfdeliveryfaq">
-				
-          <div class="">
-            <div class="accordion-option">
-              <!-- <h3 class="title">Lorem Ipsum</h3> -->
-              <!-- <a href="javascript:void(0)" class="toggle-accordion active" accordion-id="#accordion"></a> -->
+              </section>
             </div>
-            <div class="clearfix"></div>
-            <section class=" p-lg-5 d-flex flex-column">
-              <div class="my-auto">
-        
-                <div id="accordion" role="tablist" aria-multiselectable="true">
-        
-                  <!-- Accordion Item 1 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="selfdeliveryfaq1">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#selfdeliveryfaq1ans" aria-expanded="false" aria-controls="selfdeliveryfaq1ans"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>I have my own delivery fleet. Can I still use Aftercare?</h6>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <div id="selfdeliveryfaq1ans" class="collapse" role="tabpanel" aria-labelledby="selfdeliveryfaq1" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>You can do it! Self-Delivery with Aftercare is suitable for merchants who already have their own delivery teams and they have self-delivery capabilities and are eager to grow orders by using the Aftercare consumer base. Utilise your own fulfilment fleet—plus, take advantage of the Aftercare  platform.</p>
-                      </div>
-                    </div>
-                  </div>
-        
-                  <!-- Accordion Item 2 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="selfdeliveryfaq2">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#selfdeliveryfaq2ans" aria-expanded="false" aria-controls="selfdeliveryfaq2ans"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>I'm already using a Aftercare drive. How can I change my delivery method to Self-Delivery?</h6>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <div id="selfdeliveryfaq2ans" class="collapse" role="tabpanel" aria-labelledby="selfdeliveryfaq2" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>If your shop is already listed on Aftercare and you're ready to start employing your own drivers to deliver Aftercare orders, you can get started with Self-Delivery on Aftercare. To change your delivery method, you need to call customer support, and your issue will be resolved.                          .</p>
-                      </div>
-                    </div>
-                  </div>
-        
-                  <!-- Accordion Item 3 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="selfdeliveryfaq3">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#selfdeliveryfaq3ans" aria-expanded="false" aria-controls="selfdeliveryfaq3ans"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>How can I use Self-Delivery to deliver my Aftercare orders?</h6>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <div id="selfdeliveryfaq3ans" class="collapse" role="tabpanel" aria-labelledby="selfdeliveryfaq3" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>Self-Delivery enables merchants to use their in-house riders to deliver, receive and accept orders through the Aftercare website. Customers are told on the Aftercare App that your shop delivers its orders.</p>
-                      </div>
-                    </div>
-                  </div>
-        
-                  <!-- Accordion Item 4 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="selfdeliveryfaq4">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#selfdeliveryfaq4ans" aria-expanded="false" aria-controls="selfdeliveryfaq4ans"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>Will I get a sufficient amount of orders?</h6>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <div id="selfdeliveryfaq4ans" class="collapse" role="tabpanel" aria-labelledby="selfdeliveryfaq4" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>Aftercare provides a variety of orders to assist you in increasing your volume, both via Aftercare participation and marketing promos that you can add straight from your Merchant Portal. Additionally, with our flexible fulfilment option, you may employ Riders to grow your delivery area and order volume without modifying your operations.</p>
-                      </div>
-                    </div>
-                  </div>
-        
-                </div>
-        
-              </div>
-            </section>
+
           </div>
 
 
-				</div>
+          <div class="tab-pane" id="selfdeliveryfaq">
 
-
-        <div class="tab-pane" id="drivefaq">
-				
-          <div class="container">
-            <div class="accordion-option">
-              <!-- <h3 class="title">Lorem Ipsum</h3> -->
-              <!-- <a href="javascript:void(0)" class="toggle-accordion active" accordion-id="#accordion"></a> -->
-            </div>
-            <div class="clearfix"></div>
-            <section class=" p-lg-5 d-flex flex-column">
-              <div class="my-auto">
-        
-                <div id="accordion" role="tablist" aria-multiselectable="true">
-        
-
-                  <!-- Accordion Item 1 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="driverfaq1">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#driverfaq1ans" aria-expanded="false" aria-controls="driverfaq1ans"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>How can I get started with Aftercare?</h6>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <div id="driverfaq1ans" class="collapse" role="tabpanel" aria-labelledby="driverfaq1" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>There are three simple steps:</p>
-                        <p>
-                          <small><b>Register for Drive now :</b>  Give us a bit of information about yourself and your shipping needs, and we can give you an on-the-spot quote.</small><br><br>
-                        <small><b>Get a personalised suggestion :</b>  Our expertise thoroughly examines your delivery requirements and proposes the ideal solution for your company.</small><br><br>
-                        <small><b>Offer delivery on demand :</b>  With our integrated technological solutions and a large network of drivers, we can fulfil delivery requests.</small><br><br>
-                        </p>
-                        
-
-                      </div>
-                    </div>
-                  </div>
-        
-
-                  <!-- Accordion Item 2 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="drivefaq2">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#drivefaq2ans" aria-expanded="false" aria-controls="drivefaq2ans"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>How is Aftercare drive unique?</h6>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <div id="drivefaq2ans" class="collapse" role="tabpanel" aria-labelledby="drivefaq2" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>Riders may deliver native orders from your shop with Aftercare Drive, our white-label fulfilment delivery solution. Simply, Aftercare drive delivers orders from your place to customers.</p>
-                      </div>
-                    </div>
-                  </div>
-        
-
-                  <!-- Accordion Item 3 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="drivefaq3">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#drivefaq3ans" aria-expanded="false" aria-controls="drivefaq3ans"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>How much does Aftercare Drive cost?</h6>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <div id="drivefaq3ans" class="collapse" role="tabpanel" aria-labelledby="drivefaq3" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>
-                          With Aftercare Drive, there are no hidden fees, and we don't charge any commission fees or other signup fees.  Additionally, drivers earn 100% of customer tips as well as a higher earning compared to self-delivery.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <!-- Accordion Item 4 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="drivefaq4">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#drivefaq4ans" aria-expanded="false" aria-controls="drivefaq4ans"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>How can I pay for Aftercare Drive?</h6>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <div id="drivefaq4ans" class="collapse" role="tabpanel" aria-labelledby="drivefaq4" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>Depending on your online ordering service provider, you may:
-                          At the beginning of each month, Aftercare will send you an itemised invoice with Drive deliveries and related costs. Alternatively, you can request an invoice from your online buying service. The Aftercare invoice can be paid by NEFT, cheque, UPI, Paytm wallet, and many more. The monthly invoice you get from Aftercare for Drive deliveries is just for Aftercare Drive costs.
-                                                    
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <!-- Accordion Item 5 -->
-                  <div class="card">
-                    <div class="card-header" role="tab" id="drivefaq5">
-                      <div class="mb-0 row">
-                        <div class="col-12 no-padding accordion-head">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#drivefaq5ans" aria-expanded="false" aria-controls="drivefaq5ans"
-                            class="collapsed ">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <h6>How can I get in touch with the Drive customer service team?</h6>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <div id="drivefaq5ans" class="collapse" role="tabpanel" aria-labelledby="drivefaq5" aria-expanded="false">
-                      <div class="card-block col-12">
-                        <p>If you're already using Drive and need help with LIVE orders, call XXXXXXXXX is another way to contact us.                          
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                   
-
-        
-        
-                </div>
-        
+            <div class="">
+              <div class="accordion-option">
+                <!-- <h3 class="title">Lorem Ipsum</h3> -->
+                <!-- <a href="javascript:void(0)" class="toggle-accordion active" accordion-id="#accordion"></a> -->
               </div>
-            </section>
+              <div class="clearfix"></div>
+              <section class=" p-lg-5 d-flex flex-column">
+                <div class="my-auto">
+
+                  <div id="accordion" role="tablist" aria-multiselectable="true">
+
+                    <!-- Accordion Item 1 -->
+                    <div class="card">
+                      <div class="card-header" role="tab" id="selfdeliveryfaq1">
+                        <div class="mb-0 row">
+                          <div class="col-12 no-padding accordion-head">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#selfdeliveryfaq1ans"
+                              aria-expanded="false" aria-controls="selfdeliveryfaq1ans" class="collapsed ">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              <h6>I have my own delivery fleet. Can I still use Aftercare?</h6>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="selfdeliveryfaq1ans" class="collapse" role="tabpanel" aria-labelledby="selfdeliveryfaq1"
+                        aria-expanded="false">
+                        <div class="card-block col-12">
+                          <p>You can do it! Self-Delivery with Aftercare is suitable for merchants who already have
+                            their own delivery teams and they have self-delivery capabilities and are eager to grow
+                            orders by using the Aftercare consumer base. Utilise your own fulfilment fleet—plus, take
+                            advantage of the Aftercare platform.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Accordion Item 2 -->
+                    <div class="card">
+                      <div class="card-header" role="tab" id="selfdeliveryfaq2">
+                        <div class="mb-0 row">
+                          <div class="col-12 no-padding accordion-head">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#selfdeliveryfaq2ans"
+                              aria-expanded="false" aria-controls="selfdeliveryfaq2ans" class="collapsed ">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              <h6>I'm already using a Aftercare drive. How can I change my delivery method to
+                                Self-Delivery?</h6>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="selfdeliveryfaq2ans" class="collapse" role="tabpanel" aria-labelledby="selfdeliveryfaq2"
+                        aria-expanded="false">
+                        <div class="card-block col-12">
+                          <p>If your shop is already listed on Aftercare and you're ready to start employing your own
+                            drivers to deliver Aftercare orders, you can get started with Self-Delivery on Aftercare. To
+                            change your delivery method, you need to call customer support, and your issue will be
+                            resolved. .</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Accordion Item 3 -->
+                    <div class="card">
+                      <div class="card-header" role="tab" id="selfdeliveryfaq3">
+                        <div class="mb-0 row">
+                          <div class="col-12 no-padding accordion-head">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#selfdeliveryfaq3ans"
+                              aria-expanded="false" aria-controls="selfdeliveryfaq3ans" class="collapsed ">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              <h6>How can I use Self-Delivery to deliver my Aftercare orders?</h6>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="selfdeliveryfaq3ans" class="collapse" role="tabpanel" aria-labelledby="selfdeliveryfaq3"
+                        aria-expanded="false">
+                        <div class="card-block col-12">
+                          <p>Self-Delivery enables merchants to use their in-house riders to deliver, receive and accept
+                            orders through the Aftercare website. Customers are told on the Aftercare App that your shop
+                            delivers its orders.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Accordion Item 4 -->
+                    <div class="card">
+                      <div class="card-header" role="tab" id="selfdeliveryfaq4">
+                        <div class="mb-0 row">
+                          <div class="col-12 no-padding accordion-head">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#selfdeliveryfaq4ans"
+                              aria-expanded="false" aria-controls="selfdeliveryfaq4ans" class="collapsed ">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              <h6>Will I get a sufficient amount of orders?</h6>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="selfdeliveryfaq4ans" class="collapse" role="tabpanel" aria-labelledby="selfdeliveryfaq4"
+                        aria-expanded="false">
+                        <div class="card-block col-12">
+                          <p>Aftercare provides a variety of orders to assist you in increasing your volume, both via
+                            Aftercare participation and marketing promos that you can add straight from your Merchant
+                            Portal. Additionally, with our flexible fulfilment option, you may employ Riders to grow
+                            your delivery area and order volume without modifying your operations.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </section>
             </div>
+
+
+          </div>
+
+
+          <div class="tab-pane" id="drivefaq">
+
+            <div class="container">
+              <div class="accordion-option">
+                <!-- <h3 class="title">Lorem Ipsum</h3> -->
+                <!-- <a href="javascript:void(0)" class="toggle-accordion active" accordion-id="#accordion"></a> -->
+              </div>
+              <div class="clearfix"></div>
+              <section class=" p-lg-5 d-flex flex-column">
+                <div class="my-auto">
+
+                  <div id="accordion" role="tablist" aria-multiselectable="true">
+
+
+                    <!-- Accordion Item 1 -->
+                    <div class="card">
+                      <div class="card-header" role="tab" id="driverfaq1">
+                        <div class="mb-0 row">
+                          <div class="col-12 no-padding accordion-head">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#driverfaq1ans"
+                              aria-expanded="false" aria-controls="driverfaq1ans" class="collapsed ">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              <h6>How can I get started with Aftercare?</h6>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="driverfaq1ans" class="collapse" role="tabpanel" aria-labelledby="driverfaq1"
+                        aria-expanded="false">
+                        <div class="card-block col-12">
+                          <p>There are three simple steps:</p>
+                          <p>
+                            <small><b>Register for Drive now :</b> Give us a bit of information about yourself and your
+                              shipping needs, and we can give you an on-the-spot quote.</small><br><br>
+                            <small><b>Get a personalised suggestion :</b> Our expertise thoroughly examines your
+                              delivery requirements and proposes the ideal solution for your company.</small><br><br>
+                            <small><b>Offer delivery on demand :</b> With our integrated technological solutions and a
+                              large network of drivers, we can fulfil delivery requests.</small><br><br>
+                          </p>
+
+
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!-- Accordion Item 2 -->
+                    <div class="card">
+                      <div class="card-header" role="tab" id="drivefaq2">
+                        <div class="mb-0 row">
+                          <div class="col-12 no-padding accordion-head">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#drivefaq2ans"
+                              aria-expanded="false" aria-controls="drivefaq2ans" class="collapsed ">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              <h6>How is Aftercare drive unique?</h6>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="drivefaq2ans" class="collapse" role="tabpanel" aria-labelledby="drivefaq2"
+                        aria-expanded="false">
+                        <div class="card-block col-12">
+                          <p>Riders may deliver native orders from your shop with Aftercare Drive, our white-label
+                            fulfilment delivery solution. Simply, Aftercare drive delivers orders from your place to
+                            customers.</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!-- Accordion Item 3 -->
+                    <div class="card">
+                      <div class="card-header" role="tab" id="drivefaq3">
+                        <div class="mb-0 row">
+                          <div class="col-12 no-padding accordion-head">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#drivefaq3ans"
+                              aria-expanded="false" aria-controls="drivefaq3ans" class="collapsed ">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              <h6>How much does Aftercare Drive cost?</h6>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="drivefaq3ans" class="collapse" role="tabpanel" aria-labelledby="drivefaq3"
+                        aria-expanded="false">
+                        <div class="card-block col-12">
+                          <p>
+                            With Aftercare Drive, there are no hidden fees, and we don't charge any commission fees or
+                            other signup fees. Additionally, drivers earn 100% of customer tips as well as a higher
+                            earning compared to self-delivery.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!-- Accordion Item 4 -->
+                    <div class="card">
+                      <div class="card-header" role="tab" id="drivefaq4">
+                        <div class="mb-0 row">
+                          <div class="col-12 no-padding accordion-head">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#drivefaq4ans"
+                              aria-expanded="false" aria-controls="drivefaq4ans" class="collapsed ">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              <h6>How can I pay for Aftercare Drive?</h6>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="drivefaq4ans" class="collapse" role="tabpanel" aria-labelledby="drivefaq4"
+                        aria-expanded="false">
+                        <div class="card-block col-12">
+                          <p>Depending on your online ordering service provider, you may:
+                            At the beginning of each month, Aftercare will send you an itemised invoice with Drive
+                            deliveries and related costs. Alternatively, you can request an invoice from your online
+                            buying service. The Aftercare invoice can be paid by NEFT, cheque, UPI, Paytm wallet, and
+                            many more. The monthly invoice you get from Aftercare for Drive deliveries is just for
+                            Aftercare Drive costs.
+
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!-- Accordion Item 5 -->
+                    <div class="card">
+                      <div class="card-header" role="tab" id="drivefaq5">
+                        <div class="mb-0 row">
+                          <div class="col-12 no-padding accordion-head">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#drivefaq5ans"
+                              aria-expanded="false" aria-controls="drivefaq5ans" class="collapsed ">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              <h6>How can I get in touch with the Drive customer service team?</h6>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="drivefaq5ans" class="collapse" role="tabpanel" aria-labelledby="drivefaq5"
+                        aria-expanded="false">
+                        <div class="card-block col-12">
+                          <p>If you're already using Drive and need help with LIVE orders, call XXXXXXXXX is another way
+                            to contact us.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+                  </div>
+
+                </div>
+              </section>
+            </div>
+          </div>
+
+
         </div>
+      </div>
+    </div>
+  </div>
 
-
-			</div>
-			</div>
-		</div>
-	</div>
-		
   </div>
 
 
   <!-- contact -->
 
   <style>
-  .container-fluid.faqcontact {
-    background-image: url("img/contactbg.png"); 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  } 
+    .container-fluid.faqcontact {
+      background-image: url("img/contactbg.png");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   </style>
 
-  <div class="container-fluid faqcontact" >
+  <div class="container-fluid faqcontact">
     <div class="container p-2 text-center">
-      <div class="heading my-4"><h2 class="" style="color: #fff !important;">Do you have any queries?</h2></div>
-      <div class="subhead ">
-        <p class="" style="color: #B52421; font-weight: bold;"><a href="mailto:vivek@example.com">info@aftercareco.com</a> </p>
-        <p> <b> Or Call<a href="tel:5558920234">  +91 8080800000</b> </a></p>
+      <div class="heading my-4">
+        <h2 class="" style="color: #fff !important;">Do you have any queries?</h2>
       </div>
-      
+      <div class="subhead ">
+        <p class="" style="color: #B52421; font-weight: bold;"><a
+            href="mailto:vivek@example.com">info@aftercareco.com</a> </p>
+        <p> <b> Or Call<a href="tel:5558920234"> +91 8080800000</b> </a></p>
+      </div>
+
       <div class="contactform1 my-5">
 
-        
-          <div class="form-wrapper">
-            <div class="container form-page-center">
-              <div class="row justify-content-center">
-                <div class="col-lg-9">
-                  <form action="/action_page.php">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <input type="textname" class="form-control form-control-md" id="name" placeholder="Name" name="First Name" required>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <input type="emailid" class="form-control form-control-md" id="mail" placeholder="Email" name="Last Name" required>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <textarea id="messageid" name="message" placeholder="Message" style="height:10rem; width: 100%; border-radius: 5px; padding: 1rem;"></textarea>
-                        </div>
 
-                        <div class="form-group d-flex flex-end">
-                          <button class="feedsubmitbtn" type="submit" style="margin:0 auto;">Submit</button>
-                        </div> 
-                      </div>
-                      <!-- <div class="col-4 ml-auto">
-                        
-                      </div> -->
-                      
+        <div class="form-wrapper">
+          <div class="container form-page-center">
+            <div class="row justify-content-center">
+              <div class="col-lg-9">
+                <form action="/action_page.php">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control form-control-md" id="name" placeholder="Name"
+                          name="First Name" required>
                       </div>
                     </div>
-                  </form>
-                </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="mail" class="form-control form-control-md" id="mail" placeholder="Email"
+                          name="Last Name" required>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <textarea id="messageid" name="message" placeholder="Message"
+                          style="height:10rem; width: 100%; border-radius: 5px; padding: 1rem;"></textarea>
+                      </div>
+
+                      <div class="form-group d-flex flex-end">
+                        <button class="feedsubmitbtn" type="submit" style="margin:0 auto;">Submit</button>
+                      </div>
+                    </div>
+                    <!-- <div class="col-4 ml-auto">
+                        
+                      </div> -->
+
+                  </div>
               </div>
+              </form>
             </div>
           </div>
-
-
-
+        </div>
       </div>
+
+
+
     </div>
   </div>
-
-  
-
-
-
-
-
-
-   <!-- footer section -->
-
-   <div class="">
-    <script>
-      $.get("footer.html", function(data){
-          $("#footerjs").replaceWith(data);
-      });
-      </script>
-      <div class="container-fluid " id="footerjs" ></div>
   </div>
 
 
 
-<!-- Optional JavaScript -->
+
+
+
+
+
+  <!-- footer section -->
+
+  <div class="">
+    <script>
+      $.get("footer.html", function (data) {
+        $("#footerjs").replaceWith(data);
+      });
+    </script>
+    <div class="container-fluid " id="footerjs"></div>
+  </div>
+
+
+
+  <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="js/main.js"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
-</html>
 
+</html>

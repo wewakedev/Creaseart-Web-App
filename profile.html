@@ -299,7 +299,8 @@
                         Haryana 122008</p>
                     </div>
                     <div class="addcta">
-                      <a href=""><span>Edit</span></a> <a href=""><span>Delete</span></a>
+                      <a href="" data-toggle="modal" data-target="#newadd" data-dismiss="modal"><span>Edit</span></a> <a
+                        href=""><span>Delete</span></a>
                     </div>
 
                   </div>
@@ -317,7 +318,8 @@
                         Haryana 122008</p>
                     </div>
                     <div class="addcta">
-                      <a href=""><span>Edit</span></a> <a href=""><span>Delete</span></a>
+                      <a href="" data-toggle="modal" data-target="#newadd" data-dismiss="modal"><span> Edit</span></a>
+                      <a href=""><span>Delete</span></a>
                     </div>
 
                   </div>
@@ -335,7 +337,8 @@
                         Haryana 122008</p>
                     </div>
                     <div class="addcta">
-                      <a href=""><span>Edit</span></a> <a href=""><span>Delete</span></a>
+                      <a href="" data-toggle="modal" data-target="#newadd" data-dismiss="modal"><span>Edit</span></a> <a
+                        href=""><span>Delete</span></a>
                     </div>
 
 
@@ -541,77 +544,60 @@
         <div class="modal-body">
           <small class="my-2">Save address as*</small>
 
-          <div class="col-md-12">
+          <div class="col-md-12 my-3">
 
-            <div class="nav add_new_add justify-content-around justify-content-xs-center flex-row" id="v-pills-tab"
-              role="tablist" aria-orientation="vertical">
-              <a class="nav-link active show" id="homeadd_tab" data-toggle="pill" href="#homeadd" role="tab"
-                aria-controls="homeadd" aria-selected="false"><small>Home</small> </a>
-              <a class="nav-link" id="workadd_tab" data-toggle="pill" href="#workadd" role="tab" aria-controls="workadd"
-                aria-selected="false"><small>Work</small></a>
-              <a class="nav-link" id="otheradd_tab" data-toggle="pill" href="#otheradd" role="tab"
-                aria-controls="otheradd" aria-selected="true"><small>Other</small></a>
-              <!-- <a class="nav-link" id="v-pills-coupons-tab" data-toggle="pill" href="#v-pills-coupons" role="tab" aria-controls="v-pills-coupons" aria-selected="false">Coupons & Offers</a> -->
+            <div class=" row d-flex justify-content-around">
+              <input type="radio" id="radio5" name="radios" value="all">
+              <label for="radio5"> Home</label>
+              <input type="radio" id="radio6" name="radios" value="all">
+              <label for="radio6"> Work</label>
+              <input type="radio" id="radio7" name="radios" value="false">
+              <label for="radio7"> Other</label>
             </div>
+            <style>
+              input[type=radio] {
+                display: none;
+                margin: 10px;
+              }
+
+              /*
+Change the look'n'feel of labels (which are adjacent to radiobuttons).
+Add some margin, padding to label
+*/
+              input[type=radio]+label {
+                font-size: .8rem;
+                padding: 0.2rem 1rem;
+                background: #fafafa;
+                border-radius: 16px;
+                margin: .3rem;
+              }
+
+              /*
+Change background color for label next to checked radio button
+to make it look like highlighted button
+*/
+              input[type=radio]:checked+label {
+                background-image: none;
+                background-color: #B52421;
+                color: #fff;
+              }
+            </style>
 
 
-
-            <div class="tab-content my-3" id="tabContent" style="background: #fff; border-radius: 1rem;">
-              <div class="tab-pane fade active in show" id="homeadd" role="tabpanel" aria-labelledby="homeadd_tab">
-                <form id="loginform" action="" method="post">
-                  <fieldset>
-                    <input placeholder="Address Line 1 " type="text" tabindex="3">
-                  </fieldset>
-                  <fieldset>
-                    <input placeholder="Address Line 1" type="text" tabindex="4">
-                  </fieldset>
-                  <fieldset>
-                    <input placeholder="Enter Pin Code" type="text" tabindex="4">
-                  </fieldset>
-                  <fieldset>
-                    <a href=""><button name="submit" type="submit" id="submit" data-submit="...Saving">Save</button></a>
-                  </fieldset>
-                </form>
-              </div>
-
-              <div class="tab-pane fade" id="workadd" role="tabpanel" aria-labelledby="workadd_tab">
-                <form id="loginform" action="" method="post">
-                  <fieldset>
-                    <input placeholder="Office Address Line 1 " type="text" tabindex="3">
-                  </fieldset>
-                  <fieldset>
-                    <input placeholder="Office Address Line 1" type="text" tabindex="4">
-                  </fieldset>
-                  <fieldset>
-                    <input placeholder="Enter Pin Code" type="text" tabindex="4">
-                  </fieldset>
-                  <fieldset>
-                    <a href=""><button name="submit" type="submit" id="submit" data-submit="...Saving">Save</button></a>
-                  </fieldset>
-                </form>
-              </div>
-              <div class="tab-pane fade " id="otheradd" role="tabpanel" aria-labelledby="otheradd_tab">
-                <form id="loginform" action="" method="post">
-                  <fieldset>
-                    <input placeholder="Save name as " type="text" tabindex="3">
-                  </fieldset>
-                  <fieldset>
-                    <input placeholder="Address Line 1 " type="text" tabindex="3">
-                  </fieldset>
-                  <fieldset>
-                    <input placeholder="Address Line 1" type="text" tabindex="4">
-                  </fieldset>
-                  <fieldset>
-                    <input placeholder="Enter Pin Code" type="text" tabindex="4">
-                  </fieldset>
-                  <fieldset>
-                    <a href=""><button name="submit" type="submit" id="submit" data-submit="...Saving">Save</button></a>
-                  </fieldset>
-                </form>
-              </div>
-
-
-            </div>
+            <form id="loginform" action="" method="post">
+              <fieldset>
+                <input placeholder="Address Line 1 " type="text" tabindex="3">
+              </fieldset>
+              <fieldset>
+                <input placeholder="Address Line 1" type="text" tabindex="4">
+              </fieldset>
+              <fieldset>
+                <input placeholder="Enter Pin Code" type="text" tabindex="4">
+              </fieldset>
+              <fieldset>
+                <a href=""><button name="submit" type="submit" id="submit" data-submit="...Saving">Save</button></a>
+              </fieldset>
+            </form>
 
           </div>
         </div>
