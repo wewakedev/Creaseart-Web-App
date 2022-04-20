@@ -537,14 +537,7 @@
 
 
 
-            <div class=" row d-flex justify-content-around">
-              <input type="radio" id="radio5" name="radios" value="all">
-              <label for="radio5"> Home</label>
-              <input type="radio" id="radio6" name="radios" value="all">
-              <label for="radio6"> Work</label>
-              <input type="radio" id="radio7" name="radios" value="false">
-              <label for="radio7"> Other</label>
-            </div>
+
             <style>
               #map {
                 height: 400px;
@@ -582,7 +575,18 @@ to make it look like highlighted button
             </style>
 
 
-            <form id="loginform" action="" method="post">
+            <form id="addAddressForm" action="" method="post">
+
+              <div class=" row d-flex justify-content-around">
+                <input type="radio" id="radio5" name="radios" value="all">
+                <label for="radio5"> Home</label>
+                <input type="radio" id="radio6" name="radios" value="all">
+                <label for="radio6"> Work</label>
+                <input type="radio" id="radio7" name="radios" value="false">
+                <label for="radio7"> Other</label>
+              </div>
+
+
               <fieldset>
                 <input placeholder="Address Line 1 " type="text" tabindex="3">
               </fieldset>
@@ -590,7 +594,7 @@ to make it look like highlighted button
                 <input placeholder="Address Line 1" type="text" tabindex="4">
               </fieldset>
               <fieldset>
-                <input placeholder="Enter Pin Code" type="text" tabindex="4">
+                <input placeholder="Enter Pin Code" type="number" tabindex="4">
               </fieldset>
               <fieldset>
                 <a href=""><button name="submit" type="submit" id="submit" data-submit="...Saving">Save</button></a>
