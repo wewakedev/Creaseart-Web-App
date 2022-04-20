@@ -354,10 +354,10 @@ fieldset {
 }
 
 #signupform input[type="text"],
-input[type="text"],
-input[type="date"],
-input[type="tel"],
-input[type="mail"],
+.tabcon input[type="tel"],
+.tabcon input[type="email"],
+.tabcon input[type="password"],
+.tabcon input[type="text"],
 textarea[name="message"],
 #signupform input[type="email"],
 #signupform input[type="tel"],
@@ -393,10 +393,10 @@ textarea[name="message"],
 }
 
 #signupform input[type="text"]:hover,
-input[type="text"]:hover,
-input[type="tel"]:hover,
-input[type="mail"]:hover,
-input[type="date"]:hover,
+.tabcon input[type="tel"]:hover,
+.tabcon input[type="email"]:hover,
+.tabcon input[type="password"]:hover,
+.tabcon input[type="text"]:hover,
 textarea[name="message"]:hover,
 #signupform input[type="email"]:hover,
 #signupform input[type="tel"]:hover,
@@ -1516,16 +1516,6 @@ a.savechangesbtn {
   /* font-weight: bold !important; */
 }
 
-.tabcon input[type="phone"],
-.tabcon input[type="email"],
-.tabcon input[type="password"],
-.tabcon input[type="name"] {
-  border: none !important;
-  width: 100%;
-  border-bottom: 1px solid #888 !important;
-  padding: 10px;
-  /* cursor: not-allowed; */
-}
 .tabcon fieldset {
   margin: 30px 5px;
   padding: 10px auto;
