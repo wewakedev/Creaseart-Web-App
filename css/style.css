@@ -354,6 +354,11 @@ fieldset {
 }
 
 #signupform input[type="text"],
+input[type="text"],
+#custom input[type="text"],
+#custom input[type="email"],
+#custom input[type="tel"],
+#custom input[type="time"],
 .tabcon input[type="tel"],
 .tabcon input[type="email"],
 .tabcon input[type="password"],
@@ -395,6 +400,7 @@ textarea[name="message"],
 }
 
 #signupform input[type="text"]:hover,
+input[type="text"]:hover,
 .tabcon input[type="tel"]:hover,
 .tabcon input[type="email"]:hover,
 .tabcon input[type="password"]:hover,
