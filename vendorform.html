@@ -544,7 +544,7 @@ if (isset($_POST['submit']) && !empty($_POST['email'])) {
             <div class="col-md-6 d-flex justify-content-between flex-wrap">
               <div class="form-group">
                 <div class="form-check">
-                  <input type="radio" name="yes_discount" value="1" onclick="yesdisopt();" />
+                  <input type="radio" name="optdiscount" value="1" onclick="yesdisopt();" />
                   <label for="yesdisopt">Yes</label>
                 </div>
               </div>
@@ -552,7 +552,7 @@ if (isset($_POST['submit']) && !empty($_POST['email'])) {
 
               <div class="form-group">
                 <div class="form-check">
-                  <input type="radio" name="no_discount" value="0" onclick="nodisopt();" />
+                  <input type="radio" name="optdiscount" value="0" onclick="nodisopt();" />
                   <label for="nodisopt">No</label>
                 </div>
               </div>
@@ -664,7 +664,7 @@ if (isset($_POST['submit']) && !empty($_POST['email'])) {
               <div class="form-group">
                 <div class="form-check">
                   <input type="radio" name="own_logistic" value="0" onclick="noopt();" />
-                  <label for="noopt">Atercare Drive</label>
+                  <label for="noopt">Aftercare Drive</label>
                 </div>
               </div>
             </div>
@@ -885,7 +885,162 @@ if (isset($_POST['submit']) && !empty($_POST['email'])) {
 
             <div class="col-md-6 d-flex flex-sm-row flex-column justify-content-between flex-wrap">
               <label for="outclose">Outlet Closing Days</label>
-              <input class="" type="text" placeholder="Wednesday, Friday" name="outletoff">
+              <!-- <input class="" type="text" placeholder="Wednesday, Friday" name="outletoff"> -->
+              <div class="dropdown-wrapper ">
+                <span class="dropdown-heading">Choose Days</span>
+                <div class="icon-wrapper">
+                  <i class="toggle fa fa-chevron-down"></i>
+                  <div class="dropdown-content">
+                    <ul>
+                      <!-- <li><input type="checkbox" name="days" id="1"><label for="1"><span>All Days</span> </label></li> -->
+                      <li><input type="checkbox" name="days" id="2"><label for="2"><span>Monday</span></label></li>
+                      <li><input type="checkbox" name="days" id="2"><label for="3"><span>Tuesday</span></label></li>
+                      <li><input type="checkbox" name="days" id="3"><label for="4"><span>Wednesday</span></label></li>
+                      <li><input type="checkbox" name="days" id="2"><label for="5"><span>Thursday</span></label></li>
+                      <li><input type="checkbox" name="days" id="2"><label for="6"><span>Friday</span></label></li>
+                      <li><input type="checkbox" name="days" id="2"><label for="7"><span>Saturday</span></label></li>
+                      <li><input type="checkbox" name="days" id="2"><label for="8"><span>Sunday</span></label></li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <style>
+                .dropdown-content {
+                  display: none;
+                }
+
+                .dropdown-wrapper.active .dropdown-content {
+                  display: block;
+                }
+
+
+                .dropdown-wrapper {
+                  margin: 0 auto;
+                  max-width: 260px;
+                  width: 100%;
+                }
+
+                .dropdown-content {
+                  border-radius: 5px;
+                  position: absolute;
+                  border: 1px solid #b3b3bf;
+                  padding: 15px;
+                  left: 50%;
+                  top: 40px;
+                  z-index: 1;
+                  background-color: #fff;
+                  transform: translate(-50%, 0);
+                  width: 230px;
+                }
+
+                .dropdown-content ul,
+                .dropdown-content li {
+                  margin: 0;
+                  padding: 0;
+                }
+
+                .dropdown-content ul {
+                  list-style: none;
+                }
+
+                .dropdown-content:after,
+                .dropdown-content:before {
+                  bottom: 100%;
+                  left: 50%;
+                  border: solid transparent;
+                  content: " ";
+                  height: 0;
+                  width: 0;
+                  position: absolute;
+                  pointer-events: none;
+                }
+
+                .dropdown-content:after {
+                  border-color: rgba(0, 0, 0, 0);
+                  border-bottom-color: #ffff;
+                  border-width: 10px;
+                  margin-left: -10px;
+                }
+
+                .dropdown-content:before {
+                  border-color: rgba(179, 179, 191, 0);
+                  border-bottom-color: #b3b3bf;
+                  border-width: 11px;
+                  margin-left: -11px;
+                }
+
+                .icon-wrapper {
+                  color: #b3b3bf;
+                }
+
+                .icon-wrapper i {
+                  position: relative;
+                  margin-left: 5px;
+                  width: 20px;
+                  height: 20px;
+                  background: #dcdbe5;
+                  border-radius: 50%;
+                  text-align: center;
+                  display: block;
+                  cursor: pointer;
+                  color: #2f255b;
+                }
+
+                .icon-wrapper i:before {
+                  display: block;
+                  line-height: 18px;
+                  font-size: 10px;
+                }
+
+                .icon-wrapper li {
+                  border-bottom: 1px solid #dcdbe5;
+                  padding-bottom: 15px;
+                  max-height: 32px;
+                  margin-top: 15px;
+                  color: #2f255b;
+                }
+
+                .icon-wrapper li:last-child {
+                  border-bottom: 0;
+                  padding-bottom: 0;
+                }
+
+                .icon-wrapper li:first-child {
+                  margin-top: 0;
+                }
+
+                .icon-wrapper li span {
+                  display: block;
+                  padding-left: 35px;
+                  font-size: 0.8rem;
+                  color: #000;
+                }
+
+                .icon-wrapper {
+                  display: inline-block;
+                  position: relative;
+                }
+
+                .dropdown-heading {
+                  color: #000;
+                }
+              </style>
+              <script>
+                let toggle = function () {
+                  document.querySelectorAll('.dropdown-wrapper')[0].classList.toggle('active');
+                  var sax = $(".dropdown-wrapper").hasClass('active');
+                  if (sax) {
+                    $('.toggle').addClass('fa-chevron-up');
+                    $('.toggle').removeClass('fa-chevron-down');
+                  }
+                  else {
+                    $('.toggle').addClass('fa-chevron-down');
+                    $('.toggle').removeClass('fa-chevron-up');
+                  }
+                }
+                document.querySelectorAll('.toggle')[0].addEventListener("click", toggle);
+              </script>
 
             </div>
 
@@ -906,13 +1061,6 @@ if (isset($_POST['submit']) && !empty($_POST['email'])) {
               </div>
             </div>
 
-            <div class="col-md-10">
-              <div class="form-group">
-                <label for="">- Recent Invoice with GST/ PAN and Bank details
-                  specified:</label>
-                <input type="file" id="" name=""><br><br>
-              </div>
-            </div>
 
             <div class="col-md-10">
               <div class="form-group">
