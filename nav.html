@@ -256,7 +256,7 @@
     <!-- MODAL pincode pop up -->
 
 
-    <!-- Modal -->
+    <!-- Modal Pincode -->
     <div class="modal fade" id="enterpin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
       aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -310,6 +310,115 @@
     }
 
   </script>
+
+  <!-- New address Modal -->
+  <div class="modal fade my-3 in" id="newadd" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #BD3935;">
+          <h5 class="modal-title text-white" id="exampleModalLongTitle">Enter Address Details</h5>
+          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="col-md-12 my-3">
+
+            <div id="map"></div>
+            <script>
+              // Initialize and add the map
+              function initMap() {
+                // The location of Uluru
+                const uluru = { lat: -25.344, lng: 131.031 };
+                // The map, centered at Uluru
+                const map = new google.maps.Map(document.getElementById("map"), {
+                  zoom: 4,
+                  center: uluru,
+                });
+                // The marker, positioned at Uluru
+                const marker = new google.maps.Marker({
+                  position: uluru,
+                  map: map,
+                });
+              }
+
+              window.initMap = initMap;
+            </script>
+
+            <small class="my-2">Save address as*</small>
+
+
+
+
+            <style>
+              #map {
+                height: 400px;
+                /* The height is 400 pixels */
+                width: 100%;
+                /* The width is the width of the web page */
+              }
+
+              input[type=radio] {
+                display: none;
+                margin: 10px;
+              }
+
+              /*
+Change the look'n'feel of labels (which are adjacent to radiobuttons).
+Add some margin, padding to label
+*/
+              input[type=radio]+label {
+                font-size: .8rem;
+                padding: 0.2rem 1rem;
+                background: #fafafa;
+                border-radius: 16px;
+                margin: .3rem;
+              }
+
+              /*
+Change background color for label next to checked radio button
+to make it look like highlighted button
+*/
+              input[type=radio]:checked+label {
+                background-image: none;
+                background-color: #B52421;
+                color: #fff;
+              }
+            </style>
+
+
+            <form id="addAddressForm" action="" method="post">
+
+              <div class=" row d-flex justify-content-around">
+                <input type="radio" id="radio5" name="radios" value="all">
+                <label for="radio5"> Home</label>
+                <input type="radio" id="radio6" name="radios" value="all">
+                <label for="radio6"> Work</label>
+                <input type="radio" id="radio7" name="radios" value="false">
+                <label for="radio7"> Other</label>
+              </div>
+
+
+              <fieldset>
+                <input placeholder="Address Line 1 " type="text" tabindex="3">
+              </fieldset>
+              <fieldset>
+                <input placeholder="Address Line 1" type="text" tabindex="4">
+              </fieldset>
+              <fieldset>
+                <input placeholder="Enter Pin Code" type="number" tabindex="4">
+              </fieldset>
+              <fieldset>
+                <a href=""><button name="submit" type="submit" id="submit" data-submit="...Saving">Save</button></a>
+              </fieldset>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 

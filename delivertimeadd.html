@@ -42,7 +42,7 @@
 
     <div class="row">
 
-      <div class="col-md-8 checkoutleft my-3">
+      <div class="col-lg-8 checkoutleft my-3">
 
         <ul class="timeline panel-group" id="accordion" role="tablist" aria-multiselectable="true">
           <!-- <li class="timeline-line"></li> -->
@@ -64,17 +64,16 @@
                 <div id="deliveryadress" class="panel-collapse collapse show" role="tabpanel">
                   <div class="panel-body">
                     <div class="timeline-content">
+
                       <div class="container">
-                        <div class="row">
-                          <div class="col-lg-5 m-sm-3 m-1 adds p-3">
-                            <div class="row">
-                              <i style="padding:5px;" class="fas fa-home"></i>
-                            </div>
-                            <div class="col-10">
+                        <div class="row justify-content-start">
+                          <div class="col-md-12 col-lg-5 mx-2 my-3 adds">
+                            <div class="col-12 px-0 py-3">
                               <div class="addbody">
-                                <h6>Home</h6>
-                                <small>123, Lorem, ipsum dolor. <br>
-                                  Dwarka, New Delhi 110059</small>
+                                <h6> <i class="fas fa-home"></i> &nbsp;Home</h6>
+                                <p>5th Floor, Tower A, Spaze iTech Park, Unit No. 512, Sohna - Gurgaon Rd, Sector 49,
+                                  Gurugram,
+                                  Haryana 122008</p>
                               </div>
                               <div class="deliveryaddbtn flex-wrap my-2">
                                 <input type="radio" id="deliveryhomebtn" name="radios" value="all">
@@ -85,15 +84,13 @@
 
                           </div>
 
-                          <div class="col-lg-5 m-sm-3 m-1  adds p-3">
-                            <div class="row">
-                              <i style="padding:5px;" class="fas fa-briefcase"></i>
-                            </div>
-                            <div class="col-10">
+                          <div class="col-md-12 col-lg-5 mx-2 my-3  adds">
+                            <div class="col-12 px-0 py-3">
                               <div class="addbody">
-                                <h6>Work</h6>
-                                <small>34/4 lorem, ipsum dolor sit. <br>
-                                  Gurgram, Haryana 112203</small>
+                                <h6> <i class="fas fa-briefcase"></i> &nbsp;Work</h6>
+                                <p>5th Floor, Tower A, Spaze iTech Park, Unit No. 512, Sohna - Gurgaon Rd, Sector 49,
+                                  Gurugram,
+                                  Haryana 122008</p>
                               </div>
                               <div class="deliveryaddbtn flex-wrap my-2">
                                 <input type="radio" id="deliveryworkbtn" name="radios" value="all">
@@ -104,33 +101,37 @@
 
                           </div>
 
-                          <div class="col-lg-5 m-sm-3 m-1  adds p-3">
-                            <div class="row">
-                              <i style="padding:5px;" class="fas fa-location-arrow"></i>
-                            </div>
-                            <div class="col-10">
+                          <div class="col-md-12 col-lg-5 mx-2 my-3 adds">
+                            <div class="col-12 px-0 py-3">
                               <div class="addbody">
-                                <h6>Add New Address</h6>
+                                <h6> <i class="fas fa-location-arrow"></i> &nbsp;Add New Address</h6>
+                                <!-- <p>5th Floor, Tower A, Spaze iTech Park, Unit No. 512, Sohna - Gurgaon Rd, Sector 49,
+                                  Gurugram,
+                                  Haryana 122008</p> -->
                               </div>
-                              <div class="addcta">
-                                <button class="addbtn">
-                                  Add New
-                                </button>
+                              <div class="ctabtn">
+                                <button class="ctariderbtn" style="padding: .2rem 1rem; border-radius: 1rem;"
+                                  data-toggle="modal" data-target="#newadd" data-dismiss="modal">Add
+                                  New</button>
                               </div>
+
 
                             </div>
 
                           </div>
 
-
                         </div>
 
                       </div>
+
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
+
+
           </li>
 
           <li class="timeline-item">
@@ -186,7 +187,7 @@
                           <form action="">
                             <small><label for="Delivery"><i class="fas fa-calendar-alt"></i> <small>Select your Delivery
                                   Up Date</small> </label><br></small>
-                            <input type="date" id="pickupdate" name="pickup" onkeydown="return false">
+                            <input type="date" id="delivdate" name="pickup" onkeydown="return false">
                           </form>
                         </div>
 
