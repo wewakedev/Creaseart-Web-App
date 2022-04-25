@@ -695,7 +695,7 @@ body:not(.modal-open) {
 }
 .homeallsetbtns {
   background: #b52421;
-  padding: 0.3rem 0.6rem;
+  padding: 0.8rem;
   color: #fff !important;
   margin: 0.5rem 0rem;
   border-radius: 0.2rem;
