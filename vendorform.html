@@ -27,6 +27,7 @@ if (isset($_POST['submit']) && !empty($_POST['email'])) {
   <link rel="icon" href="img/aftercaremobilelogo.png" type="image/x-icon" />
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -297,23 +298,23 @@ if (isset($_POST['submit']) && !empty($_POST['email'])) {
         </div>
 
         <!-- <div class="row">
-          <div class="col-md-4">
-            <div class="form-group">
-              <label for="venpin">Longitude<sup>*</sup></label>
-              <input type="text" class="form-control" id="" name="" placeholder="">
-            </div>
-          </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <label for="venpin">Longitude<sup>*</sup></label>
+        <input type="text" class="form-control" id="" name="" placeholder="">
+      </div>
+    </div>
 
-          <div class="col-md-4">
-            <div class="form-group">
-              <label for="venstate">Latitude <sup>*</sup></label>
-              <input type="text" name="" class="form-control" id="" placeholder="">
-            </div>
-          </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <label for="venstate">Latitude <sup>*</sup></label>
+        <input type="text" name="" class="form-control" id="" placeholder="">
+      </div>
+    </div>
 
 
 
-        </div> -->
+  </div> -->
 
         <div class="row">
           <div class="col-md-4">
@@ -613,10 +614,26 @@ if (isset($_POST['submit']) && !empty($_POST['email'])) {
 
               <div class="form-group">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="discount_offered[]" value="4" id="eachclothopt">
+                  <input class="form-check-input" type="checkbox" name="discount_offered[]" value="4" id="percentOpt"
+                    onclick="myPercent()">
                   <label class="form-check-label" for="eachclothopt">
-                    Each Cloth Based
+                    Percentage Based
                   </label>
+                  <div>
+                    <input id="percentInput" style="display:none" name="percent" type="text" value="">
+                  </div>
+
+                  <script>
+                    function myPercent() {
+                      var checkBox = document.getElementById("percentOpt");
+                      var percentInput = document.getElementById("percentInput");
+                      if (checkBox.checked == true) {
+                        percentInput.style.display = "block";
+                      } else {
+                        percentInput.style.display = "none";
+                      }
+                    }
+                  </script>
                 </div>
               </div>
 
@@ -632,14 +649,14 @@ if (isset($_POST['submit']) && !empty($_POST['email'])) {
                   </div>
                   <script>
                     //hide field by default
-                    $('input[name="showthis"]').hide();
+                    $('input[id="showthis"]').hide();
 
                     //show it when the checkbox is clicked
-                    $('input[name="checkbox"]').on('click', function () {
+                    $('input[type="checkbox"]').on('click', function () {
                       if ($(this).prop('checked')) {
-                        $('input[name="showthis"]').fadeIn();
+                        $('input[id="showthis"]').fadeIn();
                       } else {
-                        $('input[name="showthis"]').hide();
+                        $('input[id ="showthis"]').hide();
                       }
                     });
                   </script>
@@ -808,7 +825,8 @@ if (isset($_POST['submit']) && !empty($_POST['email'])) {
 
           <div class="row">
             <style>
-              .table>tbody>tr>td {
+              .table>tbody>tr>td,
+              th {
                 vertical-align: middle;
               }
             </style>
@@ -836,51 +854,106 @@ if (isset($_POST['submit']) && !empty($_POST['email'])) {
                   </thead>
                   <tbody>
                     <tr id="cartaddon-row0">
-                      <td class=" font-weight-bold" colspan="15">1.</td>
-                      <td>At the time of signing of this agreement</td>
-                      <td class="text-center">
-                        <input class="agreementinput form-control" type="text" name="signfeeinput">
+                      <td class=" font-weight-bold">1.</td>
+                      <td colspan="15">At the time of signing of this agreement</td>
+                      <td class=" my-2">
+                        <div class="d-flex justify-content-around align-items-center">
+                          <div class="form-check pl-0">
+                            <input type="radio" name="onboardagree" value="0" onclick="hidehiddenfee();" />
+                            <label for="yesboardopt">Yes</label>
+                          </div>
+
+
+                          <div class="form-check">
+                            <input type="radio" name="onboardagree" value="0" onclick="showhiddenfee();" />
+                            <label for="noboardopt">No</label>
+                          </div>
+                        </div>
                       </td>
                     </tr>
-
-                    <tr id="cartaddon-row1">
-                      <td class=" font-weight-bold">2.</td>
-                      <td colspan="15">Rs 1000 On boarding fee and rest amount will be charged at the time off launch.
-                      </td>
-                      <td class="text-center">
-                        <input class="agreementinput form-control" type="text" name="onboardfee1input">
-                      </td>
-                    </tr>
-
-                    <tr id="cartaddon-row2">
-                      <td class=" font-weight-bold">3.</td>
-                      <td colspan="15">On boarding fee shall deducted from the commission of the vendor.</td>
-                      <td class="text-center">
-                        <input class="agreementinput form-control" type="text" name="onboardfee2input">
-                      </td>
-                    </tr>
-
-                    <tr id="cartaddon-row3">
-                      <td class=" font-weight-bold">4.</td>
-                      <td colspan="15">Commission 2%</td>
-                      <td class="text-center">
-                        <input class="agreementinput form-control" type="text" name="comfee">
-                      </td>
-                    </tr>
-
                   </tbody>
                 </table>
               </div>
+              <script>
 
-              <small style="font-size:10px;">
-                AFTERCARE shall have all the rights related to change and modification in the fee and the right to
-                charge an additional fee at any point in time.
-              </small>
+                function hidehiddenfee() {
+                  document.getElementById('hiddenfeerow').style.display = 'none';
+                }
+
+                function showhiddenfee() {
+                  document.getElementById('hiddenfeerow').style.display = 'block';
+                }
+              </script>
+
 
 
             </div>
 
           </div>
+          <div class="table-responsive cartsection text-center" id="hiddenfeerow" style="display: none;">
+            <table class="table table-bordered ">
+              <thead>
+                <tr>
+                  <th class="">Sr. No.</th>
+                  <th colspan="15">Merchant agrees to pay the onboarding
+                    fee as per one of the below mentioned
+                    schedules :</th>
+                  <th class="text-center">Consented by the
+                    Merchant</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class=" font-weight-bold">2.</td>
+                  <td colspan="15">Onboarding fees shall be deducted from the commission due to the vendor, and <br> if
+                    you choose this option commission will be increased by 2%.
+                  </td>
+                  <td class=" my-2">
+                    <div class="d-flex justify-content-around align-items-center">
+                      <div class="form-check pl-0">
+                        <input type="radio" name="onboardfeeopt" value="1" checked="checked">
+                        <label for="yesboardfeeopt">Yes</label>
+                      </div>
+
+
+                      <!-- <div class="form-check">
+                      <input type="radio" name="onboardfeeopt" value="0">
+                      <label for="noboardopt">No</label>
+                    </div> -->
+                    </div>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+          <div class="table-responsive cartsection text-center">
+            <table class="table table-bordered ">
+              <thead>
+                <tr>
+                  <th class="">Sr. No.</th>
+                  <th colspan="15">Commision Agreement</th>
+                  <th class="text-center">Commission % </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr id="cartaddon-row0">
+                  <td class=" font-weight-bold" colspan="15">1.</td>
+                  <td>The merchant shall agree to this commission %</td>
+                  <td class="text-center">
+                    <input class="agreementinput form-control" type="text" name="commissioninput">
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+          <small style="font-size:10px;">
+            AFTERCARE shall have all the rights related to change and modification in the fee and to charge
+            an additional fee at any point in time.
+          </small>
 
           <hr class="my-5">
 
@@ -1135,18 +1208,17 @@ if (isset($_POST['submit']) && !empty($_POST['email'])) {
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" name="tncopt" id="tncopt">
                 <label class="form-check-label" for="tncopt">
-                  I agree to buy Starter Kit. &nbsp; <a href="vendor.html#vendorkit" target="_blank"><b>( View Starter
+                  I agree to buy Starter Kit. &nbsp; <a href="https://www.aftercareco.com/vendor.html#vendorkit"
+                    target="_blank"><b>( View Starter
                       Kit
                       )</b> </a>
                 </label>
               </div>
 
-              <div class="form-check text-sm-center text-left mt-5 p-4 " style="background-color: #F6F6F6;">
-                <input class="form-check-input" type="checkbox" data-toggle="modal" data-target="#tncagreement"
-                  name="tncopt1" id="tncopt1" required="required">
-                <label class="form-check-label" for="tncopt1">
-                  Please read our T&C before proceeding
-                </label>
+
+              <div class="text-sm-center text-left mt-5 p-3 " style="background-color: #F6F6F6;">
+                <p>Please read our <b> <a href="vendoragreement.html">T&C</a></b> before proceeding
+                </p>
               </div>
 
             </div>
@@ -1161,12 +1233,31 @@ if (isset($_POST['submit']) && !empty($_POST['email'])) {
 
 
 
-
       <div class="vendorformsubmission my-3 text-center">
         <input type="submit" name="submit" value="Submit" class="rgst-btn">
 
       </div>
       <style>
+        #custom input[type="text"],
+        select#demo_overview_minimal,
+        #custom input[type="email"],
+        #custom input[type="tel"],
+        #custom input[type="time"] {
+          width: 100%;
+          border: 1px solid transparent;
+          background: #fff;
+          /* margin: 0 0 10px; */
+          padding: 1rem;
+          font-size: 12px;
+          -webkit-appearance: none;
+          --webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+            rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          -moz-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+            rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+            rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        }
+
         .rgst-btn {
           padding: 0.4rem 2rem;
           background: #b52421;
@@ -1175,6 +1266,10 @@ if (isset($_POST['submit']) && !empty($_POST['email'])) {
           -webkit-appearance: none;
           box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
           --webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        select#demo_overview_minimal {
+          padding: 0.2rem 0.8rem;
         }
       </style>
   </div>
@@ -1195,550 +1290,8 @@ if (isset($_POST['submit']) && !empty($_POST['email'])) {
   </div>
 
 
-  <!-- Agreement form -->
 
 
-  <div id="tncagreement" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title"></h4>
-        </div>
-        <div class="modal-body">
-          <div class="container mt-5">
-            <div class="agreementhead text-center">
-              <h4 style="color: rgb(75, 75, 241);">FABRIQUE SERVICE LEVEL AGREEMENT FOR MERCHANTS</h4>
-            </div>
-
-            <div class="agreementbody mt-5">
-
-
-              <p><em>NAME OF OUR COMPANY having registered address at ……through ……..…….(in short
-                  <b> “Fabrique”</b>) and (<b>legal name of MERCHANT</b> ] (in short the “MERCHANT”),</em> mutually
-                agree to the terms and conditions which are incorporated into this agreement as of <b>[ insert
-                  current date]:</b>
-              </p>
-
-              <h5>A. Definition or meanings</h5>
-              <p>
-                (a) Merchant or Merchant <br>
-                (b) Customer <br>
-                (c) laundry services offered. <br>
-              </p>
-
-
-              <!------------------------------------------ 1 ---------------------------------------->
-
-              <h5 class="mt-5">1. Agreement Overview</h5>
-
-              <p> <b>1.1.</b> &nbsp; Fabrique hereby retains the MERCHANT to provide and perform LAUNDRY services
-                including any derivative, replacement and follow-on services thereto (the “Services”)
-                on the representation of the Merchant that the Merchant is engaged in the business of
-                laundry services.
-              </p>
-
-              <p> <b>1.2.</b> &nbsp; This agreement represents a service level agreement between Fabrique and the
-                MERCHANT for the provision of the Services of laundry and related works.
-              </p>
-
-
-              <p> <b>1.3.</b> &nbsp; Fabrique hereby retains the MERCHANT to provide and perform LAUNDRY services
-                including any derivative, replacement and follow-on services thereto (the “Services”)
-                on the representation of the Merchant that the Merchant is engaged in the business of
-                laundry services.
-              </p>
-
-
-              <!------------------------------------------ 2 ---------------------------------------->
-
-
-              <h5 class="mt-5">2. Service Agreement</h5>
-
-              <p>
-                <b>2.1.</b> &nbsp; The following detailed service parameters are the responsibility of the
-                MERCHANT in the ongoing support of this Agreement:
-
-              <p>
-                (a) to mutually agree with Fabrique on catalogue of laundry services that includes
-                descriptions of dry-clearing, cost to Fabrique, and dry-clearing pricing at the
-                MERCHANT’s physical location, all of which may be changed from time to
-                time if mutually agreed upon by the parties;<br>
-
-                (b) to work with Fabrique to setup the ability to receive orders, to confirm the ability
-                to fulfill orders, to notify Fabrique immediately, to fulfill and have complete
-                orders, to label and package all orders/deliveries via mobile APPLICATIONS,
-                website, emails or any other modes as prescribed by the Fabrique from time to
-                time.
-              </p>
-
-              </p>
-
-              <p>
-                <b>2.2.</b> &nbsp; The following detailed service parameters are the responsibility of Fabrique in the
-                ongoing support of this Agreement:
-
-              <p>
-                (a) to work with MERCHANT on a Laundry service menu;<br>
-                (b) to send orders via email/mobile Application to the MERCHANT; <br>
-
-                (c) to use reasonable efforts to make advise the MERCHANT quickly of any
-                changes to orders that have been confirmed; <br>
-
-                (d) to send any payments to the MERCHANT via electronic funds transfer with
-                an order summary in the manner Stated in Schedule..... <br>
-              </p>
-
-
-              </p>
-
-
-              <!------------------------------------------ 3 ---------------------------------------->
-
-
-              <h5 class="mt-5">3. Pricing & Payment</h5>
-
-              <p>
-                <b>3.1.</b> &nbsp; MERCHANT agrees to pay Onboarding fee of Rs. …… to the Fabrique. Fabrique
-                shall have all the rights related to change and modification in the fee and to charge
-                additional fee at any point of time.
-
-              </p>
-
-              <p>
-                <b>3.2.</b> &nbsp; Merchant agree that Fabrique will collect payment on behalf of merchant for the
-                services provided by the Merchant.
-              </p>
-
-              <p>
-                <b>3.3.</b> &nbsp; The amount paid by Fabrique to the MERCHANT for a service on their menu (The
-                ‘Fabrique Price’) and amount charged by Fabrique to the end client (The ‘Customer
-                Price’) is set based on the MERCHANT’s menu price (The ‘Retail Price’) as per the
-                following:
-
-              <p>
-                (a) MERCHANT agrees to give Fabrique a 15% discount (The ‘Fabrique Price’)
-                on the MERCHANT’s menu price (The ‘Retail Price’)
-                <br>
-                (b) MERCHANT agrees that the MERCHANT’s menu price (The ‘Retail Price’)
-                will be marked up 15% (The ‘Customer Price’) by Fabrique.
-                <br>
-                (c) MERCHANT agrees that the Fabrique Price and the Customer Price will apply
-                to all menu items on Fabrique without exception.
-                <br>
-                (d) MERCHANT agrees to pay Fabrique an administrative fee on every order,
-                equal to 5% of the Fabrique Price, which will be deducted by Fabrique from the
-                MERCHANT payment.
-                <br>
-              </p>
-
-              <p>
-                <b>3.4.</b> &nbsp; This pricing is standard for all MERCHANTs on the platform and cannot be
-                reduced. Nor can the MERCHANT change the Retail Price, to reduce the cost on
-                themselves. The Retail Price is the only price used to determine the Fabrique Price
-                and the Customer Price.
-              </p>
-
-              <p>
-                <b>3.5.</b> &nbsp; Payment settlement period <br> The payment will be cleared to the Merchant into two
-                parts i.e.; order from (Monday
-                to Thursday) will be settled on coming Tuesday and Friday to Sunday will be settled
-                on coming Thursday
-              </p>
-
-              </p>
-
-
-              <!------------------------------------------ 4 ---------------------------------------->
-
-
-              <h5 class="mt-5">4. Errors and penalties</h5>
-
-              <p>
-                <b>4.1.</b> &nbsp; Fabrique reserves the right to determine, within reason, appropriate compensation
-                for errors made by the MERCHANT in the fulfilment of services/orders. The
-                MERCHANT agrees that the costs associated with rectifying such errors are the sole
-                responsibility of the MERCHANT.
-              </p>
-
-              <p>
-                <b>4.2.</b> &nbsp; Errors and penalties include, but are not limited to, the following:
-
-              <p>
-                (a) Order cancellation charges : <br>
-                &nbsp; &nbsp; (i) if order is cancelled by merchant....<br>
-                &nbsp; &nbsp; (ii) If order is cancelled by customer.... <br>
-
-                (b) If service delivery time is missed by Merchant, as determined by
-                Fabrique in its sole discretion: <br>
-                &nbsp; &nbsp; (i) 15% discount if complete service is not completed in …..days after
-                handing over of the goods;<br>
-                &nbsp; &nbsp; (ii) 25% discount if …………… <br>
-                &nbsp; &nbsp; (iii) 50% discount if …………… <br>
-                &nbsp; &nbsp; (iv) 100% discount if …………… <br>
-
-                (c) If the Product is lost and damaged: <br>
-                The Merchant shall be liable to pay the amount of the lost/damaged product.
-                Fabrique shall have all the rights to deduct the amount from the payment due
-                to the Merchant or to recover the amount from the Merchant.
-
-                (d) If the Merchant commits two (2) or more errors in a given 30 day period,
-                Fabrique reserves the right to terminate this Agreement immediately. Final
-                payment to the Merchant will be calculated based on the amount owing to
-                the Merchant net of any applicable penalties. <br>
-
-              <h5 style="color:red"><b>Refund for deputed order</b></h5>
-              </p>
-
-
-              </p>
-              <p>
-                <b>4.3.</b> &nbsp; Fabrique acknowledges that errors in delivery may result in errors originating
-                within the Fabrique service and Fabrique will be responsible for all costs associated
-                with correcting these errors.
-              </p>
-              <p>
-                <b>4.4.</b> &nbsp; Fabrique acknowledges that the costs associated with rectifying errors made by
-                Fabrique are the sole responsibility of Fabrique.
-
-              </p>
-
-              <!------------------------------------------ 5 ---------------------------------------->
-
-              <h5 class="mt-5">5. Merchant undertaking Regarding compliance of Laws
-              </h5>
-
-              <p> The MERCHANT assures the Fabrique that it has taken all the licenses applicable
-                to its business. MERCHANT agrees that all the Merchant will not provide or
-                delivered any item or services that may be unsafe, harmful, misbranded or
-                substandard or which contains extraneous matter or not environment friendly. The
-                Merchant agrees that violating these standards will be grounds for immediate
-                termination of this Agreement by Fabrique, as well as for an action by Fabrique
-                against the Merchant for damages
-              </p>
-
-              <!------------------------------------------ 6 ---------------------------------------->
-
-
-              <h5 class="mt-5">6. Miscellaneous</h5>
-
-              <p> <b>6.1.</b> &nbsp; Nothing in this Agreement will constitute a commitment by Fabrique to send to
-                the Merchant any particular volume or quantity of orders.
-              </p>
-
-              <p> <b>6.2.</b> &nbsp; Nothing in this Agreement shall preclude Fabrique from obtaining services
-                similar to the Services from third parties.
-              </p>
-
-
-              <!------------------------------------------ 7 ---------------------------------------->
-
-
-              <h5 class="mt-5">7. Additional Terms and Conditions</h5>
-              <p>Fabrique and The Merchant mutually agree to the following additional terms and
-                conditions. :</p>
-
-              <p> <b>7.1.</b> &nbsp; Intellectual Property Rights and Confidential Information
-              </p>
-              <p>
-                (i) Fabrique shall own and retain all right, title and interest to its intellectual
-                property, whether registered or not, including patents, inventions (whether or
-                not patentable), trademarks, trade names, service marks, copyrights,
-                software, source code, and any registrations and applications for registration
-                of any of the foregoing and confidential and proprietary information
-                including trade secrets. <br>
-
-                (ii) For the purposes of this Agreement, “Confidential Information” means
-                any and all material and information of Fabrique or Fabrique customers,
-                including any personal information and any information, whether recorded
-                in a material form or not, about or related to an identifiable person, including
-                an individual who can be identified directly or indirectly from the
-                information, and in the case of Fabrique includes all such information of
-                Fabrique and Fabrique affiliates relating to its or their respective customers,
-                clients, clients’ customers, suppliers, partners, and their employees and
-                contractors, which has or will come into the possession or knowledge of the
-                Merchant in connection with or as a result of entering into this Agreement or
-                performance of the Services. <br>
-
-                (iii) The Merchant acknowledges that all Confidential Information consists
-                of confidential and proprietary information. Except as required by law, rule,
-                regulation, or court order the Merchant agrees to keep all Confidential
-                Information in strict confidence. The Merchant represents, warrants and
-                covenants that it will comply with applicable Indian data protection laws and
-                regulations and all "substantially similar" legislation that applies to Services
-                under this Agreement. <br>
-
-                (iv) Upon the termination or expiry of this Agreement, the Merchant will
-                return to Fabrique all Confidential Information which is then in the
-                Merchant’s possession or control, and will remove all digital representations
-                thereof in any form from all electronic storage media in its possession or
-                under its control. <br>
-              </p>
-
-              <p> <b>7.2.</b> &nbsp; Non-Competition
-              <p>
-                (i) Merchant covenants that in no event shall it, or any of its affiliates, during the term
-                of this Agreement or for a period of 1 year thereafter : <br>
-                &nbsp; &nbsp; (a) solicit, on behalf of the Merchant or otherwise, through the use of
-                Confidential Information or otherwise, any client of Fabrique; or<br>
-                <!-- &nbsp; &nbsp; (ii) If order is cancelled by customer.... <br> -->
-
-                (ii) The Merchant agrees and acknowledges that any breach by it of its obligations and
-                duties pursuant to this Section shall result in immediate and irreparable harm and
-                damage to Fabrique for which monetary damages alone will not fairly or adequately
-                compensate Fabrique or otherwise remedy such breach. Accordingly, the Merchant
-                agrees that it shall not oppose or otherwise interfere with any applications by
-                Fabrique to a court of competent jurisdiction for any equitable relief or remedy
-                associated with any such breach of this Agreement. Both parties agree and
-                acknowledge that this Section is fair and reasonable in the commercial
-                circumstances of this Agreement and that each party's agreements in this Section
-                have been a material inducement and promise by each party upon which both parties
-                have relied, and been induced, to enter into this Agreement. <br>
-
-                (iii) If the Product is lost and damaged: <br>
-                The Merchant shall be liable to pay the amount of the lost/damaged product.
-                Fabrique shall have all the rights to deduct the amount from the payment due
-                to the Merchant or to recover the amount from the Merchant. <br>
-
-                (iv) If the Merchant commits two (2) or more errors in a given 30 day period,
-                Fabrique reserves the right to terminate this Agreement immediately. Final
-                payment to the Merchant will be calculated based on the amount owing to
-                the Merchant net of any applicable penalties. <br>
-              </p>
-              </p>
-
-              <p> <b>7.3.</b> &nbsp; Indemnities
-              <p>
-                Notwithstanding any other provision hereof, the Merchant agrees to indemnify
-                Fabrique and its respective directors, officers, and employees from and against all
-                losses, costs, damages, expenses, and liabilities (including reasonable legal fees)
-                which may be suffered or incurred by Fabrique arising out of or as a result of or
-                relating in any manner whatsoever to:
-              </p>
-
-
-              <p>
-                (i) Any breach of a representation, warranty, or covenant made by the Merchant in
-                this Agreement; <br>
-
-                (ii) Any injury to persons (including injuries resulting in death) or loss of or damage
-                to property of others which may be or be alleged to be caused by or suffered as a
-                result of or in connection with the performance by the Merchant or its
-                representatives of all or any part of the Merchant’s obligations under this
-                Agreement; <br>
-
-                (iii) The negligence or willful misconduct of the Merchant and/or its representatives
-                in the performance of the Merchant’s obligations under this Agreement; and <br>
-
-                (iv) Any breach of applicable law by the Merchant and/or its representatives in the
-                performance of the Merchant’s obligations under this Agreement. <br>
-
-              </p>
-              </p>
-
-              <p> <b>7.4.</b> &nbsp; Limitation of Liability
-              <p>
-                Under no circumstances shall either party have any liability, whether in contract or
-                for negligence or otherwise and whether related to any single event or series of
-                connected events, for any incidental, indirect or consequential damages or loss of
-                profits, loss of business, revenue or anticipated savings or other economic loss
-                arising out of or in furtherance of the provisions or objectives of this Agreement
-                whether or not the party was informed or was aware of the possibility of such loss.
-              </p>
-              </p>
-
-              <p> <b>7.5.</b> &nbsp; Effective date of onboarding will the date of signing the LOU.
-                <!-- <p>
-                        Under no circumstances shall either party have any liability, whether in contract or
-                        for negligence or otherwise and whether related to any single event or series of
-                        connected events, for any incidental, indirect or consequential damages or loss of
-                        profits, loss of business, revenue or anticipated savings or other economic loss
-                        arising out of or in furtherance of the provisions or objectives of this Agreement
-                        whether or not the party was informed or was aware of the possibility of such loss.
-                    </p> -->
-              </p>
-
-              <p> <b>7.6.</b> &nbsp; Termination
-              <p>
-                Either party shall have the right to terminate all or any part of this Agreement by
-                giving the other party 30 days written notice.
-              </p>
-              </p>
-
-              <p> <b>7.7.</b> &nbsp; Effect of Termination
-              <p>
-                If this Agreement is terminated, Fabrique may invoice the Merchant for Services
-                performed up to the date of termination of the Agreement.
-              </p>
-              </p>
-
-              <p> <b>7.8.</b> &nbsp; Severability
-              <p>
-                The invalidity or unenforceability of any particular provision of this Agreement will
-                not affect or limit the validity or enforceability of its remaining provisions.
-              </p>
-              </p>
-
-              <p> <b>7.9.</b> &nbsp; Survival
-              <p>
-                Any provision of the Agreement that contemplates performance or observance
-                subsequent to termination or expiration of the Agreement will survive termination
-                or expiration of the Agreement and will continue in full force and effect, including,
-                but not limited to, those relating to confidentiality, proprietary rights, warranties,
-                indemnification, limitation of liability, non-solicitation, non-competition, and
-                dispute resolution.
-              </p>
-              </p>
-
-              <p> <b>7.10.</b> &nbsp; Binding Effect and Assignment
-              <p>
-                This Agreement shall be binding upon and shall enure to the benefit of and be
-                enforceable by each of the parties, their respective successors, and permitted
-                assigns. This Agreement may not be assigned by the Merchant. All or part of this
-                Agreement may be assigned by Fabrique to any person who acquires all or part of
-                Fabrique’s business and such assignee may enforce this Agreement as if such
-                assignee was a party hereto.
-              </p>
-              </p>
-
-              <p> <b>7.11.</b> &nbsp; Independent Contractors
-              <p>
-                The Merchant will provide all services as an independent contractor and in no way
-                will the Merchant or its employees be considered employees, agents, partners,
-                fiduciaries, or joint venturers of Fabrique. The Merchant and its employees will
-                have no authority to represent Fabrique or its affiliates without Fabrique’s
-                permission, or bind Fabrique or its affiliates in any way, and the Merchant agrees
-                that neither the Merchant nor its employees will hold themselves out as having
-                authority to act for Fabrique or its affiliates.
-              </p>
-              </p>
-
-              <p> <b>7.12.</b> &nbsp; Governing Law
-              <p>
-                This Agreement is governed by, and is to be interpreted, construed, and enforced in accordance with the
-                laws of India
-              </p>
-              </p>
-
-
-              <h6 style="color: red;">ARBITRATION CLAUSE TO BE INSERTED</h6>
-
-
-              <!------------------------------------------ 8 ---------------------------------------->
-
-
-              <h5 class="mt-5">8. Branding Guidelines</h5>
-              <p>The Merchant agrees to the following additional terms and conditions, regarding
-                Fabrique’s brand standards.
-              </p>
-
-
-              <p>
-                <b>8.1.</b> &nbsp; Presentation
-
-              <p>
-                (a) All ITEM must be packaged in a presentable manner, with no grease
-                stains on the PACKETS/BAGS and clear labels on all the items. <br>
-                <!-- &nbsp; &nbsp; (i) if order is cancelled by merchant....<br>
-                        &nbsp; &nbsp; (ii) If order is cancelled by customer.... <br> -->
-
-                (b) All PACKETS/BAGS etc. used to transport the ITEM can use a
-                MERCHANT’s logo or colours, however it must include a Fabrique label. <br>
-
-                (c) Packaging cannot be.... <br>
-              </p>
-
-
-              </p>
-
-              <p>
-                <b>8.2.</b> &nbsp; Labelling
-              <p>
-                (i) All PACKETS/BAGS must include a Fabrique label on it. <br>
-
-                (ii) All labels must include: <br>
-                &nbsp; &nbsp;(a) Name of the order item, and <br>
-                &nbsp; &nbsp;(b) ....... <br>
-
-              </p>
-              </p>
-              <p>
-                <b>4.4.</b> &nbsp; Fabrique acknowledges that the costs associated with rectifying errors made by
-                Fabrique are the sole responsibility of Fabrique.
-
-              </p>
-
-              <!------------------------------------------ 9 ---------------------------------------->
-
-
-              <h5 class="mt-5">9. Cross-Marketing and Promotional Activities</h5>
-              <p>The Merchant agrees to work with Fabrique to use commercially reasonable efforts to
-                engage in the following cross-marketing and promotional activities:
-
-              <p>
-                (1) Social media engagement; <br>
-                (2) Guest blog features; <br>
-                (3) Testimonials; <br>
-                (4) MERCHANT video features; <br>
-                (5) Online promotion of Fabrique’s LAUNDRY services via a link to Fabrique’s
-                website or a picture of the Fabrique logo; and <br>
-                (6) Partnering with and/or sponsoring Fabrique at key annual events. <br>
-                (7) . Fabrique shall be entitled to charge Marketing fee and other charges (customer
-                support charges) from the Merchant. <br>
-              </p>
-              </p>
-
-
-              <!------------------------------------------ 10 ---------------------------------------->
-
-
-              <h5 class="mt-5">10. List of documents required to onboard a Merchant on platform.</h5>
-              <p>The Merchant is under obligation to provide following documents to the Fabrique,
-                failing which this agreement shall be treated as null and void and the Merchant shall
-                indemnity the loss suffered by the Fabrique :
-
-              <p>
-                (1) Trade License <br>
-                (2) GSTIN <br>
-                (3) Basic KYC documents <br>
-                (4) Cancelled cheque <br>
-              </p>
-              </p>
-
-
-              <!------------------------------------------ 11 ---------------------------------------->
-
-
-              <h5 class="mt-5 ">11. TAXES </h5>
-              <p>The transactions are bilateral between the Merchant and Customer, and therefore, Fabrique
-                shall not be liable to charge or deposit any taxes applicable on such transactions.
-              </p>
-              <p><b>FABRIQUE and the Merchant each agree that they have read, understood, and agree to the
-                  Standards of Service set out in this Agreement.
-                </b></p>
-
-
-
-            </div>
-
-            <div class="agreementfootsign mt-5 pt-5">
-              <h6>FABRIQUE</h6>
-              <p><b>By: _________________________ Name: </b></p>
-              <p>Title Date: _____</p>
-            </div>
-            <div class="agreementfootsign">
-              <h6>[NTD: insert legal name of MERCHANT]</h6>
-              <p><b>By: _________________________ Name: </b></p>
-              <p>Title Date: _____</p>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 
