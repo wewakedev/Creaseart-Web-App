@@ -338,7 +338,7 @@ if (isset($_POST['submit']) && !empty($_POST['email'])) {
         <div class="row">
           <div class="col-md-4">
             <div class="form-group">
-              <label for="venmail">Office Email<sup>*</sup></label>
+              <label for="venmail">Order Notify Email Address<sup>*</sup></label>
               <input type="mail" name="email" class="form-control" id="email" placeholder="">
 
             </div>
@@ -380,7 +380,7 @@ if (isset($_POST['submit']) && !empty($_POST['email'])) {
 
           <div class="col-md-4">
             <div class="form-group">
-              <label for="venmobile">Office Mobile Number<sup>*</sup></label>
+              <label for="venmobile">Order Notify Mobile Number<sup>*</sup></label>
               <input type="tel" name="email_phone" id="email_phone" maxlength="10" class="form-control" pattern="\d{10}"
                 title="Please enter exactly 10 digits" />
               <a href="#" class="callt" onclick="this.href = document.getElementById('email_phone').value;">
@@ -871,6 +871,14 @@ if (isset($_POST['submit']) && !empty($_POST['email'])) {
                         </div>
                       </td>
                     </tr>
+
+                    <script>
+                      function{ showhiddenfee(); }
+
+                    </script>
+
+
+
                   </tbody>
                 </table>
               </div>
@@ -951,8 +959,8 @@ if (isset($_POST['submit']) && !empty($_POST['email'])) {
           </div>
 
           <small style="font-size:10px;">
-            AFTERCARE shall have all the rights related to change and modification in the fee and to charge
-            an additional fee at any point in time.
+            AFTERCARE shall have all the rights related to change and modification in the fee and the right to
+            charge an additional fee at any point in time.
           </small>
 
           <hr class="my-5">
@@ -1208,8 +1216,7 @@ if (isset($_POST['submit']) && !empty($_POST['email'])) {
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" name="tncopt" id="tncopt">
                 <label class="form-check-label" for="tncopt">
-                  I agree to buy Starter Kit. &nbsp; <a href="https://www.aftercareco.com/vendor.html#vendorkit"
-                    target="_blank"><b>( View Starter
+                  I agree to buy Starter Kit. &nbsp; <a href="vendor.html#vendorkit" target="_blank"><b>( View Starter
                       Kit
                       )</b> </a>
                 </label>
@@ -1217,7 +1224,8 @@ if (isset($_POST['submit']) && !empty($_POST['email'])) {
 
 
               <div class="text-sm-center text-left mt-5 p-3 " style="background-color: #F6F6F6;">
-                <p>Please read our <b> <a href="vendoragreement.html">T&C</a></b> before proceeding
+                <p>Please read our <b> <a href="vendoragreement.html">T&C</a></b> before
+                  proceeding
                 </p>
               </div>
 
