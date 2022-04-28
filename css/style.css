@@ -248,7 +248,7 @@ input {
 #signupform input[type="text"],
 input[type="text"],
 input[type="tel"],
-input[type="mail"],
+input[type="email"],
 input[type="date"],
 textarea[name="message"],
 #contactusform input [type="text"],
