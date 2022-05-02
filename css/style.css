@@ -355,9 +355,9 @@ fieldset {
 
 #signupform input[type="text"],
 input[type="text"],
-#subform input[type="text"],
-#subform input[type="email"],
-#subform input[type="tel"],
+.landingform input[type="text"],
+.landingform input[type="email"],
+.landingform input[type="tel"],
 input[type="date"],
 #custom input[type="text"],
 #custom input[type="email"],
