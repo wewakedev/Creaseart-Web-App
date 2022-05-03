@@ -782,7 +782,7 @@ body:not(.modal-open) {
 .pinsubmitbtn {
   background: #b52421;
   color: white !important;
-
+  border: none;
   /* height: 36px; */
   padding: 0.575rem 0.75rem;
   font-size: 13px;
@@ -1209,13 +1209,17 @@ ul.links {
     height: 100vh;
   }
 }
+@media only screen and (min-device-width: 481px) and (max-device-width: 1600px) and (orientation: portrait) {
+  /* For portrait layouts only */
+  #par-js {
+    height: 45vh;
+  }
+}
 @media only screen and (max-width: 900px) {
   .checkoutleft .btns.d-flex.justify-content-between {
     width: 100% !important;
   }
-  #par-js {
-    height: 100vh;
-  }
+
   .workings img {
     width: 100%;
   }
@@ -1237,7 +1241,7 @@ ul.links {
    */
 @media only screen and (min-width: 1600px) {
   #par-js {
-    height: 60vh;
+    height: 40vh;
   }
 }
 
