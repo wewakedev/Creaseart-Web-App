@@ -2030,6 +2030,12 @@ input[type="locationsearch"] {
   height: 150px;
   background-size: cover;
 }
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #16181b;
+  text-decoration: none;
+  background-color: #f8f9fa !important;
+}
 
 .dropdown.show .dropdown-menu {
   max-height: 200px;
