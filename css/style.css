@@ -655,7 +655,7 @@ body:not(.modal-open) {
 #par-js {
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 31rem;
   background-image: linear-gradient(315deg, #dc3545 0%, #f3f3f5 74%);
 }
 .herosec {
@@ -1032,7 +1032,7 @@ ul.links {
     font-size: 1.5rem;
   }
   #par-js {
-    height: 100vh;
+    height: 43rem;
   }
   .cartmain {
     position: absolute;
@@ -1205,15 +1205,15 @@ ul.links {
   }
 }
 @media only screen and (max-width: 390px) {
-  #par-js {
+  /* #par-js {
     height: 100vh;
-  }
+  } */
 }
 @media only screen and (min-device-width: 481px) and (max-device-width: 1600px) and (orientation: portrait) {
   /* For portrait layouts only */
-  #par-js {
+  /* #par-js {
     height: 45vh;
-  }
+  } */
 }
 @media only screen and (max-width: 900px) {
   .checkoutleft .btns.d-flex.justify-content-between {
@@ -1241,7 +1241,7 @@ ul.links {
    */
 @media only screen and (min-width: 1600px) {
   #par-js {
-    height: 40vh;
+    height: 30rem;
   }
 }
 
