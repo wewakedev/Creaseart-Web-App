@@ -655,7 +655,7 @@ body:not(.modal-open) {
 #par-js {
   position: relative;
   width: 100%;
-  height: 31rem;
+  height: 30rem;
   background-image: linear-gradient(315deg, #dc3545 0%, #f3f3f5 74%);
 }
 .herosec {
@@ -1202,6 +1202,12 @@ ul.links {
   .googlebadge,
   .iosbadge {
     width: 150px;
+  }
+}
+
+@media only screen and (min-width: 1024) {
+  #par-js {
+    height: 31rem;
   }
 }
 @media only screen and (max-width: 390px) {
